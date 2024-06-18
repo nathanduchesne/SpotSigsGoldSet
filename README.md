@@ -3,3 +3,5 @@
 
 
 This repository contains the GoldSet created for this paper, which remained the reference benchmark ever since its creation for near-duplicate detection. It was given to me by Prof. Theobald in 2024 after it no longer was available online. 
+
+The dataset was previously hosted on Prof. Theobald's Max Planck Institut page (https://mpi-inf.mpg.de/~mtb) before being moved to his University of Antwerp web page (https://adrem.ua.ac.be/~tmartin).
