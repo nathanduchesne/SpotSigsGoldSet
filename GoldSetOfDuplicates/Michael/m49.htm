@@ -1,0 +1,1142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>FOX Sports - NBA - Michael Jordan, wife file for divorce</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Michael Jordan, wife file for divorce">
+<meta name="keywords" content="NBA, Basketball">
+<script language="JavaScript1.2" type="text/javascript">
+  var isFanAvail = "false";
+  function checkCookie(cookieName, length) {
+  var allcookies = document.cookie;
+  var cookiePos = allcookies.indexOf(cookieName + "=");
+  if(cookiePos != -1) {
+    var start = cookiePos + length;
+    var end = allcookies.indexOf(";", start);
+    if(end == -1)
+      end = allcookies.length;
+    var value = allcookies.substring(start, end);
+    value = unescape(value);
+    return value;
+  }
+  return "";
+  }
+  var uid = "";
+  var euid = checkCookie("pUID", 5);
+  var fuid = checkCookie("pFUID", 6);
+  var fanid = checkCookie("pFANID", 6);
+  var lmd = checkCookie("pLMD", 5);
+  var flmd = checkCookie("pFLMD", 6);
+  var rme = checkCookie("pRME", 5); //Hitbox Reg Addition
+  var curDate = new Date();
+
+  if (flmd == null || flmd == "") {
+   flmd = curDate.getMilliseconds();
+   document.cookie = "pFLMD=" + curDate + "; path=/; domain=.foxsports.com;";
+  }
+
+  if (lmd != null && lmd != "") {
+    uid = euid;
+  } else{
+    uid = checkCookie("pRME", 5);
+    if (uid != null && uid != "") {
+      curDate = curDate.getMilliseconds();
+      document.cookie = "pLMD=" + curDate + "; path=/; domain=.foxsports.com;";
+    }
+  }
+  document.write('<scr' + 'ipt language="JavaScript1.2" src="/user.js?uid=' + escape(uid) + '&lmd=' + escape(lmd) + '" type="text/javascript"></scr' + 'ipt>');
+  var fantasyUserJsPath = 'http://msn.foxsports.com/fantasy/football/commissioner/fantasyUser.js?epuid=' + escape(euid) + '&flmd=' + escape(flmd);
+  
+</script><script language="JavaScript1.2" src="m49_files/user.htm" type="text/javascript"></script><!--start hitbox code--><!--% fs_request_setCacheHeaders 60 -overwrite %--><!--WEBSIDESTORY CODE HBX1.0 (Universal)--><!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+
+
+
+
+
+
+<script language="javascript">
+  function _hbxStrip(a){
+    a = a.replace(/\s+$/, '');
+    a = a.split(",").join("");
+    a = a.split("&").join("");
+    a = a.split("'").join("");
+    a = a.split("#").join("");
+    a = a.split("$").join("");
+    a = a.split("%").join("");
+    a = a.split("^").join("");
+    a = a.split("*").join("");
+    a = a.split(":").join("");
+    a = a.split("!").join("");
+    a = a.split("<").join("");
+    a = a.split(">").join("");
+    a = a.split("~").join("");
+    a = a.split(";").join("");
+    a = a.split("\\").join("");
+    a = a.split(" ").join("+");
+    return a;
+  }
+  var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+  var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="h.foxsports.com";
+  hbx.pndef="title";
+  hbx.ctdef="full";
+  hbx.fv="";
+  hbx.lt="auto"; //LINK TRACKING
+  hbx.dlf="n";
+  hbx.dft="n";
+  hbx.elf="n";
+  hbx.seg="";
+  hbx.fnl="";
+  hbx.cmp="";
+  hbx.cmpn="CMP"; //
+  hbx.dcmp="";
+  hbx.dcmpn="DCMP"; //
+  hbx.dcmpe="";
+  hbx.dcmpre="";
+  hbx.hra="";
+  hbx.hqsr="";
+  hbx.hqsp="ATT"; //
+  hbx.hlt="";
+  hbx.hla="";
+  hbx.gp="";
+  hbx.gpn="GP"; //
+  hbx.hcn="";
+  hbx.hcv="";
+  hbx.cp="null";
+  hbx.cpd="";
+
+  // Hitbox registration additions
+
+  function findAge(yr, mon, day, unit, decimal, round) {
+    //Sample usage
+    //findAge (year, month, day, unit, decimals, rounding)
+    //Unit can be "years", "months", or "days"
+    //Decimals specifies demical places to round to (ie: 2)
+    //Rounding can be "roundup" or "rounddown"
+    //findAge(1997, 11, 24, "years", 0, "rounddown")
+
+    var one_day = 1000*60*60*24;
+    var one_month = 1000*60*60*24*30;
+    var one_year = 1000*60*60*24*30*12;
+    today = new Date();
+    var pastdate = new Date(yr, mon-1, day);
+    var countunit = unit;
+    var decimals = decimal;
+    var rounding = round;
+    finalunit = (countunit=="days")? one_day : (countunit=="months")? one_month : one_year;
+    decimals = (decimals<=0)? 1 : decimals*10;
+    if(unit!="years") {
+      if (rounding=="rounddown")
+        return(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit);
+      else
+        return(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit);
+    }
+    else {
+      yearspast = today.getFullYear()-yr-1;
+      tail = (today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0;
+      pastdate.setFullYear(today.getFullYear());
+      pastdate2 = new Date(today.getFullYear()-1, mon-1, day);
+      //tail = (tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals;
+      return(yearspast+tail);
+    }
+  }
+
+  function returnAge() {
+    var age = -1;
+    if(user.MONTH_CODE == "0" || user.MONTH_CODE == "" || user.DATE_CODE == "0" || user.DATE_CODE == "" || user.BIRTH_YEAR == "0" || user.BIRTH_YEAR == "")
+    {
+    }
+    else
+    {
+      var bdayMonth = user.MONTH_CODE;
+      var bdayDate = user.DATE_CODE;
+      var bdayYear = user.BIRTH_YEAR;
+      age = findAge(bdayYear, bdayMonth, bdayDate, "years", 0, "rounddown");
+    }
+
+    if (age > 12 && age < 18) {
+      (age = 1);
+    }
+    if (age > 17 && age < 25) {
+      (age = 2);
+    }
+    if (age > 24 && age < 35) {
+      (age = 3);
+    }
+    if (age > 34 && age < 45) {
+      (age = 4);
+    }
+    if (age > 44 && age < 55) {
+      (age = 5);
+    }
+    if (age > 54 && age < 65) {
+      (age = 6);
+    }
+    if (age > 64) {
+      (age = 7);
+    }
+    return age;
+  }
+
+  if (typeof(user.USER_ID) == 'undefined') {
+      user.USER_ID = '';
+    }
+
+  var user_status="";
+  //var user_age=returnAge();
+
+  if (rme.length > 0)
+  {
+    if (user.USER_ID == '0')
+    {
+      (user_status = "No-Log");
+    }
+      else
+    {
+      (user_status = "Yes|" + returnAge());
+    }
+  }
+    else
+  {
+    (user_status = "Not-Reg");
+  }
+
+  //CUSTOM VARIABLES
+  if (typeof(user.USER_ID) == 'undefined') {
+    user.USER_ID = '';
+  }
+  hbx.ci=user.USER_ID; //
+
+  hbx.hc1=_hbxStrip('Story') + "|" + _hbxStrip('AP');
+  hbx.hc2=_hbxStrip('AP+Authors') + "|" + _hbxStrip('Michael+Jordan,+wife+file+for+divorce');
+  hbx.hc3=user_status;
+  hbx.hc4="";
+  hbx.hrf="";
+  hbx.pec="";
+
+  hbx.acct='DM520329A1SZ95EN3';
+  var _acct='DM520329A1SZ95EN3'; //legacy for back compat
+  var _acctMedia='DM520329OJCS95EN3';  // legacy for back compat
+
+
+
+  hbx.pn=_hbxStrip('Michael+Jordan,+wife+file+for+divorce');
+  hbx.mlc=_hbxStrip('/nba/stories ');
+  var _pn=_hbxStrip('Michael+Jordan,+wife+file+for+divorce');
+  var _mlc=_hbxStrip('/nba/stories ');
+
+</script>
+<script language="javascript1.1" defer="defer" src="m49_files/hbx.js"></script><!--END WEBSIDESTORY CODE--><!-- MSN Ads JS CODE BEGIN -->
+
+
+
+<script type="text/javascript" src="m49_files/dap.js"></script><!-- MSN Ads JS CODE END -->
+
+
+
+  <link href="m49_files/main.css" rel="stylesheet" type="text/css">
+  <link href="m49_files/main_002.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+  <script language="JavaScript1.2" src="m49_files/site_wide.js" type="text/javascript"></script>
+  <script language="JavaScript1.2" src="m49_files/vp.js" type="text/javascript"></script>
+  <script language="JavaScript1.2" src="m49_files/msn_survey.js" type="text/javascript"></script>
+	<script language="JavaScript1.2" src="m49_files/FSJavaScriptFlashGateway.js" type="text/javascript"></script>
+<style>
+.big7 {font:11px tahoma, sans-serif;back ground:#686B6E;color:#183390}
+.big7 a, .big7 a:visited {font:bold 11px tahoma, sans-serif;text-decoration:none;color:#183390}
+.big7 a:hover, .big7 a:visited:hover{text-decoration: underline;color:#183390}
+</style><style>.userName {font-family: verdana;font-size:10px;color:#000;font-weight: bold;}.userName a:link, .userName a:visited {color: #000;} .userName a:hover {color: #fff;}</style><style>
+td.navEl {border-bottom:1px solid #996a00; border-right:1px solid #a58401; border-left:1px solid #fc0; height:26px; font-family:verdana; font-size:10px; font-weight:bold;}
+td.navElOn, td.navEl2On {border-right:1px solid #a58401; border-left:1px solid #eee; border-bottom:1px solid #eee; height:26px; background-color:#eee; font-family:verdana; font-size:10px; font-weight:bold;}
+td.navElOnHome {border-right:1px solid #a58401; border-left:1px solid #fff; border-bottom:1px solid #fff; height:26px; background-color:#fff; font-family:verdana; font-size:10px; font-weight:bold;}
+td.navElOnOver {border-right:1px solid #a58401; border-left:1px solid #eee; border-bottom:1px solid #996a00; background-color:#eee; height:26px; font-family:verdana; font-size:10px; font-weight:bold;}
+td.navElOver {border-right:1px solid #a58401; border-left:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; height:26px; font-family:verdana; font-size:10px; font-weight:bold;}
+
+td.navElOnOver a:hover, td.navElOn a:hover, td.navElOver a:hover, td.navEl a:hover, td.navElOnHome a:hover {
+color:#333; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+}
+td.navElOnOver a:link, td.navElOn a:link, td.navElOver a:link, td.navEl a:link, td.navElOnHome a:link {
+color:#333; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+}
+td.navElOnOver a:visited, td.navElOn a:visited, td.navElOver a:visited, , td.navEl a:visited, td.navElOnHome a:visited {
+color:#333; width:100%; padding-top:7px; padding-bottom:6px; display:block;
+}
+div.dd1, div.dd2 {position:absolute; visibility:hidden; padding:3px; width:120px; background-color:#eee;}
+div.dd1 {border-right:1px solid #996a00; border-left:1px solid #996a00; border-bottom:1px solid #996a00; z-Index:1000;}
+div.dd2 {border: 1px solid #996a00; z-Index:1001;}
+div.dd, div.ddHigh {font-size:10px; font-family:verdana; color:#000; font-weight:bold; width:120px; padding:1px; z-Index:1000;}
+div.ddHigh {background-color:#ccc; color:#009;}
+
+/* this is for the orange fantasy tab background */
+td.navEl2 {border-bottom:1px solid #996a00; border-right:1px solid #a58401; border-left:1px solid #fc0; height:26px; font-family:verdana; font-size:10px; font-weight:bold; background-image: url(/fe/img/sf_nav_bg_orange.gif);}
+td.navEl2 a:visited, td.navEl2 a:link, td.navEl2 a:hover {color:#333; width:100%; padding-top:7px; padding-bottom:6px; display:block;}
+</style><style>
+.sponsorHdr {
+  background-color: #d3d3d3;
+  color: #000099;
+  font-weight:bold;
+  border-left:1px solid #fff;
+  border-right:1px solid #fff;
+  padding:5px;
+}
+</style><style>
+#ad300x250box {margin-bottom:10px; height:260px;}
+</style><style>
+.big7 {font:11px tahoma, sans-serif; color:#183390;}
+.big7 a, .big7 a:link ,.big7 a:visited {font:bold 11px tahoma, sans-serif;text-decoration:none; color:#183390;}
+.big7 a:hover, .big7 a:visited:hover {text-decoration:underline; color:#183390;}
+</style></head><body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"><div style="border: 0pt none ; margin: 0pt; padding: 0pt; overflow: visible; text-align: left; position: absolute; z-index: 10000; top: 0pt; left: 0pt;" dir="ltr" id="eyeDiv"></div>
+<!-- search:<noindex> -->
+
+<div id="global" align="center">
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+     
+
+
+<script type="text/javascript" language="Javascript1.2">
+  function generateLoginUrl() {
+    var path = location.pathname;
+    var query = location.search ;
+    if (query == '') {
+      query = "?need=prefs";
+    } else {
+      query += "&need=prefs";
+    }
+    if (window.location.href.indexOf('blogs') != -1) {
+      var cfu = escape("https://s.foxsports.com/pp/response?blogs=true&cfu=" + path + query);
+    } else {
+      var cfu = escape("https://s.foxsports.com/pp/response?cfu=" + path + query);
+    }
+    var doubleEscapeCfu = escape (cfu);
+    var queryParams = "&seclog=10&wa=wsignin1.0&wreply=" + cfu + "&cb=" + escape("&wa=wsignin1.0&wreply="
+) + doubleEscapeCfu;
+    return "https://login.live.com/ppsecure/secure.srf?wp=MBI_SSL_SAML" + queryParams;
+  }
+if (navigator.appName.indexOf('WebTV') != -1) {
+  document.write('<embed src="wtv-tricks:/msndispatch?type=tv-navbar-insert&amp;loc=top-navbar" height="33" width="544"></embed>');
+} else {
+  document.write('<div class="dMSNME_1"><table width="770" height="41" cellpadding="0" cellspacing="0" class="big7" border="0"><tr><td width="85" align="left"><a href="http://g.msn.com/0nwenus0/AK/14" target="_top"><img src="/fe/img/Misc/Logos/msft_69x25.gif" width="69" height="25" border="0" alt="go to MSN.com" title="go to MSN.com" hspace="7" vspace="7"></a></td><td align="right">&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/14" target="_top">MSN&nbsp;Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/01">My&nbsp;MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/02">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;');
+   if (typeof(euid)== "undefined" || euid == null || euid == '') {
+    document.write("<a href=\"" + generateLoginUrl() + "\"><img src=\"http://www.passportimages.com/1033/signin.gif\" border=\"0\" width=\"66\" height=\"19\" align=\"absmiddle\"></a>");
+   } else {
+    document.write("<a href=\"http://login.live.com/logout.srf?ID=64537\"><img src=\"http://www.passportimages.com/1033/signout.gif\" border=\"0\" width=\"66\" height=\"19\" align=\"absmiddle\"></a>");
+   }
+  document.write('</td></tr></table></div>');
+}
+</script><div class="dMSNME_1"><table class="big7" border="0" cellpadding="0" cellspacing="0" height="41" width="770"><tbody><tr><td align="left" width="85"><a href="http://g.msn.com/0nwenus0/AK/14" target="_top"><img src="m49_files/msft_69x25.gif" alt="go to MSN.com" title="go to MSN.com" border="0" height="25" hspace="7" vspace="7" width="69"></a></td><td align="right">&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/14" target="_top">MSN&nbsp;Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/01">My&nbsp;MSN</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://g.msn.com/0nwenus0/AK/02">Hotmail</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://login.live.com/ppsecure/secure.srf?wp=MBI_SSL_SAML&amp;seclog=10&amp;wa=wsignin1.0&amp;wreply=https%3A//s.foxsports.com/pp/response%3Fcfu%3D/nba/story/6316848%3Fneed%3Dprefs&amp;cb=%26wa%3Dwsignin1.0%26wreply%3Dhttps%253A//s.foxsports.com/pp/response%253Fcfu%253D/nba/story/6316848%253Fneed%253Dprefs"><img src="m49_files/signin.gif" align="absmiddle" border="0" height="19" width="66"></a></td></tr></tbody></table></div>
+<img src="m49_files/c.gif" style="display: none;" border="0" height="0" width="0">
+
+<!--print out my player css classes-->
+<script>
+var hasTeams = userState('teams');
+if (hasTeams) {
+  var mp = '';
+  mp += '<style>';
+  for (var i = 0; i < userTeams.length; i++) {
+    if (typeof(userTeams[i]) == "undefined") continue;
+    mp += '.' + userTeams[i][4] + 'x' + userTeams[i][2] + ' {';
+    mp += 'font-weight:bold;';
+    mp += 'background-image: url(/fe/img/my-black-gold.gif); background-repeat: no-repeat;';
+    mp += 'padding-left:15px;';
+    mp += '}';
+  }
+  mp += '</style>';
+  document.write(mp);
+}
+var hasPlayers = userState('players');
+if (hasPlayers) {
+  var mp = '';
+  mp += '<style>';
+  for (var i = 0; i < userPlayers.length; i++) {
+    if (typeof(userPlayers[i]) == "undefined") continue;
+    mp += '.' + userPlayers[i][8] + 'x' + userPlayers[i][3] + ' {';
+    mp += 'font-weight:bold;';
+    mp += 'background-image: url(/fe/img/my-black-gold.gif); background-repeat: no-repeat;';
+    mp += 'padding-left:15px;';
+    mp += '}';
+  }
+  mp += '</style>';
+  document.write(mp);
+}
+</script>
+<!--end print out my player css classes-->
+
+
+
+
+	
+
+
+
+
+
+    <!-- categoryId = 73  -->
+    
+
+
+<div class="advertisementLabel" id="advertLabel728x90" align="center"><img src="m49_files/arrow_down_gray.gif" border="0">advertisement</div>
+       <div id="ad728x90box"><div id="acbdiv0"></div><div style="border: 0px none ; margin: 0px; padding: 0px; text-align: left; display: inline;"><img id="ebBannerImage_0_5122675353998381167471104687" src="m49_files/5223C296-EEE1-4F56-975F-73944C284E63.jpg" onclick="ebScriptWin0_5122675353998381167471104687.gEbBanners[0].displayUnit.ebinteractionHandler('ebDefaultClick')" onload="" style="border: 0pt none ; margin: 0pt; padding: 0pt; cursor: pointer;" border="0" height="90" width="728"></div><iframe style="visibility: hidden;" src="about:blank" name="dapIfM0" id="dapIfM0" frameborder="0" height="0" scrolling="no" width="0"></iframe></div>
+
+     <script>
+       if(MAC) {
+         var theDiv = document.getElementById('ad728x90box');
+         if(theDiv!=null) {
+           if (!adQs) var adQs = "action=serveAd";
+           var _ad728x90 = '';
+           _ad728x90 += '<IFRAME SCROLLING=NO MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 FRAMESPACING=0 ';
+           _ad728x90 += 'WIDTH="728" HEIGHT="90" ';
+           _ad728x90 += 'SRC="http://rad.msn.com/ADSAdClient31.dll?GetAd=&PG=SPTBB1&SC=1390&TF=_NEW&'
+           _ad728x90 += adQs;
+           _ad728x90 += '"></IFRAME>';
+           theDiv.innerHTML = _ad728x90;
+         }
+       }
+       else {
+         dapMgr.enableACB('ad728x90box',false);
+         dapMgr.renderAd('ad728x90box', '&PG=SPTBB1&AP=1390', 728, 90);
+       }
+     </script>
+    
+
+
+    <div class="spacer10"></div>
+
+
+	<div class="bdyContainer">
+		
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+if ( typeof(FSFlashTag)=="undefined" || typeof(FSFlashTag.prototype.setSalign)=="undefined" ) {
+  document.write('<scr'+'ipt language="JavaScript1.2" src="/fe/js/lib/javascriptFlash/FSJavaScriptFlashGateway.js" type="text/javascript"></scr'+'ipt>');
+}
+</script>
+<script type="text/javascript" language="JavaScript1.2">
+  var showScorestrip = "true";
+  if (useFlash == true) {
+    var countryCode = "";
+    countryCode = "US";
+    e=document.getElementById("headerScoreboard");
+    function changeH (){
+      e.style.height = x;
+    }
+    var domain = "http://msn.foxsports.com";
+    var menuXml = "/name/public/FS/Jumbotron/scoresMenu";
+    var categoryId="73";
+    var loc="FS"; //[FS, FSW, desk]
+
+    if (loc == "FSW")  menuXml = "/name/public/FSW/Jumbotron/scoresMenu";
+
+    if (countryCode == "CA") loc="CAN";
+    var sectionFront="NBA";  //section front name
+    var sectionFrontUrl="/nba";
+    var gamesUrl="/nugget/9240_73";
+
+    var firstName="";
+    var userStatus=0;
+
+    if(typeof(user) == "undefined" || user.USER_ID == "null" || parseInt(user.USER_ID) == 0) {
+        //logged out
+    } else {
+        //username available
+        firstName=user.USER_FIRST_NAME;
+        userStatus=1;
+        if (euid != null && euid != '') {
+            //account available
+            userStatus+=2;
+        }
+    }
+
+    var promo="/id/6241318_15_2.swf";
+    var promoUrl="/fantasy/college-football?OTC-M1I998154004";
+    var jtBg="";
+    var jtBgUrl="";
+    var jtScores="";
+    var jtScoresUrl="";
+    var adPageCode="SPTBB5";
+    var pageType="story";
+    var jumbotronPath = "/id/2843313_15_123.swf";
+
+    if ((location.host.indexOf("8050")!=-1) || (location.pathname.indexOf("/scores")!=-1) || (location.pathname.indexOf("/gameTrax")!=-1)){
+      refreshValue="refresh=0&";
+    }else{
+      refreshValue="";
+    }
+    var JTflashVars = refreshValue + 'categoryId='+categoryId+'&sectionFront='+sectionFront+'&sectionFrontUrl='+sectionFrontUrl+'&adPageCode='+adPageCode+'&loc='+loc+'&domain='+domain+'&showScorestrip='+showScorestrip;
+    JTflashVars += '&firstName='+firstName +'&userStatus='+userStatus+'&menuXml='+menuXml+'&gamesUrl='+gamesUrl;
+    JTflashVars += '&login=/login&logout=/logout&customize=/prefs&register=/login&promo='+promo+'&promoUrl='+promoUrl;
+    JTflashVars += '&jtBg='+jtBg+'&jtBgUrl='+jtBgUrl+'&jtScores='+jtScores+'&jtScoresUrl='+jtScoresUrl;
+    JTflashVars += '&pageType='+pageType;
+    if (typeof(myTeams)!="undefined") JTflashVars += '&myTeams='+myTeams;
+
+    var flashArgs = GetArgs();
+    if (typeof(flashArgs.gameId)!="undefined") {
+      JTflashVars += '&gameId=' + flashArgs.gameId;
+    }
+    document.write('<div id="headerScoreboard" height="126" style="height:126px; width:770px; overflow-y:hidden;">');
+    var tag = new FSFlashTag(jumbotronPath, 770, 126); // movie path, last two arguments are width and height
+    tag.setFlashvars(JTflashVars);
+    tag.setId('jumboTron');
+    tag.setSalign("lt");
+    tag.setScale("noscale");
+    tag.setWmode("opaque");
+    tag.setVersion("6,0,0,0");
+    tag.write(document);
+    document.write('</div>');
+  }else{
+    document.write('<scr'+'ipt type="text/javascript"  language="JavaScript1.2" src="/fe/js/html_jumbotron.js"></scr'+'ipt>');
+  }
+</script><script type="text/javascript" language="JavaScript1.2" src="m49_files/html_jumbotron.js"></script><div style="position: relative; background-image: url(/fe/img/jumbotron_background_2.jpg); height: 67px; width: 770px;"><a href="http://msn.foxsports.com/"><img src="m49_files/spacer.gif" alt="" border="0" height="67" width="110"></a><div style="position: absolute; top: 2px; left: 117px;"><span class="userName"><a href="http://msn.foxsports.com/feedback" style="text-decoration: none;">Where's my login?</a></span></div><div id="headerSearch">  <div style="position: absolute; top: 6px; left: 543px;">    <form onsubmit="return FindWhichSearch(this);" name="search" style="display: inline;">      <div style="position: absolute; top: -1px; left: -130px;"><input name="whichSearch" value="fox" checked="checked" type="radio"></div>      <div style="position: absolute; top: -1px; left: -58px;"><input name="whichSearch" value="msn" type="radio"></div>      <input name="searchTerm" value="Enter Keyword" size="16" maxlength="50" style="border: medium none ; margin: 0px; padding: 0px; color: rgb(0, 0, 0); height: 15px; width: 140px; background-color: transparent; font-family: verdana; font-size: 10px;" onfocus="this.value=''" type="text">    </form></div>    <div style="position: absolute; top: 3px; left: 675px;">      <input value="Go" name="Go" src="m49_files/spacer.gif" align="absmiddle" border="0" height="17" type="image" width="80">      </div></div></div>
+
+
+		
+
+ 
+
+     
+
+
+
+<script>
+function ShowLayer(el){return;}
+function Outm(){return;}
+</script>
+<!--  param categoryId: 73 -->
+<!--  nav categoryId: 73 -->
+<!--  listtypecode: 1 -->
+<div id="navMain" class="nav" style="width: 770px; background-color: rgb(255, 192, 0);">
+<table style="background-image: url(/fe/img/sf_nav_bg.gif);" bgcolor="#ffc000" border="0" cellpadding="0" cellspacing="0" width="770">
+<tbody><tr align="center" valign="middle">
+<td class="navEl" onmouseover="this.className='navElOver';" onmouseout="this.className='navEl';" id="nav_0" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/">HOME</a></td>
+<td class="navEl" id="nav_5" onmouseover="ShowLayer(5);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/nfl">NFL</a></td>
+<td class="navEl" id="nav_49" onmouseover="ShowLayer(49);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/mlb">MLB</a></td>
+<td class="navElOn" id="nav_73" onmouseover="ShowLayer(73);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/nba">NBA</a></td>
+<td class="navEl" id="nav_142" onmouseover="ShowLayer(142);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/nhl">NHL</a></td>
+<td class="navEl" id="nav_167" onmouseover="ShowLayer(167);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/nascar">NASCAR</a></td>
+<td class="navEl" id="nav_24" onmouseover="ShowLayer(24);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/cfb/bowls/home">NCAA FB</a></td>
+<td class="navEl" id="nav_99" onmouseover="ShowLayer(99);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/cbk">NCAA BK</a></td>
+<td class="navEl" id="nav_220" onmouseover="ShowLayer(220);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/golf">GOLF</a></td>
+<td class="navEl" id="nav_176" onmouseover="ShowLayer(176);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/foxsoccer">SOCCER</a></td>
+<td class="navEl" id="nav_2662" onmouseover="ShowLayer(2662);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/name/public/siteIndex">MORE</a></td>
+<td class="navEl2" id="nav_2407" onmouseover="ShowLayer(2407);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://msn.foxsports.com/fantasy">FANTASY</a></td>
+<td class="navEl2" id="nav_5776" onmouseover="ShowLayer(5776);" onmouseout="Outm();" nowrap="nowrap" valign="middle"><a href="http://community.foxsports.com/blogs/">Community</a></td>
+<td class="navEl" onmouseover="this.className='navElOver';" onmouseout="this.className='navEl';" id="nav_3672" nowrap="nowrap" valign="middle"><a href="http://shopping.msn.com/content/shp/?ctId=644,ptnrid=38,ptnrdata=1">SHOP</a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="sectionFrontNav">&nbsp; 
+<a href="http://msn.foxsports.com/nba">NBA Home</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/scores">Scores</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/schedule">Schedules</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/standings">Standings</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/stats">Stats</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/transactions">Transactions</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/injuries">Injuries</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/teams">Teams</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/players">Players</a>
+<b>·</b>
+<a href="http://msn.foxsports.com/nba/odds">Odds</a>
+<b>·</b>
+<a href="http://foxsports.razorgator.com/sport/event/nba/teams.asp">Tickets</a>
+</div>
+
+
+
+
+
+		<div style="width: 770px;">
+			
+
+
+<!--this comment needed to prevent a bug-->
+
+
+		</div>
+		
+
+
+
+
+
+<!-- -->
+<table class="bdy" border="0" cellpadding="0" cellspacing="0" width="770">
+<tbody><tr valign="top">
+<td>
+    <div class="storyHeadline" style="padding: 0px 0px 10px 10px;">
+      Michael Jordan, wife file for divorce
+    </div>
+		<script>
+		function BlogThisStoryTools() {
+		  var headline = "Michael Jordan, wife file for divorce";
+			var url = document.location.href;
+			var destination = "http://blogs.foxsports.com/BlogThis.aspx?r_title=" + escape(headline) + "&r_url=" + url;
+			//alert(destination);
+			//return;
+			window.location.href = destination;
+		}
+		</script>
+
+    <div class="dataTable" style="float: right; width: 313px;">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr align="center">
+				<td style="padding-right: 5px;" align="left">Story&nbsp;Tools:</td>
+				<td>
+				  <a href="http://msn.foxsports.com/nba/story/6316848?print=true"><img src="m49_files/print.gif" align="absmiddle" border="0" height="17" hspace="3" vspace="2" width="18"></a>
+				</td>
+				<td>
+				  <a href="#" onclick="openWin('/nba/story/6316848?email=true','email',400,305);"><img src="m49_files/email.gif" align="absmiddle" border="0" height="17" hspace="3" vspace="2" width="18"></a>
+				</td>
+				<td>
+				  <a href="javascript:BlogThisStoryTools();void(0)"><img src="m49_files/blog.gif" align="absmiddle" border="0" height="17" hspace="3" vspace="2" width="18"></a>
+				</td>
+				<td>
+					
+				</td>
+      </tr>
+      <tr align="center">
+				<td></td>
+				<td>
+				  &nbsp;<a href="http://msn.foxsports.com/nba/story/6316848?print=true">Print</a>&nbsp;
+				</td>
+				<td>
+				  &nbsp;<a href="#" onclick="openWin('/nba/story/6316848?email=true','email',400,305);">Email</a>&nbsp;
+				</td>
+				<td>
+				  &nbsp;<a href="javascript:BlogThisStoryTools();void(0)">Blog This</a>&nbsp;
+				</td>
+				<td>
+					
+        </td>
+      </tr>
+      </tbody></table>
+    </div>
+
+
+    <div style="padding: 0px 0px 10px 10px;">
+      <table border="0" cellpadding="0" cellspacing="0" width="440">
+      <tbody><tr valign="top">
+      <td>
+      Associated Press
+
+      <br>
+      <!-- Meta Tag For Search -->
+
+      <!-- meta name="author" content=""-->
+      <!-- meta name="source" content="AP"-->
+      <!-- meta name="eventId" content=""-->
+      <!-- meta name="contentTypeCode" content="1"-->
+      <!-- meta name="editorContentCode" content="1"-->
+      <!-- meta name="blurb" content="Michael Jordan and his wife, Juanita, filed for divorce Friday after 17 years of marriage.
+
+"Michael and Juanita Jordan mutually and amicably decided to end their 17 year marriage," the couple said in a statement issued through their lawyers. "A judgment for dissolution of their marriage was entered today. There will be no further statements."-->
+      <!-- meta name="modDate" content="December 30, 2006 00:26:57 GMT"-->
+      <span id="postedTime">Posted: 9 hours ago</span>
+      <script>
+      // front-end hack to remove postedTime from Rumors page until a better way can be determined
+      if (document.URL.indexOf("/name/FS/rumors") != -1 && document.getElementById("postedTime") != null) document.getElementById("postedTime").style.display = 'none';
+      </script>
+      </td>
+      <td width="10">&nbsp;</td>
+      <td align="right">
+        <!--this is for sponsorships or brandings-->
+        <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td><!-- workingCategoryId: 73-->
+          </td>
+        </tr>
+        </tbody></table>
+      </td>
+      </tr>
+      </tbody></table>
+    </div>
+</td>
+</tr>
+</tbody></table>
+
+
+
+		<table class="bdy" border="0" cellpadding="0" cellspacing="0" width="770">
+		<tbody><tr><td height="5"></td></tr>
+		</tbody></table>
+		<table class="bdy" border="0" cellpadding="0" cellspacing="0" width="770">
+			<tbody><tr valign="top">
+				<td width="10"></td>
+				<td width="440">
+					<!-- search:</noindex> -->
+					
+
+
+
+
+
+ <script>
+   if(fanid.length > 0 && typeof(nflDefaultLeague)!= "undefined") {
+       leagueId = nflDefaultLeague;
+    //find teamId of default league (if exists)
+    for(var i=0; i < teamsInfo.length; i++){
+      if(teamsInfo[i][4] == leagueId){
+        defaultTeamId = teamsInfo[i][0];
+      }
+    }
+    var fantasyLeaguePlayerJsPath = 'http://msn.foxsports.com' + '/nugget/200002_' + leagueId + '|||' + fanid;
+  
+  }
+ </script>
+
+<div class="firstP">CHICAGO (AP) - Michael Jordan and his wife, Juanita, filed for divorce Friday after 17 years of marriage.</div><p></p>
+"Michael and Juanita Jordan mutually and amicably decided to end their
+17 year marriage," the couple said in a statement issued through their
+lawyers. "A judgment for dissolution of their marriage was entered
+today. There will be no further statements."<p>Juanita
+Jordan previously filed for divorce in January 2002, but withdrew her
+petition a month later when the couple announced they were attempting a
+reconciliation.</p><p>During her last divorce petition, Jordan said
+attempts to reconcile their marriage had failed and future ones "would
+be impractical and not in the best interests of the family."</p><p>The
+couple met at a Chicago restaurant during his second season with the
+Bulls and were married Sept. 2, 1989, in Las Vegas. They have three
+children: Jeffrey, Marcus and Jasmine.</p><p>The 43-year-old Jordan, a
+part-owner of the Charlotte Bobcats, led the Bulls to six NBA titles
+and was a five-time league MVP. He lives in Highland Park, Ill.</p><p></p>
+
+
+
+					<!-- search:<noindex> -->
+					
+
+
+
+
+
+
+
+<div class="comrTopStories">
+  <div id="hl">
+    <div id="hlA">
+    <b style="line-height: 18px;">TOP STORIES</b>
+<br>&#8226;&nbsp;<a href="http://msn.foxsports.com/other/story/6280300">Some bold, some not-so-bold predictions</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/cfb/story/6313950">Texas Tech pulls off biggest comeback in bowl history</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/nba/story/6318334">Kobe scores 58, but Lakers lose in triple OT to Bobcats</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/nfl/story/6317616">Merriman to Taylor: Enjoy watching us in playoffs</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/other/story/6315464">Tyson out of jail, but faces felony possession charge</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/golf/story/6316268">Woods will skip season opener for second straight year</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/nba/story/6316848">Jordan, wife file for divorce after 17 years of marriage</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/nfl/story/6316884">Season finale feels like 'just another game' to Favre</a><br>&#8226;&nbsp;<a href="http://msn.foxsports.com/cfb/story/6316916">No guts, no glory: Oregon State wins on daring play call </a><br><br>
+    <a href="http://msn.foxsports.com/morenews">More News</a> |
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page"><img src="m49_files/rss_icon.gif" align="absmiddle" border="0" height="12" width="12"></a>
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page">Subscribe</a>
+    </div>
+  </div>
+</div>
+
+
+				</td>
+				<td width="10"></td>
+				<td width="300">
+                    <div class="advertisementLabel" align="center"><img src="m49_files/arrow_down_gray.gif" border="0"> advertisement</div>
+					<div id="ad300x250box"><div id="acbdiv2"></div><iframe src="about:blank" name="dapIfM2" id="dapIfM2" frameborder="0" height="250" scrolling="no" width="300"></iframe></div>
+          
+             
+
+
+
+
+
+
+
+
+
+
+
+
+             
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="comr">
+  <div class="hdr">NBA NEWS</div>
+  <div id="hl">
+    <div id="hlA">
+      
+      <!--start related stories, ONLY DISPLAY THIS CODE IF THERE ARE RELATED STORIES (THAT INCLUDES THE HEADLINES LABEL)-->
+
+	   
+
+
+<b>Headlines</b>
+<br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6312044">Showing resolve</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6318334">Kobe scores 58, but Lakers lose in triple OT to Bobcats</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6316848">Jordan, wife file for divorce after 17 years of marriage</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6316188">Paul goes from out for four games to out for four weeks</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6317056">No Wade, no win: Heat fall to 0-3 without star</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6313830">Barone will finish season as Grizzlies' interim coach</a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6302792">Yao to get update on injured knee</a>
+         | 
+        <a href="http://msn.foxsports.com/nba/story/6318406"><b>Rockets win</b></a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6317078">Cavaliers snap Bucks' six-game winning streak</a>
+         | 
+        <a href="javascript:msnvDwd('33', '59e8eaea-21f5-4514-85e7-b12721a0a353', 'us', '', 'm1483', 'foxsports', _mlc);"><b>VIDEO</b></a>
+        <br>&#8226;&nbsp;
+        <a href="http://msn.foxsports.com/nba/story/6318422">Suns open road trip with easy win over Knicks</a>
+         | 
+        <a href="javascript:msnvDwd('33', '38bf5b71-26f1-4516-aaa3-17ac76085847', 'us', '', 'm1483', 'foxsports', _mlc);"><b>VIDEO</b></a>
+        <br><br>
+
+    </div>
+  </div>
+  <div class="fade">
+    <div style="padding: 0px;" align="right">
+    <a href="http://msn.foxsports.com/morenews">More Headlines</a> |
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page"><img src="m49_files/rss_icon.gif" align="absmiddle" border="0" height="12" width="12"></a>
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page">Subscribe</a>
+    &nbsp;
+    </div>
+  </div>
+</div>
+
+
+
+
+             
+
+
+
+
+
+
+
+
+<div class="comr">
+  <div class="hdr">NBA Video</div>
+  <div id="hl">
+    <div id="hlA">
+
+      &#8226;&nbsp;<a href="javascript:msnvDwd('33', '38bf5b71-26f1-4516-aaa3-17ac76085847', 'us', '', 'm1483', 'foxsports', _mlc);">Nash joins club</a><br>
+
+      &#8226;&nbsp;<a href="javascript:msnvDwd('33', 'af8cad71-c210-4df9-8f17-df0ae8b18370', 'us', '', 'm1483', 'foxsports', _mlc);">Clips stop Kings dominance</a><br>
+
+      &#8226;&nbsp;<a href="javascript:msnvDwd('33', '35acbd3d-f543-4329-8984-61f93a7b9233', 'us', '', 'm1483', 'foxsports', _mlc);">Pacers nip Pistons in Detroit</a><br>
+
+      &#8226;&nbsp;<a href="javascript:msnvDwd('33', '59e8eaea-21f5-4514-85e7-b12721a0a353', 'us', '', 'm1483', 'foxsports', _mlc);">Cavs snap Bucks streak</a><br>
+
+    </div>
+  </div>
+  <div class="fade">
+    <div style="padding: 0px;" align="right">
+
+    <a href="javascript:msnvDwd('33', '', 'us', '', 'm1483', 'foxsports', _mlc);">Video Home</a>
+
+    <!-- ===================RSS XML=========================== -->
+      | <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page"><img src="m49_files/rss_icon.gif" align="absmiddle" border="0" height="12" width="12"></a>
+      <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page">Subscribe</a>&nbsp;
+
+    <!-- ===================RSS XML=========================== -->
+
+    </div>
+  </div>
+</div>
+
+
+
+			 
+             
+
+
+
+
+
+
+	     
+
+
+
+
+<!-- start: Overture 300x250 -->
+
+<!--div class="sponsorHdr">SPONSORED LINKS</div-->
+
+  
+
+
+<div class="advertisementLabel" id="advertLabel300x250" align="center"><img src="m49_files/arrow_down_gray.gif" border="0">advertisement</div>
+       <div id="adOverture300x250box"><div id="acbdiv1"></div><iframe src="about:blank" name="dapIfM1" id="dapIfM1" frameborder="0" height="250" scrolling="no" width="300"></iframe></div>
+
+     <script>
+       if(MAC) {
+         var theDiv = document.getElementById('adOverture300x250box');
+         if(theDiv!=null) {
+           if (!adQs) var adQs = "action=serveAd";
+           var _ad300x250 = '';
+           _ad300x250 += '<IFRAME SCROLLING=NO MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 FRAMESPACING=0 ';
+           _ad300x250 += 'WIDTH="300" HEIGHT="250" ';
+           _ad300x250 += 'SRC="http://rad.msn.com/ADSAdClient31.dll?GetAd=&PG=SPTX04&SC=1089&TF=_NEW&'
+           _ad300x250 += adQs;
+           _ad300x250 += '"></IFRAME>';
+           theDiv.innerHTML = _ad300x250;
+         }
+       }
+       else {
+         dapMgr.enableACB('adOverture300x250box',false);
+         dapMgr.renderAd('adOverture300x250box', '&PG=SPTX04&AP=1089', 300, 250);
+       }
+     </script>
+    
+
+
+
+<!-- end: Overture 300x250 -->
+
+           </td>
+	    <td width="10"></td>
+	  </tr>
+   </tbody></table>
+
+		<div style="width: 770px; text-align: left;" class="bdy">
+
+  <div style="padding: 10px; display: none; text-align: left;" id="debugHeader"><b>Debug Information:</b></div>
+  <div style="padding: 10px; overflow: auto; width: 90%; height: 200px; display: none; margin-bottom: 20px; text-align: left;" id="debugInfo"></div> 
+  
+	<div class="bottomNav">
+    <b>FOXSports.com:</b>
+    <a href="http://msn.foxsports.com/feedback" target="_blank">Feedback</a> |
+    <a href="http://msn.foxsports.com/name/Press" target="_blank">Press</a> |
+    <a href="http://www.foxcareers.com/" target="_blank">Jobs</a> |
+    <a href="http://foxsports.razorgator.com/" target="_blank">Tickets</a> |
+    <a href="http://surveys2.researchresults.com/192/0030/1920030.htm?l=1" target="_blank">Join Our Opinion Panel</a> |
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page"><img src="m49_files/rss_icon.gif" align="absmiddle" border="0" height="12" width="12"></a>
+    <a href="http://msn.foxsports.com/other/story/2005035" title="RSS index page">Subscribe</a> 
+    <br>
+    <b>Other Fox Sites:</b>    
+    <a href="http://www.fox.com/" target="_blank">FOX.com</a> |
+    <a href="http://www.foxnews.com/" target="_blank">FOX News</a> |
+    <a href="http://www.newscorp.com/" target="_blank">News Corp.</a>
+    <br>
+    © 2006 Fox Sports Interactive Media, LLC.  All rights reserved. |
+    <a href="http://msn.foxsports.com/name/Legal/privacyPolicy" target="_blank">Privacy Policy</a> |
+    <a href="http://msn.foxsports.com/name/Legal/termsOfUse" target="_blank">Terms of Use</a>
+  </div>
+</div>
+	</div>
+	<div class="bdyBottom"></div>
+	
+
+<script>
+var nav_2751 = new Array(['http://msn.foxsports.com/name/public/CBK/HoopsHysteria/Atlanta','Atlanta',0,-1,0],['http://msn.foxsports.com/name/public/CBK/HoopsHysteria/Minneapolis','Minneapolis',0,-1,0],['http://msn.foxsports.com/name/public/CBK/HoopsHysteria/Oakland','Oakland',0,-1,0],['http://msn.foxsports.com/name/public/CBK/HoopsHysteria/WashingtonDC','Washington DC',0,-1,0]);
+var nav_177 = new Array(['http://msn.foxsports.com/soccer/england','England Home',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=433','EPL',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=367','Championship',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=5015','League 1',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=5020','League 2',0,-1,0],['http://msn.foxsports.com/foxsoccer/England/FACup','FA Cup',0,-1,0],['http://msn.foxsports.com/foxsoccer/Europe/ChampionsLeague','Champions League',0,-1,0],['http://msn.foxsports.com/foxsoccer/Europe/UEFACup','UEFA Cup',0,-1,0],['http://msn.foxsports.com/foxsoccer/England/NationalTeam','England NT',0,-1,0],['http://eplfantasy.foxsoccer.com','EPL Fantasy',0,-1,1]);
+var nav_2740 = new Array(['http://msn.foxsports.com/soccer/europe','Europe Home',0,-1,0],['http://msn.foxsports.com/soccer/england','England',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=2817','France',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=431','Germany',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=435','Italy',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=2822','Scotland',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=2818','Spain',0,-1,0],['http://msn.foxsports.com/foxsoccer/Europe/ChampionsLeague','Champions League',0,-1,0],['http://msn.foxsports.com/foxsoccer/Europe/UEFACup','UEFA Cup',0,-1,0],['http://msn.foxsports.com/foxsoccer/Europe/Euro2008Qualifying','Euro 2008',0,-1,0]);
+var nav_2741 = new Array(['http://msn.foxsports.com/soccer/latinamerica','Latin America Home',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=193','Copa Libertadores',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=318','Copa Sudamericana',0,-1,0]);
+var nav_194 = new Array(['http://msn.foxsports.com/soccer/fsctv','Fox Soccer Channel',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/printableschedules','Printable Schedules',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/soccermatches','Soccer this Week',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/programmingguide','Programming Guide',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/getfsc','How to Get FSC',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/television/press','Press Releases',0,-1,0],['http://msn.foxsports.com/soccer/fsctv/television/advertising','Advertising Profile',0,-1,0]);
+var nav_195 = new Array(['http://msn.foxsports.com/soccer/usa','USA Home',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league?categoryId=195','MLS',0,-1,0],['http://msn.foxsports.com/foxsoccer/USA/MenNationalTeam','Men&#039;s NT',0,-1,0],['http://msn.foxsports.com/foxsoccer/USA/WomenNationalTeam','Women&#039;s NT',0,-1,0]);
+var nav_1001 = new Array(['http://msn.foxsports.com/foxsoccer/soccer/epl/scores','EPL',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/mls/scores','MLS',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/engchampionship/scores?categoryId=367','Championship',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/engleagueone/scores?categoryId=5015','League 1',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/engleaguetwo/scores?categoryId=5020','League 2',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fran/scores','France',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/bundesliga/scores','Germany',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/seriea/scores','Italy',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/spl/scores?categoryId=2822','Scotland',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/laliga/scores','Spain',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/league/scores?categoryId=193','Copa Libertadores',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/copasud/scores?categoryId=318','Copa Sudamericana',0,-1,0]);
+var nav_1002 = new Array(['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=433','EPL',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=195','MLS',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=367','Championship',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=5015','League 1',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=5020','League 2',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=2817','France',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=431','Germany',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=435','Italy',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=2822','Scotland',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=2818','Spain',0,-1,0]);
+var nav_1003 = new Array(['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=433','EPL',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=195','MLS',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=367','Championship',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=5015','League 1',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=5020','League 2',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=2817','France',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=431','Germany',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=435','Italy',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=2822','Scotland',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=2818','Spain',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=193','Copa Libertadores',0,-1,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=318','Copa Sudamericana',0,-1,0]);
+var nav_3154 = new Array(['http://msn.foxsports.com/cfb/scores','Top 25',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=1','ACC',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=2','Big East',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=4','Big Ten',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=71','Big 12',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=72','Conference USA',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=11','Independents',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=6','MAC',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=87','Mountain West',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=7','Pac-10',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=90','Sun Belt',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=8','SEC',0,-1,0],['http://msn.foxsports.com/cfb/scores?conf=10','WAC',0,-1,0]);
+var nav_41 = new Array(['http://msn.foxsports.com/cfb/bowls/home','Bowls Home',0,-1,0],['http://msn.foxsports.com/cfb/bowls/championship','Natl. Championship',0,-1,0],['http://msn.foxsports.com/cfb/bowls/rose','Rose Bowl',0,-1,0],['http://msn.foxsports.com/cfb/bowls/fiesta','Fiesta Bowl',0,-1,0],['http://msn.foxsports.com/cfb/bowls/orange','Orange Bowl',0,-1,0],['http://msn.foxsports.com/cfb/bowls/sugar','Sugar Bowl',0,-1,0]);
+var nav_3155 = new Array(['http://msn.foxsports.com/cbk/scores','Top 25',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=all','ALL',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=6','ACC',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=101','Atlantic 10',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=102','Big East',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=3','Big Ten',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=103','Big 12',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=1','Conference USA',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=20','MAC',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=112','Mountain West',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=2','Pac-10',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=5','Sun Belt',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=10','SEC',0,-1,0],['http://msn.foxsports.com/cbk/scores?conf=111','WAC',0,-1,0]);
+var nav_93 = new Array(['http://msn.foxsports.com/wcbk','Women&#039;s BK Home',0,-1,0],['http://msn.foxsports.com/wcbk/scores','Scores',0,-1,0],['http://msn.foxsports.com/wcbk/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/wcbk/standings','Standings',0,-1,0],['http://msn.foxsports.com/wcbk/stats','Stats',0,-1,0],['http://msn.foxsports.com/wcbk/teams','Teams',0,-1,0],['http://msn.foxsports.com/wcbk/polls','Polls',0,-1,0]);
+var nav_16701 = new Array(['http://msn.foxsports.com/nascar/cup/boxscore','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/boxscore','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/boxscore','Truck',0,-1,0]);
+var nav_16702 = new Array(['http://msn.foxsports.com/nascar/cup/results','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/results','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/results','Truck',0,-1,0]);
+var nav_16703 = new Array(['http://msn.foxsports.com/nascar/cup/schedule','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/schedule','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/schedule','Truck',0,-1,0]);
+var nav_16704 = new Array(['http://msn.foxsports.com/nascar/cup/standings','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/standings','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/standings','Truck',0,-1,0]);
+var nav_16705 = new Array(['http://msn.foxsports.com/nascar/cup/stats','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/stats','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/stats','Truck',0,-1,0]);
+var nav_16706 = new Array(['http://msn.foxsports.com/nascar/cup/drivers','Cup',0,-1,0],['http://msn.foxsports.com/nascar/busch/drivers','Busch',0,-1,0],['http://msn.foxsports.com/nascar/truck/drivers','Truck',0,-1,0]);
+var nav_16707 = new Array(['http://www.speedtv.com','SPEEDTV.com',0,-1,1],['http://www.speedtv.com/nascaronspeed/','NASCAR on SPEED',0,-1,1],['http://www.speedtv.com/roadtour/','SPEED Road Tour',0,-1,1]);
+var nav_16708 = new Array(['http://msn.foxsports.com/nascar/cup/raceTrax','Race Trax',0,-1,0],['http://msn.foxsports.com/nascar/cup/foxTrax','FOX Trax',0,-1,0],['http://msn.foxsports.com/nascar/nascarNation','NASCAR Nation',0,-1,0],['http://msn.foxsports.com/cingular','Instant Analysis',0,-1,0],['http://msn.foxsports.com/fantasy/auto/index.asp','Fantasy Racing',0,-1,0],['http://msn.foxsports.com/games/racetheexperts','Race the Experts',0,-1,0],['http://msn.foxsports.com/name/public/NASCAR/AllWaltrip/Index','AllWaltrip.com',0,-1,0],['http://msn.foxsports.com/name/public/NASCAR/TonyStewart/Index','TonyStewart.com',0,-1,0]);
+var nav_199 = new Array(['http://msn.foxsports.com/tennis','Tennis Home',0,-1,0],['http://msn.foxsports.com/tennis/morenews','News',0,-1,0],['http://msn.foxsports.com/tennis/results','Results',0,-1,0],['http://msn.foxsports.com/tennis/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/tennis/rank','Rankings',0,-1,0],['http://msn.foxsports.com/tennis/players','Players',0,-1,0]);
+var nav_209 = new Array(['http://msn.foxsports.com/boxing','Boxing Home',0,-1,0],['http://msn.foxsports.com/name/public/Boxing/schedule','Schedule',0,-1,0],['http://msn.foxsports.com/name/public/Boxing/champions','Champions',0,-1,0],['http://msn.foxsports.com/boxing/odds','Odds',0,-1,0],['http://foxsports.razorgator.com/sport/event/boxing.html','Tickets',0,-1,0]);
+var nav_241 = new Array(['http://msn.foxsports.com/horseracing','Home',0,-1,0],['http://msn.foxsports.com/name/public/Horseracing/TripleCrown','Triple Crown',0,-1,0],['http://msn.foxsports.com/story/1056334','Events',0,-1,0],['http://www.tvg.com/special/FoxSportsJumpPage_final.htm','Odds/Results',0,-1,1],['http://www.tvg.com/special/FoxSportsJumpPage_final.htm','TVG',0,-1,1],['http://www.racereplays.com/foxsports/index.cfm?start=ws_foxsports.com_navbar','Race/Replays',0,-1,1],['/horseracing/live','Live Racing',0,-1,0]);
+var nav_171 = new Array(['http://msn.foxsports.com/motor','Motor Home',0,-1,0],['http://msn.foxsports.com/motor/irl/results','Results',0,-1,0],['http://msn.foxsports.com/motor/irl/schedule','Schedule',0,-1,0],['http://msn.foxsports.com/motor/irl/standings','Standings',0,-1,0],['http://msn.foxsports.com/motor/irl/stats','Stats',0,-1,0],['http://msn.foxsports.com/motor/irl/drivers','Drivers',0,-1,0]);
+var nav_172 = new Array(['http://msn.foxsports.com/motor/f1','F1 Home',0,-1,0],['http://msn.foxsports.com/motor/f1/morenews','News',0,-1,0],['http://msn.foxsports.com/motor/f1/results','Results',0,-1,0],['http://msn.foxsports.com/motor/f1/schedule','Schedule',0,-1,0],['http://msn.foxsports.com/motor/f1/standings','Standings',0,-1,0],['http://msn.foxsports.com/motor/f1/drivers','Drivers',0,-1,0]);
+var nav_173 = new Array(['http://msn.foxsports.com/motor','Motor Home',0,-1,0],['http://msn.foxsports.com/motor/champ/results','Results',0,-1,0],['http://msn.foxsports.com/motor/champ/schedule','Schedule',0,-1,0],['http://msn.foxsports.com/motor/champ/standings','Standings',0,-1,0],['http://msn.foxsports.com/motor/champ/stats','Stats',0,-1,0],['http://msn.foxsports.com/motor/champ/drivers','Drivers',0,-1,0]);
+var nav_90 = new Array(['http://msn.foxsports.com/wnba','WNBA Home',0,-1,0],['http://msn.foxsports.com/wnba/scores','Scores',0,-1,0],['http://msn.foxsports.com/wnba/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/wnba/standings','Standings',0,-1,0],['http://msn.foxsports.com/wnba/stats','Stats',0,-1,0],['http://msn.foxsports.com/wnba/transactions','Transactions',0,-1,0],['http://msn.foxsports.com/wnba/injuries','Injuries',0,-1,0],['http://msn.foxsports.com/wnba/teams','Teams',0,-1,0],['http://msn.foxsports.com/wnba/players','Players',0,-1,0],['http://foxsports.razorgator.com/sport/event/wnba.html','Tickets',0,-1,0]);
+var nav_4776 = new Array(['http://avp.com/','Home',0,-1,1],['http://avp.com/event','Schedule/Results',0,-1,1],['http://info.avp.com/ranking.asp','Standings/Stats',0,-1,1]);
+var nav_391 = new Array(['http://msn.foxsports.com/story/1636002','FSN',0,-1,0],['http://msn.foxsports.com/fcs','FOXCollegeSports',0,-1,0],['http://msn.foxsports.com/soccer/fsctv','Fox Soccer Channel',0,-1,0],['http://www.speedtv.com','SPEED',0,-1,0],['http://www.fuel.tv','Fuel',0,-1,0],['http://www.fox.com','FOX',0,-1,0],['http://www.fxnetworks.com','FX',0,-1,0],['http://www.foxnews.com','FOX News',0,-1,0]);
+var nav_4901 = new Array(['http://msn.foxsports.com/mlb/story/6180634','Free Agent Tracker',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=162','Rosenthal&#039;s Reports',0,-1,0]);
+var nav_4902 = new Array(['http://msn.foxsports.com/writer/archive?authorId=162','Ken Rosenthal',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=217','Dayn Perry',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=81','Kevin Kennedy',0,-1,0]);
+var nav_7301 = new Array(['http://msn.foxsports.com/writer/archive?authorId=227','Charley Rosen',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=229','Dime Magazine',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=277','Mike Kahn',0,-1,0]);
+var nav_220 = new Array(['http://msn.foxsports.com/golf','Golf Home',0,-1,0],['http://msn.foxsports.com/golf/leaderboard','Leaderboard',0,-1,0],['http://golfserv.foxsports.com/gdc/tourcentral/story.asp?StoryList=pga_stats;1;7&tour=PGA&SOURCE=FOXSP','Stats',0,-1,0],['http://msn.foxsports.com/golf/schedule','Schedule',0,-1,0],['http://golfserv.foxsports.com/gdc/tourcentral/tour_home.asp?tour=PGA&SOURCE=FOXSP','PGA',0,-1,0],['http://golfserv.foxsports.com/gdc/tourcentral/tour_home.asp?tour=LPGA&SOURCE=FOXSP','LPGA',0,-1,0],['http://golfserv.foxsports.com/gdc/tourcentral/tour_home.asp?tour=SPGA&SOURCE=FOXSP','SPGA',0,-1,0],['http://foxsports.razorgator.com/sport/subcategory/golf.html','Tickets',0,-1,0]);
+var nav_2874 = new Array(['http://msn.foxsports.com/motor/f1','Motorsports Home',0,-1,0],['http://msn.foxsports.com/nascar','NASCAR Home',0,-1,0],['http://msn.foxsports.com/motor/f1','F1 Home',0,-1,0],['http://foxsports.razorgator.com/sport/event/nascar/tickets.asp','Tickets',0,-1,0],['http://www.speedtv.com','SPEED',0,-1,1]);
+var nav_24 = new Array(['http://msn.foxsports.com/cfb','NCAA FB Home',0,-1,0],['http://msn.foxsports.com/cfb/bowls/home','Bowls',1,41,0],['http://www.bcsfootball.org','BCS',0,-1,0],['http://msn.foxsports.com/name/public/CFB/Recruiting','Recruiting',0,-1,0],['http://msn.foxsports.com/cfb/scores','Scores',1,3154,0],['http://msn.foxsports.com/cfb/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/cfb/standings','Standings',0,-1,0],['http://msn.foxsports.com/cfb/stats','Stats',0,-1,0],['http://msn.foxsports.com/cfb/teams','Teams',0,-1,0],['http://msn.foxsports.com/cfb/polls','Polls',0,-1,0],['http://foxsports.razorgator.com/sport/event/ncaa-football/teams.asp','Tickets',0,-1,0],['http://msn.foxsports.com/fcs','FCS',0,-1,0],['http://college.scout.com/','Scout.com',0,-1,0]);
+var nav_5 = new Array(['http://msn.foxsports.com/nfl','NFL Home',0,-1,0],['http://msn.foxsports.com/nfl/scores','Scores',0,-1,0],['http://msn.foxsports.com/nfl/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nfl/standings','Standings',0,-1,0],['http://msn.foxsports.com/nfl/powerRankings','Power Rankings',0,-1,0],['http://msn.foxsports.com/nfl/stats','Stats',0,-1,0],['http://msn.foxsports.com/nfl/transactions','Transactions',0,-1,0],['http://msn.foxsports.com/nfl/injuries','Injuries',0,-1,0],['http://msn.foxsports.com/nfl/teams','Teams',0,-1,0],['http://msn.foxsports.com/nfl/players','Players',0,-1,0],['http://msn.foxsports.com/nfl/odds','Odds',0,-1,0],['http://nfl.scout.com/','Scout.com',0,-1,0],['http://foxsports.razorgator.com/sport/event/nfl/teams.asp','Tickets',0,-1,0]);
+var nav_142 = new Array(['http://msn.foxsports.com/nhl','NHL Home',0,-1,0],['http://msn.foxsports.com/nhl/scores','Scores',0,-1,0],['http://msn.foxsports.com/nhl/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nhl/standings','Standings',0,-1,0],['http://msn.foxsports.com/nhl/powerRankings','Power Rankings',0,-1,0],['http://msn.foxsports.com/nhl/stats','Stats',0,-1,0],['http://msn.foxsports.com/nhl/transactions','Transactions',0,-1,0],['http://msn.foxsports.com/nhl/injuries','Injuries',0,-1,0],['http://msn.foxsports.com/nhl/teams','Teams',0,-1,0],['http://msn.foxsports.com/nhl/players','Players',0,-1,0],['http://foxsports.razorgator.com/sport/event/nhl/teams.asp','Tickets',0,-1,0]);
+var nav_73 = new Array(['http://msn.foxsports.com/nba','NBA Home',0,-1,0],['http://msn.foxsports.com/nba/scores','Scores',0,-1,0],['http://msn.foxsports.com/nba/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nba/standings','Standings',0,-1,0],['http://msn.foxsports.com/nba/powerRankings','Power Rankings',0,-1,0],['http://msn.foxsports.com/nba/stats','Stats',0,-1,0],['http://msn.foxsports.com/nba/transactions','Transactions',0,-1,0],['http://msn.foxsports.com/nba/injuries','Injuries',0,-1,0],['http://msn.foxsports.com/nba/teams','Teams',0,-1,0],['http://msn.foxsports.com/nba/players','Players',0,-1,0],['http://msn.foxsports.com/nba/odds','Odds',0,-1,0],['http://foxsports.razorgator.com/sport/event/nba/teams.asp','Tickets',0,-1,0],['http://community.foxsports.com/blogs/category/nba','Blogs',0,-1,0],['http://community.foxsports.com/boards/category.aspx?category_id=20','Message Boards',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=227','Writers',1,7301,0]);
+var nav_49 = new Array(['http://msn.foxsports.com/mlb','MLB Home',0,-1,0],['http://msn.foxsports.com/mlb/story/6180634','Hot Stove',1,4901,0],['http://msn.foxsports.com/mlb/scores','Scores',0,-1,0],['http://msn.foxsports.com/mlb/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/mlb/standings','Standings',0,-1,0],['http://msn.foxsports.com/mlb/powerRankings','Power Rankings',0,-1,0],['http://msn.foxsports.com/mlb/stats','Stats',0,-1,0],['http://msn.foxsports.com/mlb/transactions','Transactions',0,-1,0],['http://msn.foxsports.com/mlb/injuries','Injuries',0,-1,0],['http://msn.foxsports.com/mlb/teams','Teams',0,-1,0],['http://msn.foxsports.com/mlb/players','Players',0,-1,0],['http://msn.foxsports.com/mlb/odds','Odds',0,-1,0],['http://mlb.scout.com','Scout.com',0,-1,0],['http://foxsports.razorgator.com/sport/event/mlb/teams.asp','Tickets',0,-1,0],['http://community.foxsports.com/blogs/category/mlb','Blogs',0,-1,0],['http://community.foxsports.com/boards/category.aspx?category_id=19','Message Boards',0,-1,0],['http://msn.foxsports.com/writer/archive?authorId=162','Writers',1,4902,0]);
+var nav_99 = new Array(['http://msn.foxsports.com/cbk','NCAA BK Home',0,-1,0],['http://msn.foxsports.com/cbk/scores','Scores',0,-1,0],['http://msn.foxsports.com/cbk/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/cbk/standings','Standings',0,-1,0],['http://msn.foxsports.com/cbk/stats','Stats',0,-1,0],['http://msn.foxsports.com/cbk/teams','Teams',0,-1,0],['http://msn.foxsports.com/cbk/polls','Polls',0,-1,0],['http://foxsports.razorgator.com/sport/event/ncaa-basketball/teams.asp','Tickets',0,-1,0],['http://msn.foxsports.com/wcbk','Women&#039;s BK',0,-1,0],['http://msn.foxsports.com/fcs','FCS',0,-1,0],['http://college.scout.com/','Scout.com',0,-1,0]);
+var nav_170 = new Array(['http://msn.foxsports.com/nascar/truck/morenews','Truck Home',0,-1,0],['http://msn.foxsports.com/nascar/truck/results','Results',0,-1,0],['http://msn.foxsports.com/nascar/truck/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nascar/truck/standings','Standings',0,-1,0],['http://msn.foxsports.com/nascar/truck/stats','Stats',0,-1,0],['http://msn.foxsports.com/nascar/truck/drivers','Drivers',0,-1,0],['http://msn.foxsports.com/nascar/tracks','Tracks',0,-1,0]);
+var nav_169 = new Array(['http://msn.foxsports.com/nascar/busch/morenews','Busch Home',0,-1,0],['http://msn.foxsports.com/nascar/busch/results','Results',0,-1,0],['http://msn.foxsports.com/nascar/busch/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nascar/busch/standings','Standings',0,-1,0],['http://msn.foxsports.com/nascar/busch/stats','Stats',0,-1,0],['http://msn.foxsports.com/nascar/busch/drivers','Drivers',0,-1,0],['http://msn.foxsports.com/nascar/tracks','Tracks',0,-1,0]);
+var nav_168 = new Array(['http://msn.foxsports.com/nascar/busch/morenews','Nextel Cup Home',0,-1,0],['http://msn.foxsports.com/nascar/cup/results','Results',0,-1,0],['http://msn.foxsports.com/nascar/cup/schedule','Schedules',0,-1,0],['http://msn.foxsports.com/nascar/cup/standings','Standings',0,-1,0],['http://msn.foxsports.com/nascar/cup/stats','Stats',0,-1,0],['http://msn.foxsports.com/nascar/cup/drivers','Drivers',0,-1,0],['http://msn.foxsports.com/nascar/tracks','Tracks',0,-1,0]);
+var nav_167 = new Array(['http://msn.foxsports.com/nascar','NASCAR Home',0,-1,0],['http://msn.foxsports.com/nascar/cup/boxscore','Box Score',1,16701,0],['http://msn.foxsports.com/nascar/cup/results','Results',1,16702,0],['http://msn.foxsports.com/nascar/cup/schedule','Schedules',1,16703,0],['http://msn.foxsports.com/nascar/cup/standings','Standings',1,16704,0],['http://msn.foxsports.com/nascar/cup/stats','Stats',1,16705,0],['http://msn.foxsports.com/nascar/cup/drivers','Drivers',1,16706,0],['http://msn.foxsports.com/nascar/tracks','Tracks',0,-1,0],['http://foxsports.razorgator.com/sport/event/nascar.html','Tickets',0,-1,0],['http://www.speedtv.com','SPEED',1,16707,1],['/name/public/NASCAR/features','Features',1,16708,0]);
+var nav_2407 = new Array(['http://msn.foxsports.com/fantasy','Home',0,-1,0],['http://msn.foxsports.com/fantasy/football','Football',0,-1,0],['http://msn.foxsports.com/fantasy/college-football/pickem','Bowl Pick&#039;em',0,-1,0],['http://msn.foxsports.com/fantasy/auto/index.asp','Auto Racing',0,-1,0],['http://community.foxsports.com/boards/default.aspx?application_id=2','Message Boards',0,-1,0],['http://msn.foxsports.com/fantasy/sim','Simulation Games',0,-1,0],['http://msn.foxsports.com/name/Games/arcade','Arcade Games',0,-1,0]);
+var nav_2662 = new Array(['http://msn.foxsports.com/tennis','Tennis',0,-1,0],['http://msn.foxsports.com/horseracing','Horse Racing',1,241,0],['http://msn.foxsports.com/boxing','Boxing',1,209,0],['http://msn.foxsports.com/actionsports','Action',0,-1,0],['http://msn.foxsports.com/poker','Poker',0,-1,0],['http://msn.foxsports.com/motor','IRL',1,171,0],['http://msn.foxsports.com/motor/f1','F1',1,172,0],['http://msn.foxsports.com/motor','Champ Car',1,173,0],['http://msn.foxsports.com/wnba','WNBA',1,90,0],['http://avp.com/','Beach Volleyball',1,4776,0],['http://www.prorodeotour.com','Rodeo',0,-1,1],['http://www.flwoutdoors.com/index.cfm?sc=sc154','Fishing',0,-1,0],['/DestinationWild','Destination Wild',0,-1,0],['http://www.redbullairrace.com','Air Race Series',0,-1,1],['http://msn.foxsports.com/rugby','Rugby',0,-1,0],['http://msn.foxsports.com/cricket','Cricket',0,-1,0],['http://msn.foxsports.com/contests','Contests',0,-1,0],['http://msn.foxsports.com/name/public/foxfunhouse','Funhouse',0,-1,0],['http://foxsports.av.net','Mobile',0,-1,0],['http://msn.foxsports.com/tv/schedule','Television',1,391,0],['http://msn.foxsports.com/name/public/siteIndex','Site Index',0,-1,0]);
+var nav_2737 = new Array(['http://msn.foxsports.com/soccer/usa','USA Home',0,-1,0],['http://msn.foxsports.com/soccer/usa/mls','MLS',0,-1,0],['http://msn.foxsports.com/soccer/usa/usamen','USA Men',0,-1,0],['http://msn.foxsports.com/name/FSW/Soccer/MLS/showPage','MLS on FSW',0,-1,0],['http://msn.foxsports.com/soccer/usa/usawomen','USA Women',0,-1,0]);
+var nav_176 = new Array(['http://msn.foxsports.com/soccer/usa','USA',1,195,0],['http://msn.foxsports.com/soccer/england','England',1,177,0],['http://msn.foxsports.com/soccer/europe','Europe',1,2740,0],['http://msn.foxsports.com/soccer/latinamerica','Latin America',1,2741,0],['http://msn.foxsports.com/foxsoccer/soccer/epl/scores','Scores',1,1001,0],['http://msn.foxsports.com/foxsoccer/soccer/standings?categoryId=433','Standings',1,1002,0],['http://msn.foxsports.com/foxsoccer/soccer/fixtures?categoryId=433','Schedules',1,1003,0],['http://msn.foxsports.com/soccer/fsctv','FSC TV',1,194,0],['http://foxsports.razorgator.com/sport/subcategory/soccer-football.html','Tickets',0,-1,0],['http://eplfantasy.foxsoccer.com','EPL Fantasy',0,-1,1]);
+var nav_5776 = new Array(['http://community.foxsports.com/blogs/','Blogs',0,-1,0],['http://msn.foxsports.com/messageboards','Boards',0,-1,0]);
+var tt = new Array([1,2751],[2,177],[2,2740],[2,2741],[2,194],[2,195],[2,1001],[2,1002],[2,1003],[2,3154],[2,41],[1,3155],[1,93],[2,16701],[2,16702],[2,16703],[2,16704],[2,16705],[2,16706],[2,16707],[2,16708],[1,199],[2,209],[2,241],[2,171],[2,172],[2,173],[2,90],[2,4776],[2,391],[2,4901],[2,4902],[2,7301],[1,220],[1,2874],[1,24],[1,5],[1,142],[1,73],[1,49],[1,99],[1,170],[1,169],[1,168],[1,167],[1,2407],[1,2662],[1,2737],[1,176],[1,5776]);
+var navOn=73;
+</script>
+
+
+
+
+<script>
+var arrRt = '<img src="/fe/img/arrow_right.gif" width="4" height="14" border="0" align="right" hspace="5" />';
+for ( i = 0 ; i < tt.length ; i++ ) {
+  var ff_nav = eval("nav_" + tt[i][1]);
+  var divNum = "gn" + tt[i][1];
+
+  if (tt[i][0] == 1) {
+    var strDiv = "<div align=\"left\" class=\"dd1\" id=\"" + divNum + "\">";
+  }
+  else {
+    var strDiv = "<div align=\"left\" class=\"dd2\" id=\"" + divNum + "\">";
+  }
+  strDiv += '<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr valign="top"><td width="110">';
+  for ( j = 0 ; j < ff_nav.length ; j++ ) {
+    if (ff_nav[j][2]) {
+      strDiv += "<div align=\"left\" id='nav_" + tt[i][1] + "_" + j + "' class='dd'>" + arrRt + "&nbsp\;" + ff_nav[j][1];
+    }
+    else {
+      strDiv += "<div align=\"left\" id='nav_" + tt[i][1] + "_" + j + "' class='dd'>&nbsp\;" + ff_nav[j][1];
+    }
+    strDiv += "</div>";
+  }
+  strDiv += '</td></tr></table></div>';
+  document.write(strDiv);
+}
+</script><div class="dd1" id="gn2751" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2751_0" class="dd" align="left">&nbsp;Atlanta</div><div id="nav_2751_1" class="dd" align="left">&nbsp;Minneapolis</div><div id="nav_2751_2" class="dd" align="left">&nbsp;Oakland</div><div id="nav_2751_3" class="dd" align="left">&nbsp;Washington DC</div></td></tr></tbody></table></div><div class="dd2" id="gn177" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_177_0" class="dd" align="left">&nbsp;England Home</div><div id="nav_177_1" class="dd" align="left">&nbsp;EPL</div><div id="nav_177_2" class="dd" align="left">&nbsp;Championship</div><div id="nav_177_3" class="dd" align="left">&nbsp;League 1</div><div id="nav_177_4" class="dd" align="left">&nbsp;League 2</div><div id="nav_177_5" class="dd" align="left">&nbsp;FA Cup</div><div id="nav_177_6" class="dd" align="left">&nbsp;Champions League</div><div id="nav_177_7" class="dd" align="left">&nbsp;UEFA Cup</div><div id="nav_177_8" class="dd" align="left">&nbsp;England NT</div><div id="nav_177_9" class="dd" align="left">&nbsp;EPL Fantasy</div></td></tr></tbody></table></div><div class="dd2" id="gn2740" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2740_0" class="dd" align="left">&nbsp;Europe Home</div><div id="nav_2740_1" class="dd" align="left">&nbsp;England</div><div id="nav_2740_2" class="dd" align="left">&nbsp;France</div><div id="nav_2740_3" class="dd" align="left">&nbsp;Germany</div><div id="nav_2740_4" class="dd" align="left">&nbsp;Italy</div><div id="nav_2740_5" class="dd" align="left">&nbsp;Scotland</div><div id="nav_2740_6" class="dd" align="left">&nbsp;Spain</div><div id="nav_2740_7" class="dd" align="left">&nbsp;Champions League</div><div id="nav_2740_8" class="dd" align="left">&nbsp;UEFA Cup</div><div id="nav_2740_9" class="dd" align="left">&nbsp;Euro 2008</div></td></tr></tbody></table></div><div class="dd2" id="gn2741" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2741_0" class="dd" align="left">&nbsp;Latin America Home</div><div id="nav_2741_1" class="dd" align="left">&nbsp;Copa Libertadores</div><div id="nav_2741_2" class="dd" align="left">&nbsp;Copa Sudamericana</div></td></tr></tbody></table></div><div class="dd2" id="gn194" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_194_0" class="dd" align="left">&nbsp;Fox Soccer Channel</div><div id="nav_194_1" class="dd" align="left">&nbsp;Printable Schedules</div><div id="nav_194_2" class="dd" align="left">&nbsp;Soccer this Week</div><div id="nav_194_3" class="dd" align="left">&nbsp;Programming Guide</div><div id="nav_194_4" class="dd" align="left">&nbsp;How to Get FSC</div><div id="nav_194_5" class="dd" align="left">&nbsp;Press Releases</div><div id="nav_194_6" class="dd" align="left">&nbsp;Advertising Profile</div></td></tr></tbody></table></div><div class="dd2" id="gn195" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_195_0" class="dd" align="left">&nbsp;USA Home</div><div id="nav_195_1" class="dd" align="left">&nbsp;MLS</div><div id="nav_195_2" class="dd" align="left">&nbsp;Men's NT</div><div id="nav_195_3" class="dd" align="left">&nbsp;Women's NT</div></td></tr></tbody></table></div><div class="dd2" id="gn1001" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_1001_0" class="dd" align="left">&nbsp;EPL</div><div id="nav_1001_1" class="dd" align="left">&nbsp;MLS</div><div id="nav_1001_2" class="dd" align="left">&nbsp;Championship</div><div id="nav_1001_3" class="dd" align="left">&nbsp;League 1</div><div id="nav_1001_4" class="dd" align="left">&nbsp;League 2</div><div id="nav_1001_5" class="dd" align="left">&nbsp;France</div><div id="nav_1001_6" class="dd" align="left">&nbsp;Germany</div><div id="nav_1001_7" class="dd" align="left">&nbsp;Italy</div><div id="nav_1001_8" class="dd" align="left">&nbsp;Scotland</div><div id="nav_1001_9" class="dd" align="left">&nbsp;Spain</div><div id="nav_1001_10" class="dd" align="left">&nbsp;Copa Libertadores</div><div id="nav_1001_11" class="dd" align="left">&nbsp;Copa Sudamericana</div></td></tr></tbody></table></div><div class="dd2" id="gn1002" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_1002_0" class="dd" align="left">&nbsp;EPL</div><div id="nav_1002_1" class="dd" align="left">&nbsp;MLS</div><div id="nav_1002_2" class="dd" align="left">&nbsp;Championship</div><div id="nav_1002_3" class="dd" align="left">&nbsp;League 1</div><div id="nav_1002_4" class="dd" align="left">&nbsp;League 2</div><div id="nav_1002_5" class="dd" align="left">&nbsp;France</div><div id="nav_1002_6" class="dd" align="left">&nbsp;Germany</div><div id="nav_1002_7" class="dd" align="left">&nbsp;Italy</div><div id="nav_1002_8" class="dd" align="left">&nbsp;Scotland</div><div id="nav_1002_9" class="dd" align="left">&nbsp;Spain</div></td></tr></tbody></table></div><div class="dd2" id="gn1003" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_1003_0" class="dd" align="left">&nbsp;EPL</div><div id="nav_1003_1" class="dd" align="left">&nbsp;MLS</div><div id="nav_1003_2" class="dd" align="left">&nbsp;Championship</div><div id="nav_1003_3" class="dd" align="left">&nbsp;League 1</div><div id="nav_1003_4" class="dd" align="left">&nbsp;League 2</div><div id="nav_1003_5" class="dd" align="left">&nbsp;France</div><div id="nav_1003_6" class="dd" align="left">&nbsp;Germany</div><div id="nav_1003_7" class="dd" align="left">&nbsp;Italy</div><div id="nav_1003_8" class="dd" align="left">&nbsp;Scotland</div><div id="nav_1003_9" class="dd" align="left">&nbsp;Spain</div><div id="nav_1003_10" class="dd" align="left">&nbsp;Copa Libertadores</div><div id="nav_1003_11" class="dd" align="left">&nbsp;Copa Sudamericana</div></td></tr></tbody></table></div><div class="dd2" id="gn3154" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_3154_0" class="dd" align="left">&nbsp;Top 25</div><div id="nav_3154_1" class="dd" align="left">&nbsp;ACC</div><div id="nav_3154_2" class="dd" align="left">&nbsp;Big East</div><div id="nav_3154_3" class="dd" align="left">&nbsp;Big Ten</div><div id="nav_3154_4" class="dd" align="left">&nbsp;Big 12</div><div id="nav_3154_5" class="dd" align="left">&nbsp;Conference USA</div><div id="nav_3154_6" class="dd" align="left">&nbsp;Independents</div><div id="nav_3154_7" class="dd" align="left">&nbsp;MAC</div><div id="nav_3154_8" class="dd" align="left">&nbsp;Mountain West</div><div id="nav_3154_9" class="dd" align="left">&nbsp;Pac-10</div><div id="nav_3154_10" class="dd" align="left">&nbsp;Sun Belt</div><div id="nav_3154_11" class="dd" align="left">&nbsp;SEC</div><div id="nav_3154_12" class="dd" align="left">&nbsp;WAC</div></td></tr></tbody></table></div><div class="dd2" id="gn41" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_41_0" class="dd" align="left">&nbsp;Bowls Home</div><div id="nav_41_1" class="dd" align="left">&nbsp;Natl. Championship</div><div id="nav_41_2" class="dd" align="left">&nbsp;Rose Bowl</div><div id="nav_41_3" class="dd" align="left">&nbsp;Fiesta Bowl</div><div id="nav_41_4" class="dd" align="left">&nbsp;Orange Bowl</div><div id="nav_41_5" class="dd" align="left">&nbsp;Sugar Bowl</div></td></tr></tbody></table></div><div class="dd1" id="gn3155" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_3155_0" class="dd" align="left">&nbsp;Top 25</div><div id="nav_3155_1" class="dd" align="left">&nbsp;ALL</div><div id="nav_3155_2" class="dd" align="left">&nbsp;ACC</div><div id="nav_3155_3" class="dd" align="left">&nbsp;Atlantic 10</div><div id="nav_3155_4" class="dd" align="left">&nbsp;Big East</div><div id="nav_3155_5" class="dd" align="left">&nbsp;Big Ten</div><div id="nav_3155_6" class="dd" align="left">&nbsp;Big 12</div><div id="nav_3155_7" class="dd" align="left">&nbsp;Conference USA</div><div id="nav_3155_8" class="dd" align="left">&nbsp;MAC</div><div id="nav_3155_9" class="dd" align="left">&nbsp;Mountain West</div><div id="nav_3155_10" class="dd" align="left">&nbsp;Pac-10</div><div id="nav_3155_11" class="dd" align="left">&nbsp;Sun Belt</div><div id="nav_3155_12" class="dd" align="left">&nbsp;SEC</div><div id="nav_3155_13" class="dd" align="left">&nbsp;WAC</div></td></tr></tbody></table></div><div class="dd1" id="gn93" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_93_0" class="dd" align="left">&nbsp;Women's BK Home</div><div id="nav_93_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_93_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_93_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_93_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_93_5" class="dd" align="left">&nbsp;Teams</div><div id="nav_93_6" class="dd" align="left">&nbsp;Polls</div></td></tr></tbody></table></div><div class="dd2" id="gn16701" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16701_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16701_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16701_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16702" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16702_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16702_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16702_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16703" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16703_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16703_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16703_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16704" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16704_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16704_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16704_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16705" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16705_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16705_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16705_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16706" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16706_0" class="dd" align="left">&nbsp;Cup</div><div id="nav_16706_1" class="dd" align="left">&nbsp;Busch</div><div id="nav_16706_2" class="dd" align="left">&nbsp;Truck</div></td></tr></tbody></table></div><div class="dd2" id="gn16707" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16707_0" class="dd" align="left">&nbsp;SPEEDTV.com</div><div id="nav_16707_1" class="dd" align="left">&nbsp;NASCAR on SPEED</div><div id="nav_16707_2" class="dd" align="left">&nbsp;SPEED Road Tour</div></td></tr></tbody></table></div><div class="dd2" id="gn16708" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_16708_0" class="dd" align="left">&nbsp;Race Trax</div><div id="nav_16708_1" class="dd" align="left">&nbsp;FOX Trax</div><div id="nav_16708_2" class="dd" align="left">&nbsp;NASCAR Nation</div><div id="nav_16708_3" class="dd" align="left">&nbsp;Instant Analysis</div><div id="nav_16708_4" class="dd" align="left">&nbsp;Fantasy Racing</div><div id="nav_16708_5" class="dd" align="left">&nbsp;Race the Experts</div><div id="nav_16708_6" class="dd" align="left">&nbsp;AllWaltrip.com</div><div id="nav_16708_7" class="dd" align="left">&nbsp;TonyStewart.com</div></td></tr></tbody></table></div><div class="dd1" id="gn199" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_199_0" class="dd" align="left">&nbsp;Tennis Home</div><div id="nav_199_1" class="dd" align="left">&nbsp;News</div><div id="nav_199_2" class="dd" align="left">&nbsp;Results</div><div id="nav_199_3" class="dd" align="left">&nbsp;Schedules</div><div id="nav_199_4" class="dd" align="left">&nbsp;Rankings</div><div id="nav_199_5" class="dd" align="left">&nbsp;Players</div></td></tr></tbody></table></div><div class="dd2" id="gn209" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_209_0" class="dd" align="left">&nbsp;Boxing Home</div><div id="nav_209_1" class="dd" align="left">&nbsp;Schedule</div><div id="nav_209_2" class="dd" align="left">&nbsp;Champions</div><div id="nav_209_3" class="dd" align="left">&nbsp;Odds</div><div id="nav_209_4" class="dd" align="left">&nbsp;Tickets</div></td></tr></tbody></table></div><div class="dd2" id="gn241" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_241_0" class="dd" align="left">&nbsp;Home</div><div id="nav_241_1" class="dd" align="left">&nbsp;Triple Crown</div><div id="nav_241_2" class="dd" align="left">&nbsp;Events</div><div id="nav_241_3" class="dd" align="left">&nbsp;Odds/Results</div><div id="nav_241_4" class="dd" align="left">&nbsp;TVG</div><div id="nav_241_5" class="dd" align="left">&nbsp;Race/Replays</div><div id="nav_241_6" class="dd" align="left">&nbsp;Live Racing</div></td></tr></tbody></table></div><div class="dd2" id="gn171" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_171_0" class="dd" align="left">&nbsp;Motor Home</div><div id="nav_171_1" class="dd" align="left">&nbsp;Results</div><div id="nav_171_2" class="dd" align="left">&nbsp;Schedule</div><div id="nav_171_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_171_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_171_5" class="dd" align="left">&nbsp;Drivers</div></td></tr></tbody></table></div><div class="dd2" id="gn172" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_172_0" class="dd" align="left">&nbsp;F1 Home</div><div id="nav_172_1" class="dd" align="left">&nbsp;News</div><div id="nav_172_2" class="dd" align="left">&nbsp;Results</div><div id="nav_172_3" class="dd" align="left">&nbsp;Schedule</div><div id="nav_172_4" class="dd" align="left">&nbsp;Standings</div><div id="nav_172_5" class="dd" align="left">&nbsp;Drivers</div></td></tr></tbody></table></div><div class="dd2" id="gn173" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_173_0" class="dd" align="left">&nbsp;Motor Home</div><div id="nav_173_1" class="dd" align="left">&nbsp;Results</div><div id="nav_173_2" class="dd" align="left">&nbsp;Schedule</div><div id="nav_173_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_173_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_173_5" class="dd" align="left">&nbsp;Drivers</div></td></tr></tbody></table></div><div class="dd2" id="gn90" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_90_0" class="dd" align="left">&nbsp;WNBA Home</div><div id="nav_90_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_90_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_90_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_90_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_90_5" class="dd" align="left">&nbsp;Transactions</div><div id="nav_90_6" class="dd" align="left">&nbsp;Injuries</div><div id="nav_90_7" class="dd" align="left">&nbsp;Teams</div><div id="nav_90_8" class="dd" align="left">&nbsp;Players</div><div id="nav_90_9" class="dd" align="left">&nbsp;Tickets</div></td></tr></tbody></table></div><div class="dd2" id="gn4776" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_4776_0" class="dd" align="left">&nbsp;Home</div><div id="nav_4776_1" class="dd" align="left">&nbsp;Schedule/Results</div><div id="nav_4776_2" class="dd" align="left">&nbsp;Standings/Stats</div></td></tr></tbody></table></div><div class="dd2" id="gn391" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_391_0" class="dd" align="left">&nbsp;FSN</div><div id="nav_391_1" class="dd" align="left">&nbsp;FOXCollegeSports</div><div id="nav_391_2" class="dd" align="left">&nbsp;Fox Soccer Channel</div><div id="nav_391_3" class="dd" align="left">&nbsp;SPEED</div><div id="nav_391_4" class="dd" align="left">&nbsp;Fuel</div><div id="nav_391_5" class="dd" align="left">&nbsp;FOX</div><div id="nav_391_6" class="dd" align="left">&nbsp;FX</div><div id="nav_391_7" class="dd" align="left">&nbsp;FOX News</div></td></tr></tbody></table></div><div class="dd2" id="gn4901" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_4901_0" class="dd" align="left">&nbsp;Free Agent Tracker</div><div id="nav_4901_1" class="dd" align="left">&nbsp;Rosenthal's Reports</div></td></tr></tbody></table></div><div class="dd2" id="gn4902" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_4902_0" class="dd" align="left">&nbsp;Ken Rosenthal</div><div id="nav_4902_1" class="dd" align="left">&nbsp;Dayn Perry</div><div id="nav_4902_2" class="dd" align="left">&nbsp;Kevin Kennedy</div></td></tr></tbody></table></div><div class="dd2" id="gn7301" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_7301_0" class="dd" align="left">&nbsp;Charley Rosen</div><div id="nav_7301_1" class="dd" align="left">&nbsp;Dime Magazine</div><div id="nav_7301_2" class="dd" align="left">&nbsp;Mike Kahn</div></td></tr></tbody></table></div><div class="dd1" id="gn220" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_220_0" class="dd" align="left">&nbsp;Golf Home</div><div id="nav_220_1" class="dd" align="left">&nbsp;Leaderboard</div><div id="nav_220_2" class="dd" align="left">&nbsp;Stats</div><div id="nav_220_3" class="dd" align="left">&nbsp;Schedule</div><div id="nav_220_4" class="dd" align="left">&nbsp;PGA</div><div id="nav_220_5" class="dd" align="left">&nbsp;LPGA</div><div id="nav_220_6" class="dd" align="left">&nbsp;SPGA</div><div id="nav_220_7" class="dd" align="left">&nbsp;Tickets</div></td></tr></tbody></table></div><div class="dd1" id="gn2874" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2874_0" class="dd" align="left">&nbsp;Motorsports Home</div><div id="nav_2874_1" class="dd" align="left">&nbsp;NASCAR Home</div><div id="nav_2874_2" class="dd" align="left">&nbsp;F1 Home</div><div id="nav_2874_3" class="dd" align="left">&nbsp;Tickets</div><div id="nav_2874_4" class="dd" align="left">&nbsp;SPEED</div></td></tr></tbody></table></div><div class="dd1" id="gn24" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_24_0" class="dd" align="left">&nbsp;NCAA FB Home</div><div id="nav_24_1" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Bowls</div><div id="nav_24_2" class="dd" align="left">&nbsp;BCS</div><div id="nav_24_3" class="dd" align="left">&nbsp;Recruiting</div><div id="nav_24_4" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Scores</div><div id="nav_24_5" class="dd" align="left">&nbsp;Schedules</div><div id="nav_24_6" class="dd" align="left">&nbsp;Standings</div><div id="nav_24_7" class="dd" align="left">&nbsp;Stats</div><div id="nav_24_8" class="dd" align="left">&nbsp;Teams</div><div id="nav_24_9" class="dd" align="left">&nbsp;Polls</div><div id="nav_24_10" class="dd" align="left">&nbsp;Tickets</div><div id="nav_24_11" class="dd" align="left">&nbsp;FCS</div><div id="nav_24_12" class="dd" align="left">&nbsp;Scout.com</div></td></tr></tbody></table></div><div class="dd1" id="gn5" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_5_0" class="dd" align="left">&nbsp;NFL Home</div><div id="nav_5_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_5_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_5_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_5_4" class="dd" align="left">&nbsp;Power Rankings</div><div id="nav_5_5" class="dd" align="left">&nbsp;Stats</div><div id="nav_5_6" class="dd" align="left">&nbsp;Transactions</div><div id="nav_5_7" class="dd" align="left">&nbsp;Injuries</div><div id="nav_5_8" class="dd" align="left">&nbsp;Teams</div><div id="nav_5_9" class="dd" align="left">&nbsp;Players</div><div id="nav_5_10" class="dd" align="left">&nbsp;Odds</div><div id="nav_5_11" class="dd" align="left">&nbsp;Scout.com</div><div id="nav_5_12" class="dd" align="left">&nbsp;Tickets</div></td></tr></tbody></table></div><div class="dd1" id="gn142" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_142_0" class="dd" align="left">&nbsp;NHL Home</div><div id="nav_142_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_142_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_142_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_142_4" class="dd" align="left">&nbsp;Power Rankings</div><div id="nav_142_5" class="dd" align="left">&nbsp;Stats</div><div id="nav_142_6" class="dd" align="left">&nbsp;Transactions</div><div id="nav_142_7" class="dd" align="left">&nbsp;Injuries</div><div id="nav_142_8" class="dd" align="left">&nbsp;Teams</div><div id="nav_142_9" class="dd" align="left">&nbsp;Players</div><div id="nav_142_10" class="dd" align="left">&nbsp;Tickets</div></td></tr></tbody></table></div><div class="dd1" id="gn73" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_73_0" class="dd" align="left">&nbsp;NBA Home</div><div id="nav_73_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_73_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_73_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_73_4" class="dd" align="left">&nbsp;Power Rankings</div><div id="nav_73_5" class="dd" align="left">&nbsp;Stats</div><div id="nav_73_6" class="dd" align="left">&nbsp;Transactions</div><div id="nav_73_7" class="dd" align="left">&nbsp;Injuries</div><div id="nav_73_8" class="dd" align="left">&nbsp;Teams</div><div id="nav_73_9" class="dd" align="left">&nbsp;Players</div><div id="nav_73_10" class="dd" align="left">&nbsp;Odds</div><div id="nav_73_11" class="dd" align="left">&nbsp;Tickets</div><div id="nav_73_12" class="dd" align="left">&nbsp;Blogs</div><div id="nav_73_13" class="dd" align="left">&nbsp;Message Boards</div><div id="nav_73_14" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Writers</div></td></tr></tbody></table></div><div class="dd1" id="gn49" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_49_0" class="dd" align="left">&nbsp;MLB Home</div><div id="nav_49_1" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Hot Stove</div><div id="nav_49_2" class="dd" align="left">&nbsp;Scores</div><div id="nav_49_3" class="dd" align="left">&nbsp;Schedules</div><div id="nav_49_4" class="dd" align="left">&nbsp;Standings</div><div id="nav_49_5" class="dd" align="left">&nbsp;Power Rankings</div><div id="nav_49_6" class="dd" align="left">&nbsp;Stats</div><div id="nav_49_7" class="dd" align="left">&nbsp;Transactions</div><div id="nav_49_8" class="dd" align="left">&nbsp;Injuries</div><div id="nav_49_9" class="dd" align="left">&nbsp;Teams</div><div id="nav_49_10" class="dd" align="left">&nbsp;Players</div><div id="nav_49_11" class="dd" align="left">&nbsp;Odds</div><div id="nav_49_12" class="dd" align="left">&nbsp;Scout.com</div><div id="nav_49_13" class="dd" align="left">&nbsp;Tickets</div><div id="nav_49_14" class="dd" align="left">&nbsp;Blogs</div><div id="nav_49_15" class="dd" align="left">&nbsp;Message Boards</div><div id="nav_49_16" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Writers</div></td></tr></tbody></table></div><div class="dd1" id="gn99" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_99_0" class="dd" align="left">&nbsp;NCAA BK Home</div><div id="nav_99_1" class="dd" align="left">&nbsp;Scores</div><div id="nav_99_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_99_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_99_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_99_5" class="dd" align="left">&nbsp;Teams</div><div id="nav_99_6" class="dd" align="left">&nbsp;Polls</div><div id="nav_99_7" class="dd" align="left">&nbsp;Tickets</div><div id="nav_99_8" class="dd" align="left">&nbsp;Women's BK</div><div id="nav_99_9" class="dd" align="left">&nbsp;FCS</div><div id="nav_99_10" class="dd" align="left">&nbsp;Scout.com</div></td></tr></tbody></table></div><div class="dd1" id="gn170" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_170_0" class="dd" align="left">&nbsp;Truck Home</div><div id="nav_170_1" class="dd" align="left">&nbsp;Results</div><div id="nav_170_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_170_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_170_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_170_5" class="dd" align="left">&nbsp;Drivers</div><div id="nav_170_6" class="dd" align="left">&nbsp;Tracks</div></td></tr></tbody></table></div><div class="dd1" id="gn169" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_169_0" class="dd" align="left">&nbsp;Busch Home</div><div id="nav_169_1" class="dd" align="left">&nbsp;Results</div><div id="nav_169_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_169_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_169_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_169_5" class="dd" align="left">&nbsp;Drivers</div><div id="nav_169_6" class="dd" align="left">&nbsp;Tracks</div></td></tr></tbody></table></div><div class="dd1" id="gn168" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_168_0" class="dd" align="left">&nbsp;Nextel Cup Home</div><div id="nav_168_1" class="dd" align="left">&nbsp;Results</div><div id="nav_168_2" class="dd" align="left">&nbsp;Schedules</div><div id="nav_168_3" class="dd" align="left">&nbsp;Standings</div><div id="nav_168_4" class="dd" align="left">&nbsp;Stats</div><div id="nav_168_5" class="dd" align="left">&nbsp;Drivers</div><div id="nav_168_6" class="dd" align="left">&nbsp;Tracks</div></td></tr></tbody></table></div><div class="dd1" id="gn167" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_167_0" class="dd" align="left">&nbsp;NASCAR Home</div><div id="nav_167_1" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Box Score</div><div id="nav_167_2" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Results</div><div id="nav_167_3" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Schedules</div><div id="nav_167_4" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Standings</div><div id="nav_167_5" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Stats</div><div id="nav_167_6" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Drivers</div><div id="nav_167_7" class="dd" align="left">&nbsp;Tracks</div><div id="nav_167_8" class="dd" align="left">&nbsp;Tickets</div><div id="nav_167_9" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;SPEED</div><div id="nav_167_10" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Features</div></td></tr></tbody></table></div><div class="dd1" id="gn2407" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2407_0" class="dd" align="left">&nbsp;Home</div><div id="nav_2407_1" class="dd" align="left">&nbsp;Football</div><div id="nav_2407_2" class="dd" align="left">&nbsp;Bowl Pick'em</div><div id="nav_2407_3" class="dd" align="left">&nbsp;Auto Racing</div><div id="nav_2407_4" class="dd" align="left">&nbsp;Message Boards</div><div id="nav_2407_5" class="dd" align="left">&nbsp;Simulation Games</div><div id="nav_2407_6" class="dd" align="left">&nbsp;Arcade Games</div></td></tr></tbody></table></div><div class="dd1" id="gn2662" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2662_0" class="dd" align="left">&nbsp;Tennis</div><div id="nav_2662_1" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Horse Racing</div><div id="nav_2662_2" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Boxing</div><div id="nav_2662_3" class="dd" align="left">&nbsp;Action</div><div id="nav_2662_4" class="dd" align="left">&nbsp;Poker</div><div id="nav_2662_5" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;IRL</div><div id="nav_2662_6" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;F1</div><div id="nav_2662_7" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Champ Car</div><div id="nav_2662_8" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;WNBA</div><div id="nav_2662_9" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Beach Volleyball</div><div id="nav_2662_10" class="dd" align="left">&nbsp;Rodeo</div><div id="nav_2662_11" class="dd" align="left">&nbsp;Fishing</div><div id="nav_2662_12" class="dd" align="left">&nbsp;Destination Wild</div><div id="nav_2662_13" class="dd" align="left">&nbsp;Air Race Series</div><div id="nav_2662_14" class="dd" align="left">&nbsp;Rugby</div><div id="nav_2662_15" class="dd" align="left">&nbsp;Cricket</div><div id="nav_2662_16" class="dd" align="left">&nbsp;Contests</div><div id="nav_2662_17" class="dd" align="left">&nbsp;Funhouse</div><div id="nav_2662_18" class="dd" align="left">&nbsp;Mobile</div><div id="nav_2662_19" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Television</div><div id="nav_2662_20" class="dd" align="left">&nbsp;Site Index</div></td></tr></tbody></table></div><div class="dd1" id="gn2737" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_2737_0" class="dd" align="left">&nbsp;USA Home</div><div id="nav_2737_1" class="dd" align="left">&nbsp;MLS</div><div id="nav_2737_2" class="dd" align="left">&nbsp;USA Men</div><div id="nav_2737_3" class="dd" align="left">&nbsp;MLS on FSW</div><div id="nav_2737_4" class="dd" align="left">&nbsp;USA Women</div></td></tr></tbody></table></div><div class="dd1" id="gn176" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_176_0" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;USA</div><div id="nav_176_1" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;England</div><div id="nav_176_2" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Europe</div><div id="nav_176_3" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Latin America</div><div id="nav_176_4" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Scores</div><div id="nav_176_5" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Standings</div><div id="nav_176_6" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;Schedules</div><div id="nav_176_7" class="dd" align="left"><img src="m49_files/arrow_right.gif" align="right" border="0" height="14" hspace="5" width="4">&nbsp;FSC TV</div><div id="nav_176_8" class="dd" align="left">&nbsp;Tickets</div><div id="nav_176_9" class="dd" align="left">&nbsp;EPL Fantasy</div></td></tr></tbody></table></div><div class="dd1" id="gn5776" align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr valign="top"><td width="110"><div id="nav_5776_0" class="dd" align="left">&nbsp;Blogs</div><div id="nav_5776_1" class="dd" align="left">&nbsp;Boards</div></td></tr></tbody></table></div>
+<script language="JavaScript1.2" src="m49_files/navigation_menus.js" type="text/javascript"></script>
+<script>Initms();</script>
+
+
+	
+
+
+
+
+  <!-- categoryId = 73  -->
+  
+
+
+
+     <script>
+       if(MAC) {
+         var theDiv = document.getElementById('ad300x250box');
+         if(theDiv!=null) {
+           if (!adQs) var adQs = "action=serveAd";
+           var _ad300x250 = '';
+           _ad300x250 += '<IFRAME SCROLLING=NO MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 FRAMESPACING=0 ';
+           _ad300x250 += 'WIDTH="300" HEIGHT="250" ';
+           _ad300x250 += 'SRC="http://rad.msn.com/ADSAdClient31.dll?GetAd=&PG=SPTBB4&SC=1089&TF=_NEW&'
+           _ad300x250 += adQs;
+           _ad300x250 += '"></IFRAME>';
+           theDiv.innerHTML = _ad300x250;
+         }
+       }
+       else {
+         dapMgr.enableACB('ad300x250box',false);
+         dapMgr.renderAd('ad300x250box', '&PG=SPTBB4&AP=1089', 300, 250);
+       }
+     </script>
+    
+
+
+
+	
+<script language="javascript">
+if (navigator.appName.indexOf('WebTV') != -1) {
+  document.write('<embed src="wtv-tricks:/msndispatch?type=tv-navbar-insert&amp;loc=top-navbar" height="33" width="544"></embed>');
+} else {
+  document.write('<div class="dMSNME_1"><table width="770" height="41" cellpadding="0" cellspacing="0" class="big7" border="0"><tr><td align="left">&nbsp;&nbsp;<a href="http://privacy.msn.com/" style="font-weight:normal;">MSN&nbsp;Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://privacy.msn.com/tou" style="font-weight:normal;">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://advertising.msn.com/home/home.asp" style="font-weight:normal;">Advertise</a></td><td align="right" style="color:#ffffff;">&copy;&nbsp;2006&nbsp;Microsoft&nbsp;&nbsp;<img src="/fe/img/white_pixel.gif" width="1" height="22" border="0" hspace="7" vspace="7" align="absmiddle"><img src="/fe/img/Misc/Logos/ms_123x20_white.gif" width="123" height="20" border="0" hspace="7" vspace="7" align="absmiddle"></td></tr></table></div>');
+}
+</script><div class="dMSNME_1"><table class="big7" border="0" cellpadding="0" cellspacing="0" height="41" width="770"><tbody><tr><td align="left">&nbsp;&nbsp;<a href="http://privacy.msn.com/" style="font-weight: normal;">MSN&nbsp;Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://privacy.msn.com/tou" style="font-weight: normal;">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://advertising.msn.com/home/home.asp" style="font-weight: normal;">Advertise</a></td><td style="color: rgb(255, 255, 255);" align="right">©&nbsp;2006&nbsp;Microsoft&nbsp;&nbsp;<img src="m49_files/white_pixel.gif" align="absmiddle" border="0" height="22" hspace="7" vspace="7" width="1"><img src="m49_files/ms_123x20_white.gif" align="absmiddle" border="0" height="20" hspace="7" vspace="7" width="123"></td></tr></tbody></table></div>
+
+</div>
+
+<!-- search:</noindex> -->
+
+
+
+</body></html>

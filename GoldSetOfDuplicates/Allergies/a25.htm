@@ -1,0 +1,1003 @@
+<html><head><title>The Associated Press</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="a25_files/browser.js">
+</script><link rel="stylesheet" href="a25_files/w_nn_style.css" type="text/css">
+<link rel="stylesheet" href="a25_files/w_nn_style.css" type="text/css"><style type="text/css">
+  .xBOXgreyTEXTwhite {font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: white; text-decoration: none; background-color: #666666}
+  .xBOXgreyTEXTwhite { text-decoration: none; color: white}
+  .xBOXltgreyTEXTblue {font-family:  Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: black; text-decoration: none; background-color: #C2C4CA}
+  .xBOXltgreyTEXTblue {text-decoration: none; color: #4A4A4A}
+  .xBOXwhiteTEXTblack a:link {font-family:  Arial, Helvetica, sans-serif; font-size: 11px; color: black; text-decoration: none; background-color: white}
+  .xBOXwhiteTEXTblack a:visited {font-family:  Arial, Helvetica, sans-serif; font-size: 11px; color: black; text-decoration: none; background-color: white}
+  .xBOXwhiteTEXTblack a:hover {text-decoration: underline}
+  .xBOXwhiteTEXTblack a:active {font-family:  Arial, Helvetica, sans-serif; font-size: 11px; color: black; text-decoration: none; background-color: white}
+</style><style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="a25_files/tab.css"></head><body bgcolor="#ffffff" text="#000000">
+<table bgcolor="#ffffff" border="0" width="750">
+  <tbody><tr>
+    <td align="center"> 
+      <table border="0">
+        <tbody><tr align="center" valign="top"> 
+          <td rowspan="2" align="center" valign="middle" width="160"> 
+            <!------- insert home URL  ---------->
+            <a href="http://www.argusleader.com/"> <img src="a25_files/SDSIO.gif" align="top" border="0" hspace="2"></a> 
+          </td>
+          <!------------------ start of navigation ------------->
+          <td align="center" valign="top"> <b> <b> 
+            <!---------- color of text is based on member's prefernce. You'll need to replace these links with the member's links ----------------->
+            <font color="#000000" face="Verdana,Helvetica" size="1"></font> <a href="http://www.argusleader.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Home 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.argusleader.com/news"><font color="#000000" face="Verdana,Helvetica" size="1">Local 
+            News |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.argusleader.com/sports"><font color="#000000" face="Verdana,Helvetica" size="1">Sports 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.argusleader.com/business"><font color="#000000" face="Verdana,Helvetica" size="1">Business 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.argusleader.com/outdoors"><font color="#000000" face="Verdana,Helvetica" size="1">Outdoors 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://weather.argusleader.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Weather 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.siouxfallsclassifieds.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Classifieds 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.siouxfallsjobs.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Jobs 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.siouxfallsrealestate.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Real 
+            Estate |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.apartments.com/argusleader"><font color="#000000" face="Verdana,Helvetica" size="1">Apartments 
+            |</font> </a> <font color="#000000" face="Verdana,Helvetica" size="1"></font> 
+            <a href="http://www.siouxfallscars.com/"><font color="#000000" face="Verdana,Helvetica" size="1">Cars 
+            |</font> </a> 
+            <!---------------------------- next link ---------------------------->
+            </b></b></td>
+        </tr>
+
+<!----------------- End of member elements -------------->			
+        <tr> 
+          <td align="center" valign="middle">
+
+<!-- AP call to x82  ---->
+<script language="JavaScript">			 
+	var RN = new String(Math.random());			 
+	var RNS = "1" + RN.substring(2, 11);			 		 
+	document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');		
+	document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/HOME/' + RNS+ '@x82">');
+	document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/HOME/' + RNS+ '@x82">');			 
+	document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/HOME/' + RNS+ '@x82"></a>');			 
+	document.write('<\/SCRIPT>'+'<\/div>');			
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a25_files/1221471673x82.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/HOME/1221471673@x82"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/HOME/1221471673@x82"></a></script><!-- FASTCLICK.COM 468x60 Banner v1.4 for ap.org -->
+<script language="Javascript"><!--
+var i=j=p=t=u=x=z=dc='';var id=f=0;var f=Math.floor(Math.random()*7777);
+id=29266; dc=document;u='ht'+'tp://media.fastclick.net/w'; x='/get.media?t=n';
+z=' width=468 height=60 border=0 ';t=z+'marginheight=0 marginwidth=';
+i=u+x+'&sid='+id+'&m=1&tp=1&f=b&v=1.4&c='+f+'&r='+escape(dc.referrer);
+u='<a  hr'+'ef="'+u+'/click.here?sid='+id+'&m=1&c='+f+'"  target="_blank">';
+dc.writeln('<ifr'+'ame src="'+i+'&d=f"'+t+'0 hspace=0 vspace=0 frameborder=0 scrolling=no>');
+if(navigator.appName.indexOf('Mic')<=0){dc.writeln(u+'<img src="'+i+'&d=n"'+z+'></a>');}
+dc.writeln('</iframe>'); // --></script><iframe src="a25_files/get.htm" border="0" marginheight="0" marginwidth="0" hspace="0" vspace="0" frameborder="0" height="60" scrolling="no" width="468">
+&lt;a
+href="http://media.fastclick.net/w/click.here?sid=29266&amp;m=1&amp;c=1564"
+target="_blank"&gt;&lt;img
+src="http://media.fastclick.net/w/get.media?t=n&amp;sid=29266&amp;m=1&amp;tp=1&amp;f=b&amp;v=1.4&amp;c=1564&amp;r=http%3A//www.google.com/search%3Fq%3DThe+unseasonably+warm+weather+along+the+East+Coast+has+flooded+some+offices+with+patients+suffering+from+an+unusual+ailment+this+time+of+year%3A+allergies.%26num%3D20%26hl%3Den%26lr%3D%26client%3Dfirefox-a%26rls%3Dorg.mozilla%3Aen-US%3Aofficial%26start%3D60%26sa%3DN%26filter%3D0&amp;d=n"
+width=468 height=60 border=0 &gt;&lt;/a&gt;
+</iframe>
+<noscript>
+<a href="http://media.fastclick.net/w/click.here?sid=29266&m=1&c=1"  target="_blank">
+<img src="http://media.fastclick.net/w/get.media?sid=29266&m=1&tp=1&d=s&c=1&f=b&v=1.4"
+width=468 height=60 border=1></a></noscript>
+<!-- FASTCLICK.COM 468x60 Banner v1.4 for ap.org --></div>			
+<!--- AP end call to x82 --->	
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+<script language="JavaScript" src="a25_files/browser.js"></script>
+
+<table border="0" cellpadding="0" width="732">
+          <tbody><tr>
+            <td valign="top" width="115"><table>
+              </table>
+              <table align="right" bgcolor="#a9a9a9" border="0" cellspacing="1" width="115">
+                <tbody><tr class="xBOXgreyTEXTwhite" align="left">
+                  <td> <div aligh="left"> <span class="xBOXgreyTEXTwhite">&nbsp;LATEST
+                      NEWS<font color="#666666"></font></span></div></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/HOME?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Top
+                    Stories</span></a></td>
+                </tr>
+
+
+
+
+
+				            <!--    <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack" bgcolor="FFFFFF"><A href="/dynamic/fronts/DRUG_TRADE?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">&nbsp;<img border="0" src="http://hosted.ap.org/specials/highlighted_menu/bullet.gif"> Drug Trade</SPAN></A></TD>
+                </TR>	-->
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/US?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">U.S.</span></a></td>
+                </tr>
+
+
+<tr class="xBOXgreyTEXTwhite" align="left">
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/STORMS?SITE=SDSIO&amp;SECTION=HOME"><img src="a25_files/bullet.gif" border="0"> Severe Weather</a></td>
+</tr>				
+		
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/WORLD?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">World</span></a></td>
+                </tr>
+
+<tr class="xBOXgreyTEXTwhite" align="left">
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/CASTRO?SITE=SDSIO&amp;SECTION=HOME"><img src="a25_files/bullet.gif" border="0"> Castro</a></td>
+</tr>	
+
+
+	<tr class="xBOXgreyTEXTwhite" align="left">
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff"><a href="http://hosted.ap.org/dynamic/fronts/MIDEAST?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">&nbsp;<img src="a25_files/bullet.gif" border="0"> Mideast Crisis</span></a></td>
+</tr>
+
+
+<tr class="xBOXgreyTEXTwhite" align="left">
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff"><a href="http://hosted.ap.org/dynamic/fronts/IRAQ?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">&nbsp;<img src="a25_files/bullet.gif" border="0"> Iraq</span></a></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/BUSINESS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Business</span></a></td>
+                </tr>
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/FINANCE?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack" bgcolor="FFFFFF">Personal
+                    Finance</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/TECHNOLOGY?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack" bgcolor="FFFFFF">Technology</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/SPORTS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Sports</span></a></td>
+                </tr>
+
+
+	                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/SPORTS_COLUMNS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> Sports Columns</span></a></td>
+                </tr>
+
+
+
+
+
+
+
+
+	                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/COLLEGEFOOTBALL_25?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> College Football</span></a></td>
+                </tr>
+				
+<tr class="xBOXgreyTEXTwhite" align="left">                                                                                                      
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/COLLEGEBASKETBALL_25?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> College Hoops </span></a></td>                                                                        
+</tr>
+				
+
+
+	                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/FOOTBALL?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> NFL</span></a></td>
+                </tr>
+
+<tr class="xBOXgreyTEXTwhite" align="left">                                                                                                      
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/BASKETBALL?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> NBA</span></a>
+</td>                                                                        
+</tr>				
+
+
+				<tr class="xBOXgreyTEXTwhite" align="left">
+<td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/HOCKEY?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> NHL</span></a>
+</td>
+</tr>
+
+	                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/TENNIS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> Tennis</span></a></td>
+                </tr>
+
+
+	                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/GOLF?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><img src="a25_files/bullet.gif" border="0"> Golf</span></a></td>
+                </tr>
+
+
+
+
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/ENTERTAINMENT?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Entertainment</span></a></td>
+                </tr>
+
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/HEALTH?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Health</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/SCIENCE?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Science</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/POLITICS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Politics</span></a></td>
+                </tr>
+
+				<tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/WASHINGTON?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Washington</span></a></td>
+                </tr>
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/STRANGE?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Offbeat</span></a></td>
+                </tr>
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/PODCAST?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Podcasts</span></a></td>
+                </tr>
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/BLOGS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Blogs</span></a></td>
+                </tr>
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/WEATHER?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Weather</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/RAW?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Raw
+                    News</span></a></td>
+                </tr>
+				<!--
+
+                <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack"  bgcolor="FFFFFF">&nbsp;<A href="/dynamic/fronts/NOTICIAS_GENERALES?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">Generales</SPAN></A></TD>
+                </TR>
+
+				                <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack"  bgcolor="FFFFFF">&nbsp;<A href="/dynamic/fronts/NOTICIAS_FINANCIERAS?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">Financieras</SPAN></A></TD>
+                </TR>
+
+
+				                <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack"  bgcolor="FFFFFF">&nbsp;<A href="/dynamic/fronts/NOTICIAS_DEPORTIVAS?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">Deportivas</SPAN></A></TD>
+                </TR>
+
+				                <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack"  bgcolor="FFFFFF">&nbsp;<A href="/dynamic/fronts/NOTICIAS_ESPECTACULOS?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">Espect?o&#129;Nculos</SPAN></A></TD>
+                </TR> -->
+
+
+
+
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td> <div aligh="left"> <span class="xBOXgreyTEXTwhite">&nbsp;NEWS
+                      SEARCH</span> </div></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left" bgcolor="#ffffff">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff"><form method="get" action="/dynamic/external/search.hosted.ap.org/wireCoreTool/Search">
+                      <span class="xBOXwhiteTEXTblack">
+                      <input name="SITE" value="SDSIO" type="hidden">
+                      <input name="SECTION" value="HOME" type="hidden">
+                      <input name="TEMPLATE" value="DEFAULT" type="hidden">
+                      &nbsp;
+                      <input name="query" class="body" onfocus="this.value=''" value="Search" size="6" type="text">
+                      <input name="SUBMIT" value="Go" type="submit">
+                      </span> </form></td></tr>
+                <tr>
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff"><a href="http://hosted.ap.org/dynamic/fronts/ARCHIVE?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack"><b>&nbsp;Archive Search</b></span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td> <div aligh="left"> <span class="xBOXgreyTEXTwhite">&nbsp;SPECIAL
+                      SECTIONS</span></div></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff" valign="top">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/homepage/index2.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Multimedia
+                    Gallery</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/videolineups/audio.html?SITE=SDSIO"><span class="xBOXwhiteTEXTblack">News
+                    Summary</span></a><br> &nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/videolineups/audio.html?SITE=SDSIO"><span class="xBOXwhiteTEXTblack">(AUDIO)</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://video.ap.org/v/en-ap/v.htm?g=8f49641d-7553-402e-b712-c31f81e6dc71&amp;t=s60&amp;p=ENAPus_ENAPus&amp;&amp;f=SDSIO" onclick="window.open(this.href, 'popupwindow','width=798,height=598,status=1,scrollbars=1,resizable=1'); return false;"><span class="xBOXwhiteTEXTblack">AP Video Network</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/today-in-history/index.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Today</span></a><br>
+                    &nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/today-in-history/index.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">in
+                    History</span></a></td>
+                </tr>
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/interactives/dailygallery/index.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Photo
+                    Gallery</span></a></td>
+                </tr>
+
+				<!-- <TR align="left" class="xBOXgreyTEXTwhite">
+                  <TD class="xBOXwhiteTEXTblack"  bgcolor="FFFFFF">&nbsp;<A href="http://hosted.ap.org/dynamic/external/wid.ap.org/index.html?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">Washington</SPAN></A><br>
+                    &nbsp;<A href="/dynamic/external/wid.ap.org/index.html?SITE=SDSIO&SECTION=HOME"><SPAN class="xBOXwhiteTEXTblack">in
+                    Depth</SPAN></A></TD>
+                </TR> -->
+
+
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/interactives/photoweek/flash.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">PhotoWeek</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/files/specials/interactives/sportsweek_pix/flash.html?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">SportsWeek</span></a></td>
+                </tr>
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/CENSUSINDEX?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">U.S.
+                    Census</span></a><br> &nbsp;<a href="http://hosted.ap.org/dynamic/fronts/CENSUSINDEX?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Database</span></a></td>
+                </tr>
+
+                <tr class="xBOXgreyTEXTwhite" align="left">
+                  <td class="xBOXwhiteTEXTblack" bgcolor="#ffffff">&nbsp;<a href="http://hosted.ap.org/dynamic/fronts/CORRECTIONS?SITE=SDSIO&amp;SECTION=HOME"><span class="xBOXwhiteTEXTblack">Corrections</span></a></td>
+                </tr>
+              </tbody></table></td>
+            <td valign="top" width="470"><!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="a25_files/s_code_remote.js"></script><img src="a25_files/s9288412356667.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "SDSIO") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="a25_files/prototype.js"></script>
+ <script type="text/javascript" src="a25_files/scriptaculous.js"></script><script type="text/javascript" src="a25_files/effects.js"></script>
+ <script type="text/javascript" src="a25_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="a25_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1997883: Warm Weather Allergies
+   Created: 2007/1/5 17:56:51
+   Modified: 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Jan 5, 5:56 PM EST</div></div><br>
+<p class="body"><span class="headline">Winter No Relief for Allergy Sufferers    </span>
+</p>
+<p class="ap-story-p">
+<span class="byline">By REBECCA SANTANA         </span><br>
+<span class="bylinetitle">Associated Press Writer</span></p></div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11251066
+   Created  : 2007/1/5 17:56:53
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1110030: online
+   Created: 2007/1/5 17:56:53
+   Modified: 2007/1/5 17:56:53
+   Generated: 2007/1/5 17:56:54 -->
+<!-- SmallPhoto: 2249289
+   Created: 2007/1/5 16:35:39
+   Modified: 2007/1/5 16:35:40
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://hosted.ap.org/dynamic/files/photos/P/PAPL10201052135.html?SITE=SDSIO&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="a25_files/PAPL10201052135-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo/Pat Little</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2249289 -->
+<!-- /Package: 1110030 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858182: VIDEO_PROMO_US_SECTION
+   Created: 2006/3/21 10:47:29
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+
+<!-- HtmlTable: 44689
+   Created  : 2006/3/21 10:48:08
+   Modified : 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">U.S. Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4637
+   Created: 2006/3/21 10:49:30
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="a25_files/apOVN.js">
+</script>
+<div id="flashcontent"><embed type="application/x-shockwave-flash" src="a25_files/sm_vrt_3thumb_scroll.swf" id="sm_vrt_3thumb_scroll" name="sm_vrt_3thumb_scroll" wmode="opaque" quality="best" bgcolor="#FFFFFF" flashvars="cat=US&amp;pid=SDSIO&amp;fontcolor=0x336699" height="165" width="170">
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4637 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44689 -->
+<!-- /Package: 858182 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 125902: ADVERTISEMENT_NATIONAL
+   Created: 2003/1/9 18:30:29
+   Modified: 2006/3/27 13:54:08
+   Generated: 2006/12/2 09:46:35 -->
+<!-- HtmlFragment: 4267
+   Created: 2005/11/28 11:28:59
+   Modified: 2005/11/28 11:29:08
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=ntn; dt";</script>
+<script src="a25_files/slf.js" language="JavaScript"></script><script src="a25_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4267 -->
+<!-- HtmlFragment: 1114
+   Created: 2003/1/9 18:31:04
+   Modified: 2005/8/5 11:00:20
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR NATIONAL STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='NATIONAL';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a25_files/1543320716x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x96"></a></script><iframe src="a25_files/011935237125.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="250" scrolling="no" width="300">&lt;script
+language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/1935237125/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?1935237125"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/1935237125"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/1935237125/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?1935237125"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/1935237125"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="a25_files/1543320716x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x03"></a></script><!-- Casale Media 2006 (C) -->
+<!-- Ad Format: Pop Under -->
+<!-- Domain(s): ap.org -->
+<script type="text/javascript"><!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape('ap.org');
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'76784&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//--></script><script type="text/javascript" src="a25_files/s.txt"></script><!-- Casale Media 2006 (C) -->
+</div>
+<!-- AP end call to x03 -->
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 1114 -->
+<!-- /Package: 125902 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251066  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11251071
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 507193: X_BEHAVIORAL_NATIONAL
+   Created: 2004/11/19 10:00:46
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:57 -->
+<!-- HtmlFragment: 3853
+   Created: 2004/11/22 08:56:17
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:58 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- start behavioral tag 1 -->
+<script language="Javascript" src="a25_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+<!-- end behavioral tag 1 -->
+
+<!-- start behavioral tag 2 -->
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "NATIONAL")
+</script>
+<!-- end behavioral tag 2 -->
+
+<!-- start behavioral tag 3 -->
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="a25_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+<!-- end behavioral tag 3 -->
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3853 -->
+<!-- /Package: 507193 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251071  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11251072
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="a25_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="a25_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="a25_files/WARM_WEATHER_ALLERGIES.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251072  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> TRENTON, N.J. (AP) -- The unseasonably warm
+weather along the East Coast has flooded some offices with patients
+suffering from an unusual ailment this time of year: allergies.</p> <p class="ap-story-p">Doctors
+say this winter's weather has sparked an onslaught of mold spores that
+cause allergies and fluctuating temperatures that irritate
+already-suffering nasal passages. Many patients may confuse an allergic
+reaction with a common cold.</p> <p class="ap-story-p">"The phone is
+ringing off the hook - it's incredible," said Dr. Clifford W. Bassett,
+vice chairman in charge of public education of the American Academy of
+Allergy, Asthma and Immunology, who has a practice in Manhattan.</p> <p class="ap-story-p">"It's
+an explosion of people who are realizing that they may have allergies,"
+said Bassett. "Typically, January and February are quiet times in most
+allergists' offices."</p> <p class="ap-story-p">Mold spores that grow
+outdoors would normally die off during a cold snap or be covered with
+snow. But in warm weather mold spores continue to grow and spread.
+Throwing open the windows to enjoy the weather makes things worse: The
+mold spores waltz inside.</p> <p class="ap-story-p">Maria Carola, 35,
+of New York said usually she could go without her medication for
+chronic allergies in the winter. But she learned Friday from her doctor
+her runny nose and itchy eyes weren't symptoms of a cold as she
+suspected.</p> <p class="ap-story-p">"Usually, the symptoms wouldn't be that prominent," Carola said of her allergies.</p> <p class="ap-story-p">The
+most common allergy symptoms are itchy eyes, noses and throats, and
+possibly runny or stuffy noses, said Bassett. People with colds may
+share the stuffed up nose problem, but also may see changes in the
+color of their mucus, loss of appetite, fatigue, low-grade headaches or
+fevers.</p> <p class="ap-story-p">Some doctors say a warm spell could
+bring a very early allergy season since trees might begin to bud early;
+others say the temperatures don't always make much of a difference.</p> <p class="ap-story-p">©
+2007 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MFDFK80', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="a25_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11251075
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621972: ADV_UNDER_NAT
+   Created: 2005/5/15 11:24:17
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:11 -->
+<!-- HtmlFragment: 3986
+   Created: 2005/5/15 11:27:45
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">
+var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1' + RNS+ '@x02"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><script language="JavaScript1.1" src="a25_files/1543320716x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1543320716@x02"></a></script><script language="JavaScript" src="a25_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="$340,000 mortgage for $1,100/mo. Get 4 free quotes. Bad credit OK!" onmouseover="top.status='Refinance Rates at 3.8%'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnobhnibiniblnhzfydxaxort&eid=1&id=87923304&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812225138108131000000106048054&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance Rates at 3.8%</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">$340,000 mortgage for $1,100/mo. Get 4 free quotes. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.lendgo.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!" onmouseover="top.status='Find Low Mortgage Rates'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnobhnibiniblnhzbyfxcxarw&eid=1&id=87977874&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812225138108131000000106048054&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Find Low Mortgage Rates</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.loanweb.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Get a low mortgage rate and start saving thousands. Bad credit OK!" onmouseover="top.status='Refinance $300K for $996/Month'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnobhnibiniblnhzxwwrzxerr&eid=1&id=87138207&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812225138108131000000106048054&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance $300K for $996/Month</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Get a low mortgage rate and start saving thousands. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.low.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Our network of bad credit mortgage experts can save you $1,000s!" onmouseover="top.status='Bad Credit Mortgage Experts'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnobhnibiniblnhzvwtxexcrs&eid=1&id=87916006&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812225138108131000000106048054&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Bad Credit Mortgage Experts</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Our network of bad credit mortgage experts can save you $1,000s!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.homeloanhelpline.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Receive up to 4 free quotes and select the best rate! No obligations." onmouseover="top.status='Refinance as Low as 3.9% - Fast Quotes'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnobhnibiniblnhzewzxdxbrv&eid=1&id=87916093&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812225138108131000000106048054&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance as Low as 3.9% - Fast Quotes</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Receive up to 4 free quotes and select the best rate! No obligations.</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.refinancetrust.com</span></div></div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3986 -->
+<!-- /Package: 621972 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251075  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1997883: Warm Weather Allergies -->
+</td>
+            <td valign="top" width="139">
+
+			<!-- AP call to x80  -->
+			<script language="JavaScript">
+			 var RN = new String(Math.random());
+			 var RNS = RN.substring(2, 11);
+			 var SECTION_TPL;
+			  if ( !(SECTION_TPL))
+			  {
+			  SECTION_TPL = "FRONT";
+              }
+
+			 document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+			 document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x80">');
+			 document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x80">');
+			 document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x80"></a>');
+			 document.write('<\/SCRIPT>'+'<\/div>');
+			</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a25_files/1808582341x80x81x80.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1808582341@x80,x81!x80"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1808582341@x80,x81!x80"></a></script><iframe src="a25_files/01861016091.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="600" scrolling="no" width="160">
+&lt;script language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/861016091/x80/APress/MSN_WIRE_VALUE_MAR07/MSN_WIRE_BOSTON_160.html/34353662373166363435396635663630?861016091"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000123gbl/direct;wi.160;hi.600/01/861016091"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/861016091/x80/APress/MSN_WIRE_VALUE_MAR07/MSN_WIRE_BOSTON_160.html/34353662373166363435396635663630?861016091"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000123gbl/direct;wi.160;hi.600/861016091"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+			<!-- AP end call to x80 -->
+
+
+		</td>
+          </tr>
+          <tr valign="middle">
+            <td colspan="3" height="140">
+
+
+				<!-- AP call to x81  -->
+				<script language="JavaScript">
+				 var RN = new String(Math.random());
+				 var RNS = RN.substring(2, 11);
+				 var SECTION_TPL;
+				 if ( !(SECTION_TPL))
+				 {
+				 SECTION_TPL = "FRONT";
+                 }
+
+				 document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+				 document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x81">');
+				 document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x81">');
+				 document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/'+ SECTION_TPL + '/1' + RNS+ '@x80,x81!x81"></a>');
+				 document.write('<\/SCRIPT>'+'<\/div>');
+				</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a25_files/1027360130x80x81x81.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1027360130@x80,x81!x81"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/SDSIO.hosted.ap.org/NATIONAL/1027360130@x80,x81!x81"></a></script><iframe src="a25_files/011862821431.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="90" scrolling="no" width="728">&lt;script
+language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/1862821431/x81/APress/MSN_WIRE_ROS_MAR07/MSN_WIRE_BOSTON_728.html/34353662373166363435396635663630?1862821431"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000122gbl/direct;wi.728;hi.90/01/1862821431"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/SDSIO.hosted.ap.org/NATIONAL/1862821431/x81/APress/MSN_WIRE_ROS_MAR07/MSN_WIRE_BOSTON_728.html/34353662373166363435396635663630?1862821431"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000122gbl/direct;wi.728;hi.90/01/1862821431"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+				<!-- AP end call to x81 -->
+
+
+              <p class="copyright" align="center">©2006 The Associated Press.<br>
+                All rights reserved. <a href="http://apdigitalnews.com/terms.html" class="term">Terms</a>
+                under which this site is provided.<br>
+                Learn more about our <a href="http://apdigitalnews.com/privacy.html" class="term">Privacy
+                Policy</a>.</p></td>
+          </tr>
+        </tbody></table>
+    
+  
+  <div align="center"> </div>
+				
+	
+
+	
+		
+		<center>
+		<br>
+    <p><br>
+						</p>
+			
+		
+	
+
+</center><div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="a25_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="a25_files/closelabel.gif"></a></div></div></div></div></body></html>

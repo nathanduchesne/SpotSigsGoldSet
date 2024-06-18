@@ -1,0 +1,529 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>News and more Business News from ADN1</title>
+
+	
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Keywords" content=", , Internet Technology, Computer SoftwareNews, Business News">
+<link rel="stylesheet" href="a2_files/site-style.css" type="text/css">
+<link rel="alternate" href="http://rss.digital50.com/news/" type="application/rss+xml" title="RSS">
+<script src="a2_files/global.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="a2_files/digital50-style.css">
+<link rel="stylesheet" type="text/css" media="print" href="a2_files/digital50-print.css">
+<style>
+	.SearchHighlight {
+		background-color: yellow;
+	}
+</style>
+<script type="text/javascript" src="a2_files/scripts.js"></script>
+<script type="text/javascript">
+
+function highlightWord(node,word) {
+	// Iterate into this nodes childNodes
+	if (node.hasChildNodes) {
+		var hi_cn;
+		for (hi_cn=0;hi_cn<node.childNodes.length;hi_cn++) {
+			highlightWord(node.childNodes[hi_cn],word);
+		}
+	}
+	
+	// And do this node itself
+	if (node.nodeType == 3) { // text node
+		tempNodeVal = node.nodeValue.toLowerCase();
+		tempWordVal = word.toLowerCase();
+		if (tempNodeVal.indexOf(tempWordVal) != -1) {
+			pn = node.parentNode;
+			if (pn.className != "SearchHighlight") {
+				// word has not already been highlighted!
+				nv = node.nodeValue;
+				ni = tempNodeVal.indexOf(tempWordVal);
+				// Create a load of replacement nodes
+				before = document.createTextNode(nv.substr(0,ni));
+				docWordVal = nv.substr(ni,word.length);
+				after = document.createTextNode(nv.substr(ni+word.length));
+				hiwordtext = document.createTextNode(docWordVal);
+				hiword = document.createElement("span");
+				hiword.className = "SearchHighlight";
+				hiword.appendChild(hiwordtext);
+				pn.insertBefore(before,node);
+				pn.insertBefore(hiword,node);
+				pn.insertBefore(after,node);
+				pn.removeChild(node);
+			}
+		}
+	}
+}
+
+function refererSearchHighlight() {
+	if (!document.createElement) return;
+	ref = document.referrer;
+	if (ref.indexOf('?') == -1) return;
+	qs = ref.substr(ref.indexOf('?')+1);
+	qsa = qs.split('&');
+	for (i=0;i<qsa.length;i++) {
+		qsip = qsa[i].split('=');
+	        if (qsip.length == 1) continue;
+        	if (qsip[0] == 'q' || qsip[0] == 'p') { // q= for Google, p= for Yahoo
+			words = unescape(qsip[1].replace(/\+/g,' ')).split(/\s+/);
+	                for (w=0;w<words.length;w++) {
+				highlightWord(document.getElementsByTagName("body")[0],words[w]);
+                	}
+	        }
+	}
+}
+window.onload = function() {
+	refererSearchHighlight();
+}
+</script></head><body bgcolor="#ffffff" text="#000000">
+<!-- /news/index.php?nid=20070116006525&url_date=2001/07/14&source=BW&p_title=adobe-delivers-flash-player-9-for-linux&print= -->
+<div align="center">
+<table style="position: relative; left: 22px;" align="" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+    <td><img src="a2_files/spacer.gif" height="1" width="3"></td>
+
+    <td align="left" valign="top"><img src="a2_files/header_tab_home_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_home_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Home</a></td>
+    <td><img src="a2_files/header_tab_home_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+    <td align="left" valign="top"><img src="a2_files/header_tab_inact_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_inact_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/Business_Profile/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Business Profile</a></td>
+    <td><img src="a2_files/header_tab_inact_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+
+    <td align="left" valign="top"><img src="a2_files/header_tab_inact_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_inact_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/Organizations_and_Associations/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Organizations</a></td>
+    <td><img src="a2_files/header_tab_inact_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+    <td align="left" valign="top"><img src="a2_files/header_tab_inact_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_inact_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/University_Network/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Education</a></td>
+    <td><img src="a2_files/header_tab_inact_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+
+    <td align="left" valign="top"><img src="a2_files/header_tab_inact_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_inact_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/Professional_Members/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Professionals</a></td>
+    <td><img src="a2_files/header_tab_inact_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+    <td align="left" valign="top"><img src="a2_files/header_tab_inact_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_inact_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/Events_Calendar/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Events Calendar</a></td>
+    <td><img src="a2_files/header_tab_inact_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="1"></td>
+
+    <td align="left" valign="top"><img src="a2_files/header_tab_act_left.gif" height="24" width="15"></td>
+    <td background="a2_files/header_tab_act_bg.gif" nowrap="nowrap"><a href="http://www.adn1.com/Business_News/?SESSID=d66ccc978bf7a7a6b0d757d0cfe2bfe3" class="header_tab_text">Business News</a></td>
+    <td><img src="a2_files/header_tab_act_right.gif" height="24" width="15"></td>
+    <td><img src="a2_files/spacer.gif" height="1" width="3"></td>
+  </tr>
+</tbody></table>
+</div><table class="table_border" align="center" border="0" cellpadding="0" cellspacing="0" width="774">
+  <tbody><tr> 
+    <td colspan="2" align="center" bgcolor="#ffffff" nowrap="nowrap"> <img src="a2_files/header_logo.gif" height="84" width="332"><img src="a2_files/header_slogan.jpg" height="84" width="442"></td>
+
+  </tr>
+  <tr> 
+    <td colspan="3" background="a2_files/header_base.gif" height="7" valign="top"><span id="Layer1" style="position: relative; top: -25px; left: 345px; z-index: 1;" class="header_slogan">How do people view your business?</span>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" align="center" bgcolor="#ffffff"> 
+      <form name="site_search" method="get" action="http://www.adn1.com/Site_Search/">
+	  <input name="SESSID" value="d66ccc978bf7a7a6b0d757d0cfe2bfe3" type="hidden">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td height="29"><img src="a2_files/spacer.gif" height="1" width="195"></td>
+
+            <td bgcolor="#798997" height="29" valign="bottom" width="12"><img src="a2_files/searchbox_corner_sw.gif" height="29" width="12"></td>
+            <td bgcolor="#798997" height="29" nowrap="nowrap"><span class="title_grey_drk">ADN1</span> 
+              <span class="title_white">Search</span> <img src="a2_files/icon_doubleslash_798997.gif" align="absmiddle" height="19" width="14"> 
+              <input name="q" style="width: 145px;" type="text">
+              <select name="domain" style="width: 210px;">
+                <option value="">All</option>
+                <option value="BP">Business Profile</option>
+
+                <option value="OA">Organizations &amp; Associations</option>
+                <option value="UN">Universities</option>
+                <option value="PM">Professional Members</option>
+                <option value="BN">Business News</option>
+              </select>
+              <input value="SEARCH" class="form_submit" type="submit">
+
+              &nbsp; </td>
+          </tr>
+        </tbody></table>
+      </form>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#ffffff" valign="top" width="173"> 
+      <p>&nbsp;</p>
+
+      <table border="0" cellpadding="3" cellspacing="0" width="173">
+        <tbody><tr> 
+          <td class="title_header">&nbsp;&nbsp;<span class="title_grey_med">News</span> <span class="title_grey_drk">Categories</span> <img src="a2_files/icon_doubleslash_ffffff.gif" align="absmiddle" height="14" width="11"></td>
+        </tr>
+        <tr> 
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="173">
+              <tbody><tr> 
+                <td colspan="3"><img src="a2_files/infobox_header.gif" height="15" width="173"></td>
+
+              </tr>
+              <tr> 
+                <td background="a2_files/infobox_bg_left.gif" width="13"><img src="a2_files/spacer.gif" height="1" width="13"></td>
+                <td bgcolor="#e7eaed" valign="top" width="147">
+					<ul class="news_categories">
+						<li><a href="http://digital50.com/news/" title="Show the most recent news from all categories"><b>All categories</b></a></li>
+						
+								<li><a href="http://digital50.com/news/categories/ADV/advertising.html" title="Show all news from the Advertising category">Advertising</a></li>
+								<li><a href="http://digital50.com/news/categories/AGR/agriculture.html" title="Show all news from the Agriculture category">Agriculture</a></li>
+								<li><a href="http://digital50.com/news/categories/AIR/airlines-aviation.html" title="Show all news from the Airlines/Aviation category">Airlines / Aviation</a></li>
+								<li><a href="http://digital50.com/news/categories/ARO/aerospace-defense.html" title="Show all news from the Aerospace/Defense category">Aerospace / Defense</a></li>
+								<li><a href="http://digital50.com/news/categories/ART/art.html" title="Show all news from the Art category">Art</a></li>
+								<li><a href="http://digital50.com/news/categories/AUT/auto.html" title="Show all news from the Auto category">Auto</a></li>
+								<li><a href="http://digital50.com/news/categories/BIO/biotechnology.html" title="Show all news from the Biotechnology category">Biotechnology</a></li>
+								<li><a href="http://digital50.com/news/categories/BKS/books.html" title="Show all news from the Books category">Books</a></li>
+								<li><a href="http://digital50.com/news/categories/CHM/chemical.html" title="Show all news from the Chemical category">Chemical</a></li>
+								<li><a href="http://digital50.com/news/categories/CNO/gambling-casinos.html" title="Show all news from the Gambling/Casinos category">Gambling / Casinos</a></li>
+								<li><a href="http://digital50.com/news/categories/CPR/computer-electronics.html" title="Show all news from the Computer/Electronics category">Computer / Electronics</a></li>
+								<li><a href="http://digital50.com/news/categories/CSE/consumer-electronics.html" title="Show all news from the Consumer Electronics category">Consumer Electronics</a></li>
+								<li><a href="http://digital50.com/news/categories/CST/construction-building.html" title="Show all news from the Construction/Building category">Construction / Building</a></li>
+								<li><a href="http://digital50.com/news/categories/ECM/electronic-commerce.html" title="Show all news from the Electronic Commerce category">Electronic Commerce</a></li>
+								<li><a href="http://digital50.com/news/categories/ECP/electronic-components.html" title="Show all news from the Electronic Components category">Electronic Components</a></li>
+								<li><a href="http://digital50.com/news/categories/EDA/electronic-design-automation.html" title="Show all news from the Electronic Design Automation category">Electronic Design Automation</a></li>
+								<li><a href="http://digital50.com/news/categories/EDU/education.html" title="Show all news from the Education category">Education</a></li>
+								<li><a href="http://digital50.com/news/categories/ENT/entertainment.html" title="Show all news from the Entertainment category">Entertainment</a></li>
+								<li><a href="http://digital50.com/news/categories/ENV/environmental-services.html" title="Show all news from the Environmental Services category">Environmental Services</a></li>
+								<li><a href="http://digital50.com/news/categories/EPM/electronics-performance-measurement.html" title="Show all news from the Electronics Performance Measurement category">Electronics Performance Measurement</a></li>
+								<li><a href="http://digital50.com/news/categories/FAS/fashion.html" title="Show all news from the Fashion category">Fashion</a></li>
+								<li><a href="http://digital50.com/news/categories/FIN/banking-financial-services.html" title="Show all news from the Banking/Financial Services category">Banking / Financial Services</a></li>
+								<li><a href="http://digital50.com/news/categories/FLM/film-motion-picture.html" title="Show all news from the Film &amp; Motion Picture category">Film &amp; Motion Picture</a></li>
+								<li><a href="http://digital50.com/news/categories/FOD/food-beverages.html" title="Show all news from the Food/Beverages category">Food / Beverages</a></li>
+								<li><a href="http://digital50.com/news/categories/GEN/general-news.html" title="Show all news from the General News category">General News</a></li>
+								<li><a href="http://digital50.com/news/categories/HEA/health-care-hospitals.html" title="Show all news from the Health Care/Hospitals category">Health Care / Hospitals</a></li>
+								<li><a href="http://digital50.com/news/categories/HED/higher-education.html" title="Show all news from the Higher Education category">Higher Education</a></li>
+								<li><a href="http://digital50.com/news/categories/HOU/household-consumer-cosmetics.html" title="Show all news from the Household/Consumer/Cosmetics category">Household / Consumer / Cosmetics</a></li>
+								<li><a href="http://digital50.com/news/categories/HRD/computer-hardware.html" title="Show all news from the Computer Hardware category">Computer Hardware</a></li>
+								<li><a href="http://digital50.com/news/categories/HTS/high-tech-security.html" title="Show all news from the High Tech Security category">High Tech Security</a></li>
+								<li><a href="http://digital50.com/news/categories/INS/insurance.html" title="Show all news from the Insurance category">Insurance</a></li>
+								<li><a href="http://digital50.com/news/categories/ITE/internet-technology.html" title="Show all news from the Internet Technology category">Internet Technology</a></li>
+								<li><a href="http://digital50.com/news/categories/LEI/leisure-travel-hotels.html" title="Show all news from the Leisure/Travel/Hotels category">Leisure / Travel / Hotels</a></li>
+								<li><a href="http://digital50.com/news/categories/MAC/machinery.html" title="Show all news from the Machinery category">Machinery</a></li>
+								<li><a href="http://digital50.com/news/categories/MAG/magazines.html" title="Show all news from the Magazines category">Magazines</a></li>
+								<li><a href="http://digital50.com/news/categories/MAR/maritime-shipbuilding.html" title="Show all news from the Maritime/Shipbuilding category">Maritime / Shipbuilding</a></li>
+								<li><a href="http://digital50.com/news/categories/MFD/mutual-funds.html" title="Show all news from the Mutual Funds category">Mutual Funds</a></li>
+								<li><a href="http://digital50.com/news/categories/MLM/multimedia-online-internet.html" title="Show all news from the Multimedia/Online/Internet category">Multimedia / Online / Internet</a></li>
+								<li><a href="http://digital50.com/news/categories/MNG/mining-metals.html" title="Show all news from the Mining/Metals category">Mining / Metals</a></li>
+								<li><a href="http://digital50.com/news/categories/MTC/medical-pharmaceuticals.html" title="Show all news from the Medical/Pharmaceuticals category">Medical / Pharmaceuticals</a></li>
+								<li><a href="http://digital50.com/news/categories/MUS/music.html" title="Show all news from the Music category">Music</a></li>
+								<li><a href="http://digital50.com/news/categories/NET/computer-networks.html" title="Show all news from the Computer Networks category">Computer Networks</a></li>
+								<li><a href="http://digital50.com/news/categories/OFP/office-products.html" title="Show all news from the Office Products category">Office Products</a></li>
+								<li><a href="http://digital50.com/news/categories/OIL/oil-energy.html" title="Show all news from the Oil/Energy category">Oil / Energy</a></li>
+								<li><a href="http://digital50.com/news/categories/OTC/otc-smallcap.html" title="Show all news from the OTC/SmallCap category">OTC / SmallCap</a></li>
+								<li><a href="http://digital50.com/news/categories/PAP/paper-forest-products-containers.html" title="Show all news from the Paper/Forest Products/Containers category">Paper / Forest Products / Containers</a></li>
+								<li><a href="http://digital50.com/news/categories/PEL/peripherals.html" title="Show all news from the Peripherals category">Peripherals</a></li>
+								<li><a href="http://digital50.com/news/categories/PUB/publishing-information-services.html" title="Show all news from the Publishing/Information Services category">Publishing / Information Services</a></li>
+								<li><a href="http://digital50.com/news/categories/RAD/radio.html" title="Show all news from the Radio category">Radio</a></li>
+								<li><a href="http://digital50.com/news/categories/REA/retail.html" title="Show all news from the Retail category">Retail</a></li>
+								<li><a href="http://digital50.com/news/categories/RLT/real-estate.html" title="Show all news from the Real Estate category">Real Estate</a></li>
+								<li><a href="http://digital50.com/news/categories/RST/restaurants.html" title="Show all news from the Restaurants category">Restaurants</a></li>
+								<li><a href="http://digital50.com/news/categories/SEM/semiconductors.html" title="Show all news from the Semiconductors category">Semiconductors</a></li>
+								<li><a href="http://digital50.com/news/categories/SPM/supplementary-medicine.html" title="Show all news from the Supplementary Medicine category">Supplementary Medicine</a></li>
+								<li><a href="http://digital50.com/news/categories/SPT/sports.html" title="Show all news from the Sports category">Sports</a></li>
+								<li><a href="http://digital50.com/news/categories/STW/computer-software.html" title="Show all news from the Computer Software category">Computer Software</a></li>
+								<li><a href="http://digital50.com/news/categories/SUP/supermarkets.html" title="Show all news from the Supermarkets category">Supermarkets</a></li>
+								<li><a href="http://digital50.com/news/categories/TEX/textiles.html" title="Show all news from the Textiles category">Textiles</a></li>
+								<li><a href="http://digital50.com/news/categories/TLS/telecommunications.html" title="Show all news from the Telecommunications category">Telecommunications</a></li>
+								<li><a href="http://digital50.com/news/categories/TOB/tobacco.html" title="Show all news from the Tobacco category">Tobacco</a></li>
+								<li><a href="http://digital50.com/news/categories/TRA/travel.html" title="Show all news from the Travel category">Travel</a></li>
+								<li><a href="http://digital50.com/news/categories/TRN/transportation-trucking-railroad.html" title="Show all news from the Transportation/Trucking/Railroad category">Transportation / Trucking / Railroad</a></li>
+								<li><a href="http://digital50.com/news/categories/TVN/television.html" title="Show all news from the Television category">Television</a></li>
+								<li><a href="http://digital50.com/news/categories/UTI/utilities.html" title="Show all news from the Utilities category">Utilities</a></li>
+					</ul>
+                </td>
+                <td background="a2_files/infobox_bg_right.gif" width="13"><img src="a2_files/spacer.gif" height="1" width="13"></td>
+              </tr>
+
+              <tr> 
+                <td colspan="3"><img src="a2_files/infobox_footer.gif" height="15" width="173"></td>
+              </tr>
+            </tbody></table>
+            <br>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+    <td bgcolor="#ffffff" valign="top" width="575">
+      <div class="account_top_nav" align="right">
+	  	<a href="https://secure.adn1.com/My_Account/">Login to Manage Account</a>
+	  </div>
+      <table align="center" border="0" cellpadding="3" cellspacing="0" height="100%" width="575">
+        <tbody><tr> 
+          <td colspan="2" class="title_header" height="32">
+                        <span class="title_grey_med">Business</span> <span class="title_grey_drk">News</span><img src="a2_files/icon_doubleslash_ffffff.gif" align="absmiddle" height="14" width="11"></td>
+        </tr>
+		<tr>
+			<td colspan="2">
+				<div id="search-box">
+				<form id="search" method="get" action="/news/search/">
+					<h1>Search News</h1>
+					<input id="q" name="q" value="enter your terms" onclick="clearBox(this)" title="Tip: Use &quot;quotes&quot; for a literal search." type="text">
+					<select id="c" name="c">
+					<option value="">All categories</option>
+					
+								<option value="ADV">Advertising</option>
+								<option value="AGR">Agriculture</option>
+								<option value="AIR">Airlines/Aviation</option>
+								<option value="ARO">Aerospace/Defense</option>
+								<option value="ART">Art</option>
+								<option value="AUT">Auto</option>
+								<option value="BIO">Biotechnology</option>
+								<option value="BKS">Books</option>
+								<option value="CHM">Chemical</option>
+								<option value="CNO">Gambling/Casinos</option>
+								<option value="CPR">Computer/Electronics</option>
+								<option value="CSE">Consumer Electronics</option>
+								<option value="CST">Construction/Building</option>
+								<option value="ECM">Electronic Commerce</option>
+								<option value="ECP">Electronic Components</option>
+								<option value="EDA">Electronic Design Automation</option>
+								<option value="EDU">Education</option>
+								<option value="ENT">Entertainment</option>
+								<option value="ENV">Environmental Services</option>
+								<option value="EPM">Electronics Performance Measurement</option>
+								<option value="FAS">Fashion</option>
+								<option value="FIN">Banking/Financial Services</option>
+								<option value="FLM">Film &amp; Motion Picture</option>
+								<option value="FOD">Food/Beverages</option>
+								<option value="GEN">General News</option>
+								<option value="HEA">Health Care/Hospitals</option>
+								<option value="HED">Higher Education</option>
+								<option value="HOU">Household/Consumer/Cosmetics</option>
+								<option value="HRD">Computer Hardware</option>
+								<option value="HTS">High Tech Security</option>
+								<option value="INS">Insurance</option>
+								<option value="ITE">Internet Technology</option>
+								<option value="LEI">Leisure/Travel/Hotels</option>
+								<option value="MAC">Machinery</option>
+								<option value="MAG">Magazines</option>
+								<option value="MAR">Maritime/Shipbuilding</option>
+								<option value="MFD">Mutual Funds</option>
+								<option value="MLM">Multimedia/Online/Internet</option>
+								<option value="MNG">Mining/Metals</option>
+								<option value="MTC">Medical/Pharmaceuticals</option>
+								<option value="MUS">Music</option>
+								<option value="NET">Computer Networks</option>
+								<option value="OFP">Office Products</option>
+								<option value="OIL">Oil/Energy</option>
+								<option value="OTC">OTC/SmallCap</option>
+								<option value="PAP">Paper/Forest Products/Containers</option>
+								<option value="PEL">Peripherals</option>
+								<option value="PUB">Publishing/Information Services</option>
+								<option value="RAD">Radio</option>
+								<option value="REA">Retail</option>
+								<option value="RLT">Real Estate</option>
+								<option value="RST">Restaurants</option>
+								<option value="SEM">Semiconductors</option>
+								<option value="SPM">Supplementary Medicine</option>
+								<option value="SPT">Sports</option>
+								<option value="STW">Computer Software</option>
+								<option value="SUP">Supermarkets</option>
+								<option value="TEX">Textiles</option>
+								<option value="TLS">Telecommunications</option>
+								<option value="TOB">Tobacco</option>
+								<option value="TRA">Travel</option>
+								<option value="TRN">Transportation/Trucking/Railroad</option>
+								<option value="TVN">Television</option>
+								<option value="UTI">Utilities</option>
+					</select>
+					<select id="d" name="d">
+						<option value="" selected="selected">Anytime</option>
+						<option value="hour">Last hour</option>
+						<option value="day">Last day</option>
+						<option value="week">Past week</option>
+						<option value="month">Past month</option>
+						<option value="year">Past year</option>
+					</select>
+					<input id="submit" value="Search" type="submit">
+					<input name="search" value="Search" type="hidden">
+					<br>
+			</form>
+			</div>
+			</td>
+		</tr>
+        <tr>
+			<td id="content" valign="top" width="495">
+				<!-- Main Content Area -->
+				<!-- Individual Item -->
+
+<h2> News</h2>
+<h1>Adobe Delivers Flash Player 9 for Linux</h1>
+
+							<p>SAN JOSE,
+Calif.-(Business Wire)-January 17, 2007 - Adobe Systems Incorporated
+(Nasdaq:ADBE) today announced the availability of Adobe(R) Flash(R)
+Player 9 for Linux, the next-generation client runtime for engaging
+with Flash content and applications on Linux open source operating
+systems. Adobe Flash Player 9 delivers a consistent cross-platform
+experience and extends unprecedented performance and advanced features
+to the broadest set of developers and users to date. Additionally,
+Linux developers can create, test and deploy rich Internet applications
+(RIAs) on the Linux platform using the free Adobe Flex(R) 2 Software
+Developers Kit (SDK), Adobe Flash Player 9 and the free Flex Data
+Services 2 Express. </p> 
+							<p> Installed on over 700 million
+Internet-connected PCs and mobile devices worldwide, Adobe Flash Player
+engages people across a wide array of different channels, enabling
+collaboration and delivering richer, more interactive experiences that
+work consistently across multiple platforms. </p> 
+							<p> "With
+the proliferation of video on the Web, Adobe Flash Player is quickly
+becoming the de facto industry standard for delivering engaging
+interactive content and applications," said Emmy Huang, senior product
+manager at Adobe. "Now the Linux community has full access to the high
+volume of Flash content and applications available on the Internet
+today, bringing Linux developers and users to the forefront of the Web
+2.0 experience." </p> 
+							<p> Adobe Flash Player 9 for Linux
+vastly enhances user experiences with new capabilities such as
+efficient memory utilization, advanced features for graphics, video and
+text, as well as the ActionScript Virtual Machine (AVM2), which allows
+up to 10 times faster scripting performance. Adobe recently contributed
+source code from the AVM2 to the Mozilla Foundation, which is hosting a
+new open source project called Tamarin to accelerate the development of
+a standards-based approach for creating rich and engaging Web
+applications that work across multiple platforms. The Tamarin source
+code is available via CVS, an open source version control and
+collaboration system, from the Mozilla site
+www.mozilla.org/projects/tamarin/. </p> 
+							<p> "Adobe Flash
+Player 9 delivers high-quality performance, a more secure viewing
+experience and an enhanced programming model that will help further
+advance SUSE Linux Enterprise Desktop as the top Linux desktop for
+business," said Justin Steinman, director of marketing for Linux and
+Open Platform Solutions at Novell. "Novell is committed to providing
+our users the means to experience the latest in rich content on the
+Web." </p> 
+							<p> "Red Hat is committed to providing the world's
+best Linux user experience," said Tim Yeaton, Senior Vice President of
+Red Hat Enterprise Solutions. "Offering our users Adobe Flash Player 9
+for Linux helps Red Hat deliver the desktop capabilities Linux users
+want, and is an indicator of the growing demand for rich Internet
+applications certified for Red Hat Enterprise Linux." </p> 
+							<p> Pricing and Availability </p> 
+							<p>
+Adobe Flash Player 9 for Linux is available immediately as a free
+download from www.adobe.com/go/getflashplayerlinux. The standalone and
+debug versions of Adobe Flash Player for developers are available from
+www.adobe.com/support/flashplayer/downloads.html. Adobe Flash Player 9
+for Linux will also be included in Linux operating systems distributed
+by Novell and Red Hat later this year. </p> 
+							<p> Adobe Flash
+Player 9 is available in both English and localized versions and is
+available for Linux, Windows and Mac platforms. To learn more about
+Adobe Flash Player 9, please visit www.adobe.com/products/flashplayer/.
+For system requirements, please visit
+www.adobe.com/products/flashplayer/productinfo/systemreqs/. </p> 
+							<p>
+For more information about developing RIAs for the Linux platform with
+the free Adobe Flex 2 SDK and Flex Data Services 2 software, please
+visit www.adobe.com/products/flex/productinfo/overview/. </p> 
+							<p> About Adobe Systems Incorporated </p> 
+							<p>
+Adobe revolutionizes how the world engages with ideas and information -
+anytime, anywhere and through any medium. For more information, visit
+www.adobe.com. </p> 
+							<p> (C) 2007 Adobe Systems Incorporated.
+All rights reserved. Adobe, the Adobe logo, Flash and Flex are either
+registered trademarks or trademarks of Adobe Systems Incorporated in
+the United States and/or other countries. Linux is the registered
+trademark of Linus Torvalds in the U.S. and other countries. Mac is a
+trademark of Apple Computer, Inc., registered in the United States and
+other countries. Windows is either a registered trademark or a
+trademark of Microsoft Corporation in the United States and/or other
+countries.</p>
+<!-- Send to a Friend -->
+
+<p><a href="javascript://" onclick="sendToFriend('http://digital50.com/news/items/BW/2001/07/14/20070116006525/adobe-delivers-flash-player-9-for-linux')" title="Send this news item to a friend.">Send this news item to a friend</a>.</p>
+<p><a href="http://digital50.com/news/items/BW/2001/07/14/20070116006525/adobe-delivers-flash-player-9-for-linux/print">Print This Page</a></p>			</td>
+			<td align="center" valign="top" width="170">
+		  				<!-- disabled login -->
+			<!-- <form id="login" method="post" action="/news/login/">
+				<fieldset>
+					<legend>Log In</legend>
+					<input type="hidden" name="dologin" id="dologin" value="1" />
+					<span class="smallest">Email Address</span><br />
+					<input type="text" id="u" name="u" value="" /><br />
+					<span class="smallest">Password</span><br />
+					<input type="password" id="p" name="p" value="" /><br />
+					<input class="padTop" type="submit" name="submit" id="loginSubmit" value="Log In" /><br />
+					<span class="smallestCenter"><a href="/news/register" title="Register">Register for free</a></span>
+				</fieldset>
+			</form> -->
+						<br>						<p><a href="http://digital50.com/news/items/BW/2001/07/14/20070116006525/adobe-delivers-flash-player-9-for-linux/print">Print This Page</a></p>
+					
+
+<b><a href="http://www.digital50.com/news/rss.asp">GET RSS NEWSFEEDS</a></b><br><br>
+<a name="Bookmark_us"><script type="text/javascript">
+    <!--
+        if (document.all)
+        {
+            document.write("<a href=\"javascript:window.external.AddFavorite(location.href, 'ADN1.COM : News Alerts')\">Bookmark this page</a>");
+			document.write("<br><br>");
+        }
+        else
+        {
+            //document.write("Some of the functions and views in this site are not visible in non-Microsoft Browsers");
+        }
+    //-->
+</script></a>
+<b>GET THE NEWS</b><br>
+<a href="http://www.digital50.com/newsalertspage.asp"><b>Sign-up</b></a>
+<br><br>
+			<script type="text/javascript"><!--
+			google_ad_client = "pub-1027847310758974";
+			google_alternate_color = "FFFFFF";
+			google_ad_width = 160;
+			google_ad_height = 600;
+			google_ad_format = "160x600_as";
+			google_ad_type = "text";
+			google_ad_channel ="";
+			google_page_url = document.location;
+			//--></script>
+			<script type="text/javascript" src="a2_files/show_ads.js">
+			</script><iframe name="google_ads_frame" src="a2_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="600" scrolling="no" width="160"></iframe>
+
+		  </td>
+        </tr>
+      </tbody></table>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="footer_text" bgcolor="#ffffff"> 
+      <p><br>
+		<span class="footer_text_nav"><a href="http://www.adn1.com/">Home</a>
+		| <a href="http://www.adn1.com/About_Us/">About Us</a>
+		| <a href="http://www.adn1.com/Services/">Services</a>
+		| <a href="http://www.adn1.com/About_Us/copyright_notice.php">Copyright</a>
+		
+		| <a href="http://www.adn1.com/About_Us/terms_of_use.php">Terms of Use</a>
+		| <a href="http://www.adn1.com/About_Us/terms_of_sale.php">Terms of Sale</a>
+		| <a href="http://www.adn1.com/About_Us/privacy.php">Privacy</a>
+		| <a href="http://www.adn1.com/About_Us/contact.php">Contact Us</a>
+		</span><br><br>
+		American Digital Networks, All Rights Reserved 2000-2006<br>
+		Original design and development by <a href="http://www.breakforth.com/" target="_blank">BreakForth!</a><br>
+		This site uses <a href="http://www.thumbshots.com/" target="_blank" title="This site uses Thumbshots previews">Thumbshots</a> previews.
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
+<script src="a2_files/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-313907-2";
+	urchinTracker();
+</script>
+
+<!-- Loadtime: 0.010209 --></body></html>

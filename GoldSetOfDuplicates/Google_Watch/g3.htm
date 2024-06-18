@@ -1,0 +1,1105 @@
+<html><head><title>Australian IT - Fox, YouTube in Simpsons brawl (Andrew Wallenstein and Carl DiOrio in Los Angeles, JANUARY 25, 2007)</title>
+    
+	
+
+	
+	
+<meta http-equiv="Refresh" content="420">
+<meta name="keywords" content="Technology, IT, Australia, IT jobs, IT careers, IT employment, reviews, networking, hardware, software, computers, Internet, PC, games, sites, Y2K, Net news, Web trends, The Australian, IT news, computer industry, Macintosh, Apple, News Interactive, News Limited, News Corporation">
+<meta name="description" content="The number one information technology destination in Australia that keeps you ahead of the competition. This leading source for IT jobs not only enables you to search for your next position but also to read the latest reviews on hardware and software and games, all in one place.">
+<meta name="ROBOTS" content="NOARCHIVE">
+	 <link href="g3_files/ausit2_style.css" rel="stylesheet" type="text/css">
+	<script language="Javascript">
+<!--
+// Cookie Functions
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function FixCookieDate(date) {
+var base = new Date(0);
+var skew = base.getTime();
+if (skew > 0) 
+	date.setTime (date.getTime() - skew);
+}
+
+function GetCookie(name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i=0;
+while (i < clen) {	
+	var j = i + alen;
+	if (document.cookie.substring(i, j) == arg)
+	return getCookieVal (j);
+	i = document.cookie.indexOf(" ", i) + 1;
+	if (i == 0) break;
+	}
+return null;
+}
+
+function SetCookie(name,value,expires,path,domain,secure) {
+document.cookie = name + "=" + escape (value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "");
+}
+
+// form validation
+function valiDate(theform) {
+// validate payer email
+if (theform.mailFromAddress.value!="") {
+	if (!validEmail(theform.mailFromAddress.value)) {
+		alert("Please enter a valid email address.");
+		theform.mailFromAddress.focus();
+		theform.mailFromAddress.select();
+		return false;	
+	}
+} else {
+	alert("Please enter your email address.");
+	theform.mailFromAddress.focus();
+	theform.mailFromAddress.select();
+	return false;	
+}
+
+return true;	
+}
+
+function validateC1(thef) {
+	if (thef.q.value=="Keywords") {
+		thef.q.value = "";
+	}
+	if (thef.qCity.value=="City or suburb") {
+		thef.qCity.value = "";
+	}
+}
+
+function validEmail(email) {
+
+	invalidChars = " /:,;"
+	if (email == "") {						// cannot be empty
+		return false
+	}
+
+	for (i=0; i<invalidChars.length; i++) {	// does it contain any invalid characters?
+		badChar = invalidChars.charAt(i)
+		if (email.indexOf(badChar,0) > -1) {
+			return false
+		}
+	}
+
+	atPos = email.indexOf("@",1)			// there must be one "@" symbol
+	if (atPos == -1) {
+		return false
+	}
+
+	if (email.indexOf("@",atPos+1) != -1) {	// and only one "@" symbol
+		return false
+	}
+
+	periodPos = email.indexOf(".",atPos)
+	if (periodPos == -1) {					// and at least one "." after the "@"
+		return false
+
+	}
+
+	if (periodPos+3 > email.length)	{		// must be at least 2 characters after the "."
+		return false
+	}
+
+	domainName = email.substring(atPos+1, periodPos)
+
+	if (domainName.length < 2) {			// Cannot have a domain less than 2 characters long
+		return false
+	}
+
+	return true
+}
+
+// end form validation
+
+//mouse roll over functions
+
+function preLoadimages() {
+
+news_off = new Image(122,17);
+news_off.src = "/images/nav_news_off.gif";
+news_on = new Image(122,17);
+news_on.src = "/images/nav_news_on.gif";	
+
+business_off = new Image(122,17);
+business_off.src = "/images/nav_businessit_off.gif";
+business_on = new Image(122,17);
+business_on.src = "/images/nav_businessit_on.gif";	
+
+reviews_off = new Image(122,17);
+reviews_off.src = "/images/nav_reviews_off.gif";
+reviews_on = new Image(122,17);
+reviews_on.src = "/images/nav_reviews_on.gif";	
+
+columns_off = new Image(122,17);
+columns_off.src = "/images/nav_columns_off.gif";
+columns_on = new Image(122,17);
+columns_on.src = "/images/nav_columns_on.gif";	
+
+itjobs_off = new Image(122,17);
+itjobs_off.src = "/images/nav_itjobs_off.gif";
+itjobs_on = new Image(122,17);
+itjobs_on.src = "/images/nav_itjobs_on.gif";	
+
+services_off = new Image(122,17);
+services_off.src = "/images/nav_services_off.gif";
+services_on = new Image(122,17);
+services_on.src = "/images/nav_services_on.gif";	
+
+siteinfo_off = new Image(122,17);
+siteinfo_off.src = "/images/nav_siteinfo_off.gif";
+siteinfo_on = new Image(122,17);
+siteinfo_on.src = "/images/nav_siteinfo_on.gif";
+}
+
+function mOver(imgDocID)  {	document.images[imgDocID].src = eval(imgDocID + "_on.src"); }
+function mOut(imgDocID)  { document.images[imgDocID].src = eval(imgDocID + "_off.src"); }
+
+// odds for Ninnbar flash
+var randomN=Math.floor(Math.random()*3); // 1 in 4 odds 
+
+// Flash Detect IE4+ Win32 only
+var flashVersion = 0;
+function getFlashVersion() {
+var agent = navigator.userAgent.toLowerCase();
+if (agent.indexOf("msie") != -1 && agent.indexOf("opera")==-1 && parseInt(navigator.appVersion) >= 4 && agent.indexOf("win")!=-1 && agent.indexOf("16bit")==-1) {
+document.write('<scr' + 'ipt language="VBScript"> \n');
+document.write('on error resume next \n');
+document.write('dim obFlash \n');
+document.write('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7") \n');
+document.write('if IsObject(obFlash) then \n');
+document.write('flashVersion = 7 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if \n');
+document.write('if flashVersion < 7 and IsObject(obFlash) then \n');
+document.write('flashVersion = 6 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if \n');
+document.write('if flashVersion < 6 and IsObject(obFlash) then \n');
+document.write('flashVersion = 5 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if \n');
+document.write('if flashVersion < 5 and IsObject(obFlash) then \n');
+document.write('flashVersion = 4 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if \n');
+document.write('if flashVersion < 4 and IsObject(obFlash) then \n');
+document.write('flashVersion = 3 \n');
+document.write('end if');
+document.write('</scr' + 'ipt> \n');
+}
+else { flashVersion = 5; // assume flash5 for all other cases
+	}
+}	
+
+getFlashVersion();
+
+// end Flash detect
+
+//-->
+</script>
+
+<script language="JavaScript">
+<!--
+
+// Flash object(s)
+// 1.
+
+// Flash nav:
+var flashNav = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
++ 'width="242" height="173"'
++ 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" name=ausitFlash ID=ausitFlash>'
++ '<param name="movie" value="/flash/ausitNav_apr06.swf?flashmenu=news&5">'
++ '<param name="quality" value="high">'
++ '<param name="bgcolor" value="#FFFFFF">'
++ '<embed src="/flash/ausitNav_apr06.swf?flashmenu=news&5"'
++ 'width="242" height="173" autostart="false" quality="high" bgcolor="#FFFFFF"'
++ 'TYPE="application/x-shockwave-flash"'
++ 'PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"'
++ 'name=ausitFlash id=ausitFlash></EMBED></object>';
+
+// Alternative No-Flash HTML:
+var htmlNav = '<table border=0 width=242 cellspacing="0" cellpadding="0" bgcolor="#E4E4E4">'
++ '<tr><td rowspan=3><img src="http://australianit.news.com.au/images/nav_side.gif"></td><td colspan=2><a href="http://australianit.com.au/"><img src="http://australianit.news.com.au/images/nav_home.gif" border=0></a><img src="http://australianit.news.com.au/images/nav_top.gif"></td></tr><tr>'
++ '<td rowspan=2><a href="http://australianit.com.au/index/0,7281,news,00.html" OnMouseOver=mOver("news") ><img src="http://australianit.news.com.au/images/nav_news_on.gif" border=0 name="news"></a><br>'
++ '<a href="http://australianit.news.com.au/businessit" OnMouseOver=mOver("business") OnMouseOut=mOut("business")><img src="http://australianit.news.com.au/images/nav_businessit_off.gif" border=0 name="business"></a><br>'
++ '<a href="http://australianit.com.au/index/0,7281,review,00.html" OnMouseOver=mOver("reviews") OnMouseOut=mOut("reviews")><img src="http://australianit.news.com.au/images/nav_reviews_off.gif" border=0 name="reviews"></a><br>'
++ '<a href="http://australianit.com.au/index/0,7281,columns,00.html" OnMouseOver=mOver("columns") OnMouseOut=mOut("columns")><img src="http://australianit.news.com.au/images/nav_columns_off.gif" border=0 name="columns"></a><br>'
++ '<a href="http://itjobs.australianit.careerone.com.au" OnMouseOver=mOver("itjobs") OnMouseOut=mOut("itjobs")><img src="http://australianit.news.com.au/images/nav_itjobs_off.gif" border=0 name="itjobs"></a><br>'
++ '<a href="http://australianit.com.au/services/0,7205,services,00.html" OnMouseOver=mOver("services") OnMouseOut=mOut("services")><img src="http://australianit.news.com.au/images/nav_services_off.gif" border=0 name="services"></a><br>'
++ '<a href="http://australianit.com.au/siteinfo/0,7205,siteinfo,00.html" OnMouseOver=mOver("siteinfo") OnMouseOut=mOut("siteinfo")><img src="http://australianit.news.com.au/images/nav_siteinfo_off.gif" border=0 name="siteinfo"></a><br>'
++ '<img src="http://australianit.news.com.au/images/nav_bottom.gif" border=0></td><td valign=top>'
++ '<table width=113 cellpadding=0 cellspacing=0 border=0 background="http://australianit.com.au/images/1p_grey.gif">'
+
+
++ '<tr><td><A href="/channels/0,7203,business_news,00.html" class="htmlnav">&nbsp;&nbsp;Business</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,industry_news,00.html" class="htmlnav">&nbsp;&nbsp;Industry</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,internet_news,00.html" class="htmlnav">&nbsp;&nbsp;Internet</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,law_news,00.html" class="htmlnav">&nbsp;&nbsp;Law/Politics</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,technology_news,00.html" class="htmlnav">&nbsp;&nbsp;Technology</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,telecoms_news,00.html" class="htmlnav">&nbsp;&nbsp;Telecoms</a></td></tr>'
++ '<tr><td><a href="/channels/0,7203,world_news,00.html" class="htmlnav">&nbsp;&nbsp;World</a></td></tr>'
++ '<tr><td><a href="/topics/0,7202,features,00.html" class="htmlnav">&nbsp;&nbsp;Features</a></td></tr>'
++ '<tr><td height=32><spacer type="block" width=1 height=37></td></tr></table></td></tr>'
++ '<tr><td valign=bottom><img src="/images/nav_substrip.gif"></td></tr></table>'
+
+
+//-->
+</script><!-- debug: news-->
+
+
+<script language="JavaScript">
+<!--
+
+function windowOpener(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>	
+<link rel="stylesheet" type="text/css" href="g3_files/ninnbar_ext_760.css"></head><body leftmargin="0" topmargin="0" background="g3_files/ausit2_main_bg.gif" bgcolor="White" marginheight="0" marginwidth="0">
+<a name="top">
+<!-- Insert Header Here -->
+
+
+
+
+
+</a><div style="margin-bottom: 4px;"><a name="top"><script language="JavaScript" src="g3_files/ninnbar.js"></script>
+</a><div id="ninnbar"><div id="nnFixed"><div id="nnNews"><a href="http://redirect.news.com.au/servlet/jsp/Redirect.jsp?redirect=ni_news">NEWS.com.au</a></div><div id="nnFox"><a href="http://redirect.news.com.au/servlet/jsp/Redirect.jsp?redirect=foxsports">FOX SPORTS</a></div><div id="nnClassifieds"><a href="http://redirect.news.com.au/servlet/jsp/Redirect.jsp?redirect=ni_class">CLASSIFIEDS</a></div><div id="nnNewspapers"><a href="http://redirect.news.com.au/servlet/jsp/Redirect.jsp?redirect=ni_newspapers">NEWSPAPERS</a></div><div id="nnMobile"><a href="http://mobile.news.com.au/">MOBILE</a></div><div id="nnSearch"><div id="nnSearchText">Search the web</div><form action="http://searchresults.news.com.au/servlet/Search" name="searchheader" method="post" class="nnsearchForm"><div id="nnSearchInput"><input name="queryterm" value="" class="searchText" type="text"></div><div id="nnSearchGo"><input value="Go" class="searchGo" onmouseover='this.style.background="#ffffff"' onmouseout='this.style.background="#F1F1F1"' type="submit"></div></form></div></div></div>
+</div>
+
+<script language="javascript">
+	<!--
+	function emptySearch(){
+	document.Keyword_Search.KEYWORDS.value = ""
+		}
+	function emptySearch2() {
+	document.Keyword_Search.KEYWORDS.value = ""
+	   }
+	function emptyName(){
+	document.pingEmail.firstname.value = ""
+		}
+	function emptyMail(){
+	document.pingEmail.email.value = ""
+		}
+	function focusdrop(){
+	//document.jobsearch.PROVINCE.focus();
+	//Set Var for Flash.. Set here as its already loading onLoad. 8^)
+	//window.document.ausitFlash.SetVariable("section", "");
+		}
+
+	function emptyYourSayName(){
+	document.yourSay.uName.value = ""
+		}
+
+	function emptyYourSayMail(){
+	document.yourSay.mailFromAddress.value = ""
+		}
+
+	function emptyYourSayPhone(){
+	document.yourSay.Phone.value = ""
+		}
+
+	function emptyField(formField){
+	formField.value = ""
+		}		
+
+
+function fieldEmpty( foo ) {
+   for( var i = 0; i < foo.length; i++ )
+   {
+      var c = foo.charAt( i );
+      if( ( c != ' ' ) && ( c != '/n' ) && ( c != '/t' ) )
+         return false;
+   } 
+
+   return true;
+}
+
+
+function fieldInvalidEmail( foo ) {
+var symbolAt = 0;
+var symbolDot = 0;
+   for( var i = 0; i < foo.length; i++ )
+   {
+      var c = foo.charAt( i );
+      if( c == '@' )
+         symbolAt = 1;
+      else if ( c == '.' )
+         symbolDot = 1;
+   }
+
+   if( symbolAt == 1 && symbolDot == 1 )
+      return false;
+   else
+      return true;
+}
+
+function windowOpener(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+
+function validate() {
+   if( fieldEmpty( document.pingEmail.firstname.value ) )
+   {
+      alert( "Please enter your first name." );
+      return false;
+   }
+   if( fieldInvalidEmail( document.pingEmail.email.value ) )
+   {
+      alert( "Please enter a valid email address." );
+      return false;
+   }
+   return true;
+}
+
+//-->
+</script>
+<a name="top"></a>
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="760">
+	<tbody><tr>
+		<td align="left" bgcolor="#003366" valign="top" width="229">
+		<table border="0" cellpadding="0" cellspacing="0" width="229">
+			<tbody><tr>
+				<td align="left" valign="top" width="229"><a href="http://australianit.news.com.au/"><img src="g3_files/ausit2_topnav_logo.gif" alt="Australian IT" border="0" height="50" hspace="0" vspace="0" width="229"></a></td>
+			</tr>
+			<tr>
+				<td align="left" bgcolor="#003366" height="34" valign="middle" width="229"><p class="topnavheadbold">Thursday, January 25, 2007</p></td>
+			</tr>
+		</tbody></table>
+		</td>
+		<td width="25"><img src="g3_files/ausit2_topnav_slope.gif" alt="" border="0" height="84" hspace="0" vspace="0" width="25"></td>
+		<td align="left" valign="bottom" width="506">
+		<table border="0" cellpadding="0" cellspacing="0" width="506">
+			<tbody><tr>
+				<td colspan="3"><spacer type="block" height="1" width="342"></td>
+			</tr>
+			<!-- <form> -->
+			
+
+
+
+
+
+	<tr>
+		<td style="padding: 8px 5px 0px 0px;" align="center" height="69" valign="top" width="333">
+			
+	<table border="0" cellpadding="0" cellspacing="0" width="165">
+		<tbody><tr>
+			<td style="padding: 0px 4px;" valign="top">
+				</td><td style="padding: 0px 4px;" valign="top"><img src="g3_files/01658537118600.jpg" style="border: 1px solid black;" border="0" height="55" width="55"></td>
+			
+
+			<td valign="top"><span class="bluetextheader"><a href="http://australianit.news.com.au/articles/0,7204,21121380%5E15338%5E%5Enbv%5E15306%2D15321,00.html">Friend or foe? Gamers ponder Vista</a></span></td>
+		</tr>
+	</tbody></table>
+	
+		</td>
+		<td style="padding-top: 8px;" valign="top" width="240">
+			
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td style="padding: 0px 4px;" valign="top">
+				</td><td style="padding: 0px 4px;" valign="top"><img src="g3_files/01658536727100.jpg" style="border: 1px solid black;" border="0" height="55" width="55"></td>
+			
+
+			<td valign="top"><span class="bluetextheader"><a href="http://australianit.news.com.au/articles/0,7204,21086442%5E15308%5E%5Enbv%5E,00.html">Armchair ride for home directors</a></span></td>
+		</tr>
+	</tbody></table>
+	
+		</td>
+	</tr>
+	 <tr>
+				<td colspan="3" align="center" valign="bottom" width="506"><img src="g3_files/ausit2_topnav_gap.gif" alt="" border="0" height="14" width="506"></td>
+			</tr>
+			<!-- </form> -->
+		</tbody></table>
+		</td>
+	</tr>
+	 <tr>
+		<td colspan="3" align="left" width="760">
+		<table border="0" cellpadding="0" cellspacing="0" width="760">
+			 <tbody><tr>
+				<td bgcolor="#003366" width="7"><spacer type="block" height="10" width="7"></td>
+				
+				<td align="center" bgcolor="#003366" valign="top">
+					<!-- AdSpace SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD-->
+<script type="text/javascript" language="JavaScript">
+<!-- Hide from old browsers
+// Cache-busting and pageid values
+random = Math.round(Math.random() * 100000000);
+if (!pageNum) var pageNum = Math.round(Math.random() * 100000000);
+
+document.write('<SCR');
+document.write('IPT TYPE="TEXT/JAVASCRIPT" SRC="http://mercury.tiser.com.au/jserver/acc_random=' + random + '/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=' + pageNum + '">');
+document.write('</SCR');
+document.write('IPT>');
+
+// End Hide -->
+</script><script type="TEXT/JAVASCRIPT" src="g3_files/pageid36334614_002.htm"></script><!-- Template file for Flash ads -->
+<!-- Copyright (c) 2006 Accipiter Solutions, Inc. All rights reserved. -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=3,0,0,0" id="obj16815" height="90" width="728"><param name="movie" value="http://saturn.tiser.com.au/images/MiningEnergy 728X90_new.SWF?clickTAG=http://mercury.tiser.com.au/ADCLICK/CID=000041afad992c8100000000/acc_random=21165955/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=36334614"><param name="allowScriptAccess" value="always"><param name="wmode" value="opaque"><param name="quality" value="autohigh"><param name="bgcolor" value="#FFFFFF"><embed src="g3_files/MiningEnergy%2520728X90_new.SWF" wmode="opaque" allowscriptaccess="always" type="application/x-shockwave-flash" swliveconnect="false" quality="autohigh" pluginspace="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" height="90" width="728"></object><noembed>
+&lt;a
+href="http://mercury.tiser.com.au/ADCLICK/CID=000041afad992c8100000000/acc_random=21165955/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=36334614"&gt;
+&lt;img src="http://saturn.tiser.com.au/images/MiningEnergy 728X90.GIF"
+alt="" width="728" height="90" border="0"&gt;
+&lt;/a&gt;
+</noembed>
+<noscript><a
+href="http://mercury.tiser.com.au/ADCLICK/CID=000041afad992c8100000000/acc_random=21165955/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=36334614">
+<img src="http://saturn.tiser.com.au/images/MiningEnergy 728X90.GIF"
+alt="" width="728" height="90" border="0">
+</a>
+</noscript>
+<img src="g3_files/pageid36334614_002.gif" border="0" height="1" width="1">
+
+
+<noscript>
+<A HREF="http://mercury.tiser.com.au/adclick/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=1">
+<IMG SRC="http://mercury.tiser.com.au/nserver/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=468X60/MAAMZ=LEADERBOARD/pageid=1"></A>
+</noscript>
+
+<!-- /AdSpace --> </td>
+				 </tr>
+		</tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" bgcolor="#003366" height="10" width="760"><spacer type="block" height="10" width="12"></td>
+	</tr>
+</tbody></table>
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="760">
+	<tbody><tr>
+		<td bgcolor="#003366" height="6" width="8"><spacer type="block" height="6" width="8"></td>
+		<td bgcolor="#ffffff" height="6" width="752"><spacer type="block" height="6" width="752"></td>
+	</tr>
+</tbody></table>
+<!-- Start Master Table //-->
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+	<tbody><tr>
+		<td bgcolor="#003366" width="8">
+		<!-- Spacer 5 pixels //-->
+		<spacer type="block" height="50" width="8">
+		</td>	
+		<td bgcolor="#003366" valign="top" width="242">
+		<!-- Start Left Nav //-->
+		<!-- Include Left Nav -->
+		<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+<tbody><tr>
+<td height="173" valign="top" width="242">
+<script language="JavaScript">
+<!--
+
+if(flashVersion>=5) {
+	document.write(flashNav);
+} else {
+	preLoadimages();
+	document.write(htmlNav);
+}
+ 
+
+// -->
+</script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" name="ausitFlash" id="ausitFlash" height="173" width="242"><param name="movie" value="/flash/ausitNav_apr06.swf?flashmenu=news&amp;5"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"><embed src="g3_files/ausitNav_apr06.swf" autostart="false" quality="high" bgcolor="#FFFFFF" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" name="ausitFlash" id="ausitFlash" height="173" width="242"></object>
+</td>
+</tr>
+<tr>
+	<td bgcolor="#003366" height="5" width="242"><spacer type="block" height="5" width="242"></td>
+</tr>
+</tbody></table>
+
+ <!-- Begin Story with image example -->
+		<!-- End Story with image example -->
+		
+		<!-- Begin Story without image example -->
+		 <!-- Begin Story without image example -->
+
+
+<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+	<tbody><tr>
+		<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+		<p class="topnavhead">TOP NEWS</p></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121503%5E15306%5E%5Enbv%5E,00.html" class="leftnav">HD players hand over DVD keys</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121390%5E15306%5E%5Enbv%5E,00.html" class="leftnav">Pirate downloads no big deal</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121386%5E15306%5E%5Enbv%5E,00.html" class="leftnav">Court threat over iTunes lock-up</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121415%5E15306%5E%5Enbv%5E,00.html" class="leftnav">Google leaves video to YouTube</a></span></td>
+	</tr>
+	</tbody></table>
+			
+
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">BUSINESS</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121411%5E15316%5E%5Enbv%5E,00.html" class="leftnav">Nintendo rides DS higher</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121239%5E15316%5E%5Enbv%5E,00.html" class="leftnav">Microsoft profits fall</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21109699%5E15316%5E%5Enbv%5E,00.html" class="leftnav">Sun back in black</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">INDUSTRY</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121395%5E15317%5E%5Enbv%5E,00.html" class="leftnav">iPhone battle 'minor' - Cisco</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21110893%5E15317%5E%5Enbv%5E,00.html" class="leftnav">Wal-Mart shops at Microsoft for Linux</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21115145%5E15317%5E%5Enbv%5E,00.html" class="leftnav">Microsoft stands by XP</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">INTERNET</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121415%5E15318%5E%5Enbv%5E,00.html" class="leftnav">Google leaves video to YouTube</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121390%5E15318%5E%5Enbv%5E,00.html" class="leftnav">Pirate downloads no big deal</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121421%5E15318%5E%5Enbv%5E,00.html" class="leftnav">Web shift brings axe on US media</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">LAW</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21120857%5E15319%5E%5Enbv%5E,00.html" class="leftnav">Top silk faces jail on child  porno</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21115487%5E15319%5E%5Enbv%5E,00.html" class="leftnav">Card bidders sign up for secrecy</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21112869%5E15319%5E%5Enbv%5E,00.html" class="leftnav">Telstra courts 'just' network prices</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">TELECOMS</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121404%5E15320%5E%5Enbv%5E,00.html" class="leftnav">Sony Ericsson steps up</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21118950%5E15320%5E%5Enbv%5E,00.html" class="leftnav">Powertel confirms suitor proposal</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21107507%5E15320%5E%5Enbv%5E,00.html" class="leftnav">NRL rings up $90m Telstra deal</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">TECHNOLOGY</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121435%5E15321%5E%5Enbv%5E,00.html" class="leftnav">New cell pushes memory density</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21115531%5E15321%5E%5Enbv%5E,00.html" class="leftnav">Sony names PS3 date</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21109188%5E15321%5E%5Enbv%5E,00.html" class="leftnav">Beijing confirms satellite missile</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">WORLD</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21121386%5E15322%5E%5Enbv%5E,00.html" class="leftnav">Court threat over iTunes lock-up</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21109535%5E15322%5E%5Enbv%5E,00.html" class="leftnav">China's net population soars</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21099842%5E15322%5E%5Enbv%5E,00.html" class="leftnav">China takes action on net addiction</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">HARDWARE</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21064204%5E15323%5E%5Enbv%5E,00.html" class="leftnav">iPhone simple to use</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,20896502%5E15323%5E%5Enbv%5E,00.html" class="leftnav">Easy digital shooters</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,20777560%5E15323%5E%5Enbv%5E,00.html" class="leftnav">Tuned-in TVs</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">SOFTWARE</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,20697334%5E15324%5E%5Enbv%5E,00.html" class="leftnav">Upgrade obstacles</a></span></td>
+	</tr>
+	 </tbody></table>
+	
+	 
+	<table bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="242">
+		<tbody><tr>
+			<td colspan="2" align="left" bgcolor="#0099cc" valign="middle" width="242">
+			<p class="topnavhead">GAMES</p></td>
+		</tr>
+		
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21084444%5E15325%5E%5Enbv%5E,00.html" class="leftnav">Ricky Ponting International Cricket 2007</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21048072%5E15325%5E%5Enbv%5E,00.html" class="leftnav">Star Wars: Lethal Alliance for PSP</a></span></td>
+	</tr>
+	
+	<tr>
+		<td height="25" valign="middle" width="7"><spacer type="block" height="25" width="7"></td>
+		<td align="left" height="25" valign="middle" width="235"><span class="yellowHeadline"><a href="http://australianit.news.com.au/articles/0,7204,21001244%5E15325%5E%5Enbv%5E,00.html" class="leftnav">Super Swing Golf for Wii</a></span></td>
+	</tr>
+	 </tbody></table>
+	<!-- End Story without image example --> <!-- End Story without image example -->
+		<!-- End Left Nav //-->
+		</td>
+		<td bgcolor="#ffffff" width="5">
+		<!-- Spacer 5 pixels //-->
+		<spacer type="block" height="50" width="5">
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="500">
+		<!-- Begin Main content Area //-->
+		
+			 <table bgcolor="#cccccc" border="0" cellpadding="0" cellspacing="0" width="500">
+			<tbody><tr>
+				<td colspan="3" bgcolor="#003366" height="1" width="500"><spacer type="block" height="1" width="500"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="15" width="1"></td>
+				<td bgcolor="#cccccc" width="498"><p class="blueindent5"><a href="http://www.australianit.com.au/">HOME</a> &gt; <a href="http://australianit.news.com.au/index/0,7281,news,00.html">NEWS</a> &gt; <a href="http://australianit.news.com.au/channels/0,7203,law_news,00.html">LAW/POLITICS</a> &gt; <a href="http://australianit.news.com.au/topics/0,7202,news__law,00.html">DIGITAL COPYRIGHT</a> </p></td>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="15" width="1"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="1" width="1"></td>
+				<td bgcolor="#003366" height="1" width="498"><spacer type="block" height="1" width="498"></td>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="1" width="1"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff" width="1"><spacer type="block" height="10" width="1"></td>
+				<td bgcolor="White" height="5" width="498"><spacer type="block" height="5" width="498"></td>
+				<td bgcolor="#ffffff" width="1"><spacer type="block" height="10" width="1"></td>
+			</tr>
+		</tbody></table>
+		<a name="top">
+		</a><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="500">
+			<tbody><tr>
+				<td colspan="2" bgcolor="#003366" height="1" width="499"><spacer type="block" height="1" width="475"></td>
+				<td bgcolor="#003366" height="1" width="1"><spacer type="block" height="1" width="1"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff" width="14"><spacer type="block" height="20" width="14"></td>
+				<td bgcolor="#ffffff" width="475">
+				<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="475">
+					<tbody><tr>
+						<td bgcolor="#ffffff" height="15" width="475"><spacer type="block" height="15" width="475"></td>
+					</tr>
+					<tr>
+						<td width="475">
+						<span class="blacknewsheader">Fox, YouTube in Simpsons brawl</span><br>
+						  <span class="blackbodytext">Andrew Wallenstein and Carl DiOrio in Los Angeles</span><br>
+						<span class="greydate">
+						
+						JANUARY 25, 2007  </span>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" height="10" width="475"><spacer type="block" height="10" width="475"></td>
+					</tr>
+					<tr>
+						<td width="475">
+						<span class="blackbodytext">20TH
+Century Fox has served YouTube with a subpoena demanding it discloses
+the identity of a user who uploaded copies of entire episodes of <i>24</i> and <i>The Simpsons</i>.<br><br>
+						
+	
+		 <!-- story length: 630 -->
+The subpoena, which first came to light on the blog <a href="http://googlewatch.eweek.com/index.html">Google Watch </a>was
+granted by a judge in US District Court for the Northern District of
+California after being filed by the News Corporation-owned studio on
+January 18. It is not yet known whether YouTube has complied with the
+request. <br><br>News Corporation is publisher of AustralianIT.<br><br>In addition, a second, lesser-known video site, LiveDigital, was also served with a similar subpoena.<br><br>A
+Fox spokesman confirmed the subpoena was filed to both YouTube and
+LiveDigital and served but declined further comment. A spokesman for
+YouTube declined comment.<br><br>The <span style="font-style: italic;">24</span>
+episodes in question actually appeared on YouTube prior to their prime
+time January 14 premiere on the Fox broadcast network, which spread
+four hour-long episodes of the hit drama over two consecutive nights.
+Fox became aware the episodes were on YouTube on January 8, according
+to the subpoena.<br><br>Filed on the basis of the Digital Millennium
+Copyright Act, the subpoena includes testimony of Fox Entertainment
+Group vice president Jane Sunderland suggesting Fox has been unable to
+determine the users' identities on its own. The uploaded material could
+cause Fox "irreparable harm," Ms Sunderland said, but it was not
+immediately clear if the episodes in question still were posted on the
+site or perhaps had been removed.<br><br>However, the subpoena
+identifies the YouTube subscriber by the username "ECOtotal." A search
+under that username on the YouTube site unearths a user by that name
+with a banner across the top of the subscriber's page that reads, "This
+user account has been suspended."<br><br>Still, identifying "ECOtotal" won't necessarily explain how unaired episodes of <span style="font-style: italic;">24</span>
+made it onto the internet. Prior to January 8, there were reports that
+the same episodes had popped up on illegal files-haring sites, which
+may have transmitted them even before they appeared on YouTube.<br><br>This
+is not an unprecedented request for YouTube. Last May, prior to its
+$US1.65 billion acquisition by Google, the site complied with a request
+made by Paramount Pictures to identify a user who posted a clip from
+the film <span style="font-style: italic;">Twin Towers</span>.<br><br>But Google has a history of fighting subpoenas seeking the names of those using its services.<br><br>YouTube
+and most other similar sites typically tell content providers they will
+delete copyright video when alerted by owners of the material.<br><br>Among
+the content companies, much of the more aggressive policing of
+peer-to-peer and community-based websites has been by Universal Music
+Group. The world's biggest record company has sued MySpace and others
+over what it calls illegal postings of its artists' music videos, and
+it came close to legal action against YouTube before striking a
+licensing agreement with that site last year.<br><br>Terrence Clark, a
+copyright attorney with the LA law firm Greenberg, Traurig, said Fox
+appeared to be proceeding along proscribed legal lines in the matter.<br><br>"It's
+the process available under the Digital Copypright Act," Mr Clark said.
+"There are certain procedures you can follow to get some information
+(but) this also impinges on the question of the privacy issues of the
+users of the sites."<br><br>Some sites might need to defend strongly
+against such actions as Fox is taking, but ultimately the studio is
+like to prevail, said Tom Ferber, a copyright attorney with the Pryor
+Cashman law firm in New York.<br><br>"It's always a policy decision of
+the entity involved," Mr Ferber. "So if you're the hard-news press, for
+instance, usually money is no object if it's seen as infringing on
+(your) rights. And (these sites) may have business issues of concern as
+well. But I think ultimately the studio is going to get the names that
+they want."<br><br><span style="font-style: italic;">Reuters</span>
+<p><table align="right" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+	    <td rowspan="3" width="8"><spacer type="block" height="1" width="8"></td>
+        <td colspan="3" bgcolor="#0099cc" height="20">
+		<p class="topnavhead">&nbsp;ADVERTISEMENT</p></td>
+    </tr>
+    <tr>
+    	<td bgcolor="#0099cc" width="1"><spacer type="block" height="1" width="1"></td>
+    	<td align="center" valign="middle"><!-- AdSpace SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE-->
+<script type="text/javascript" language="JavaScript">
+<!-- Hide from old browsers
+// Cache-busting and pageid values
+random = Math.round(Math.random() * 100000000);
+if (!pageNum) var pageNum = Math.round(Math.random() * 100000000);
+
+document.write('<SCR');
+document.write('IPT TYPE="TEXT/JAVASCRIPT" SRC="http://mercury.tiser.com.au/jserver/acc_random=' + random + '/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=' + pageNum + '">');
+document.write('</SCR');
+document.write('IPT>');
+
+// End Hide -->
+</script><script type="TEXT/JAVASCRIPT" src="g3_files/pageid36334614.htm"></script><!-- Template file for Flash ads -->
+<!-- Copyright (c) 2006 Accipiter Solutions, Inc. All rights reserved. -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=3,0,0,0" id="obj17268" height="600" width="300"><param name="movie" value="http://saturn.tiser.com.au/images/foxtel_summer_drop_300x600.swf?clickTAG=http://mercury.tiser.com.au/ADCLICK/CID=00004374ad992c8100000000/acc_random=67945479/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=36334614"><param name="allowScriptAccess" value="always"><param name="wmode" value="opaque"><param name="quality" value="autohigh"><param name="bgcolor" value="#FFFFFF"><embed src="g3_files/foxtel_summer_drop_300x600.swf" wmode="opaque" allowscriptaccess="always" type="application/x-shockwave-flash" swliveconnect="false" quality="autohigh" pluginspace="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" height="600" width="300"></object><noembed>
+&lt;a
+href="http://mercury.tiser.com.au/ADCLICK/CID=00004374ad992c8100000000/acc_random=67945479/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=36334614"&gt;
+&lt;img
+src="http://saturn.tiser.com.au/images/foxtel_summer_drop_300x600.gif"
+alt="" width="300" height="600" border="0"&gt;
+&lt;/a&gt;
+</noembed>
+<noscript><a
+href="http://mercury.tiser.com.au/ADCLICK/CID=00004374ad992c8100000000/acc_random=67945479/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=36334614">
+<img
+src="http://saturn.tiser.com.au/images/foxtel_summer_drop_300x600.gif"
+alt="" width="300" height="600" border="0">
+</a>
+</noscript>
+<img src="g3_files/pageid36334614.gif" border="0" height="1" width="1">
+
+
+<noscript>
+<A HREF="http://mercury.tiser.com.au/adclick/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=1">
+<IMG SRC="http://mercury.tiser.com.au/nserver/SITE=AIT/AREA=NEWS.ITNEWS.STORY/AAMSZ=300X250/MAAMZ=HALFPAGE/pageid=1"></A>
+</noscript>
+
+<!-- /AdSpace --><br></td>
+        <td bgcolor="#0099cc" width="1"><spacer type="block" height="1" width="1"></td>
+    </tr>
+    <tr>
+    	<td colspan="3" bgcolor="#0099cc" height="1"><spacer type="block" height="1" width="1"></td>
+    </tr>
+	<tr>
+	    <td colspan="4" height="5"><spacer type="block" height="5" width="1"></td>
+	</tr>
+</tbody></table>
+</p><p>
+ </p></span><p>
+						 
+							  <span class="blackbodytext"><i></i></span>
+						
+                        </p><div align="right">
+						<br><br><br clear="all">
+                         <!-- AdSpace -->
+<script type="text/javascript" language="JavaScript">
+<!-- Hide from old browsers
+// Cache-busting and pageid values
+random = Math.round(Math.random() * 100000000);
+if (!pageNum) var pageNum = Math.round(Math.random() * 100000000);
+
+document.write('<SCR');
+document.write('IPT TYPE="TEXT/JAVASCRIPT" SRC="http://mercury.tiser.com.au/jserver/acc_random=' + random + '/SITE=AIT/AREA=NEWS.HOME/AAMSZ=173X128/pageid=' + pageNum + '">');
+document.write('</SCR');
+document.write('IPT>');
+
+// End Hide -->
+</script><script type="TEXT/JAVASCRIPT" src="g3_files/pageid36334614_003.htm"></script><a href="http://mercury.tiser.com.au/ADCLICK/CID=fffffffcfffffffcfffffffc/acc_random=57823680/SITE=AIT/AREA=NEWS.HOME/AAMSZ=173X128/pageid=36334614" target="_NEW">
+<img src="g3_files/AE2.gif" alt="" border="0"></a>
+
+
+<noscript>
+<A HREF="http://mercury.tiser.com.au/adclick/SITE=AIT/AREA=NEWS.HOME/AAMSZ=173X128/pageid=1">
+<IMG SRC="http://mercury.tiser.com.au/nserver/SITE=AIT/AREA=NEWS.HOME/AAMSZ=173X128/pageid=1"></A>
+</noscript>
+
+<!-- /AdSpace --> </div>
+										
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="1" width="1"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<!-- START FOOTER ICONS -->
+				<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="499">
+					<tbody><tr>
+						<td height="20" width="499"><spacer type="block" height="20" width="499"></td>
+					</tr>
+				</tbody></table>
+				<script language="javascript">
+				<!--
+					function emailWindow() {
+					emailFriend = window.open('/common/emailfriend/1,7210,21116785^27317^^nbv^15306-15319,00.html','newWin', 'width=490,height=560,scrollbars=no')
+					}
+				//-->
+				</script> 
+				<table bgcolor="#f3f3f3" border="0" cellpadding="0" cellspacing="0" width="499">
+					<tbody><tr>
+					<td style="padding-top: 2px;" align="center" bgcolor="#f3f3f3" height="30" valign="middle" width="162">
+		                 <script language="javascript">
+				        <!--
+					    function yourSayWindow() {
+					    emailFriend = window.open('/comment/0,10190,21116785^27317^^nbv^15306-15319,00.html#yoursay','newWin', 'width=520,height=400,scrollbars=no')
+					     }
+				        //-->
+				        </script>
+						<a href="javascript:yourSayWindow()"><img src="g3_files/ausit2_footer_comment.gif" alt="Have your say" border="0">
+						</a></td>
+						<td align="center" bgcolor="#f3f3f3" height="30" valign="middle" width="166"><a href="javascript:emailWindow()"><img src="g3_files/ausit2_footer_email.gif" alt="Email this article to a friend of collegue" border="0" height="22" width="82"></a></td>
+						<td align="center" bgcolor="#f3f3f3" height="30" valign="middle" width="166">
+						 <a href="http://australianit.news.com.au/common/print/0,7208,21116785%5E27317%5E%5Enbv%5E15306%2D15319,00.html"><img src="g3_files/ausit2_footer_print.gif" alt="Print this article" border="0" height="22" width="123"></a></td>
+						<td align="center" bgcolor="#ffffff" height="30" valign="middle" width="5"><spacer type="block" height="30" width="5"></td>
+					</tr>
+				</tbody></table>
+				<!-- END FOOTER ICONS -->
+				<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="499">
+					<tbody><tr>
+						<td height="4" width="499"><spacer type="block" height="4" width="499"></td>
+					</tr>
+				</tbody></table>
+				
+				<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="499">
+					<tbody><tr>
+						<td bgcolor="#ffffff" height="30" width="499"><spacer type="block" height="30" width="499"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#003366" height="1" width="499"><spacer type="block" height="1" width="499"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#003366" height="1" width="499"><spacer type="block" height="1" width="499"></td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td bgcolor="#003366" width="1"><spacer type="block" height="1" width="1"></td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#ffffff" height="15" width="499"><spacer type="block" height="15" width="499"></td>
+		</tr>
+		</tbody></table>
+<a name="top">  </a><table bgcolor="#f3f3f3" border="0" cellpadding="3" cellspacing="5">
+<tbody><tr><td bgcolor="#0099cc">
+
+<!-- Filler -->
+
+</td></tr><tr><td><a href="http://mercury.tiser.com.au/adclick/CID=000018570000000000000000" target="_blank" class="bluebodytext"><b>Love &amp; Relationships </b></a><span class="blackbodytext">Find a date near you on Match.com - # 1 Online Dating site Worldwide.</span>
+</td></tr>
+
+
+</tbody></table>
+<a name="top"> <!-- End Main content Area //-->
+		</a></td>
+		<td bgcolor="#ffffff" width="5">
+		<!-- Spacer 5 pixels //-->
+		<spacer type="block" height="50" width="5">
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#003366" width="8">
+		<!-- Spacer 5 pixels //-->
+		<spacer type="block" height="50" width="8">		
+		</td>	
+		<td bgcolor="#003366" width="242"><spacer type="block" height="10" width="242"></td>
+		<td colspan="4" bgcolor="#003366" valign="top" width="510">		
+		<table bgcolor="#e4e4e4" border="0" cellpadding="0" cellspacing="0" width="510">
+	<tbody><tr>
+		<td colspan="6" bgcolor="#ffffff" height="10" width="510"><spacer type="block" height="10" width="510"></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#000000" height="1" width="510"><spacer type="block" height="1" width="510"></td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#e4e4e4" valign="middle" width="60"><span class="footer"><a href="http://australianit.news.com.au/siteinfo/0,7205,about,00.html">ABOUT</a></span></td>
+		<td align="center" bgcolor="#e4e4e4" valign="middle" width="100"><span class="footer"><a href="http://www.advertising.ni.com.au/" target="blank">ADVERTISING</a></span></td>
+		<td align="center" bgcolor="#e4e4e4" valign="middle" width="80"><span class="footer"><a href="http://australianit.news.com.au/siteinfo/0,7205,privacy,00.html">PRIVACY</a></span></td>
+		<td align="center" bgcolor="#e4e4e4" valign="middle"><span class="footer"><a href="http://australianit.news.com.au/siteinfo/0,7205,terms,00.html">TERMS</a></span></td>		
+		<td align="center" bgcolor="#e4e4e4" valign="middle" width="200"><span class="footer"><a href="http://australianit.news.com.au/siteinfo/0,7205,copyright,00.html"><nobr>COPYRIGHT &amp; REPRODUCTION</nobr></a></span></td>
+		<td align="center" bgcolor="#e4e4e4" valign="middle" width="70"><span class="footer"><a href="http://australianit.news.com.au/siteinfo/0,7205,contacts,00.html">CONTACTS</a></span></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#000000" height="1" width="510"><spacer type="block" height="1" width="510"></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#ffff33" height="5" width="510"><spacer type="block" height="5" width="510"></td>
+	</tr>
+	<tr>
+		<td colspan="6" bgcolor="#003366" height="10" width="510"><spacer type="block" height="10" width="510"></td>
+	</tr>
+</tbody></table> </td>
+	</tr>
+</tbody></table>		
+		<!-- End Right Nav//-->
+		<!-- End Main Table -->
+
+<!-- START Nielsen//NetRatings SiteCensus V5.2 -->
+<!-- COPYRIGHT 2006 Nielsen//NetRatings -->
+<script type="text/javascript">
+var _rsCI="newscorp";
+var _rsCG="0";
+var _rsDN="//secure-au.imrworldwide.com/";
+var _rsCC=0;
+</script>
+<script type="text/javascript" src="g3_files/v52.js"></script><img src="g3_files/m.gif" height="1" width="1">
+<noscript>
+<img src="http://secure-au.imrworldwide.com/cgi-bin/m?ci=newscorp&cg=0" alt=""/>
+</noscript>
+<!-- END Nielsen//NetRatings SiteCensus V5.2 -->
+	</body></html>

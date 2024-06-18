@@ -1,0 +1,1073 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>tulsaworld.com: AP News</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="m116_files/twstyles.css" rel="stylesheet" type="text/css"><!-- START OF SmartSource Data Collector TAG --><!-- Copyright (c) 1996-2005 WebTrends Inc.  All rights reserved. --><!-- V7.5 --><!-- $DateTime$ -->
+
+
+
+
+<script language="Javascript"><!--
+gVersion="1.0";
+//-->
+</script>
+<script language="Javascript1.1"><!--
+gVersion="1.1";
+//-->
+</script>
+<script language="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g,"%20":/ /g,"%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+//-->
+</script>
+<script language="Javascript1.3"><!--
+gVersion="1.3";
+if (window.ActiveXObject){
+	var gFV="";
+	for (var gVer=2;gVer<=10;gVer++){
+		try{
+			var gFlash = eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+gVer+"');");
+			if (gFlash){
+				gFV=gVer+".0";
+				break;
+			}
+		}
+		catch(e){
+		}
+	}
+}
+//-->
+</script>
+<script language="Javascript1.4"><!--
+gVersion="1.4";
+//-->
+</script>
+<script language="Javascript1.5"><!--
+gVersion="1.5";
+//-->
+</script>
+<script language="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+var gQP=new Array();
+
+var gDomain="sdc.tulsaworld.com";
+var gDcsId="dcsfpfu60r39c3lo8ivkr9l2j_7f7o";
+
+if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)){
+	document.write("<SCR"+"IPT Language='JavaScript' SRC='"+"http://"+gDomain+"/"+gDcsId+"/wtid.js"+"'></SCR"+"IPT>");
+}
+//-->
+</script>
+<script language="Javascript"><!--
+// WebTrends SmartSource Data Collector
+// Copyright (c) 1996-2005 WebTrends Inc. All rights reserved.
+// $DateTime: 2005/05/03 12:06:24 $
+
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+	
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=navigator.appName=="Netscape"?screen.pixelDepth:screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	if (document.body&&document.body.addBehavior){
+		document.body.addBehavior("#default#clientCaps");
+		if (document.body.connectionType){
+			WT.ct=document.body.connectionType;
+		}
+		document.body.addBehavior("#default#homePage");
+		WT.hp=document.body.isHomePage(location.href)?"1":"0";
+	}
+	if (parseInt(navigator.appVersion)>3){
+		if ((navigator.appName=="Microsoft Internet Explorer")&&document.body){
+			WT.bs=document.body.offsetWidth+"x"+document.body.offsetHeight;
+		}
+		else if (navigator.appName=="Netscape"){
+			WT.bs=window.innerWidth+"x"+window.innerHeight;
+		}
+	}
+	WT.fi="No";
+	if (window.ActiveXObject){
+		if ((typeof(gFV)!="undefined")&&(gFV.length>0)){
+			WT.fi="Yes";
+			WT.fv=gFV;
+		}
+	}
+	else if (navigator.plugins&&navigator.plugins.length){
+		for (var i=0;i<navigator.plugins.length;i++){
+			if (navigator.plugins[i].name.indexOf('Shockwave Flash')!=-1){
+				WT.fi="Yes";
+				WT.fv=navigator.plugins[i].description.split(" ")[2];
+				break;
+			}
+		}
+	}
+	WT.sp="@@SPLITVALUE@@";
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+		if (gQP.length>0){
+			for (var i=0;i<gQP.length;i++){
+				var pos=DCS.dcsqry.indexOf(gQP[i]);
+				if (pos!=-1){
+					var front=DCS.dcsqry.substring(0,pos);
+					var end=DCS.dcsqry.substring(pos+gQP[i].length,DCS.dcsqry.length);
+					DCS.dcsqry=front+end;
+				}
+			}
+		}
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsLoadHref(evt){
+	if ((typeof(gHref)!="undefined")&&(gHref.length>0)){
+		window.location=gHref;
+		gHref="";
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		if ((typeof(gHref)!="undefined")&&(gHref.length>0)){
+			gImages[gIndex].onload=gImages[gIndex].onerror=dcsLoadHref;
+		}
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var elems;
+	if (document.all){
+		elems=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		elems=document.getElementsByTagName("meta");
+	}
+	if (typeof(elems)!="undefined"){
+		for (var i=1;i<=elems.length;i++){
+			var meta=elems.item(i-1);
+			if (meta.name){
+				if (meta.name.indexOf('WT.')==0){
+					WT[meta.name.substring(3)]=meta.content;
+				}
+				else if (meta.name.indexOf('DCSext.')==0){
+					DCSext[meta.name.substring(7)]=meta.content;
+				}
+				else if (meta.name.indexOf('DCS.')==0){
+					DCS[meta.name.substring(4)]=meta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+function dcsFunc(func){
+	if (typeof(window[func])=="function"){
+		window[func]();
+	}
+}
+
+dcsVar();
+dcsMeta();
+dcsFunc("dcsAdv");
+dcsTag();
+//-->
+</script><!-- END OF SmartSource Data Collector  TAG -->
+
+	
+
+<style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="m116_files/tab.css"></head><noscript>
+<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1"
+SRC="http://sdc.tulsaworld.com/dcsfpfu60r39c3lo8ivkr9l2j_7f7o/njs.gif?dcsuri=/nojavascript&amp;WT.js=No">
+</noscript><body>
+<div align="left"> <span class="twnav-reg"> 
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+    <tbody><tr><td colspan="2" height="14"></td></tr>
+	<tr valign="bottom"> 
+      <td width="400">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" height="60" width="400">
+            <param name="movie" value="http://www.tulsaworld.com/WorldImages/elements/twlogo_ani.swf">
+            <embed src="m116_files/twlogo_ani.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" height="60" width="400">  
+        </object>
+      </td>
+      <td height="38" width="478"> 
+        <table border="0" bordercolor="#ffffff" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr>
+				<td colspan="2">
+				<font class="twstoryheadline" size="3">
+				
+</font>
+				</td>
+          </tr> 
+          <tr bgcolor="#ffffff"> 
+            <td valign="bottom" width="51%"> 
+              <div align="left"><font class="twstoryheadline" size="3">
+               
+  
+
+	</font></div> 
+              <div align="center"></div></td>
+            <td class="twnav-reg" valign="bottom" width="49%"> 
+              <div align="center"><a href="http://www.tulsaworld.com/weather/Weather.asp" class="twnav-reg">Weather&nbsp;</a>|<a href="http://maps.cityoftulsa.org/" target="_blank" class="twnav-reg">&nbsp;Traffic&nbsp;</a>|<a href="http://hosted.ap.org/dynamic/files/static/moneywire-basic/dc_tables/indexes.html?SITE=OKTUL&amp;SECTION=FINANCE" target="_blank" class="twnav-reg">Stocks</a></div> 
+            </td>
+          </tr>
+        </tbody></table></td>
+    </tr>
+    <tr bgcolor="#1f62ca"> 
+      <td colspan="2" background="m116_files/hdr_gnrc_blu.jpg" height="22"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td class="twnav-top" align="left" valign="middle" width="498">&nbsp;<a href="http://www.tulsaworld.com/news.asp" class="twnav-top">&nbsp;News&nbsp;</a>|<a href="http://www.tulsaworld.com/Sports.asp" class="twnav-top">&nbsp;Sports&nbsp;</a>|<a href="http://www.tulsaworld.com/Business.asp" class="twnav-top">&nbsp;Business&nbsp;</a>|<a href="http://www.tulsaworld.com/ClassifiedsSearch/ClassifiedIndex.asp" class="twnav-top">&nbsp;Classifieds&nbsp;</a>|<a href="http://www.tulsaworld.com/entertainmenthome.asp" class="twnav-top">&nbsp;Entertainment&nbsp;</a>|<a href="http://www.tulsaworld.com/AboutUs/AboutusHelpFAQ.asp" class="twnav-top">&nbsp;Help&nbsp;</a>|<a href="http://www.tulsaworld.com/Register/MemberAcctMaint.asp" class="twnav-top">&nbsp;Account Info&nbsp;</a>|<a href="http://www.tulsaworld.com/Register/Login.aspx?force" class="twnav-top">Login</a><br>
+</td>
+          <td class="twnav-topsrch" align="right" valign="middle">Site Search:&nbsp;&nbsp;
+                <input name="searchstring1" class="searchfield" size="18" type="text">
+            </td>
+          <form action="http://www.tulsaworld.com/SiteSearchRESULTS.asp" method="post" id="SiteSearchForm" name="SiteSearchForm"></form>
+            <td align="left" valign="top" width="41"><input name="submit1" id="submit1" src="m116_files/btn_go.gif" alt="search" align="left" border="0" type="image">
+                <input name="Param" value="new" type="hidden">
+                <input name="Section" value="news" type="hidden">
+                <input name="rpp" value="15" type="hidden"></td>
+          
+        </tr>
+      </tbody></table></td>
+    </tr>
+    <tr>
+      <td colspan="2" height="10"></td>
+    </tr>
+    
+  </tbody></table>
+
+  </span></div>
+  
+<div align="left"> 
+  <table border="0" cellpadding="1" cellspacing="0" width="760">
+    <tbody><tr> 
+      <td valign="top" width="165"><table border="0" cellpadding="0" cellspacing="0" width="155">
+        <tbody><tr>
+          <td colspan="5"><div align="center"> <a href="http://www.tulsaworldstuff.com/"><img src="m116_files/Classifieds-ad-155x90.gif" border="0" height="90" width="155"></a> </div></td>
+        </tr>
+        <tr>
+          <td colspan="5" height="10"></td>
+        </tr>
+        <tr bgcolor="#1f62ca">
+          <td colspan="5" height="1"><div align="center"><img src="m116_files/hdr_todaystw.jpg" alt="Today's Tulsa World" border="0" height="20" width="155"></div></td>
+        </tr>
+        <tr bgcolor="#ffffff">
+          <td rowspan="3" bgcolor="#1f62ca" width="1"></td>
+          <td colspan="3" bgcolor="#e3eefd" height="5"></td>
+          <td rowspan="3" bgcolor="#1f62ca" width="1"></td>
+        </tr>
+        <tr bgcolor="#ffffff">
+          <td bgcolor="#e3eefd" width="5"></td>
+          <td align="center" bgcolor="#e3eefd" width="143"><table align="center" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr>
+                <td align="left"><a href="http://www.tulsaworld.com/ArchiveSearch/Search/SearchFormNew.asp" class="twnav-head">Archives</a>
+                    <hr align="center" color="#5c9eea" size="1" width="120">
+                    <a href="http://www.tulsaworld.com/Business.asp" class="twnav-head">Business / Finance</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://hosted.ap.org/dynamic/files/static/moneywire-basic/dc_tables/indexes.html?SITE=OKTUL&amp;SECTION=FINANCE" target="_blank" class="twnav-reg">Stock Ticker</a> <br>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworldstuff.com/" class="twnav-head">Classifieds</a><br>
+            <img src="m116_files/caricon.jpg" border="0" height="11" width="20"><a href="http://www.tulsaworldstuff.com/Vehicles/Vehicle_Indx.asp" class="twnav-reg">Vehicles</a><br>
+            <img src="m116_files/brieficon.jpg" border="0" height="11" width="20"><a href="http://www.tulsaworldjobs.com/" class="twnav-reg">Jobs</a><br>
+            <img src="m116_files/homeicon.jpg" border="0" height="11" width="20"><a href="http://www.tulsaworldstuff.com/Real_Estate/Real_indx.asp" class="twnav-reg">Real Estate</a>
+<hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworld.com/Default.asp#Columnists" class="twnav-head">Columnists</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head"><a href="http://www.tulsaworld.com/Community.asp" class="twnav-head">Communities<br>
+            </a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Calendars.asp" class="twnav-reg">Calendars</a></span><a href="http://www.tulsaworld.com/Calendars.asp" class="twnav-reg"><br></a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head"><a href="http://www.tulsaworld.com/EntertainmentHome.asp" class="twnav-head">Entertainment Spot<br>
+            </a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Entertainment/Movies/movielistings.aspx" class="twnav-reg">Movie Listings<br>
+            </a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Entertainment/Movies/MovieReviews.aspx" class="twnav-reg">Movie Reviews<br>
+            </a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Music.asp" class="twnav-reg">Music</a></span><a href="http://www.tulsaworld.com/Music.asp" class="twnav-reg"><br>
+            </a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head">Lifestyle Scenes</span><span class="twnav-head"><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/BooksScene.asp" class="twnav-reg">Book Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Education/EducationIndex.asp" class="twnav-reg">Education Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/FamilyScene.asp" class="twnav-reg">Family Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/FoodScene.asp" class="twnav-reg">Food Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/healthindex.asp" class="twnav-reg">Health Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Home_GardenScene.asp" class="twnav-reg">Home &amp; Garden<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Home_GardenScene.asp" class="twnav-reg">Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/html/RecipesCooking.asp" class="twnav-reg">Recipes &amp; Cooking<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/ReligionScene.asp" class="twnav-reg">Religion Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/SocialScene.asp" class="twnav-reg">Social Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/StyleScene.asp" class="twnav-reg">Style Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/TravelScene.asp" class="twnav-reg">Travel Scene<br>
+</a> &nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Satellite.asp" class="twnav-reg">Satellite Teens</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            </span><a href="http://www.tulsaworld.com/Lotteries.asp" class="twnav-head">Lotteries</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head"><a href="http://www.tulsaworld.com/News.asp" class="twnav-head">News</a> <br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/ActionLine.asp" class="twnav-reg">Action Line</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaairports.com/tia/flight_schedules.html" target="_blank" class="twnav-reg">Flight Info</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/PhotoDept/swfs/PhotoHome.asp" class="twnav-reg">Photojournalism</a><br>
+            </span>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head"><a href="http://www.tulsaworld.com/Opinion.asp" class="twnav-head">Opinion</a> <br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Polls/PollForm1.asp" class="twnav-reg">Polls</a></span>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworld.com/ResourcesLinks.asp" class="twnav-head">Resource Links</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworld.com/Sports.asp" class="twnav-head">Sports</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://maps.cityoftulsa.org/" class="twnav-head" target="_blank">Traffic</a><span class="twnav-head"> &amp; </span><a href="http://maps.cityoftulsa.org/construction.asp" class="twnav-head" target="_blank">Construction</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <span class="twnav-head">Transitions <br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Births.asp" class="twnav-reg">Births</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Deaths.asp" class="twnav-reg">Death Notices</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://legacy.com/TulsaWorld/LegacyHome.asp" class="twnav-reg">Obituaries</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Divorces.asp" class="twnav-reg">Divorces</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Marriages.asp" class="twnav-reg">Marriages &amp; </a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.tulsaworld.com/Marriages.asp" class="twnav-reg">Anniversaries</a>
+            </span>            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworld.com/Weather.asp" class="twnav-head">Weather</a>
+            <hr align="center" color="#5c9eea" size="1" width="120">
+            <a href="http://www.tulsaworld.com/WorldOfHomes/WOHHome.asp" class="twnav-head">World of Homes</a></td>
+              </tr>
+          </tbody></table></td>
+          <td bgcolor="#e3eefd" width="5"></td>
+        </tr>
+        <tr bgcolor="#ffffff">
+          <td colspan="3" bgcolor="#e3eefd" height="5"></td>
+        </tr>
+        <tr bgcolor="#ffffff">
+          <td colspan="5" bgcolor="#1f62ca" height="1"></td>
+        </tr>
+      </tbody></table>
+      <div align="center"></div>
+</td>
+      <td rowspan="2" valign="top"> <div align="center"> 
+          <table bgcolor="#1f62ca" border="0" cellpadding="1" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td><table id="AP Box" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                  <td colspan="5" class="twnav-topsrch" align="left" background="m116_files/hdr_gnrc_blu.jpg" height="22" width="1718">&nbsp;&nbsp;Latest News:</td>
+                </tr>
+              </tbody></table>
+                <table id="AP Box" align="center" bgcolor="#ffffff" border="0" cellpadding="5" cellspacing="0" width="100%">
+                  <tbody><tr>
+                    <td colspan="5" class="twstorytext" align="left" height="22" valign="top"><!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="m116_files/s_code_remote.js"></script><img src="m116_files/s98242324710873.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "OKTUL") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="m116_files/prototype.js"></script>
+ <script type="text/javascript" src="m116_files/scriptaculous.js"></script><script type="text/javascript" src="m116_files/effects.js"></script>
+ <script type="text/javascript" src="m116_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="m116_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1987720: BKN Michael Jordan Divorce
+   Created: 2006/12/30 01:20:20
+   Modified: 2006/12/30 01:20:21
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Dec 30, 1:20 AM EST</div></div><br>
+<p class="body"><span class="headline">Jordan, wife end their 17-year marriage</span>
+</p>
+</div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11187682
+   Created  : 2006/12/30 01:20:20
+   Modified : 2006/12/30 01:20:21
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1103822: online
+   Created: 2006/12/30 01:20:20
+   Modified: 2006/12/30 01:20:20
+   Generated: 2006/12/30 01:20:21 -->
+<!-- SmallPhoto: 2233849
+   Created: 2006/12/29 17:03:38
+   Modified: 2006/12/29 17:03:39
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://hosted.ap.org/dynamic/files/photos/C/CX10512292203.html?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="m116_files/CX10512292203-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo/Morry Gash</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2233849 -->
+<!-- /Package: 1103822 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1103823: online
+   Created: 2006/12/30 01:20:20
+   Modified: 2006/12/30 01:20:20
+   Generated: 2006/12/30 01:20:21 -->
+
+<!-- Video: 18151
+   Created: 2006/12/29 23:12:19
+   Modified: 2006/12/29 23:12:19
+   Generated: 2006/12/30 01:20:21 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-video-table" width="180">
+<tbody><tr class="ap-video-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-video-td"><span class="tabletitle">AP VIDEO</span></td></tr>
+<tr class="ap-video-tr">
+<td class="ap-video-td">
+<p class="ap-video-p"><span class="apCaption"><a href="http://video.ap.org/vws/search/aspx/ap.aspx?t=&amp;p=&amp;f=OKTUL&amp;g=1229dv_jordan_divorce" class="ap-video-a" onclick="window.open(this.href, 'popupwindow','width=798,height=598,status=1,scrollbars=1,resizable=1'); return false;">Michael Jordan and Wife Divorced</a></span></p>
+</td>
+</tr>
+</tbody></table>
+<!-- /Video: 18151 -->
+<!-- /Package: 1103823 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858197: VIDEO_PROMO_SPORTS_SECTION
+   Created: 2006/3/21 11:05:01
+   Modified: 2006/10/16 12:48:19
+   Generated: 2006/12/2 09:26:35 -->
+
+<!-- HtmlTable: 44693
+   Created  : 2006/3/21 11:05:48
+   Modified : 2006/10/16 12:48:19
+   Generated: 2006/12/2 09:26:35 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">News Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4641
+   Created: 2006/3/21 11:06:16
+   Modified: 2006/10/16 12:48:19
+   Generated: 2006/12/2 09:26:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="m116_files/apOVN.js">
+</script>
+<div id="flashcontent">
+<script type="text/javascript">
+   var ap = new SWFObject("http://img.video.ap.org/p/s/sm_vrt_3thumb_scroll.swf", "sm_vrt_3thumb_scroll", "170", "165", "7");
+    ap.addParam("quality", "best");
+    ap.addParam("bgcolor", "#FFFFFF");
+    ap.addVariable("cat", "Multi");
+
+    ap.addVariable("pid", "OKTUL");
+    ap.addVariable("fontcolor", "0x336699");
+    ap.write("flashcontent");
+</script>
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4641 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44693 -->
+<!-- /Package: 858197 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 125906: ADVERTISEMENT_SPORTS
+   Created: 2003/1/9 18:33:15
+   Modified: 2006/3/27 14:06:46
+   Generated: 2006/12/2 09:46:33 -->
+<!-- HtmlFragment: 4268
+   Created: 2005/11/28 11:29:29
+   Modified: 2005/11/28 11:29:37
+   Generated: 2006/12/2 09:46:33 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=spt; dt";</script>
+<script src="m116_files/slf.js" language="JavaScript"></script><script src="m116_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4268 -->
+<!-- HtmlFragment: 1116
+   Created: 2003/1/9 18:33:38
+   Modified: 2005/8/5 11:05:09
+   Generated: 2006/12/2 09:46:33 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR SPORTS STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='SPORTS';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="m116_files/1049676800x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x96"></a></script><script language="JavaScript">var tcdacmd="sa=a;sz=3;ad";</script>
+<script src="m116_files/slf.js" language="JavaScript"></script><script src="m116_files/a.htm" language="JavaScript"></script><script language="JavaScript1.1" src="m116_files/REDIRURL.js"></script>
+
+
+
+
+
+
+			
+			<script src="m116_files/MotifExternalScript_01_01.js" language="JavaScript"></script>
+
+			<div id="OUTER_DIV_19156763_11167472899765" style="position: relative; z-index: 99999;"><a target="_blank" href="http://ad.doubleclick.net/activity;src%3D998766%3Bmet%3D1%3Bv%3D1%3Bpid%3D14258929%3Baid%3D50260297%3Bko%3D0%3Bcid%3D19138868%3Brid%3D19156763%3Brv%3D1%3Bcs%3Di%3Beid1%3D1120%3Becn1%3D1%3Betm1%3D0%3B_dc_redir%3Durl%3fhttp://ad.doubleclick.net/click%3Bh=v8/34cb/7/5f/%2a/e%3B50260297%3B1-0%3B0%3B14258929%3B4307-300/250%3B19138868/19156763/1%3B%3B%7Esscs%3D%3fhttp://anad.tacoda.net/ads/ad11676a-map.cgi/BCPG59540.87161.95968/SZ=300X250A/V=2.0S//REDIRURL=http://www.thepearlexperience.com/?WT.mc_n=PubPromo_Seg&amp;WT.mc_t=Other"><img id="IMG_19156763_11167472899765" src="m116_files/PID_150253_300x250.jpg" alt="Click Here!" border="0" height="250" width="300"></a></div><script src="m116_files/adServer.htm" language="JavaScript"></script>
+			<noscript>
+<A TARGET="_blank"
+HREF="http://ad.doubleclick.net/activity;src%3D998766%3Bmet%3D1%3Bv%3D1%3Bpid%3D14258929%3Baid%3D50260297%3Bko%3D0%3Bcid%3D19138868%3Brid%3D19156763%3Brv%3D1%3Bcs%3Di%3Beid1%3D1120%3Becn1%3D1%3Betm1%3D0%3B_dc_redir%3Durl%3fhttp://ad.doubleclick.net/click%3Bh=v8/34cb/7/5f/%2a/e%3B50260297%3B1-0%3B0%3B14258929%3B4307-300/250%3B19138868/19156763/1%3B%3B%7Esscs%3D%3fhttp://anad.tacoda.net/ads/ad11676a-map.cgi/BCPG59540.87161.95968/SZ=300X250A/V=2.0S//REDIRURL=http://www.thepearlexperience.com/?WT.mc_n=PubPromo_Seg&WT.mc_t=Other">
+<IMG SRC="http://m1.2mdn.net/998766/PID_150253_300x250.jpg" width="300"
+height="250" BORDER="0" alt="Click Here!"> </A> <IMG
+SRC="http://ad.doubleclick.net/activity;src=998766;met=1;v=1;pid=14258929;aid=50260297;ko=0;cid=19138868;rid=19156763;rv=1;&timestamp=2271532;eid1=9;ecn1=1;etm1=0;"
+width="0px" height="0px" style="visibility:hidden" BORDER="0"/> <IMG
+SRC="" width="0px" height="0px" style="visibility:hidden" BORDER="0"/> </noscript><img src="m116_files/a.gif" height="1" width="1"></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="m116_files/1049676800x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x03"></a></script><script language="javascript" src="m116_files/tmp.htm"></script><script type="text/javascript" src="m116_files/try.js"></script><input style="width: 0px; top: 0px; position: absolute; visibility: hidden;" id="oV6" onchange="fV8(fV1,5,true)"><div id="oV10"><embed type="application/x-shockwave-flash" swliveconnect="true" src="m116_files/pop.swf" height="1" width="1"></div></div>
+<!-- AP end call to x03 -->
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 1116 -->
+<!-- /Package: 125906 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11187682  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11187683
+   Created  : 2006/12/30 01:20:21
+   Modified : 2006/12/30 01:20:21
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 516301: X_BEHAVIORAL_SPORSUB2
+   Created: 2004/12/6 10:20:39
+   Modified: 2005/5/12 15:50:33
+   Generated: 2006/12/2 09:42:52 -->
+<!-- HtmlFragment: 3876
+   Created: 2004/12/6 10:22:59
+   Modified: 2005/5/12 15:50:33
+   Generated: 2006/12/2 09:42:52 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="Javascript" src="m116_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "SPORTS; BASKETBALL")
+</script>
+
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="m116_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3876 -->
+<!-- /Package: 516301 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11187683  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11187684
+   Created  : 2006/12/30 01:20:21
+   Modified : 2006/12/30 01:20:21
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 971: SPTBASKETBALL
+   Created: 2002/6/21 10:45:32
+   Modified: 2006/2/17 11:55:13
+   Generated: 2006/12/30 03:37:27 -->
+
+<!-- HtmlTable: 44
+   Created  : 2002/6/21 10:47:46
+   Modified : 2004/3/17 15:32:07
+   Generated: 2006/12/30 03:37:27 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Basketball News</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- AdHocNewsListing: 45
+   Created: 2002/6/21 10:48:25
+   Modified: 2004/3/17 15:32:07
+   Generated: 2006/12/30 03:37:27 -->
+<table class="ap-adhocnewslisting-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-adhocnewslisting-tr"><td class="ap-adhocnewslisting-td">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_NBA_RDP?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-03-37-24" class="ap-adhocnewslisting-a">Bryant and Billups suffer tough endings</a></span></span></span></span><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_KINGS_CLIPPERS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-03-14-28" class="ap-adhocnewslisting-a">Clippers snap 14-game losing streak</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_CELTICS_WARRIORS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-03-13-43" class="ap-adhocnewslisting-a">Pietrus helps Warriors defeat Celtics</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_76ERS_TRAIL_BLAZERS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-03-09-31" class="ap-adhocnewslisting-a">Sixers' Igoudala too much for Blazers</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_LAKERS_BOBCATS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-02-36-53" class="ap-adhocnewslisting-a">Kobe spoils big game with bigger miscues</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_MICHAEL_JORDAN_DIVORCE?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-01-20-20" class="ap-adhocnewslisting-a">Jordan, wife end their 17-year marriage</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_KNICKS_SUNS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-00-17-19" class="ap-adhocnewslisting-a">Knicks no match for Suns in 108-86 loss</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_HAWKS_ROCKETS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-30-00-03-08" class="ap-adhocnewslisting-a">T-Mac scores 31 as Rockets top Hawks</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_PACERS_PISTONS?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-29-23-50-05" class="ap-adhocnewslisting-a">Armstrong lifts Pacers over Pistons</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+<span class="apCaption"><span class="apHeadline"><span class="storylink"><span class="latestnews"><a href="http://hosted.ap.org/dynamic/stories/B/BKN_SUPERSONICS_TIMBERWOLVES?SITE=OKTUL&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT&amp;CTIME=2006-12-29-23-44-21" class="ap-adhocnewslisting-a">T-Wolves run past sleepy Sonics 101-82</a></span></span></span></span></p><p class="ap-adhocnewslisting-p">
+</p></td></tr>
+</tbody></table>
+<!-- /AdHocNewsListing: 45 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44 -->
+<!-- /Package: 971 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="m116_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="m116_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="m116_files/BKN_MICHAEL_JORDAN_DIVORCE.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11187684  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> CHICAGO (AP) -- Michael Jordan and his wife,
+Juanita, divorced Friday after 17 years of marriage. "Michael and
+Juanita Jordan mutually and amicably decided to end their 17 year
+marriage," the couple said in a statement issued through their lawyers.
+"A judgment for dissolution of their marriage was entered today. There
+will be no further statements."</p> <p class="ap-story-p">Michael Jordan's lawyer, Frederick J. Sperling, declined comment.</p> <p class="ap-story-p">But
+in court documents filed Friday with the Lake County Circuit Court, the
+couple said "irreconcilable differences have caused an irretrievable
+breakdown of the marriage." The couple said attempts to reconcile their
+marriage had failed and future ones "would be impractical and not in
+the best interests of the family."</p> <p class="ap-story-p">Juanita
+Jordan previously filed for divorce in January 2002, but withdrew her
+petition a month later when the couple announced they were attempting a
+reconciliation.</p> <p class="ap-story-p">The couple met at a Chicago
+restaurant during his second season with the Bulls and were married
+Sept. 2, 1989, in Las Vegas. They have three children: Jeffrey, 18,
+Marcus, 16, and Jasmine, 14.</p> <p class="ap-story-p">Michael Jordan, 43, lives in Chicago; Juanita Jordan, 47, lives in Highland Park, Ill.</p> <p class="ap-story-p">The Jordans, who have lived separately since February, will share custody of their children, according to court documents.</p> <p class="ap-story-p">"The
+co-petitioners acknowledge that although their marriage is ending, they
+desire to resolve all of the issues surrounding the dissolution of
+marriage in the most amicable, expeditious and private fashion
+possible, for the benefit of themselves and their children," the
+documents read.</p> <p class="ap-story-p">Jordan, a part-owner of the Charlotte Bobcats, led the Bulls to six NBA titles and was a five-time league MVP.</p> <p class="ap-story-p">©
+2006 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MB0AH01', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="m116_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11187687
+   Created  : 2006/12/30 01:20:21
+   Modified : 2006/12/30 01:20:21
+   Generated: 2006/12/30 01:20:21 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621986: ADV_UNDER_SPORTS
+   Created: 2005/5/15 11:51:39
+   Modified: 2005/12/16 10:24:18
+   Generated: 2006/12/2 09:39:07 -->
+<!-- HtmlFragment: 3992
+   Created: 2005/5/15 11:56:13
+   Modified: 2005/12/16 10:24:18
+   Generated: 2006/12/2 09:39:07 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">
+var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x02">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x02">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1' + RNS+ '@x02"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><script language="JavaScript1.1" src="m116_files/1049676800x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/OKTUL.hosted.ap.org/SPORTS/1049676800@x02"></a></script><script language="JavaScript" src="m116_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="We'll send you an official T.O. Cowboys jersey for free! Survey req." onmouseover="top.status='Free Terrell Owens Jersey'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnnbknnbinobpnmzarprxrsro&eid=1&id=87217006&brightads_used=&partner_override=&query=sports&clickfactor_impression=1&clickid=82333664&UNQ=00116747289666381652&cgroup=sports&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Free Terrell Owens Jersey</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">We'll send you an official T.O. Cowboys jersey for free! Survey req.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.ontheweb-offer.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Draft a team of PGA superstars and compete against your friends." onmouseover="top.status='PGA Tour Fantasy Golf'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnnbknnbinobpnmzlrxrwryrs&eid=1&id=88009878&brightads_used=&partner_override=&query=sports&clickid=82333664&UNQ=00116747289666381649&cgroup=sports&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">PGA Tour Fantasy Golf</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Draft a team of PGA superstars and compete against your friends.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">PGATOUR.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Life-sized wall graphics. Buy one get one free for a limited time!" onmouseover="top.status='Fathead Sports Graphics'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnnbknnbinobpnmztrarrrxrp&eid=1&id=88010760&brightads_used=&partner_override=&query=sports&clickid=82333664&UNQ=00116747289666381676&tz=US&cgroup=sports&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Fathead Sports Graphics</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Life-sized wall graphics. Buy one get one free for a limited time!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.fathead.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="4 pairs of Jordan's are yours for free! Act now." onmouseover="top.status='Free Air Jordan Shoe Pack'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnnbknnbinobpnmznrerbrard&eid=1&id=87002537&brightads_used=&partner_override=&query=sports&clickid=82333664&UNQ=00116747289666381671&cgroup=sports&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Free Air Jordan Shoe Pack</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">4 pairs of Jordan's are yours for free! Act now.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">sports-fitness-rewardpath.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Free picks from the web's top sports handicapper. Get free picks email" onmouseover="top.status='Free Sports Picks - NFL Picks and More'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnnbknnbinobpnmzrrxrwryrs&eid=1&id=87756202&brightads_used=&partner_override=&query=sports&clickid=82333664&UNQ=00116747289666381673&cgroup=sports&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Free Sports Picks - NFL Picks and More</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Free picks from the web's top sports handicapper. Get free picks email</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.freeunderdog.com</span>					</div>				</div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3992 -->
+<!-- /Package: 621986 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11187687  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1987720: BKN Michael Jordan Divorce -->
+</td>
+                  </tr>
+                </tbody></table></td>
+            </tr>
+          </tbody></table>
+          </div>
+		
+		<div align="center"><br>
+		  <center><table border="0" cellpadding="0" cellspacing="0" width="584">
+  <tbody><tr>
+    <td height="20"><div align="center"><img src="m116_files/TulsaWorld.gif" alt="Tulsa World Logo" align="top" height="29" width="200"></div></td>
+  </tr>
+  <tr>
+    <td height="20"></td>
+  </tr>
+  <tr>
+    <td><div align="center"><a href="http://www.tulsaworld.com/AboutUs/AboutUsWelcome.asp" class="twnav-reg">About Tulsa World</a><span class="twnav-reg"> | </span><span class="twnav-reg">Advertise: </span><a href="http://www.tulsaworld.com/AboutUs/TWCRates.asp" class="twnav-reg">Online</a><span class="twnav-reg"> or </span><a href="http://www.tulsaworld.com/AboutUs/aboutusPLACEAD.asp" class="twnav-reg">Print</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/html/circcarrierapp.asp" class="twnav-reg">Carrier Application</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/AboutUs/PAPERMISSING.asp" class="twnav-reg">Delivery Inquiries</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"> <a href="http://www.tulsaworld.com/Register/Path6Step2a.asp" class="twnav-reg">Subscribe</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/Recycle/RecyclePaperRetriever.asp" class="twnav-reg">Recycling</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/AboutUs/AboutusONLINE.asp#Privacy" class="twnav-reg">Privacy</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/AboutUs/AboutusONLINE.asp#user" class="twnav-reg">Usage</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/AboutUs/AboutusCONTENTS.asp" class="twnav-reg">Help</a><span class="twnav-reg"> | </span><a href="http://www.tulsaworld.com/AboutUs/AboutusCONTACTdistrib.asp" class="twnav-reg">Contact</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><a href="http://www.tulsaworld.com/aboutus/AboutusONLINE.asp#copy" class="twnav-reg">Copyright</a> <span class="twnav-reg"> ©
+          &lt;%
+dim YearToday
+YearToday = cStr(Year(Date()))
+	Response.Write "<b>" &amp; YearToday &amp; "</b>"
+
+'MyYear = cStr(Year(Date(),2))
+'	Response.Write "<b>" &amp; MyYear &amp; "</b>"
+%&gt;
+, World Publishing Co. All rights reserved. </span></div></td>
+  </tr>
+</tbody></table>
+		    <p class="twtopstorywht">&nbsp;</p>
+		  </center>
+		  
+        </div></td>
+    </tr>
+
+  </tbody></table>
+</div>
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="m116_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="m116_files/closelabel.gif"></a></div></div></div></div></body></html>

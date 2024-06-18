@@ -1,0 +1,962 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><title>Post-Bulletin Online Rochester, Minnesota</title>
+	
+
+
+  
+		 
+	<script type="text/javascript">
+    function floater() {
+  	  var v2=(document.body.clientWidth-800)/2
+  		document.getElementById("floater").style.left=v2-40
+  		document["qcbanner"].Play();
+  		document.getElementById("floater").style.visibility="visible"
+		}
+		
+    function closeflash(){
+  	  document.getElementById("floater").style.visibility="hidden"
+  		//document.getElementById("sticky").style.visibility="visible"
+  		//document["qcbanner_sm"].Play();
+		}
+		
+		function check(searchType) {
+  	  if (searchType == "normal") {
+	  	  document.searchForm.action = 'http://news.postbulletin.com/newsmanager/PPLsearch.aspx';
+	  		document.searchForm.words.name = "search";
+			} else if (searchType == "yellow") {
+			  document.searchForm.action = 'http://local.rochestermn.com/search.pg';
+				document.searchForm.search.name = "q"; 
+			} else {
+	  	  document.searchForm.action = 'http://classifieds.postbulletin.com/interconnect/intercon.dll';
+				document.searchForm.search.name = "words";
+			} 
+		}
+		
+		sfHover = function() {
+		  var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+			for (var i=0; i<sfEls.length; i++) {
+			  sfEls[i].onmouseover=function() {
+				  this.className+=(this.className.length>0? " ": "") + "sfhover";
+				}
+			  sfEls[i].onmouseout=function() {
+			    this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+			  }
+		  }
+    }
+    mcAccessible = function() {
+		  var mcEls = document.getElementById("nav").getElementsByTagName("A");
+			for (var i=0; i<mcEls.length; i++) {
+			  mcEls[i].onfocus=function() {
+			    this.className+=(this.className.length>0? " ": "") + "sffocus"; //a:focus
+			    this.parentNode.className+=(this.parentNode.className.length>0? " ": "") + "sfhover"; //li < a:focus
+			    if(this.parentNode.parentNode.parentNode.nodeName == "LI") {
+				    this.parentNode.parentNode.parentNode.className+=(this.parentNode.parentNode.parentNode.className.length>0? " ": "") + "sfhover"; //li < ul < li < a:focus
+						if(this.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "LI") {
+					    this.parentNode.parentNode.parentNode.parentNode.parentNode.className+=(this.parentNode.parentNode.parentNode.parentNode.parentNode.className.length>0? " ": "") + "sfhover"; //li < ul < li < ul < li < a:focus
+				    }
+			    }
+		    }
+		    mcEls[i].onblur=function() {
+			    this.className=this.className.replace(new RegExp("( ?|^)sffocus\\b"), "");
+			    this.parentNode.className=this.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+			    if(this.parentNode.parentNode.parentNode.nodeName == "LI") {
+				    this.parentNode.parentNode.parentNode.className=this.parentNode.parentNode.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+				    if(this.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "LI") {
+					    this.parentNode.parentNode.parentNode.parentNode.parentNode.className=this.parentNode.parentNode.parentNode.parentNode.parentNode.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+				    }
+			    }
+		    }
+	    }
+    }
+    // only ie needs the sfHover script. all need the accessibility script...
+    // thanks http://www.brothercake.com/site/resources/scripts/onload/
+    if(window.addEventListener) window.addEventListener('load', mcAccessible, false); // gecko, safari, konqueror and standard
+		else if(document.addEventListener) document.addEventListener('load', mcAccessible, false); // opera 7
+		else if(window.attachEvent) { // win/ie
+	    window.attachEvent('onload', sfHover);
+	    window.attachEvent('onload', mcAccessible);
+		} else { // mac/ie5
+	    if(typeof window.onload == 'function') {
+			  var existing = onload;
+				window.onload = function() {
+				  existing();
+			    sfHover();
+			    mcAccessible();
+		    }
+	    } else {
+		    window.onload = function() {
+			    sfHover();
+			    mcAccessible();
+		    }
+	    }
+    }
+		var browserVer = navigator.appVersion;
+		browserVer =  navigator.appVersion;
+		if ( browserVer.indexOf("Mac") != -1) {
+		  document.write('<link REL="stylesheet" HREF="http://news.postbulletin.com/pbmainmac.css" TYPE="text/css">');
+		} else {
+		  document.write('<link REL="stylesheet" HREF="http://news.postbulletin.com/pbmain.css" TYPE="text/css">');
+		}
+	</script><link rel="stylesheet" href="a17_files/pbmain.css" type="text/css">
+	<meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expire" content="now">
+	
+	<meta name="description" content="Rochester Minnesota's premiere daily, local news source. PostBulletin Online is supported by the largest afternoon newspaper in South East Minnesota, the Post Bulletin.">
+	<meta name="keywords" content="rochester, minnesota, mn, daily, local, newspaper, news, story, south east minnesota, post bulletin, postbulletin, post-bulletin, austin, eyota, stewartville, elgin, dover, charfield, oronoco, pine island, kasson, byron, dodge center, west concord, zumbro falls, ">
+  
+	<link rel="shortcut icon" href="http://hosted.ap.org/dynamic/stories/W/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://hosted.ap.org/dynamic/stories/W/icons/favicon.png" type="image/png">
+	<link rel="alternate" type="application/rss+xml" title="Top News" href="http://development.postbulletin.com/rss/top_stories.xml">
+<style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="a17_files/tab.css"></head><body style="text-align: center;" bgcolor="#ffffff">
+  
+	<table align="center" border="0" cellpadding="0" cellspacing="0">
+	  <tbody><tr>
+		  <td>
+			  <!-- Start Header -->
+				<div style="background: rgb(59, 102, 102) none repeat scroll 0%; width: 768px; text-align: center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+					<div style="padding-top: 3px;">
+					<!-- Start Leaderboard -->
+					
+					  <script language="JavaScript" type="text/javascript" src="a17_files/adx.js"></script>
+						<script language="JavaScript" type="text/javascript">
+						<!--
+   					if (!document.phpAds_used) document.phpAds_used = ',';
+   					phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   					document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   					document.write ("http://adserv.postbulletin.com/adjs.php?n=" + phpAds_random);
+   					document.write ("&amp;what=zone:56");
+   					document.write ("&amp;exclude=" + document.phpAds_used);
+   					if (document.referrer)
+      			  document.write ("&amp;referer=" + escape(document.referrer));
+   					document.write ("'><" + "/script>");
+						//-->
+						</script><script language="JavaScript" type="text/javascript" src="a17_files/adjs_003.js"></script><a href="http://adserv.postbulletin.com/adclick.php?bannerid=103&amp;zoneid=56&amp;source=&amp;dest=http%3A%2F%2Fwww.tyrolskishop.com%2F" target="_blank"><img src="a17_files/tyrol_1106b.gif" alt="Tyrol Ski &amp; Sports" title="Tyrol Ski &amp; Sports" border="0" height="90" width="728"></a><div id="beacon_103" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="a17_files/adlog_002.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><noscript><a
+href='http://adserv.postbulletin.com/adclick.php?n=a2be98cb'
+target='_blank'><img
+src='http://adserv.postbulletin.com/adview.php?what=zone:56&amp;n=a2be98cb'
+border='0' alt=''></a></noscript>
+           
+					<!-- End Leaderboard -->
+					</div>
+					<div style="float: left; width: 768px; font-size: 12px; padding-left: 3px; text-align: left; color: rgb(255, 255, 255);">
+		  		  <a href="http://www.postbulletin.com/photos/sports/2005-06/" style="color: rgb(255, 255, 255);">Game of the week</a> | <a href="https://liners.postbulletin.com/AMP4AdEntry/Group.do" style="color: rgb(255, 255, 255);">Place Classified Ad</a> | <a href="http://www.rochestermn.com/" style="color: rgb(255, 255, 255);">Rochester Magazine</a> | <a href="http://news.postbulletin.com/subscribe.asp" style="color: rgb(255, 255, 255);">Subscribe Online</a>
+					</div>
+					<div style="clear: both; height: 65px; margin-top: 2px; background-image: url(http://news.postbulletin.com/images/header_brandon.gif);">
+		  		  <a href="http://news.postbulletin.com/" style="text-decoration: none;">
+						<div style="float: left; width: 250px;">
+						  <div style="float: left; padding-left: 12px; margin-top: 42px; color: rgb(255, 255, 255); font-size: 11px;">
+			  		    &nbsp;
+						  </div>
+						</div>
+						</a>
+						<div style="float: right; margin-top: 5px; color: rgb(255, 255, 255); width: 500px;">
+			  			<div style="float: right; margin-right: 10px;">&nbsp;</div>
+						</div>
+					</div>
+					<!-- Start Dropdown Menus -->
+				  	     <ul id="nav" class="nav" style="background: rgb(58, 102, 58) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 768px; text-align: left;"> 
+   			  <li>
+					  <div class="submenuBlue"><a href="http://news.postbulletin.com/template/landing/news.asp" style="color: white;">News</a></div>
+						<ul>
+						  <li><a href="http://news.postbulletin.com/template/landing/news.asp">News Home</a></li>
+							<li><a href="http://news.postbulletin.com/template/landing/featured.asp">Latest Headlines</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=2">Local News</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=28">Austin News</a></li>
+							<li><a href="http://hosted.ap.org/dynamic/fronts/MINNESOTAHEADS?SITE=MNROC">Minnesota News</a></li>
+							<li><a href="http://hosted.ap.org/dynamic/fronts/US?SITE=MNROC&amp;SECTION=HOME">National News</a></li>
+							<li><a href="http://hosted.ap.org/dynamic/fronts/WORLD?SITE=MNROC&amp;SECTION=HOME">World News</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=16">Politics</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=6">Records</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=5">Obituaries</a></li>
+							<li><a href="http://news.postbulletin.com/flash/index.asp">Multimedia Reports</a></li>
+							<!--<li><a href="http://news.postbulletin.com/podcast/">News Podcast</a></li>-->
+							<li><a href="http://development.postbulletin.com/bloggers/">PB's Local Bloggers</a></li>
+							<li><a href="http://video.ap.org/v/en-ap/v.htm?g=8f49641d-7553-402e-b712-c31f81e6dc71&amp;t=s60&amp;p=enapus_enapus&amp;&amp;f=MNROC">News Video</a></li>
+							<li><a href="http://news.postbulletin.com/digital/list_noencrypt.asp">Print Edition</a></li>
+							<li><a href="http://news.postbulletin.com/newsalerts/signup.asp">Email Headlines</a></li>
+							<li><a href="http://www.wunderground.com/auto/postbulletin/MN/Rochester.html">Weather Forecast</a></li>
+						</ul>
+					</li>
+					<li>
+					  <div class="submenuBlue"><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=22" style="color: white;">Sports</a></div>
+						<ul>
+						  <li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=22">Sports Home</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=34">Austin Sports</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=37">Local Scores</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=15">Outdoors</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=26">Recreation</a></li>
+							<li><a href="http://news.postbulletin.com/pickem/" target="_blank">Pigskin Pick'em</a></li>
+							<li><a href="http://news.postbulletin.com/photos/sports/2005-06">Game of the week</a></li>
+						</ul>
+					</li>
+					<li>
+					  <div class="submenuBlue"><a href="http://news.postbulletin.com/template/landing/business.asp" style="color: white;">Business</a></div>
+						<ul>
+						  <li><a href="http://news.postbulletin.com/template/landing/business.asp">Business Home</a></li>
+							<li><a href="http://hosted.ap.org/dynamic/fronts/BUSINESS?SITE=MNROC&amp;SECTION=BUSINESS">AP Business</a></li>
+							<li><a href="http://news.postbulletin.com/template/landing/stocks.asp">Financial News/Stocks</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=20">Technology</a></li>
+							<li><a href="http://postbulletin.typepad.com/kiger/">Business Blog - Kiger's Notebook</a></li>
+						</ul>
+					</li>
+					<li>
+					  <div class="submenuBlue"><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=35" style="color: white;">Entertainment</a></div>
+						<ul>
+						  <li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=35">Entertainment Home</a></li>
+							<li><a href="http://news.postbulletin.com/tangent">Tangent</a></li>
+							<li><a href="http://news.postbulletin.com/calendar/calendar.asp">Calendar</a></li>
+							<li><a href="http://www.rochestermn.com/">Rochestermn.com</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=31">At Home</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=36">Food</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=10">Health</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=18">Social</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=44">Anniversaries</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=43">Engagements</a></li>
+							<li><a href="http://www.rochestermn.com/living/movielistings_temp.asp">Movies</a></li>
+							<li><a href="http://news.postbulletin.com/race/">Race Pick'em</a></li>
+							<li><a href="http://www.rochestermn.com/webcam/">Rochester Webcams</a></li>
+							<li><a href="http://news.postbulletin.com/display_image.asp?cat=26" onclick="window.open('this.href','school','width=685,height=600,scrollbars=yes,resizable=yes')" target="school">Photo Gallery</a></li>
+							<li><a href="http://www.simplyminnesota.com/">Simply Minnesota</a></li>
+							<li><a href="http://www.uclick.com/client/rpb/sudoc">Sudoku</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=21">Travel</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=25">TeenBeat</a></li>
+						</ul>
+					</li>
+					<li>
+					  <div class="submenuBlue"><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=12" style="color: white;">Opinions</a></div>
+						<ul>
+						  <li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=41">Columnists</a></li>
+							<li><a href="http://news.postbulletin.com/newsmanager/templates/austinnews.asp?zoneid=23">Letters</a></li>
+							<li><a href="http://postbulletin.typepad.com/honk/">Furst Draft - Blog</a></li>
+						</ul>
+					</li>
+				  <li>
+					  <div class="submenuBlue"><a href="#" style="color: white;">Community</a></div>
+						  <ul>
+						    <li><a href="http://www.agrinews.com/">Agri News</a></li>
+								<li><a href="http://aqi.pca.state.mn.us/hourly/region1.cfm?region=Rochester">Air Quality Index</a></li>
+								<li><a href="http://www.lottery.state.mn.us/winnums.html" target="_blank">Lottery</a></li>
+								<li><a href="http://www.postbulletin.com/nie/">Newspaper in Education</a></li>
+								<li><a href="http://development.postbulletin.com/schoolclosings/">School Closings</a></li>
+								<li><a href="http://www.511mn.org/default.asp?display=cameras&amp;area=SE&amp;textOnly=false">U.S. 52 Webcams</a></li>
+								<li><a href="http://www.usaweekend.com/">USA Weekend</a></li> 
+							</ul>
+						</li>
+						<li>
+						  <div class="submenuBlue"><a href="http://news.postbulletin.com/contacts/" style="color: white;">Contact Us</a></div>
+						  <ul>
+							  <li><a href="http://news.postbulletin.com/contacts/advertising.asp">Advertise with the P-B</a></li>
+								<li><a href="https://news.postbulletin.com/subscribe.asp">Subscribe to the P-B</a></li>
+								<li><a href="https://news.postbulletin.com/customercare/">Order Reprints and laminations</a></li>
+								<li><a href="http://news.postbulletin.com/subscribe.asp?action=lostpassword1">Lost Password?</a></li>
+								<li><a href="http://news.postbulletin.com/subscribe.asp?action=changepassword">Change Password</a></li>
+								<li><a href="http://news.postbulletin.com/newlogin/">Request New Login</a></li>
+								<li><a href="https://news.postbulletin.com/subscribe.asp?action=changeinfo">Change Billing Info</a></li>
+								<li><a href="http://news.postbulletin.com/customercare/vacationpack.asp">Request a Vacation Pack</a></li>
+								<li><a href="http://news.postbulletin.com/contacts/">Contact Us</a></li>
+								<li><a href="http://www.postbulletin.com/contacts/index.stm">P-B Staff</a></li>
+							</ul>
+						</li>
+						<li>
+						  <div class="submenuGreen"><a href="http://classads.postbulletin.com/classifieds/" style="color: white;">Classifieds</a></div>
+							<ul class="submenuGreenUL"> 
+							  <li class="submenuGreenLi"><a href="http://classads.postbulletin.com/classifieds/">Browse Classifieds</a></li>
+								<li class="submenuGreenLi"><a href="http://news.postbulletin.com/classified/submitad.asp">Submit an Ad</a></li>
+								<li class="submenuGreenLi"><a href="http://www.pbautomotion.com/">PBAutomotion</a></li>
+								<li class="submenuGreenLi"><a href="http://www.rochesterapartmentfinder.com/">Apartment Finder</a></li>
+								<li class="submenuGreenLi"><a href="http://jobs.postbulletin.com/">Job Search</a></li>
+							  <li class="submenuGreenLi"><a href="http://development.postbulletin.com/topjobs/">Top Jobs</a></li>
+  							<li class="submenuGreenLi"><a href="http://customcoupon.com/cgi-bin/valuecenter.cgi?config=SMALLROCHESTER">Coupons</a></li>
+  							<li class="submenuGreenLi"><a href="http://local.rochestermn.com/">Yellow Pages</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="submenuGreen"><a href="http://jobs.postbulletin.com/" style="color: white;">Jobs</a></div>
+						  <ul>
+							  <li class="submenuGreenLi"><a href="http://jobs.postbulletin.com/">Job Search</a></li>
+								<li class="submenuGreenLi"><a href="http://www.postbulletin.com/pbjobs/">Post-Bulletin Jobs</a></li>
+							  <li class="submenuGreenLi"><a href="http://development.postbulletin.com/topjobs/">Top Jobs</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="submenuGreen"><a href="http://www.pbautomotion.com/" style="color: white;">Autos</a></div>
+							<ul>
+							  <li class="submenuGreenLi"><a href="http://www.pbautomotion.com/">PBAutomotion</a></li>
+								<li class="submenuGreenLi"><a href="http://classads.postbulletin.com/classifieds/?loc=sub&amp;main=Transportation">Motorcycles, RVs, Boats, Etc.</a></li>
+							  <li class="submenuGreenLi"><a href="http://development.postbulletin.com/topautos/">Top Autos</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="submenuGreen"><a href="http://classads.postbulletin.com/classifieds/?loc=sub&amp;main=Real%20Estate%20For%20Sale" style="color: white;">Real Estate</a></div>
+						  <ul>
+							  <li class="submenuGreenLi"><a href="http://classads.postbulletin.com/classifieds/?loc=sub&amp;main=Real%20Estate%20For%20Rent">For Rent</a></li>
+								<li class="submenuGreenLi"><a href="http://classads.postbulletin.com/classifieds/?loc=sub&amp;main=Real%20Estate%20For%20Sale">For Sale</a></li>
+ 								<li class="submenuGreenLi"><a href="http://www.rochesterapartmentfinder.com/">Apartment Finder</a></li>
+								<li class="submenuGreenLi"><a href="http://news.postbulletin.com/rem/" target="_new">Real Estate Marketplace</a></li>
+								<li class="submenuGreenLi"><a href="http://development.postbulletin.com/realestate/openhouse/">Weekly Open House Directory</a></li>
+								<li class="submenuGreenLi"><a href="http://development.postbulletin.com/tophomes/">Top Homes</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="submenuGreen"><a href="http://customcoupon.com/cgi-bin/valuecenter.cgi?config=SMALLROCHESTER" style="color: white;">Coupons</a></div>
+						  <ul>
+							  <li class="submenuGreenLi"><a href="http://microsite.coupons.com/gmsa/Login.asp?pid=11136&amp;ZID=vk47&amp;NID=4">Grocery Coupons</a></li>
+								<li class="submenuGreenLi"><a href="http://customcoupon.com/cgi-bin/localentry.cgi?config=SMALLROCHESTER">Local Coupons</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				  <!-- End Dropdown Menus -->
+					
+				</div>
+				<div style="clear: both; width: 768px;">
+					<form name="searchForm" method="post" action="http://news.postbulletin.com/newsmanager/PPLsearch.aspx" style="border-right: 1px solid rgb(204, 204, 204); border-bottom: 1px solid rgb(204, 204, 204); margin: 0px; padding: 2px; width: 596px; float: left; text-align: left;">
+		  		  <input name="page" value="search" type="hidden">
+					  <input name="directory" value="data" type="hidden">
+					  <input name="publication" value="pb" type="hidden">
+						<input name="mode" value="test" type="hidden">
+						<input name="begin" value="06/01/1989" type="hidden">
+						<input name="end" value="01/01/2009" type="hidden">
+						<span class="text" style="font-family: Trebuchet MS,Sans Serif; font-size: 14px;">&nbsp;<b>Search:</b></span><span class="text"><input name="type" value="normal" checked="checked" onclick="check(this.value)" type="radio"> last 60 days <input name="type" value="archive" onclick="check(this.value)" type="radio"> archives <input name="type" value="yellow" onclick="check(this.value)" type="radio"> Yellow Pages
+      			<input name="search" style="width: 180px;" type="text"> <input name="Submit" value="Go" type="submit">
+      			</span>
+					</form>
+					
+					  <div style="width: 150px; font-size: 11px; float: right; text-align: right;">  
+					  &nbsp;
+						</div>
+					
+				</div>
+				<!-- End Header -->
+<div style="padding: 3px; float: left; width: 602px;">
+   <!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="a17_files/s_code_remote.js"></script><img src="a17_files/s95234664380196.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "MNROC") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="a17_files/prototype.js"></script>
+ <script type="text/javascript" src="a17_files/scriptaculous.js"></script><script type="text/javascript" src="a17_files/effects.js"></script>
+ <script type="text/javascript" src="a17_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="a17_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1997883: Warm Weather Allergies
+   Created: 2007/1/5 17:56:51
+   Modified: 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Jan 5, 5:56 PM EST</div></div><br>
+<p class="body"><span class="headline">Winter no relief for allergy sufferers</span>
+</p>
+<p class="ap-story-p">
+<span class="byline">By REBECCA SANTANA         </span><br>
+<span class="bylinetitle">Associated Press Writer</span></p></div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11251066
+   Created  : 2007/1/5 17:56:53
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1110030: online
+   Created: 2007/1/5 17:56:53
+   Modified: 2007/1/5 17:56:53
+   Generated: 2007/1/5 17:56:54 -->
+<!-- SmallPhoto: 2249289
+   Created: 2007/1/5 16:35:39
+   Modified: 2007/1/5 16:35:40
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://hosted.ap.org/dynamic/files/photos/P/PAPL10201052135.html?SITE=MNROC&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="a17_files/PAPL10201052135-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo/Pat Little</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2249289 -->
+<!-- /Package: 1110030 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858182: VIDEO_PROMO_US_SECTION
+   Created: 2006/3/21 10:47:29
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+
+<!-- HtmlTable: 44689
+   Created  : 2006/3/21 10:48:08
+   Modified : 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">U.S. Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4637
+   Created: 2006/3/21 10:49:30
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="a17_files/apOVN.js">
+</script>
+<div id="flashcontent"><embed type="application/x-shockwave-flash" src="a17_files/sm_vrt_3thumb_scroll.swf" id="sm_vrt_3thumb_scroll" name="sm_vrt_3thumb_scroll" wmode="opaque" quality="best" bgcolor="#FFFFFF" flashvars="cat=US&amp;pid=MNROC&amp;fontcolor=0x336699" height="165" width="170">
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4637 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44689 -->
+<!-- /Package: 858182 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 125902: ADVERTISEMENT_NATIONAL
+   Created: 2003/1/9 18:30:29
+   Modified: 2006/3/27 13:54:08
+   Generated: 2006/12/2 09:46:35 -->
+<!-- HtmlFragment: 4267
+   Created: 2005/11/28 11:28:59
+   Modified: 2005/11/28 11:29:08
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=ntn; dt";</script>
+<script src="a17_files/slf.js" language="JavaScript"></script><script src="a17_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4267 -->
+<!-- HtmlFragment: 1114
+   Created: 2003/1/9 18:31:04
+   Modified: 2005/8/5 11:00:20
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR NATIONAL STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='NATIONAL';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a17_files/1805347770x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x96"></a></script><!-- BEGIN Tag Collective Media AP / 300x250 -->
+<script language="JavaScript" src="a17_files/script.jsp"></script><script language="javascript" src="a17_files/index.jsp"></script><script language="javascript" src="a17_files/c_none.js"></script><iframe src="a17_files/01.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" frameborder="0" height="250" scrolling="no" width="300">
+&lt;a
+href="http://clk.atdmt.com/VON/go/cllcavos0020000050von/direct/01/"
+target="_blank"&gt;&lt;img
+src="http://view.atdmt.com/VON/view/cllcavos0020000050von/direct/01/"/&gt;&lt;/a&gt;&lt;noscript&gt;&lt;a
+href="http://clk.atdmt.com/VON/go/cllcavos0020000050von/direct/01/"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/VON/view/cllcavos0020000050von/direct/01/"
+/&gt;&lt;/a&gt;&lt;/noscript&gt;</iframe>
+<!-- END Tag --></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="a17_files/1805347770x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x03"></a></script><!-- begin InterceptInteractive pop tag for INT314 -->
+<iframe src="a17_files/int314.htm" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0" height="1" scrolling="no" width="1">
+</iframe>
+<!-- end InterceptInteractive --></div>
+<!-- AP end call to x03 -->
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 1114 -->
+<!-- /Package: 125902 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251066  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11251071
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 507193: X_BEHAVIORAL_NATIONAL
+   Created: 2004/11/19 10:00:46
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:57 -->
+<!-- HtmlFragment: 3853
+   Created: 2004/11/22 08:56:17
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:58 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- start behavioral tag 1 -->
+<script language="Javascript" src="a17_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+<!-- end behavioral tag 1 -->
+
+<!-- start behavioral tag 2 -->
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "NATIONAL")
+</script>
+<!-- end behavioral tag 2 -->
+
+<!-- start behavioral tag 3 -->
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="a17_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+<!-- end behavioral tag 3 -->
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3853 -->
+<!-- /Package: 507193 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251071  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11251072
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="a17_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="a17_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="a17_files/WARM_WEATHER_ALLERGIES.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251072  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> TRENTON, N.J. (AP) -- The unseasonably warm
+weather along the East Coast has flooded some offices with patients
+suffering from an unusual ailment this time of year: allergies.</p> <p class="ap-story-p">Doctors
+say this winter's weather has sparked an onslaught of mold spores that
+cause allergies and fluctuating temperatures that irritate
+already-suffering nasal passages. Many patients may confuse an allergic
+reaction with a common cold.</p> <p class="ap-story-p">"The phone is
+ringing off the hook - it's incredible," said Dr. Clifford W. Bassett,
+vice chairman in charge of public education of the American Academy of
+Allergy, Asthma and Immunology, who has a practice in Manhattan.</p> <p class="ap-story-p">"It's
+an explosion of people who are realizing that they may have allergies,"
+said Bassett. "Typically, January and February are quiet times in most
+allergists' offices."</p> <p class="ap-story-p">Mold spores that grow
+outdoors would normally die off during a cold snap or be covered with
+snow. But in warm weather mold spores continue to grow and spread.
+Throwing open the windows to enjoy the weather makes things worse: The
+mold spores waltz inside.</p> <p class="ap-story-p">Maria Carola, 35,
+of New York said usually she could go without her medication for
+chronic allergies in the winter. But she learned Friday from her doctor
+her runny nose and itchy eyes weren't symptoms of a cold as she
+suspected.</p> <p class="ap-story-p">"Usually, the symptoms wouldn't be that prominent," Carola said of her allergies.</p> <p class="ap-story-p">The
+most common allergy symptoms are itchy eyes, noses and throats, and
+possibly runny or stuffy noses, said Bassett. People with colds may
+share the stuffed up nose problem, but also may see changes in the
+color of their mucus, loss of appetite, fatigue, low-grade headaches or
+fevers.</p> <p class="ap-story-p">Some doctors say a warm spell could
+bring a very early allergy season since trees might begin to bud early;
+others say the temperatures don't always make much of a difference.</p> <p class="ap-story-p">�
+2007 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MFDFK80', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="a17_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11251075
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621972: ADV_UNDER_NAT
+   Created: 2005/5/15 11:24:17
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:11 -->
+<!-- HtmlFragment: 3986
+   Created: 2005/5/15 11:27:45
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">
+var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1' + RNS+ '@x02"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><script language="JavaScript1.1" src="a17_files/1805347770x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MNROC.hosted.ap.org/NATIONAL/1805347770@x02"></a></script><script language="JavaScript" src="a17_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!" onmouseover="top.status='Find Low Mortgage Rates'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnobhnibinibinjzfxaxortxo&eid=1&id=87977874&brightads_used=&partner_override=&query=general%20network%3Apremium&clickid=82333664&UNQ=01116812222384598246&tz=807&cgroup=national&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Find Low Mortgage Rates</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.loanweb.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Get a low mortgage rate and start saving thousands. Bad credit OK!" onmouseover="top.status='Refinance $300K for $996/Month'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnobhnibinibinjzpxcxarwxa&eid=1&id=87138207&brightads_used=&partner_override=&query=general%20network%3Apremium&clickid=82333664&UNQ=01116812222384598266&tz=807&cgroup=national&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance $300K for $996/Month</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Get a low mortgage rate and start saving thousands. Bad credit OK!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.low.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Our network of bad credit mortgage experts can save you $1,000s!" onmouseover="top.status='Bad Credit Mortgage Experts'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnobhnibinibinjztxexcrsxc&eid=1&id=87916006&brightads_used=&partner_override=&query=general%20network%3Apremium&clickid=82333664&UNQ=01116812222384598261&tz=US&cgroup=national&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Bad Credit Mortgage Experts</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Our network of bad credit mortgage experts can save you $1,000s!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.homeloanhelpline.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Receive up to 4 free quotes and select the best rate! No obligations." onmouseover="top.status='Refinance as Low as 3.9% - Fast Quotes'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnobhnibinibinjzsrzxerrxe&eid=1&id=87916093&brightads_used=&partner_override=&query=general%20network%3Apremium&clickid=82333664&UNQ=0011681222238459827&tz=US&cgroup=national&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance as Low as 3.9% - Fast Quotes</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Receive up to 4 free quotes and select the best rate! No obligations.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.refinancetrust.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Refinance and save $1,000s. Receive up to 4 free quotes!" onmouseover="top.status='$150,000 Mortgage for $483 a Month'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnobhnibinibinjzfxaxortxo&eid=1&id=87916053&brightads_used=&partner_override=&query=general%20network%3Apremium&clickid=82333664&UNQ=00116812222384598261&tz=US&cgroup=national&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">$150,000 Mortgage for $483 a Month</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Refinance and save $1,000s. Receive up to 4 free quotes!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.pickamortgage.com</span>					</div>				</div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3986 -->
+<!-- /Package: 621972 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251075  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1997883: Warm Weather Allergies -->
+
+</div>
+<div style="float: left; width: 160px; padding-top: 3px;">
+<!-- Start News Skyscraper Zone -->
+	<script language="JavaScript" type="text/javascript" src="a17_files/adx.js"></script>
+	<script language="JavaScript" type="text/javascript">
+	<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://adserv.postbulletin.com/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:17&amp;target=_blank");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+	 //-->
+	 </script><script language="JavaScript" type="text/javascript" src="a17_files/adjs.js"></script><a href="http://adserv.postbulletin.com/adclick.php?bannerid=17&amp;zoneid=16&amp;source=&amp;dest=http%3A%2F%2Fwww.rochestermn.com%2Fhotel%2F" target="_top"><img src="a17_files/pb_hotels_skyscraper.gif" alt="Rochester, MN Hotel Finder" title="Rochester, MN Hotel Finder" border="0" height="600" width="160"></a><div id="beacon_17" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="a17_files/adlog_003.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><noscript><a
+href='http://adserv.postbulletin.com/adclick.php?n=ad3374ea'
+target='_blank'><img
+src='http://adserv.postbulletin.com/adview.php?what=zone:17&amp;n=ad3374ea'
+border='0' alt=''></a></noscript>
+  <!-- End News Skyscraper Zone -->
+	<div style="padding-top: 3px;">
+	<!-- Start Top Ads Zone -->
+	<script language="JavaScript" type="text/javascript" src="a17_files/adx.js"></script>
+	<script language="JavaScript" type="text/javascript">
+	<!--
+  if (!document.phpAds_used) document.phpAds_used = ',';
+  phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+  
+  document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+  document.write ("http://adserv.postbulletin.com/adjs.php?n=" + phpAds_random);
+  document.write ("&amp;what=zone:52");
+  document.write ("&amp;exclude=" + document.phpAds_used);
+  if (document.referrer)
+     document.write ("&amp;referer=" + escape(document.referrer));
+  document.write ("'><" + "/script>");
+	//-->
+	</script><script language="JavaScript" type="text/javascript" src="a17_files/adjs_004.js"></script><script type="text/javascript" src="a17_files/bannerAllJavascript.htm"> </script><script language="JavaScript" type="text/javascript"><!--//-->
+</script><div style="width: 160px;" name="topBanner" id="topBanner"><script>document.write(homeHTML);</script><div style="font-family: Trebuchet MS,Arial,Sans Serif,serif; font-size: 10px;"><div><img src="a17_files/top_homes.gif" usemap="#homemap" style="border: medium none ; margin: 0px; padding: 0px;" border="0"></div><div style="border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 0px;"><div style="border-bottom: 1px solid rgb(0, 0, 0); margin: 7px;"><a href="#" onclick='window.open("http://development.postbulletin.com/topjobs/adDisplay2.php?adID=00098178","_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width=400, height=400")' style="font-weight: bold; font-size: 12px;">1033 REDING AVE, RED WING</a><br>Post Bulletin Employee<br></div><div style="margin: 7px; font-weight: bold; font-size: 12px;"><a href="http://development.postbulletin.com/topjobs//phpDisplay/allHomePhp.php" style="font-weight: bold; font-size: 12px;">More Homes...</a></div></div></div><map name="homemap" id="homemap"><area shape="rect" coords="68,10,112,29" href="#" onclick="changeBanner('auto');" target="_self" alt="autos"><area shape="rect" coords="113,10,157,29" href="#" onclick="changeBanner('job');" target="_self" alt="jobs"></map></div><div id="beacon_89" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="a17_files/adlog_004.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><noscript><a
+href='http://adserv.postbulletin.com/adclick.php?n=adc94af3'
+target='_blank'><img
+src='http://adserv.postbulletin.com/adview.php?what=zone:52&amp;n=adc94af3'
+border='0' alt=''></a></noscript>
+  <!-- End Top Ads Zone -->
+	</div>
+	<div style="padding-top: 3px;">
+	<!-- Start Advertiser Directory Zone -->
+	<script language="JavaScript" type="text/javascript" src="a17_files/adx.js"></script>
+	<script language="JavaScript" type="text/javascript">
+	<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://adserv.postbulletin.com/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:53");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+	 //-->
+	 </script><script language="JavaScript" type="text/javascript" src="a17_files/adjs_002.js"></script><script type="text/javascript" src="a17_files/allAdsBanner.htm"> </script><div style="width: 160px;"><div style="border: 1px solid rgb(0, 0, 0); background: rgb(255, 255, 255) none repeat scroll 0%; font-family: Trebuchet MS,Arial,Sans Serif,serif; font-size: 12px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a href="http://adserv.postbulletin.com/inventory/index.php"><img src="a17_files/adspot_header.gif" border="0"></a><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=40&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D57">Hamilton Realestate</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=91&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D95">Babcock Builders</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=113&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D126">Olmsted Medical Center</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=75&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D88">Lake Magazine</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=42&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D60">International Event Center</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=33&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D44">Quality Overhead Door</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=93&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D97">Remax of Rochester</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=51&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D70">Wireless Toyz</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=32&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D42">Fiksdal Flowers</a></div><div style="margin: 4px;"><a href="http://adserv.postbulletin.com/adclick.php?bannerid=118&amp;zoneid=53&amp;source=&amp;dest=http%3A%2F%2Fadserv.postbulletin.com%2Finventory%2FcampaignView.php%3FcampID%3D134">Real Estate Marketplace</a></div><div style="margin: 4px; font-weight: bold; font-size: 12px;"><a href="http://adserv.postbulletin.com/inventory/index.php" style="font-weight: bold;">More Advertisers...</a></div></div></div><div id="beacon_18" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="a17_files/adlog.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><noscript><a
+href='http://adserv.postbulletin.com/adclick.php?n=a33e613d'
+target='_blank'><img
+src='http://adserv.postbulletin.com/adview.php?what=zone:53&amp;n=a33e613d'
+border='0' alt=''></a></noscript>
+	 <!-- End Advertiser Directory Zone -->
+   </div>
+</div>
+				<div style="clear: both; width: 768px; padding-top: 5px;">
+				  <!-- begin ZEDO for channel:  Post Bulletin , publisher: Post Bulletin , Ad Dimension: Super Banner - 728 x 90 -->
+					<script language="JavaScript">
+	  			  var zflag_nid="558"; var zflag_cid="350/9"; var zflag_sid="242"; var zflag_width="728"; var zflag_height="90"; var zflag_sz="14"; 
+					</script>
+					<iframe src="a17_files/ff2.htm" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0" height="90" scrolling="no" width="728">
+&lt;script language="JavaScript"
+src="http://c1.zedo.com/jsc/c1/ff2.js"&gt;&lt;/script&gt;
+&lt;noscript&gt; &lt;a
+href="http://xads.zedo.com/ads2/r?n=558;c=350/9;s=242;x=3584;u=j;z=[timestamp]"
+target="_blank"&gt;&lt;img border="0" width="728" height="90"
+src="http://xads.zedo.com/ads2/x?n=558;c=350/9;s=242;x=3584;u=j;z=[timestamp]"
+alt="Click here"&gt;&lt;/a&gt; &lt;/noscript&gt; </iframe>
+					<!-- end ZEDO  for channel:  Post Bulletin , publisher: Post Bulletin , Ad Dimension: Super Banner - 728 x 90 -->
+				</div> 
+				 
+        <div style="clear: both; width: 768px; padding-top: 5px;">
+					<p style="text-align: center; font-size: 10px; color: rgb(0, 0, 0);">
+					  <span style="font-weight: bold;">Visit other SNG news sites:</span><br>
+					  <a href="http://mywebtimes.com/" style="font-size: 10px;">MyWebTimes.com</a><b> � </b><a href="http://heraldargus.com/" style="font-size: 10px;">HeraldArgus.com</a><b> � </b><a href="http://daily-journal.com/" style="font-size: 10px;">Daily-Journal.com</a><b> � </b><a href="http://www.qconline.com/" style="font-size: 10px;">QCOnline.com</a><b> � </b><a href="http://lakemagazine.com/" style="font-size: 10px;">LakeMagazine.com</a><br>
+            <span style="font-weight: bold;">Be sure to visit our other local sites:</span> <a href="http://www.rochestermn.com/" style="font-size: 10px;">Rochestermn.com</a><b> � </b><a href="http://www.rochesterapartmentfinder.com/" style="font-size: 10px;">Rochesterapartmentfinder.com</a><b> � </b><a href="http://www.rochesterautofinder.com/" style="font-size: 10px;">Rochesterautofinder.com</a><b> � </b><a href="http://www.rochesterjobfinder.com/" style="font-size: 10px;">Rochesterjobfinder.com</a>
+					</p>
+					<p style="text-align: center; font-size: 10px; color: rgb(0, 0, 0);">
+					  Copyright 2006 Post-Bulletin Company, LLC<br>
+						All Rights Reserved
+					</p>
+				</div>
+		  </td>
+		</tr>
+	</tbody></table>
+	<script src="a17_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-285548-2";
+urchinTracker();
+</script>
+  <div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="a17_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="a17_files/closelabel.gif"></a></div></div></div></div></body></html>

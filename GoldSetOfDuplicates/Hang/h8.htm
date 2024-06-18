@@ -1,0 +1,1526 @@
+<html><head><title>wimmera.yourguide</title><!-- BEGIN: SectionID -->
+
+
+
+
+
+
+
+<script language="JavaScript" type="Text/JavaScript">
+<!-- 
+_m1SecID="000000254-007";
+_m1IsActive=1;
+_m1PosV=2;
+_m1PosH=1;
+_m1PosX=0;
+_m1PosY=20;
+// -->
+</script><!-- END: SectionID --><!-- START AC Nielsen PDF Tracking -->
+
+
+<script type="text/javascript">
+<!--
+function _nnClick(_nnClickDest)
+{
+	_nnCD = _nnClickDest;
+	_nnECD = escape(_nnClickDest);
+	_nnDelay = 500; /* click delay */
+	var _nnRD=0;
+	if (parseInt(navigator.appVersion)>=4)
+	{
+	_nnRD=(new Date()).getTime();
+	}
+	var _nnCI="ruralpressltd";
+	var _nnCG="link-click";
+	var _nnCC="au";
+	var _nnLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+	var _nnRP=escape(window.location);
+	var _nnND=_nnLP+'//secure-' + _nnCC + '.imrworldwide.com/';
+	var _nnParams = "rnd=" + _nnRD + "&ci=" + _nnCI + "&cg=" + _nnCG;
+	var _nnRef = "&rp=" + _nnRP;
+	var _nnSI = "&si=" + _nnCI + "-ctgw-" + _nnECD;
+	var _nnPixel = new Image(1,1);
+	_nnPixel.src = _nnND + "cgi-bin/m?rnd=" + _nnParams + _nnSI + _nnRef;
+	
+	
+	// Original version - opens PDF in the same window.
+	setTimeout("window.location = _nnCD", _nnDelay);
+
+	//Modified version - opens PDF in new window.
+	//setTimeout("window.open('" + _nnCD + "', 'newwindow')", _nnDelay);
+}
+//-->
+</script><!-- END AC Nielsen PDF Tracking -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta name="keywords" content="News, Newspaper, Rural">
+<meta name="description" content="Ruralpress Limited Newspapers">
+<meta name="copyright" content="© 2000 Rural Press Ltd.">
+
+<link href="h8_files/print.css" rel="stylesheet" type="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="h8_files/yourguide.css"> 
+
+<script src="h8_files/validation.js" language="JavaScript"></script>
+<script src="h8_files/error_check.js" language="JavaScript"></script>
+<script src="h8_files/common_functions.js" language="JavaScript"></script>
+<script src="h8_files/browser_check.js" language="JavaScript"></script>
+<script src="h8_files/ff_assignalliframes.js" language="javascript"></script>
+
+
+
+<script language="JavaScript">
+	function SubmitPoll(check_field)
+	{
+		fCheck = true
+		AtLeastOneSelected(document.poll_form, check_field, "checkbox","Readers Poll: Please select an option");
+
+		if (fCheck)
+		{
+			return true;
+		}
+		else {
+			return false;	
+		}
+	}
+
+	function AtLeastOneSelected(which_form, element_name, check_mode, alert_message){
+		if (fCheck) {
+			fCheck = false;
+			with (window.document) {
+				for ( i=0; i < which_form.elements.length; i++ ) {
+					current_name = which_form.elements[i].name
+					if (current_name.substring(0,element_name.length) == element_name) {
+						if ((check_mode == "checkbox" && which_form.elements[i].checked == true) || (check_mode == "text_field" && which_form.elements[i].value != "")) {
+							fCheck = true;
+							break;
+						}
+					}
+				}
+			}
+			if (fCheck == false){
+				alert(alert_message);
+			}
+		}
+	}
+
+	/****************************************************************
+	* validateimage												*
+	*														*
+	* This function is triggered by the 'onerror' property of the front cover image	*
+	* tag. When no cover image file is available, this function hides the image cell	*
+	* altogether.												*
+	*														*
+	* Missing cover images are handled in this way because they are located on	*
+	* a different site. i.e. the presence of a filename in the yourguide database	*
+	* is assumed to be no guarantee that the image file is actually available.	*
+	****************************************************************/
+	function validateimage(strPubID) {
+		var strMyFrontCoverCellID = 'cell_frontcover' + strPubID;
+		var strMyFrontCoverDividerCellID = 'cell_frontcover_divider' + strPubID;
+		var MyCellObject;
+		MyCellObject = document.getElementById(strMyFrontCoverCellID);
+
+		// Hide the Front cover cell entirely.
+		if (MyCellObject) {
+			MyCellObject.innerHTML = '';
+		}
+
+		// Also hide the spacer cell beneath the front cover cell.
+		MyCellObject = document.getElementById(strMyFrontCoverDividerCellID);
+		if (MyCellObject) {
+			MyCellObject.innerHTML = '';
+		}
+	}
+
+	function setFocusToContent()
+	{
+		//var theContent = document.getElementById("mainContentPrint");
+		assignAllIframes();
+	}
+</script>
+
+<script language="JavaScript1.2" type="text/javascript"> 
+function CreateBookmarkLink() { 
+	title = "Wimmera.yourguide"; 
+	url = "http://wimmera.yourguide.com.au/detail.asp?class=international%20news&subclass=general&story_id=543629&category=general"; 
+
+	if (window.sidebar) { 
+		// Mozilla / Firefox/Netscape Bookmark 
+		window.sidebar.addPanel(title, url,""); 
+
+	} else if( window.external ) { 
+		// IE Favorite 
+		window.external.AddFavorite( url, title); 
+	} 
+
+	else if(window.opera && window.print) { 
+		// Opera Hotlist 
+		return true;
+	} 
+}
+</script></head><body topmargin="0" leftmargin="0" onload="javascript:setFocusToContent();" bgcolor="white" marginheight="0" marginwidth="0" vlink="#666699">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="728">
+<tbody><tr>
+	<td align="center"><script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://maxads.ruralpress.com/phpAdsNew/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:89");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><script language="JavaScript" type="text/javascript" src="h8_files/adjs_003.js"></script><noscript><a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=ae238198'
+target='_blank'><img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:89&amp;n=ae238198'
+border='0' alt=''></a></noscript>
+
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_007.gif"></div></td>
+</tr>
+</tbody></table>
+
+<table id="mainTablePrint" align="center" border="0" cellpadding="0" cellspacing="0" width="940">
+<tbody><tr id="topTabsPrint">	
+	<td colspan="6" width="940">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="27" width="940">
+		<tbody><tr>
+			<td valign="bottom" width="4"><img src="h8_files/tabend.gif" border="0" height="21" width="4"></td>
+			<td valign="bottom" width="6"><img src="h8_files/tableft.gif" border="0" height="21" width="6"></td>
+			<td nowrap="nowrap" valign="bottom"><table valign="middle" class="Tab" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="center" height="21" nowrap="nowrap">&nbsp;<a href="http://www.yourguide.com.au/">yourguide</a>&nbsp;&nbsp;</td><!--<td nowrap align="center"><img src="/images/general_new/tabdivider.gif" width="5px" height="21px" border="0"></td><td nowrap>&nbsp;&nbsp;<a href="/home.asp"></a>&nbsp;</td>--></tr></tbody></table></td>
+			<td valign="bottom" width="6"><img src="h8_files/tabright.gif" border="0" height="21" width="6"></td>
+			<td class="TabBeside" valign="bottom" width="100%">&nbsp; <!-- Needs to be 55% if Arial font used -->
+			Welcome to
+			Wimmera Mail Times 
+			news, classifieds and community.<br><img src="h8_files/space.gif" height="3" width="1"><br></td>
+			
+			
+				<td align="right"><a href="http://www.lifeislocal.com.au/"><img src="h8_files/lil_top_right.gif" alt="Life is Local" title="Life is Local" border="0" height="27" width="118"></a></td>
+			
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+<tr>
+	<td colspan="6">
+	<!-- OVERALL TABLE -->
+	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+	<tbody><tr>
+		<td bgcolor="#f9f9f9" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+		<td bgcolor="#f3f3f3" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+		<td bgcolor="#f3f3f3" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+		<td bgcolor="#e9e7e7" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+		<td class="OverallBorder" height="100%">
+	
+		<table class="MastBorder" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+		<tbody><tr>
+			<td colspan="2">
+			<table class="MastBack" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td height="69">
+				<a href="http://wimmera.yourguide.com.au/home.asp">
+				&nbsp;&nbsp;<img src="h8_files/153-id.gif" border="0">
+				</a>
+				</td>
+				<td align="right" height="69" valign="middle">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody><tr><td><img src="h8_files/space.gif" border="0" height="4" width="1"></td></tr>
+				</tbody></table>					
+				<script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://maxads.ruralpress.com/phpAdsNew/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:88");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><script language="JavaScript" type="text/javascript" src="h8_files/adjs_005.js"></script><noscript><a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=a9936917'
+target='_blank'><img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:88&amp;n=a9936917'
+border='0' alt=''></a></noscript>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_014.gif"></div><a href="http://wimmera.yourguide.com.au/competitions.asp?comp_id=171"><img src="h8_files/PremiumBanner_DVDGiveawayWI.jpg" border="0" height="60" width="468">
+				</a></td>
+			</tr>
+			</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" height="20" valign="middle">
+			<table class="DateBar" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td align="left" height="20">&nbsp;&nbsp;&nbsp;Saturday, 30 December 2006</td>
+				<td align="right" height="20">
+				
+				<script type="text/javascript">
+				<!--
+				//CHECK BROWSER VERSION/TYPE - SAVE AS HOMEPAGE OR BOOKMARK.
+				
+				var setHomepage = "http://wimmera.yourguide.com.au/detail.asp?class=international%20news&subclass=general&story_id=543629&category=general";
+				var redirTo = "http://wimmera.yourguide.com.au/detail.asp?class=international%20news&subclass=general&story_id=543629&category=general";
+				var ua=navigator.userAgent;
+				//alert(ua);
+				if ((ua.indexOf("Windows")!=-1) && (ua.indexOf("MSIE 5")!=-1 || ua.indexOf("MSIE 6")!=-1 || ua.indexOf("MSIE 7")!=-1) && ua.indexOf("Win")!=-1 && ua.indexOf("Opera")==-1) {
+					 document.write("<a href=\""+redirTo+"\" onClick=\"style.behavior='url(#default#homepage)';setHomePage('"+setHomepage+"');\">Make&nbsp;this&nbsp;My&nbsp;Homepage</a>&nbsp;|&nbsp;");
+				}
+				else if (ua.indexOf("Firefox")!=-1)  {
+				      document.write("<a href=\"javascript:CreateBookmarkLink();\">Bookmark&nbsp;this&nbsp;Page</a>&nbsp;|&nbsp;");
+				}
+
+				else if (ua.indexOf("Netscape")!=-1)  {
+				      document.write("<a href=\"javascript:CreateBookmarkLink();\">Add&nbsp;this&nbsp;Site&nbsp;to&nbsp;My&nbsp;Sidebar</a>&nbsp;|&nbsp;");
+				}
+
+				else {
+				      document.write("&nbsp;");
+				}
+				 -->
+				</script><a href="javascript:CreateBookmarkLink();">Bookmark&nbsp;this&nbsp;Page</a>&nbsp;|&nbsp;<a href="http://signon.yourguide.com.au/memberprofile.asp?site=YG&amp;returnurl=http://wimmera.yourguide.com.au/detail.asp?class=international%20news&amp;subclass=general&amp;story_id=543629&amp;category=general">Member Profile</a>&nbsp;|&nbsp;<a href="http://signon.yourguide.com.au/signin.asp?returnurl=http://wimmera.yourguide.com.au/detail.asp?class=international%20news&amp;subclass=general&amp;story_id=543629&amp;category=general">Login</a>
+				&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+			</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#f9f9f9" height="1"></td> <!--Shadow line -->
+		</tr>
+
+		<!-- LEFT NAV START -->
+		<tr>
+			<td style="border-right: 1px solid rgb(201, 199, 199);" height="100%" valign="top" width="120">
+
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="120">
+			<tbody><tr>
+				<td><img src="h8_files/ttl_news.gif" border="0" height="18" width="120"></td>
+			</tr>
+			<tr width="100%">
+				<td class="LeftNav" valign="top" width="120">
+						
+				<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tbody><tr width="100%">
+					<td id="menu" valign="top" width="100%">
+			
+															
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/display.asp?class=news">Local</a></p>
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/display.asp?class=sport">Sport</a></p>
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/display.asp?class=national%20news">National</a></p>
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/display.asp?class=international%20news">World</a></p>
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/display.asp?class=your%20say">Editorial</a></p>
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/displaylifestyle.asp">Lifestyle</a></p>
+					
+
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/search.asp" width="150px">Search<img src="h8_files/space.gif" border="0" width="5"></a></p>
+
+					
+
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/weather.asp" width="150px">Weather</a></p>
+					</td>
+				</tr>
+				</tbody></table>
+				</td>
+			</tr>
+			<tr width="100%"><td><img src="h8_files/ttl_marketplace.gif" border="0" height="18" width="120"></td></tr>
+			<tr>
+				<td class="LeftNav" valign="top" width="120">
+
+				<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tbody><tr width="100%">
+					<td id="menu" valign="top" width="100%">
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/searchclas.asp">Classifieds</a></p><p class="MenuItem"><a href="http://wimmera.yourguide.com.au/classies_submit.asp">Place an Ad </a></p><p class="MenuItem"><a href="http://wimmera.yourguide.com.au/tradesandservices">Local Directory</a></p>				
+						<p class="MenuItem"><a href="http://www.propertyguide.com.au/">Real Estate</a></p>
+						<p class="MenuItem"><a href="http://www.jobsguide.com.au/">Jobs</a></p>
+						<p class="MenuItem"><a href="http://www.autoguide.com.au/">Autos</a></p>			
+						</td>
+					</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr width="100%">
+				<td><img src="h8_files/ttl_community.gif" border="0" height="18" width="120"></td>
+			</tr>
+			<tr>
+				<td class="LeftNav" valign="top" width="120">
+						
+				<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tbody><tr width="100%">
+					<td id="menu" valign="top" width="100%">					
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/displayops.asp?class=your%20say">Your Say</a></p>							
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/dispcall.asp?month=12&amp;year=2006&amp;calclass=All">Events</a></p>
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/displayclubs.asp">Club Pages</a></p>
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/dispcall.asp?month=12&amp;year=2006&amp;calclass=Entertainment">Entertainment</a></p>
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/Features.asp">Special Features</a></p><p class="MenuItem"><a href="http://wimmera.yourguide.com.au/competitions_listing.asp">Competitions</a></p>
+					</td>
+				</tr>
+				</tbody></table>
+				</td>
+			</tr>
+			<tr width="100%">
+				<td><img src="h8_files/ttl_contact.gif" border="0" height="18" width="120"></td>
+			</tr>
+			<tr>
+				<td class="LeftNav" valign="top" width="120">
+						
+				<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tbody><tr width="100%">
+					<td id="menu" valign="top" width="100%">
+
+					
+						<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/submitmail_newstips.asp">Send Us News</a></p>
+					
+
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/about.asp?department_id=1">Contact Us</a></p>
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/about.asp?department_id=12">Subscribe</a></p>
+					<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/about.asp?department_id=2">Advertise</a></p>
+									
+					
+					</td>
+				</tr>
+				</tbody></table>
+				</td>
+			</tr>
+			
+			
+				<tr width="100%">
+					<td><img src="h8_files/ttl_locallinks.gif" border="0" height="18" width="120"></td>
+				</tr>
+				<tr>
+					<td class="LeftNav" valign="top" width="120">
+					<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr width="100%">
+						<td id="menu" valign="top" width="100%">
+							<p class="MenuItem"><a href="http://www.hrcc.vic.gov.au/" target="_blank">Horsham Rural City Council</a></p>
+							<p class="MenuItem"><a href="http://wimmera.yourguide.com.au/links.asp">All Local Links</a></p>
+						</td>
+					</tr>
+					</tbody></table>
+					</td>
+				</tr>
+			
+			<tr>
+				<td class="LeftNav" valign="top" width="120">
+					<table class="LeftNav" border="0" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr width="100%">
+						<td id="menu" valign="top" width="100%">
+							<p class="MenuDivider"></p>
+							<p class="MenuItem"><span class="MenuItemGrey"><a href="http://wimmera.yourguide.com.au/privacy.asp">Privacy</a></span></p>
+							<p class="MenuItem"><span class="MenuItemGrey"><a href="http://wimmera.yourguide.com.au/copyright.asp">Copyright</a></span></p>
+						</td>
+					</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="LeftNav" height="100%" valign="top" width="120"><img src="h8_files/space.gif" border="0" height="100%" width="120"></td>
+			</tr>
+			</tbody></table>
+		</td>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="8"><img src="h8_files/space.gif" border="0" height="100%" width="8"></td>
+				<td id="mainContentPrint" valign="top" width="625">
+
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%"><!--Outer border for padding-->
+<tbody><tr>
+<td>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><!--main container for content-->
+<tbody><tr><td height="5"></td></tr>
+<tr>
+	<td>
+	<table class="CategoryLinks" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="StandardText" valign="top" width="100%"><a href="http://wimmera.yourguide.com.au/display.asp?class=International%20News">WORLD</a>&nbsp;&gt;&nbsp;<b><a href="http://wimmera.yourguide.com.au/display.asp?class=International%20News&amp;subclass=General&amp;category=General">General</a></b><img src="h8_files/space.gif" height="1" width="1"></td></tr></tbody></table>
+	</td>
+</tr>
+
+
+	
+	<tr><td height="10"></td></tr>
+	<tr>
+		<td>
+		
+		
+			<table class="StandardPageBox" border="0" cellpadding="5" cellspacing="0" width="100%"><!--table for grey box-->
+			<tbody><tr><td>
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"><!--table to display the story-->
+			<tbody><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="StandardText">Saturday, 30 December 2006</td>
+<td class="StandardText" align="right"><a href="http://wimmera.yourguide.com.au/display.asp?class=international%20news">View all news</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/addopinion.asp?class=your%20say&amp;link_story=543629">Have your say</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/email_friend.asp?story_id=543629&amp;category=General">Send to a friend</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/printerFriendlyPage.asp?class=international%20news&amp;subclass=general&amp;story_id=543629" target="_blank">Print</a>
+</td>
+</tr>
+<tr><td colspan="2" height="8"></td></tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tbody><tr>
+<td colspan="2" valign="top">
+<span class="StoryDetailsHeader"><strong>Saddam 'calm' before Baghdad execution</strong></span>
+<br><span class="NewsStoriesByLine">By Mariam Karouny</span>
+<br><img src="h8_files/space.gif" height="20" width="1"><br>
+<div class="StandardText">
+<story><bodytext> 	</bodytext></story><p>Saddam Hussein has been hanged
+at dawn for crimes against humanity, a dramatic, violent end for a
+leader who ruled Iraq by fear for three decades before a US invasion
+toppled him.</p> 	<p>"It was very quick. He died right away," one of
+the official Iraqi witnesses told Reuters, saying the former
+president's face was uncovered, he appeared calm and said a brief
+prayer as Iraqi policemen walked him to the gallows and put the noose
+round him.</p> 	<p>US President George W Bush, who branded Saddam a
+tyrant and a threat to global security even though alleged nuclear and
+other weapons were not found after the 2003 invasion, hailed the
+execution as a "milestone" on Iraq's path to democracy.</p> 	<p>As day
+broke on one of the holiest dates of the Muslim year and the call to
+prayer echoed out from minarets across a dark and bitterly cold
+Baghdad, officially-backed television channels flashed the news shortly
+after 6am (1400 AEDT) on Saturday.</p> 	<p>"He seemed very calm. He did not tremble," a senior official present at the execution told Reuters.</p> 	<p>Saddam, 69, was bound and shackled but his face was uncovered as he met his death.</p> 	<p>The
+former president recited the Muslim profession of faith "There is no
+God but God and Mohammed is his prophet" but made no other remark after
+policemen escorted him to the scaffold.</p> 	<p>The official would not say where the execution took place but said it was not in the fortified Green Zone compound.</p> 	<p>Another
+said it was at a facility known to Americans as "Camp Justice" - a
+former base for Saddam's feared security services and now used
+regularly for executions by Iraqi's courts.</p> 	<p>National Security Adviser Mowaffaq al-Rubaie told state television Saddam seemed to him "a broken man" on the gallows.</p> 	<p>He
+and other officials denied a statement read out earlier on state
+television that said Saddam's half-brother and a former judge were also
+hanged.</p> 	<p>The senior official said Barzan al-Tikriti and Awad
+al-Bander, convicted with Saddam last month, would be executed after
+the week long Eid al-Adha holiday.</p> 	<p>"Bringing Saddam Hussein to
+justice will not end the violence in Iraq, but it is an important
+milestone on Iraq's course to becoming a democracy that can govern,
+sustain, and defend itself," Bush said in a statement.</p> 	<p>Saddam's
+appeal was rejected four days ago and the rapid execution will delight
+Prime Minister Nuri al-Maliki's Shi'ites, who were oppressed under
+Saddam, but may anger Saddam's resentful Sunni minority, as well as
+some Kurds who were hoping to see him convicted of genocide against
+them.</p> 	<p>"The timing of the execution and the sudden way it has
+been done may irritate people," Saleem al-Jibouri, a spokesman for the
+main Sunni party in the national unity government, said.</p> 	<p>The
+start of the week-long Eid al-Adha holiday at noon, coinciding with the
+haj pilgrimage to Mecca, had seemed it might cause a delay in the
+execution before a late-night meeting between Maliki and US officials
+agreed the final procedures.</p> 	<p>Saddam's daughter Raghd, in
+Jordan, "is asking that his body be buried in Yemen temporarily until
+Iraq is liberated and it can be reburied in Iraq," a source close to
+the family said.</p> 	<p>One senior Iraqi official said the family
+could claim the body. It might also be sent to Saddam's home town of
+Tikrit, where the governor had declared a four-day curfew.</p> 	<p>Seeking
+an 11th hour reprieve, defence lawyers asked a US federal court to
+order a halt to the execution because Saddam is a defendant in a civil
+case in Washington. But a US judge denied the move, saying Saddam was
+not being held in US custody and as a result her court lacked
+jurisdiction.</p> 	<p>US troops are on alert for trouble from
+insurgents among Saddam's Sunni minority. While there were some
+protests at November's verdict by a US-sponsored court, few Sunnis have
+deep feelings about the fate of the fallen strongman.</p> 	<p>An
+execution at the start of Eid is highly symbolic. The feast marks the
+sacrifice the prophet Abraham was prepared to make when God ordered him
+to kill his son and many Shi'ites could regard Saddam's death as a gift
+from God. Such symbolism could further anger Sunnis, resentful of new
+Shi'ite power.</p> 	<p>Saddam was found guilty over the killing,
+torture and other crimes against the Shi'ite population of the town of
+Dujail after Shi'ite militants tried to assassinate him there in 1982.</p> 	<p>Saddam,
+who said in court he had no fear of dying, had a farewell meeting with
+two of his half-brothers on Thursday, his lawyers said, adding the
+fallen dictator was in high spirits.</p> 	<p>International human rights
+groups criticised the year-long trial, during which three defence
+lawyers were killed and a chief judge resigned complaining of political
+interference.</p> 	<p>The United Nations and many of Washington's Western allies called on Bush and Maliki not to go ahead with the execution.</p> 
+		Brought to you by REUTERS<br>
+		
+		<a href="http://wimmera.yourguide.com.au/copyright.asp#aap">© 2006&nbsp;REUTERS</a>
+		<div align="right"><table border="0" cellpadding="5" cellspacing="0">
+<tbody><tr><td><script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://maxads.ruralpress.com/phpAdsNew/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:85");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><script language="JavaScript" type="text/javascript" src="h8_files/adjs_004.js"></script><noscript><a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=ab733c4a'
+target='_blank'><img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:85&amp;n=ab733c4a'
+border='0' alt=''></a></noscript>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_006.gif"></div><script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://maxads.ruralpress.com/phpAdsNew/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:85");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><script language="JavaScript" type="text/javascript" src="h8_files/adjs.js"></script><noscript><a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=ab733c4a'
+target='_blank'><img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:85&amp;n=ab733c4a'
+border='0' alt=''></a></noscript>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_013.gif"></div></td></tr>
+</tbody></table>
+</div><p align="right">
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="StandardText" nowrap="nowrap"><a href="http://wimmera.yourguide.com.au/display.asp?class=international%20news">View all news</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/addopinion.asp?class=your%20say&amp;link_story=543629">Have your say</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/email_friend.asp?story_id=543629&amp;category=General">Send to a friend</a>&nbsp;&nbsp;|
+&nbsp;<a href="http://wimmera.yourguide.com.au/printerFriendlyPage.asp?class=international%20news&amp;subclass=general&amp;story_id=543629" target="_blank">Print</a>&nbsp;&nbsp;|
+&nbsp;<a href="#">Back to top</a>
+</td></tr></tbody></table>
+</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr> <td height="8"><hr color="#cccccc" size="1"></td></tr><tr></tr><tr><td align="center"><img src="h8_files/153.jpg" alt="Wimmera Mail Times" border="0"></td></tr><tr> <td height="3"></td></tr></tbody></table></td></tr>
+			</tbody></table>
+			
+			</td></tr>
+			</tbody></table>
+		
+
+		</td>
+	</tr>
+
+
+</tbody></table>
+<br>
+</td>
+</tr>
+</tbody></table>
+
+											</td>
+											<td width="15"><img src="h8_files/space.gif" border="0" height="100%" width="5"></td>
+											<td bgcolor="#c9c7c7" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+											<td bgcolor="#dadada" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+											<td bgcolor="#e9e7e7" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+											<td bgcolor="#f3f3f3" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+											<td bgcolor="#f9f9f9" width="1"><img src="h8_files/space.gif" border="0" height="100%" width="1"></td>
+											<td class="AdColumn" align="center" valign="top">
+
+											<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+											<tbody><tr>
+												<td align="center" valign="top" width="100%">
+												<br>
+												
+<script language="JavaScript">
+	function showSearchLayer(LayerID) {
+		var i;
+		var objMenuButton;
+
+		if (document.all)
+		{
+			// IE browsers.
+			var aDivCollection = document.all.tags("div");
+		}
+		else
+		{
+			//Mozilla browsers.
+			var aDivCollection = document.getElementsByTagName("div"); 
+		}
+
+		if (aDivCollection!=null)
+		{
+			for (i=0; i<aDivCollection.length; i++) 
+			{
+				if (aDivCollection[i].id.indexOf("menu") != -1)  //Is the word 'menu' part of the current DIV tag's ID? Only mess with DIVs that start with "menu".
+				{	
+					
+					objMenuButton = document.getElementById(aDivCollection[i].id + '_btn');
+					if (aDivCollection[i].id == "menu" + LayerID)
+					{
+						// Found the menu we want to display.
+						if (aDivCollection[i].style.display=='block')
+						{
+							aDivCollection[i].style.display='none';
+							if (objMenuButton) 
+							{
+								objMenuButton.src = objMenuButton.src.substring(0, objMenuButton.src.indexOf(".gif")); //Remove '.gif'
+								objMenuButton.src = objMenuButton.src + '_closed.gif'; //Append '_closed.gif'
+							}
+						}
+						else
+						{
+							aDivCollection[i].style.display='block';
+							if (objMenuButton) 
+							{
+								objMenuButton.src = objMenuButton.src.substring(0, objMenuButton.src.indexOf("_closed.gif")); //Remove '_closed.gif'
+								objMenuButton.src = objMenuButton.src + '.gif'; //Append '.gif'
+							}
+						}
+					}
+					else {
+						// All other menus are closed.
+						aDivCollection[i].style.display='none';
+						if (objMenuButton) 
+						{
+							if (objMenuButton.src.indexOf("_closed.gif") == -1)  //Only append '_closed' if it isn't already part of the file name.
+							{
+								objMenuButton.src = objMenuButton.src.substring(0, objMenuButton.src.indexOf(".gif")); //Remove '.gif'
+								objMenuButton.src = objMenuButton.src + '_closed.gif'; //Append '_closed.gif'
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+</script>
+<table border="0" cellpadding="0" cellspacing="0" height="0" width="170">
+	<tbody><tr>
+		<td valign="top" width="100%"><a href="http://www.yourguide.com.au/yourguide.asp?src=lil"><img src="h8_files/btn_yourguide.gif" alt="Visit YourGuide" title="Visit YourGuide" border="0" height="27" width="170"></a></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%"><a href="javascript:showSearchLayer('1');" onfocus="blur();"><img id="menu1_btn" name="menu1_btn" src="h8_files/btn_jobsguide_closed.gif" alt="Search JobsGuide" title="Search JobsGuide" border="0" height="27" width="170"></a></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+			<div id="menu1" name="menu1" style="position: relative; display: none;">
+				
+	
+	<form name="frmJobsguide" target="_blank" action="http://www.jobsguide.com.au/search_results.asp" method="get">
+	<input name="cmd" value="search" type="hidden">
+	<input name="src" value="yg_search" type="hidden">
+		<table class="sitebox_jobsguide" border="0" cellpadding="5" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td>
+					Region:<br>
+		<select name="sLocation_Region" id="sLocation_Region" class="sitebox_select">
+		<option value="">Choose Region</option>
+		
+				<optgroup label="ACT">
+					
+				<option value="1">Canberra &amp; Surrounds</option>
+		
+				</optgroup>
+					
+				<optgroup label="NSW">
+					
+				<option value="22">Blue Mountains</option>
+		
+				<option value="11">Central West</option>
+		
+				<option value="26">Hawkesbury &amp; Outer Sydney</option>
+		
+				<option value="89">New England &amp; North West</option>
+		
+				<option value="30">Newcastle &amp; Hunter</option>
+		
+				<option value="31">North Coast</option>
+		
+				<option value="33">Riverina &amp; Murray</option>
+		
+				<option value="32">South Coast</option>
+		
+				<option value="88">Sthn Highlands Capital &amp; Snowy</option>
+		
+				<option value="29">Tamworth</option>
+		
+				<option value="18">Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="NT">
+					
+				<option value="633">Northern Territory</option>
+		
+				</optgroup>
+					
+				<optgroup label="NZ">
+					
+				<option value="635">Auckland</option>
+		
+				<option value="638">Bay of Plenty</option>
+		
+				<option value="642">Canterbury/WestCoast</option>
+		
+				<option value="644">Gisborne</option>
+		
+				<option value="647">Hawkes Bay</option>
+		
+				<option value="653">Nelson/Marlborough</option>
+		
+				<option value="657">Northland</option>
+		
+				<option value="661">Otago/SouthLand</option>
+		
+				<option value="666">Taranaki/Wanganui</option>
+		
+				<option value="669">Waikato</option>
+		
+				<option value="675">Wellington/Manawatu</option>
+		
+				</optgroup>
+					
+				<optgroup label="QLD">
+					
+				<option value="117">Central Coast</option>
+		
+				<option value="119">Far North</option>
+		
+				<option value="118">Outback</option>
+		
+				<option value="9">Redland</option>
+		
+				<option value="121">South East</option>
+		
+				<option value="120">Southern</option>
+		
+				</optgroup>
+					
+				<optgroup label="SA">
+					
+				<option value="42">Barossa &amp; Outer Adelaide</option>
+		
+				<option value="41">Eyre Peninsula</option>
+		
+				<option value="124">Flinders Ranges &amp; Outback</option>
+		
+				<option value="13">Mid North &amp; Yorke Peninsula</option>
+		
+				<option value="44">Murraylands &amp; South East</option>
+		
+				<option value="40">Northern</option>
+		
+				<option value="43">Victor Hbr &amp; Kangaroo Island</option>
+		
+				</optgroup>
+					
+				<optgroup label="TAS">
+					
+				<option value="655">North West and West Tasmania</option>
+		
+				<option value="24">Tasmania - North</option>
+		
+				</optgroup>
+					
+				<optgroup label="VIC">
+					
+				<option value="20">Ballarat &amp; Central Highlands</option>
+		
+				<option value="105">Bendigo &amp; Central Victoria</option>
+		
+				<option value="106">Geelong &amp; Surf Coast</option>
+		
+				<option value="103">Gippsland</option>
+		
+				<option value="104">Gippsland West</option>
+		
+				<option value="95">Goulburn Valley</option>
+		
+				<option value="125">Mornington Peninsula &amp; Outer Melb</option>
+		
+				<option value="21">Sunraysia &amp; Mallee</option>
+		
+				<option value="107">Wimmera &amp; Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="WA">
+					
+				<option value="109">Goldfields</option>
+		
+				<option value="123">Mandurah &amp; Outer Perth</option>
+		
+				<option value="122">North West</option>
+		
+				<option value="35">South West</option>
+		
+				<option value="36">Wheatbelt</option>
+		
+		</optgroup></select>
+		
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Keyword:<br>
+					<input name="keywords" class="sitebox_input" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<input value="find jobs" src="h8_files/btn_search_jobsguide.gif" alt="Search JobsGuide" title="Search JobsGuide" class="sitebox_searchbtn" border="0" height="16" type="image" width="64">&nbsp;&nbsp;
+				</td>
+			</tr>
+		</tbody></table>	
+	</form>
+	
+	
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="top" width="100%"><a href="javascript:showSearchLayer('2');" onfocus="blur();"><img id="menu2_btn" name="menu2_btn" src="h8_files/btn_propertyguide_closed.gif" alt="Search PropertyGuide" title="Search PropertyGuide" border="0" height="27" width="170"></a></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+			<div id="menu2" name="menu2" style="position: relative; display: none;">
+				
+	<!--<form name="" target="_blank" action="http://www.propertyguide.com.au/property_results.asp" method="get">-->
+	<!--<input type="hidden" name="cmd" value="search" />-->
+	<form name="frmPropertyGuide" target="_blank" action="http://www.propertyguide.com.au/index.asp" method="get">
+	<input name="display_mode" value="search" type="hidden">
+	<input name="src" value="yg_search" type="hidden">
+		<table class="sitebox_propertyguide" border="0" cellpadding="5" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td>
+					Region:<br>
+					
+		<select name="region_id" id="region_id" class="sitebox_select">
+		<option value="">Choose Region</option>
+		
+				<optgroup label="ACT">
+					
+				<option value="1">Canberra &amp; Surrounds</option>
+		
+				</optgroup>
+					
+				<optgroup label="NSW">
+					
+				<option value="22">Blue Mountains</option>
+		
+				<option value="11">Central West</option>
+		
+				<option value="26">Hawkesbury &amp; Outer Sydney</option>
+		
+				<option value="89">New England &amp; North West</option>
+		
+				<option value="30">Newcastle &amp; Hunter</option>
+		
+				<option value="31">North Coast</option>
+		
+				<option value="33">Riverina &amp; Murray</option>
+		
+				<option value="32">South Coast</option>
+		
+				<option value="88">Sthn Highlands Capital &amp; Snowy</option>
+		
+				<option value="29">Tamworth</option>
+		
+				<option value="18">Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="NT">
+					
+				<option value="633">Northern Territory</option>
+		
+				</optgroup>
+					
+				<optgroup label="QLD">
+					
+				<option value="117">Central Coast</option>
+		
+				<option value="119">Far North</option>
+		
+				<option value="118">Outback</option>
+		
+				<option value="9">Redland</option>
+		
+				<option value="121">South East</option>
+		
+				<option value="120">Southern</option>
+		
+				</optgroup>
+					
+				<optgroup label="SA">
+					
+				<option value="42">Barossa &amp; Outer Adelaide</option>
+		
+				<option value="41">Eyre Peninsula</option>
+		
+				<option value="124">Flinders Ranges &amp; Outback</option>
+		
+				<option value="13">Mid North &amp; Yorke Peninsula</option>
+		
+				<option value="44">Murraylands &amp; South East</option>
+		
+				<option value="40">Northern</option>
+		
+				<option value="43">Victor Hbr &amp; Kangaroo Island</option>
+		
+				</optgroup>
+					
+				<optgroup label="TAS">
+					
+				<option value="96">North West and West Tasmania</option>
+		
+				<option value="24">Tasmania - North</option>
+		
+				</optgroup>
+					
+				<optgroup label="VIC">
+					
+				<option value="20">Ballarat &amp; Central Highlands</option>
+		
+				<option value="105">Bendigo &amp; Central Victoria</option>
+		
+				<option value="106">Geelong &amp; Surf Coast</option>
+		
+				<option value="103">Gippsland</option>
+		
+				<option value="104">Gippsland West</option>
+		
+				<option value="95">Goulburn Valley</option>
+		
+				<option value="125">Mornington Peninsula &amp; Outer Melb</option>
+		
+				<option value="21">Sunraysia &amp; Mallee</option>
+		
+				<option value="107">Wimmera &amp; Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="WA">
+					
+				<option value="109">Goldfields</option>
+		
+				<option value="123">Mandurah &amp; Outer Perth</option>
+		
+				<option value="122">North West</option>
+		
+				<option value="35">South West</option>
+		
+				<option value="36">Wheatbelt</option>
+		
+		</optgroup></select>
+		
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<!--<input type="submit" value="find homes"/>-->
+					<input value="find homes" src="h8_files/btn_search_propertyguide.gif" alt="Search PropertyGuide" title="Search PropertyGuide" class="sitebox_searchbtn" border="0" height="16" type="image" width="64">&nbsp;&nbsp;
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+	
+			</div>
+		</td>
+	</tr>
+	
+		<tr>
+			<td valign="top" width="100%"><a href="javascript:showSearchLayer('3');" onfocus="blur();"><img id="menu3_btn" name="menu3_btn" src="h8_files/btn_autoguide_closed.gif" alt="Search AutoGuide" title="Search AutoGuide" border="0" height="27" width="170"></a></td>
+		</tr>
+		<tr>
+			<td valign="top" width="100%">
+				<div id="menu3" name="menu3" style="position: relative; display: none;">
+					
+	<form name="frmAutoGuide" target="_blank" action="http://www.autoguide.com.au/searchresults.asp" method="get">
+		<input name="cmd" value="search" type="hidden">
+		<input name="src" value="yg_search" type="hidden">
+		<table class="sitebox_autoguide" border="0" cellpadding="5" cellspacing="0" width="100%">
+			<!--<tr>
+				<td align="center">
+					<strong>www.autoguide.com.au</strong>
+				</td>
+			</tr>-->
+			<tbody><tr>
+				<td>
+					Region:<br>
+					
+		<select name="nRegion" id="nRegion" class="sitebox_select">
+		<option value="">Choose Region</option>
+		
+				<optgroup label="ACT">
+					
+				<option value="1">Canberra &amp; Surrounds</option>
+		
+				</optgroup>
+					
+				<optgroup label="NSW">
+					
+				<option value="22">Blue Mountains</option>
+		
+				<option value="11">Central West</option>
+		
+				<option value="26">Hawkesbury &amp; Outer Sydney</option>
+		
+				<option value="89">New England &amp; North West</option>
+		
+				<option value="30">Newcastle &amp; Hunter</option>
+		
+				<option value="31">North Coast</option>
+		
+				<option value="33">Riverina &amp; Murray</option>
+		
+				<option value="32">South Coast</option>
+		
+				<option value="88">Sthn Highlands Capital &amp; Snowy</option>
+		
+				<option value="29">Tamworth</option>
+		
+				<option value="18">Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="NT">
+					
+				<option value="633">Northern Territory</option>
+		
+				</optgroup>
+					
+				<optgroup label="NZ">
+					
+				<option value="635">Auckland</option>
+		
+				<option value="638">Bay of Plenty</option>
+		
+				<option value="642">Canterbury/WestCoast</option>
+		
+				<option value="644">Gisborne</option>
+		
+				<option value="647">Hawkes Bay</option>
+		
+				<option value="653">Nelson/Marlborough</option>
+		
+				<option value="657">Northland</option>
+		
+				<option value="661">Otago/SouthLand</option>
+		
+				<option value="666">Taranaki/Wanganui</option>
+		
+				<option value="669">Waikato</option>
+		
+				<option value="675">Wellington/Manawatu</option>
+		
+				</optgroup>
+					
+				<optgroup label="QLD">
+					
+				<option value="117">Central Coast</option>
+		
+				<option value="119">Far North</option>
+		
+				<option value="118">Outback</option>
+		
+				<option value="9">Redland</option>
+		
+				<option value="121">South East</option>
+		
+				<option value="120">Southern</option>
+		
+				</optgroup>
+					
+				<optgroup label="SA">
+					
+				<option value="42">Barossa &amp; Outer Adelaide</option>
+		
+				<option value="41">Eyre Peninsula</option>
+		
+				<option value="124">Flinders Ranges &amp; Outback</option>
+		
+				<option value="13">Mid North &amp; Yorke Peninsula</option>
+		
+				<option value="44">Murraylands &amp; South East</option>
+		
+				<option value="40">Northern</option>
+		
+				<option value="43">Victor Hbr &amp; Kangaroo Island</option>
+		
+				</optgroup>
+					
+				<optgroup label="TAS">
+					
+				<option value="655">North West and West Tasmania</option>
+		
+				<option value="24">Tasmania - North</option>
+		
+				</optgroup>
+					
+				<optgroup label="VIC">
+					
+				<option value="20">Ballarat &amp; Central Highlands</option>
+		
+				<option value="105">Bendigo &amp; Central Victoria</option>
+		
+				<option value="106">Geelong &amp; Surf Coast</option>
+		
+				<option value="103">Gippsland</option>
+		
+				<option value="104">Gippsland West</option>
+		
+				<option value="95">Goulburn Valley</option>
+		
+				<option value="125">Mornington Peninsula &amp; Outer Melb</option>
+		
+				<option value="21">Sunraysia &amp; Mallee</option>
+		
+				<option value="107">Wimmera &amp; Western</option>
+		
+				</optgroup>
+					
+				<optgroup label="WA">
+					
+				<option value="109">Goldfields</option>
+		
+				<option value="123">Mandurah &amp; Outer Perth</option>
+		
+				<option value="122">North West</option>
+		
+				<option value="35">South West</option>
+		
+				<option value="36">Wheatbelt</option>
+		
+		</optgroup></select>
+		
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Make:<br>
+					
+	<select name="sCarMake" class="sitebox_select">
+	<option value="">Choose Make</option>
+	
+	<option value="ALFA ROMEO">ALFA ROMEO</option>
+	
+	<option value="ASIA">ASIA</option>
+	
+	<option value="AUDI">AUDI</option>
+	
+	<option value="BEDFORD">BEDFORD</option>
+	
+	<option value="BMW">BMW</option>
+	
+	<option value="CADILLAC">CADILLAC</option>
+	
+	<option value="CHEVROLET">CHEVROLET</option>
+	
+	<option value="CHRYSLER">CHRYSLER</option>
+	
+	<option value="CITROEN">CITROEN</option>
+	
+	<option value="DAEWOO">DAEWOO</option>
+	
+	<option value="DAIHATSU">DAIHATSU</option>
+	
+	<option value="DATSUN">DATSUN</option>
+	
+	<option value="DODGE">DODGE</option>
+	
+	<option value="FIAT">FIAT</option>
+	
+	<option value="FORD">FORD</option>
+	
+	<option value="FREIGHTLINER">FREIGHTLINER</option>
+	
+	<option value="HILLMAN">HILLMAN</option>
+	
+	<option value="HINO">HINO</option>
+	
+	<option value="HOLDEN">HOLDEN</option>
+	
+	<option value="HONDA">HONDA</option>
+	
+	<option value="HSV">HSV</option>
+	
+	<option value="HYUNDAI">HYUNDAI</option>
+	
+	<option value="INTERNATIONAL">INTERNATIONAL</option>
+	
+	<option value="ISUZU">ISUZU</option>
+	
+	<option value="IVECO">IVECO</option>
+	
+	<option value="JAGUAR">JAGUAR</option>
+	
+	<option value="JEEP">JEEP</option>
+	
+	<option value="KENWORTH">KENWORTH</option>
+	
+	<option value="KIA">KIA</option>
+	
+	<option value="LAND ROVER">LAND ROVER</option>
+	
+	<option value="LEXUS">LEXUS</option>
+	
+	<option value="LEYLAND">LEYLAND</option>
+	
+	<option value="M.G.">M.G.</option>
+	
+	<option value="MAZDA">MAZDA</option>
+	
+	<option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+	
+	<option value="MINI">MINI</option>
+	
+	<option value="MITSUBISHI">MITSUBISHI</option>
+	
+	<option value="MORRIS">MORRIS</option>
+	
+	<option value="NISSAN">NISSAN</option>
+	
+	<option value="PEUGEOT">PEUGEOT</option>
+	
+	<option value="PONTIAC">PONTIAC</option>
+	
+	<option value="PORSCHE">PORSCHE</option>
+	
+	<option value="PROTON">PROTON</option>
+	
+	<option value="RANGE ROVER">RANGE ROVER</option>
+	
+	<option value="RENAULT">RENAULT</option>
+	
+	<option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+	
+	<option value="ROVER">ROVER</option>
+	
+	<option value="SAAB">SAAB</option>
+	
+	<option value="SCANIA">SCANIA</option>
+	
+	<option value="SEAT">SEAT</option>
+	
+	<option value="SSANGYONG">SSANGYONG</option>
+	
+	<option value="SUBARU">SUBARU</option>
+	
+	<option value="SUZUKI">SUZUKI</option>
+	
+	<option value="TATA">TATA</option>
+	
+	<option value="TOYOTA">TOYOTA</option>
+	
+	<option value="TRIUMPH">TRIUMPH</option>
+	
+	<option value="VOLKSWAGEN">VOLKSWAGEN</option>
+	
+	<option value="VOLVO">VOLVO</option>
+	
+	</select>
+	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Model:<br>
+					<input name="sCarModel" class="sitebox_input" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<!--<input type="submit" value="find cars"/>-->
+					<input value="find cars" src="h8_files/btn_search_autoguide.gif" alt="Search AutoGuide" title="Search AutoGuide" class="sitebox_searchbtn" border="0" height="16" type="image" width="64">&nbsp;&nbsp;
+				</td>
+			</tr>
+		</tbody></table>
+	</form>
+	
+	
+				</div>
+			</td>
+		</tr>
+	
+	<tr>
+		<td valign="top" width="100%"><a href="http://www.farmonline.com.au/index.asp?src=lil"><img src="h8_files/btn_farmonline.gif" alt="Visit Farmonline" title="Visit Farmonline" border="0" height="27" width="170"></a></td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%"><a href="http://www.yourguide.com.au/setup.asp?mast_id=133&amp;src=lil"><img src="h8_files/btn_canberratimes.gif" alt="Visit Canberra Times" title="Visit The Canberra Times" border="0" height="27" width="170"></a></td>
+	</tr>
+	<tr>
+		<td height="100%" valign="top" width="100%"></td>
+	</tr>
+</tbody></table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" width="100%">
+												<br>
+												<table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=11082&amp;s=8&amp;schedule_id=1429" target="_self"><img src="h8_files/11082.gif" alt="IRIS" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_011.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10581&amp;s=8&amp;schedule_id=954" target="_self"><img src="h8_files/10581.jpg" alt="Tourist News" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_009.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=11110&amp;s=8&amp;schedule_id=1460" target="_self"><img src="h8_files/11110.gif" alt="Propertyguide - Over 20,000 listings" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_012.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10844&amp;s=8&amp;schedule_id=1206" target="_self"><img src="h8_files/10844.gif" alt="Looking for a local business" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_016.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10582&amp;s=8&amp;schedule_id=955" target="_self"><img src="h8_files/10582.jpg" alt="Wedding Planner" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_008.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10583&amp;s=8&amp;schedule_id=956" target="_self"><img src="h8_files/10583.gif" alt="Advertise Here" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_003.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10579&amp;s=8&amp;schedule_id=1127" target="_self"><img src="h8_files/10579.jpg" alt="Advertise" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_004.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10580&amp;s=8&amp;schedule_id=953" target="_self"><img src="h8_files/10580.jpg" alt="Wimmera Farmer" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_010.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://maxads.ruralpress.com/phpAdsNew/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:84");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><script language="JavaScript" type="text/javascript" src="h8_files/adjs_002.js"></script><iframe src="h8_files/ii.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0" height="600" scrolling="no" width="160">
+&lt;ilayer
+src="http://www.dgmaustralia.com/m/ii.asp?contid=284&amp;target=_blank&amp;rand=[TIMESTAMP]&amp;ctpage="
+width=160 height=600&gt; &lt;A
+href="http://www.dgmaustralia.com/m/ch.asp?contid=284&amp;rand=[TIMESTAMP]"
+target="_blank"&gt; &lt;IMG alt="Click here"
+SRC="http://www.dgmaustralia.com/m/ir.asp?contid=284&amp;rand=[TIMESTAMP]"
+BORDER=0&gt; &lt;/a&gt; &lt;/ilayer&gt;
+</iframe>
+<div id="beacon_88" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="h8_files/adlog.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><noscript><a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=aef0d9b6'
+target='_blank'><img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:84&amp;n=aef0d9b6'
+border='0' alt=''></a></noscript>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_002.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br><table class="AdBox" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table class="AdInnerBox" border="0" cellpadding="10" cellspacing="0"><tbody><tr><td><a href="http://ads.ruralpress.com/adserv_redir.asp?ad_id=10927&amp;s=35&amp;schedule_id=1292" target="_self"><img src="h8_files/10927.gif" alt="Holidays Away Yourguide" border="0"></a><div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_005.gif"></div></td></tr></tbody></table></td></tr></tbody></table><br>
+													<img src="h8_files/space.gif" height="5" width="1"><br>
+													<script type="text/javascript">
+														google_ad_client = "pub-7617671539297056";
+														google_ad_width = 120;
+														google_ad_height = 240;
+														google_ad_format = "120x240_as";
+														google_ad_type = "text_image";
+														google_ad_channel ="";
+														google_color_border = "CCCCCC";
+														google_color_bg = "FFFFFF";
+														google_color_link = "000000";
+														google_color_url = "666666";
+														google_color_text = "333333";
+													</script>
+													<script type="text/javascript" src="h8_files/show_ads.js">
+													</script><iframe name="google_ads_frame" src="h8_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="240" scrolling="no" width="120"></iframe>
+													<img src="h8_files/space.gif" height="5" width="1"><br>
+												
+												
+												</td>
+											</tr>
+											</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>	
+					</td>
+					<!-- Right Shadow -->
+
+					<td bgcolor="#e9e7e7">
+						<!-- Grey side border -->
+						<img src="h8_files/space.gif" border="0" height="100%" width="1">
+					</td>
+					<td bgcolor="#f3f3f3">
+						<!-- Grey side border -->
+						<img src="h8_files/space.gif" border="0" height="100%" width="1">
+					</td>
+					<td bgcolor="#f3f3f3">
+						<!-- Grey side border -->
+						<img src="h8_files/space.gif" border="0" height="100%" width="1">
+					</td>
+					<td bgcolor="#f9f9f9">
+						<!-- Grey side border -->
+						<img src="h8_files/space.gif" border="0" height="100%" width="1">
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+
+	<!-- Bottom Shadow -->
+	<tr height="1">
+		<td colspan="6" bgcolor="#e9e7e7" height="1"><img src="h8_files/space.gif" border="0" height="1" width="100%"></td>
+	</tr>
+	<tr height="1">
+		<td colspan="6" bgcolor="#f3f3f3" height="1"><img src="h8_files/space.gif" border="0" height="1" width="100%"></td>
+	</tr>
+	<tr height="1">
+		<td colspan="6" bgcolor="#f3f3f3" height="1"><img src="h8_files/space.gif" border="0" height="1" width="100%"></td>
+	</tr>
+	<tr height="1">
+		<td colspan="6" bgcolor="#f9f9f9" height="1"><img src="h8_files/space.gif" border="0" height="1" width="100%"></td>
+	</tr>
+</tbody></table>
+
+<!-- END OVERALL TABLE -->
+
+
+	<p align="center">
+	<script type="text/javascript">
+		<!--
+			google_ad_client = "pub-7617671539297056";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			google_ad_format = "728x90_as";
+			google_ad_type = "text_image";
+			google_ad_channel ="";
+			google_color_border = "CCCCCC";
+			google_color_bg = "FFFFFF";
+			google_color_link = "000000";
+			google_color_url = "666666";
+			google_color_text = "333333";
+		//-->
+	</script>
+	<script type="text/javascript" src="h8_files/show_ads.js"></script><iframe name="google_ads_frame" src="h8_files/ads_002.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="90" scrolling="no" width="728"></iframe>
+	</p>
+
+
+<!-- end body -->
+<!-- START Nielsen//NetRatings SiteCensus V5.1 -->
+<!-- COPYRIGHT 2005 Nielsen//NetRatings -->
+<script src="h8_files/acnielsen.js" language="JavaScript" type="text/javascript"></script><script language="JavaScript" type="text/javascript" src="h8_files/v51.js"></script><script language="JavaScript" type="text/javascript" src="h8_files/j"></script><img src="h8_files/m.gif" height="1" width="1">
+<noscript>
+	<img src="http://secure-au.imrworldwide.com/cgi-bin/m?ci=ruralpressltd&amp;cg=0" alt="">
+</noscript>
+<!-- END Nielsen//NetRatings SiteCensus V5.1 --><!-- BEGIN: M1ACV Release 2.1.1 -->
+<!-- (c)2002-2006, MediaOne Network Inc. All Rights Reserved. -->
+<div id="M1DIV" name="M1DIV"></div>
+<img id="M1IMG" name="M1IMG" src="h8_files/pixel.gif" border="0" height="0" width="0">
+<script language="javascript" type="text/javascript" src="h8_files/acv211.js">
+</script><script language="JavaScript" type="text/javascript" src="h8_files/acvgo.js"></script>
+<noscript>
+<img border="0" src="http://acvs.mediaonenetwork.net/client/njs.aspx" width="0" height="0" alt="">
+</noscript>
+<!-- END: M1ACV -->
+<script language="JavaScript" type="text/javascript" src="h8_files/adx.js"></script>
+<script language="JavaScript" type="text/javascript" src="h8_files/adlayer.js"></script>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon.gif"></div><iframe id="a7a2c9f6" name="a7a2c9f6" src="h8_files/adframe.htm" framespacing="0" frameborder="no" height="1" scrolling="no" width="1">&lt;a
+href='http://maxads.ruralpress.com/phpAdsNew/adclick.php?n=a7a2c9f6'
+target='_blank'&gt;&lt;img
+src='http://maxads.ruralpress.com/phpAdsNew/adview.php?what=zone:90&amp;amp;n=a7a2c9f6'
+border='0' alt=''&gt;&lt;/a&gt;</iframe>
+<div style="position: absolute; top: 1px; left: -100px;"><img src="h8_files/beacon_015.gif"></div>
+
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="937">
+<tbody><tr>
+<td align="center"><span class="StandardTextSmall">Copyright © 2006. Rural Press Limited</span></td>
+</tr>
+</tbody></table>
+
+
+</body></html>

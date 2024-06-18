@@ -1,0 +1,930 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><title>Kingston Daily Freeman - News from the Associated Press</title>
+
+
+
+
+<style type="text/css">
+<!--
+A {color: #000066; text-decoration: none;}
+td {font: 12px Arial,Helvetica,sans-serif; color: #000000;}
+.uline {text-decoration: underline;}
+.tablink {font: normal 12px Arial, Helvetica, sans-serif; color: #FFFFFF;}
+.breadcrumb {font: normal 10px Arial, Helvetica, sans-serif; color: #FFFFFF;}
+.headline {font: normal 18px/20px Arial, Helvetica, sans-serif; color: #000066;}
+.byline {font: normal 10px Arial, Helvetica, sans-serif; color: #000000;}
+.bylinetitle {font: normal 10px Arial, Helvetica, sans-serif; color: #000000;}
+.tabletitle {font: bold 11px Arial, Helvetica, sans-serif; color: #000066;}
+.storylink {font: bold 13px Arial, Helvetica, sans-serif; color: #000066;}
+.textlabel {font: bold 11px Arial, Helvetica, sans-serif; color: #000066;}
+.photo {font: 11px Arial,Helvetica,sans-serif; color: #000000;}
+.audio {font: 11px Arial,Helvetica,sans-serif; color: #000000;}
+.video {font: 11px Arial,Helvetica,sans-serif; color: #000000;}
+.firsttopheadline {FONT:bold 12px; COLOR: #000066}
+.topheadline {FONT: bold 13px Arial,Helvetica; COLOR: #000066}
+.latesnews {FONT: bold 12px Arial,Helvetica; COLOR: #ff0000}
+-->
+</style><!-- SCRIPT NEEDED FOR DATE NEXT TO BREADCRUMB LINKS -->
+
+
+
+<script language="JavaScript" type="text/javascript">
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December")
+    return MonthArray[intMonth]
+    }
+  function getDateStr(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+
+</script>
+
+<style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="s98_files/tab.css"></head><body leftmargin="0" topmargin="0" background="s98_files/skin5_backGroundImage.gif" marginheight="0" marginwidth="0">
+
+<table bgcolor="#ffffff" border="0" bordercolor="yellow" cellpadding="0" cellspacing="0" width="770">
+  <tbody><tr height="70">
+    <td style="padding-left: 5px;" align="center" valign="middle" width="170"><img src="s98_files/spacer_002.gif" height="1" width="165"><br>
+      <table border="0" cellpadding="0" cellspacing="0" width="170">
+        <tbody><tr>
+          <td>
+            <table width="120">
+              <tbody><tr>
+                <td align="left"><!-- --></td>
+                <td align="center" width="15"><!--blank cell weather was here -->&nbsp;</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+    <td align="center" width="430"><a href="http://www.capitalcentral.com/"><img src="s98_files/custlogoLG.gif" border="0"></a><br><img src="s98_files/spacer_002.gif" height="1" width="400"><br></td>
+    <td colspan="2" align="center" valign="middle" width="170"><img src="s98_files/spacer_002.gif" height="1" width="120">
+      <table border="0" width="170">
+        <tbody><tr>
+          <td>&nbsp;
+            <!-- blank cell, archives search was here --></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+  <tr width="770" bgcolor="#0000cd">
+    <td colspan="4" height="16" valign="top">
+      <table cellpadding="0" cellspacing="0" width="770">
+        <tbody><tr>
+          <td align="center"><span class="tablink"><a class="tablink" href="http://www.dailyfreeman.com/">News</a> | <a class="tablink" href="http://www.adquest3d.com/supermain.cfm?brd=1769">Classifieds</a> | <a class="tablink" href="http://www.adquest3d.com/dirmain.cfm?BRD=1769&amp;PAG=353">Directory</a> | <a class="tablink" href="http://www.adquest3d.com/da/?brd=1769">Today's Ads</a> | <a class="tablink" href="http://www.zwire.com/site/employment.cfm?brd=2572">MidHudsonJobs.com</a> | <a class="tablink" href="http://www.midhudsoncentral.com/">MidHudsonCentral.com</a></span></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+  <tr width="770">
+    <td colspan="4" valign="middle"><img alt="" src="s98_files/trinityline.gif" align="absbottom" border="0" height="1" width="770"></td>
+	</tr>
+  <tr width="770" bgcolor="#0000cd" valign="middle">
+    <td colspan="3" class="breadcrumb" height="8"><img src="s98_files/spacer_002.gif" height="1" width="10">
+
+<!-- SCRIPT FOR TODAY'S DATE -->
+		<script language="JavaScript">
+<!-- hide from old browsers
+    document.write(getDateStr())
+//-->
+		</script>January 6, 2007 &nbsp;&nbsp;&nbsp;
+
+
+		<img src="s98_files/dotsline.gif" height="11" width="1">&nbsp;&nbsp;&nbsp;<nobr><a class="breadcrumb" href="http://www.dailyfreeman.com/">Home</a></nobr> &gt; <nobr><a class="breadcrumb" href="http://www.dailyfreeman.com/">News</a></nobr> &gt; Content<br></td>
+    <td align="right" bgcolor="#0000cd" height="8" valign="bottom">&nbsp;</td>
+	</tr>
+</tbody></table>
+
+<!-- END HEADER, START SECOND TABLE -->
+
+<table border="0" bordercolor="blue" cellpadding="0" cellspacing="0" width="770"><!-- START CONTENT TABLE -->
+		<tbody><tr>
+    <td align="left" bgcolor="#ffffff" valign="top" width="140"><!--spacer--><img src="s98_files/spacer_002.gif" height="1" width="140"></td>
+    <td align="left" bgcolor="#ffffff" valign="top" width="10"><!--spacer--><img src="s98_files/spacer_002.gif" height="1" width="10"></td>
+    <td align="left" bgcolor="#ffffff" valign="top" width="470"><!--spacer--><img src="s98_files/spacer_002.gif" height="1" width="470"></td>
+    <td align="left" bgcolor="#ffffff" valign="top" width="10"><!--spacer--><img src="s98_files/spacer_002.gif" height="1" width="10"></td>
+    <td align="left" bgcolor="#ffffff" valign="top" width="140"><!--spacer--><img src="s98_files/spacer_002.gif" height="1" width="140"></td></tr>
+
+	<tr>
+		<td align="center" valign="top" width="140"><!-- START FIRST COLUMN, CONTENT TABLE -->
+		<font size="-2"><br></font>
+		<img src="s98_files/spacer_002.gif" align="left" height="15" width="1">
+			<table border="0" cellpadding="0" cellspacing="0" width="130">
+		 		<tbody><tr>
+		 				<td valign="top" width="10"><img src="s98_files/arrow_dwn.gif" height="4" vspace="3" width="7"></td>
+						<td align="left" height="18" valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/HOME?SITE=NYKIN&amp;SECTION=HOME"><font color="#cc0033" face="Verdana,Arial,Helvetica,sans-serif" size="1"> <b>AP</b></font></a><br></td>
+				</tr>
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/HOME?SITE=NYKIN&amp;SECTION=HOME"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Breaking news</font></a></td>
+				</tr>
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/US?SITE=NYKIN&amp;SECTION=US"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Nation</font></a></td>
+				</tr>
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/WORLD?SITE=NYKIN&amp;SECTION=INTERNATIONAL"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">World</font></a></td>
+				</tr>
+       	<tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/BUSINESS?SITE=NYKIN&amp;SECTION=BUSINESS"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Business</font></a></td>
+				</tr>
+<tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/TECHNOLOGY?SITE=NYKIN&amp;SECTION=BUSINESS"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Technology</font></a></td>
+				</tr>
+   <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/POLITICS?SITE=NYKIN&amp;SECTION=HOME"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Politics</font></a></td>
+				</tr>
+
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/HEALTH?SITE=NYKIN&amp;SECTION=HOME"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Health</font></a></td>
+				</tr>
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/SPORTS?SITE=NYKIN&amp;SECTION=SPORTS"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Sports</font></a></td>
+				</tr>
+
+
+
+<tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/MULTIMEDIA?SITE=NYKIN&amp;SECTION=HOME"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Multimedia</font></a></td>
+				</tr>
+
+        <tr>
+          <td valign="top" width="10">&nbsp;</td>
+          <td valign="top" width="120"><a href="http://customwire.ap.org/dynamic/fronts/ENTERTAINMENT?SITE=NYKIN&amp;SECTION=ENTERTAINMENT"><font color="#000000" face="Arial,Helvetica,sans-serif" size="1">Movies &amp; music</font></a></td>
+				</tr>
+
+
+        
+        <tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=12279"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>News</b></font></a></td>
+				</tr>
+        <tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=12668"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Sports</b></font></a></td>
+				</tr>
+        
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=13543" width="4" vspace="3"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Life</b></font></a></td>
+				</tr>
+				
+				<tr>
+				  <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=13544"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Opinion</b></font></a></td>
+				</tr>
+				
+				
+				
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=13546"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>People &amp; Events</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=13570"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Entertainment</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=26885"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Living Here</b></font></a></td>
+				</tr>
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/content_frame.cfm?brd=1769&amp;pag=460&amp;dept_id=515135&amp;FrameHeader=FH&amp;BGColor=black&amp;TextColor=black&amp;framesrc=http://www.journalregister.com/coupons/coupons.asp?ID=midhudson"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Coupons</b></font></a></td></tr>
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.adquest3d.com/da/?brd=1769&amp;catid=6"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Doorways</b></font></a></td>
+				</tr>
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+          <td align="left" height="18" valign="top" width="120"><a href="http://www.adquest3d.com/da/?brd=1769&amp;catid=9"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Wheels</b></font></a></td>
+			</tr>
+<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=59053"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Personals</b></font></a></td>
+				</tr>
+			<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=28573"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Subscriptions</b></font></a></td>
+				</tr>
+			<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;pag=460&amp;dept_ID=495551"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Other Publications</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=41805"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Fun &amp; Games</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=42532"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Consumer Guide</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=46124"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Personal Finance</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=48636"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>Lifestyles</b></font></a></td>
+				</tr>
+				
+				<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.usaweekend.com/partners/dailyfreeman.html"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>USA Weekend</b></font></a></td>
+				</tr>
+				
+			<tr>
+          <td align="left" valign="top" width="10"><img src="s98_files/arrow_rht.gif" height="7" vspace="3" width="4"></td>
+           <td align="left" height="18" valign="top" width="120"><a href="http://www.dailyfreeman.com/site/news.cfm?brd=1769&amp;Nav_Sec=13545"><font color="#000000" face="Verdana,Arial,Helvetica,sans-serif" size="1"><b>About Us</b></font></a></td>
+				</tr>
+			
+			
+			
+			
+    </tbody></table>
+	</td><!-- END FIRST COLUMN, CONTENT TABLE -->
+
+	<td bgcolor="#ffffff" width="5"><!-- START SECOND COLUMN, CONTENT TABLE -->
+	<img src="s98_files/spacer_002.gif" height="1" width="5">
+	</td><!-- END SECOND COLUMN, CONTENT TABLE -->
+
+	<td bgcolor="#ffffff" valign="top" width="480"><!-- START THIRD COLUMN, CONTENT TABLE -->
+		<table border="0" bordercolor="red" cellpadding="1" cellspacing="0" width="480">
+			<tbody><tr>
+					<td colspan="1" align="center" valign="top" width="100%">
+
+							
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody><tr>
+											<td valign="top"><!-- BEGIN FRONT 2, 'HOME' -->
+											<!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="s98_files/s_code_remote.js"></script><img src="s98_files/s51916978938153.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "NYKIN") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="s98_files/prototype.js"></script>
+ <script type="text/javascript" src="s98_files/scriptaculous.js"></script><script type="text/javascript" src="s98_files/effects.js"></script>
+ <script type="text/javascript" src="s98_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="s98_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1995833: Stunted Daughter
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:45
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Jan 5, 1:04 AM EST</div></div><br>
+<p class="body"><span class="headline">Surgery on Girl Raises Ethical Questions    </span>
+</p>
+<p class="ap-story-p">
+<span class="byline">By LINDSEY TANNER         </span><br>
+<span class="bylinetitle">AP Medical Writer</span></p></div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11244329
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1109541: online
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<!-- SmallPhoto: 2247169
+   Created: 2007/1/4 19:53:46
+   Modified: 2007/1/4 19:53:47
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://customwire.ap.org/dynamic/files/photos/W/WXS12001050053.html?SITE=NYKIN&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="s98_files/WXS12001050053-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2247169 -->
+<!-- /Package: 1109541 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1109542: online
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+
+<!-- Video: 18287
+   Created: 2007/1/4 23:31:03
+   Modified: 2007/1/4 23:31:03
+   Generated: 2007/1/5 01:04:45 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-video-table" width="180">
+<tbody><tr class="ap-video-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-video-td"><span class="tabletitle">AP VIDEO</span></td></tr>
+<tr class="ap-video-tr">
+<td class="ap-video-td">
+<p class="ap-video-p"><span class="apCaption"><a href="http://video.ap.org/vws/search/aspx/ap.aspx?t=m318&amp;p=ENAPus_ENAPus&amp;f=NYKIN&amp;g=0104dv_stunted_daughter" class="ap-video-a" onclick="window.open(this.href, 'popupwindow','width=798,height=598,status=1,scrollbars=1,resizable=1'); return false;">Parents Stunt Disabled Girl's Growth</a></span></p>
+</td>
+</tr>
+</tbody></table>
+<!-- /Video: 18287 -->
+<!-- /Package: 1109542 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858209: VIDEO_PROMO_HEALTH_SECTION
+   Created: 2006/3/21 11:16:07
+   Modified: 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+
+<!-- HtmlTable: 44695
+   Created  : 2006/3/21 11:16:35
+   Modified : 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Other News Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4643
+   Created: 2006/3/21 11:16:53
+   Modified: 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="s98_files/apOVN.js">
+</script>
+<div id="flashcontent"><embed type="application/x-shockwave-flash" src="s98_files/sm_vrt_3thumb_scroll.swf" id="sm_vrt_3thumb_scroll" name="sm_vrt_3thumb_scroll" wmode="opaque" quality="best" bgcolor="#FFFFFF" flashvars="cat=Scitech&amp;pid=NYKIN&amp;fontcolor=0x336699" height="165" width="170">
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4643 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44695 -->
+<!-- /Package: 858209 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 270575: ADVERTISEMENT_HEALTH
+   Created: 2003/8/14 11:18:49
+   Modified: 2006/3/27 15:01:23
+   Generated: 2006/12/2 09:46:12 -->
+<!-- HtmlFragment: 4266
+   Created: 2005/11/28 11:28:24
+   Modified: 2005/11/28 11:28:33
+   Generated: 2006/12/2 09:46:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=hlt; dt";</script>
+<script src="s98_files/slf.js" language="JavaScript"></script><script src="s98_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4266 -->
+<!-- HtmlFragment: 2256
+   Created: 2003/8/14 11:19:01
+   Modified: 2005/8/5 10:46:03
+   Generated: 2006/12/2 09:46:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR HEALTH STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='HEALTH';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="s98_files/1084784822x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/1084784822@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/1084784822@x96"></a></script><iframe src="s98_files/01442953691.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="250" scrolling="no" width="300">
+&lt;script language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/NYKIN.hosted.ap.org/HEALTH/442953691/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?442953691"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/442953691"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/NYKIN.hosted.ap.org/HEALTH/442953691/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?442953691"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/442953691"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="s98_files/1084784822x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/1084784822@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/1084784822@x03"></a></script><!-- Casale Media 2006 (C) -->
+<!-- Ad Format: Pop Under -->
+<!-- Domain(s): ap.org -->
+<script type="text/javascript"><!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape('ap.org');
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'76784&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//--></script><script type="text/javascript" src="s98_files/s.txt"></script><!-- Casale Media 2006 (C) -->
+</div>
+<!-- AP end call to x03 -->
+
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 2256 -->
+<!-- /Package: 270575 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244329  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11244330
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 514402: X_BEHAVIORAL_HEALTH
+   Created: 2004/12/2 17:23:21
+   Modified: 2006/4/13 09:12:08
+   Generated: 2006/12/2 09:43:45 -->
+<!-- HtmlFragment: 3861
+   Created: 2004/12/2 17:25:27
+   Modified: 2005/5/12 15:39:52
+   Generated: 2006/12/2 09:43:45 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- start behavioral tag 1 -->
+<script language="Javascript" src="s98_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+<!-- end behavioral tag 1 -->
+
+
+<!-- start behavioral tag 2 -->
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "HEALTH")
+</script>
+<!-- end behavioral tag 2 -->
+
+
+<!-- start behavioral tag 3 -->
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="s98_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+<!-- end behavioral tag 3 -->
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3861 -->
+<!-- /Package: 514402 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244330  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11244331
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:45
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="s98_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="s98_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="s98_files/STUNTED_DAUGHTER.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244331  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> CHICAGO (AP) -- In a case fraught with ethical
+questions, the parents of a severely mentally and physically disabled
+child have stunted her growth to keep their little "pillow angel" a
+manageable and more portable size.</p> <p class="ap-story-p">The
+bedridden 9-year-old girl had her uterus and breast tissue removed at a
+Seattle hospital and received large doses of hormones to halt her
+growth. She is now 4-foot-5; her parents say she would otherwise
+probably reach a normal 5-foot-6.</p> <p class="ap-story-p">The case
+has captured attention nationwide and abroad via the Internet, with
+some decrying the parents' actions as perverse and akin to eugenics.
+Some ethicists question the parents' claim that the drastic treatment
+will benefit their daughter and allow them to continue caring for her
+at home.</p> <p class="ap-story-p">University of Pennsylvania ethicist
+Art Caplan said the case is troubling and reflects "slippery slope"
+thinking among parents who believe "the way to deal with my kid with
+permanent behavioral problems is to put them into permanent childhood."</p> <p class="ap-story-p">Right
+or wrong, the couple's decision highlights a dilemma thousands of
+parents face in struggling to care for severely disabled children as
+they grow up.</p> <p class="ap-story-p">"This particular treatment,
+even if it's OK in this situation, and I think it probably is, is not a
+widespread solution and ignores the large social issues about caring
+for people with disabilities," Dr. Joel Frader, a medical ethicist at
+Chicago's Children's Memorial Hospital, said Thursday. "As a society,
+we do a pretty rotten job of helping caregivers provide what's
+necessary for these patients."</p> <p class="ap-story-p">The case
+involves a girl identified only as Ashley on a blog her parents created
+after her doctors wrote about her treatment in October's Archives of
+Pediatrics &amp; Adolescent Medicine. The journal did not disclose the
+parents' names or where they live; the couple do not identify
+themselves on their blog, either.</p> <p class="ap-story-p">Shortly
+after birth, Ashley had feeding problems and showed severe
+developmental delays. Her doctors diagnosed static encephalopathy,
+which means severe brain damage. They do not know what caused it.</p> <p class="ap-story-p">Her
+condition has left her in an infant state, unable to sit up, roll over,
+hold a toy or walk or talk. Her parents say she will never get better.
+She is alert, startles easily, and smiles, but does not maintain eye
+contact, according to her parents, who call the brown-haired little
+girl their "pillow angel."</p> <p class="ap-story-p">She goes to school
+for disabled children, but her parents care for her at home and say
+they have been unable to find suitable outside help.</p> <p class="ap-story-p">An
+editorial in the medical journal called "the Ashley treatment"
+ill-advised and questioned whether it will even work. But her parents
+say it has succeeded so far.</p> <p class="ap-story-p">She had surgery
+in July 2004 and recently completed the hormone treatment. She weighs
+about 65 pounds, and is about 13 inches shorter and 50 pounds lighter
+than she would be as an adult, according to her parents' blog.</p> <p class="ap-story-p">"Ashley's
+smaller and lighter size makes it more possible to include her in the
+typical family life and activities that provide her with needed
+comfort, closeness, security and love: meal time, car trips, touch,
+snuggles, etc.," her parents wrote.</p> <p class="ap-story-p">Also,
+Ashley's parents say keeping her small will reduce the risk of bedsores
+and other conditions that can afflict bedridden patients. In addition,
+they say preventing her from going through puberty means she won't
+experience the discomfort of periods or grow breasts that might develop
+breast cancer, which runs in the family.</p> <p class="ap-story-p">"Even
+though caring for Ashley involves hard and continual work, she is a
+blessing and not a burden," her parents say. Still, they write, "Unless
+you are living the experience ... you have no clue what it is like to
+be the bedridden child or their caregivers."</p> <p class="ap-story-p">Caplan
+questioned how preventing normal growth could benefit the patient.
+Treatment that is not for a patient's direct benefit "only seems wrong
+to me," the ethicist said.</p> <p class="ap-story-p">Dr. Douglas
+Diekema, an ethicist at Children's Hospital and Regional Medical Center
+in Seattle, where Ashley was treated, said he met with the parents and
+became convinced they were motivated by love and the girl's best
+interests.</p> <p class="ap-story-p">Diekema said he was mainly
+concerned with making sure the little girl would actually benefit and
+not suffer any harm from the treatment. She did not, and is doing well,
+he said.</p> <p class="ap-story-p">"The more her parents can be
+touching her and caring for her ... and involving her in family
+activities, the better for her," he said. "The parents' argument was,
+`If she's smaller and lighter, we will be able to do that for a longer
+period of time.'"</p> <p class="ap-story-p">---</p> <p class="ap-story-p">On the Net:</p> <p class="ap-story-p">Ashley's blog: <a href="http://ashleytreatment.spaces.live.com/" target="-blank">http://ashleytreatment.spaces.live.com</a> </p> <p class="ap-story-p">Journal: <a href="http://www.archpediatrics.com/" target="-blank">http://www.archpediatrics.com</a> </p> <p class="ap-story-p">©
+2007 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MEUL700', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="s98_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11244334
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621974: ADV_UNDER_HEALTH
+   Created: 2005/5/15 11:33:52
+   Modified: 2005/5/16 15:47:34
+   Generated: 2006/12/2 09:39:08 -->
+<!-- HtmlFragment: 3989
+   Created: 2005/5/15 11:41:51
+   Modified: 2005/5/16 15:47:34
+   Generated: 2006/12/2 09:39:09 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- AP call to x02 -->
+<script language="JavaScript">			 
+	var RN = new String(Math.random());			 
+	var RNS = "1" + RN.substring(2, 11);			 		 
+		
+	document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/NYKIN.hosted.ap.org/HEALTH/' + RNS+ '@x02">');
+	document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/' + RNS+ '@x02">');			 
+	document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/' + RNS+ '@x02"></a>');			 
+	document.write('<\/SCRIPT>'+'<\/div>');			
+
+</script><div align="center"><script language="JavaScript1.1" src="s98_files/1890376384x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/NYKIN.hosted.ap.org/HEALTH/1890376384@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/NYKIN.hosted.ap.org/HEALTH/1890376384@x02"></a></script><script language="JavaScript" src="s98_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="21 piece collection from BareEscentuals BareMinerals! Act now." onmouseover="top.status='Free Bare Escentuals Package'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnobgnobhnibhnlzoxbxoxvxf&eid=1&id=87241272&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=01116808121594819789&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Free Bare Escentuals Package</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">21 piece collection from BareEscentuals BareMinerals! Act now.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.personalcare-offer.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="CigArrest will help you quit smoking for life. Try it for free!" onmouseover="top.status='Quit Smoking in 7 Days - Guaranteed'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnobgnobhnibhnlzwxdxaxxrt&eid=1&id=87267284&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808121594819741&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Quit Smoking in 7 Days - Guaranteed</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">CigArrest will help you quit smoking for life. Try it for free!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.cigarrest.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="You may be younger than you think. Take the RealAge test and find out." onmouseover="top.status='Prepare to be Shocked'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnobgnobhnibhnlztxfxcxorw&eid=1&id=86336350&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808121594819761&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Prepare to be Shocked</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">You may be younger than you think. Take the RealAge test and find out.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.realage.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Resperate relaxes blood vessels to reduce pressure. No side effects." onmouseover="top.status='Lower Blood Pressure'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnobgnobhnibhnlzsrtxexars&eid=1&id=85414040&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808121594819739&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Lower Blood Pressure</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Resperate relaxes blood vessels to reduce pressure. No side effects.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.resperate.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="See how I did it. Before and after pictures. Men and women. 92% success." onmouseover="top.status='Tips for Fixing Hair Loss'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnobgnobhnibhnlzmxexbxrry&eid=1&id=85407820&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808121594819726&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Tips for Fixing Hair Loss</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">See how I did it. Before and after pictures. Men and women. 92% success.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.restorationhair.com</span>					</div>				</div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div>			
+<!-- AP end call to x02 --></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3989 -->
+<!-- /Package: 621974 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244334  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1995833: Stunted Daughter -->
+ <!-- END FRONT 2, 'HOME' -->
+											</td>
+									</tr>
+							</tbody></table>
+
+
+
+					</td>
+				</tr>
+		</tbody></table>
+
+	</td><!-- END THIRD COLUMN, CONTENT TABLE -->
+
+	<td bgcolor="#ffffff" width="5"><!-- START FOURTH COLUMN, CONTENT TABLE -->
+	<img src="s98_files/spacer_002.gif" height="1" width="5"></td><!-- END FOURTH COLUMN, CONTENT TABLE -->
+
+	<td valign="top" width="140"> <!-- START FIFTH COLUMN, CONTENT TABLE -->
+			<table cellpadding="0" cellspacing="5" width="130">
+					<tbody><tr>
+							<td>
+							<br><b>Return to <br>the web site ...</b><br><br>
+<img src="s98_files/redarrow.gif" height="6" width="3">&nbsp;<a class="uline" href="http://www.midhudsoncentral.com/site/news.cfm?brd=1769">DailyFreeman.com</a><br>
+<img src="s98_files/redarrow.gif" height="6" width="3">&nbsp;<a class="uline" href="http://www.midhudsoncentral.com/site/news.cfm?brd=1770">MidHudsonCentral</a><br>
+
+							</td>
+					</tr>
+			</tbody></table>
+	</td> <!-- END FIFTH COLUMN, CONTENT TABLE -->
+
+	</tr>
+
+</tbody></table><!-- END CONTENT TABLE -->
+
+<table border="0" bordercolor="blue" cellpadding="0" cellspacing="0" width="770"><!-- START FOOTER TABLE -->
+		<tbody><tr>
+				<td align="center" bgcolor="#0000cc"><span class="tablink"><a class="tablink" href="http://www.allaroundcleveland.com/">News</a> | <a class="tablink" href="http://www.adquest3d.com/supermain.cfm?brd=2211">Classifieds</a> | <a class="tablink" href="http://www.adquest3d.com/dirmain.cfm?BRD=2211&amp;PAG=353">Directory</a> | <a class="tablink" href="http://www.adquest3d.com/da/?brd=2211">Today's Ads</a> | <a class="tablink" href="http://www.zwire.com/site/shopping.cfm?brd=1718">AllAroundClevelandJobs</a> | <a class="tablink" href="http://www.zwire.com/site/shopping.cfm?brd=1718">ClevelandCarSearch</a></span></td>
+		</tr>
+</tbody></table><!-- END FOOTER TABLE -->
+
+
+<!-- page generated by paris.customwire.ap.org -->
+<!-- $Id: EdgeServer.pm,v 1.58 2004/03/19 12:20:48 mike Exp $ --><div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="s98_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="s98_files/closelabel.gif"></a></div></div></div></div></body></html>

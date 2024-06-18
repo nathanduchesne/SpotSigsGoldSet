@@ -1,0 +1,941 @@
+<html><head><!-- Vignette V6 Fri Dec 29 12:45:30 2006 --><title>Times Record News: Local News</title>
+
+ 
+ 
+
+	
+		
+		
+		
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<link rel="stylesheet" href="story60_files/mainCSS.css">
+		
+		<script language="JavaScript">
+
+function popup(url,w,h,menu) {
+	x = Math.floor((screen.width - w) / 2);
+	y = Math.floor((screen.height - h) / 2);        
+	now = new Date();
+	features = "screenx="+x+",screeny="+y+",left="+x+",top="+y+",width="+w+",height="+h+",location=no,resizable=yes"+",directories=no,status=no,scrollbars=yes";
+
+	if (menu != null) {
+		//features += ",menubar=yes,toolbar=yes,scrollbars=yes";
+		features += ",menubar=yes,toolbar=yes";
+	} else {
+		//features += ",menubar=no,toolbar=no,scrollbars=no"; 
+		features += ",menubar=no,toolbar=no"; 
+	}
+	window.open(url,"newwin",features);
+}
+
+
+function MM_reloadPage(init) {  
+  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {
+    if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+     document.MM_pgW=innerWidth; 
+	 document.MM_pgH=innerHeight;
+	 onresize=MM_reloadPage; 
+    }
+  } else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH)
+    location.reload();
+}
+
+// for Netscape thisdomain = www.scripps.com
+// for other browser thisdomain = scripps.com
+
+thisdomain = document.location + "";
+thisdomain = thisdomain.substring(thisdomain.indexOf('//')+2,thisdomain.length);
+thisdomain = thisdomain.substring(0,thisdomain.indexOf('/'));
+thisdomain = (navigator.appName != "Netscape")? thisdomain.substring(thisdomain.indexOf('.')+1,thisdomain.length): thisdomain;
+
+
+
+function getCookieVal (offset) {
+	var endstr = document.cookie.indexOf(';',offset);
+	if (endstr == -1) {
+		endstr = document.cookie.length;
+	}
+	return unescape(document.cookie.substring(offset,endstr))
+}
+
+
+function SetCookie (name, value, expires, path, domain, secure) {
+	document.cookie = name + "=" + escape (value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+} 
+
+
+function GetCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i,j) == arg) {
+			return getCookieVal(j);
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i==0) break;
+	}
+	return null;  
+}
+
+
+function DeleteCookie (name, path, domain) {
+   if (GetCookie(name)) {
+    document.cookie = name + "=" + ((path) ? "; path=" + path : "") +  ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+   }
+}
+
+
+function FixCookieDate (date) { 
+	var base = new Date(0); 
+	var skew = base.getTime();
+	if(skew > 0)
+		date.setTime (date.getTime() - skew);     
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function vod (url,streamtitle,customfeatures) {
+	windowFeatures = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=210,height=480';
+
+	//Browser Detection
+	var browser = "";
+	var browsername = navigator.appName;
+	var browserversion = parseInt(navigator.appVersion);
+	var browserplatform = navigator.userAgent;
+	if (browsername == "Netscape") {
+		browser = "ns" + browserversion;
+	} else {
+		if (browsername == "Microsoft Internet Explorer") {
+			if (browserversion >= 4) {
+				browser = "ie" + browserversion;
+			} else {
+				browser = "ie3";
+			}
+		}
+	}
+
+	if ((customfeatures) && customfeatures != '') {
+		windowFeatures = customfeatures;
+	}
+
+	if (url.indexOf(".rm",(url.length-10)) != -1) {
+		if (browser != 'ie3') {
+			hasplugin = 'false';
+			// Mac Browser (Not Netscape)
+			if ( (browserplatform.indexOf('Mac') !=-1) && ( browsername != "Netscape")) {
+				numPlugins = 0;
+				// Real Strange never goes into the followinf loop
+				// because numPlugins is 0
+				for (i = 0; i < numPlugins; i++) {
+					plugin = navigator.embeds[i];
+					if (plugin.name.substring(0,10)=="RealPlayer") {
+						hasplugin = 'true';
+					}
+				}
+			} else {
+				numPlugins = navigator.plugins.length;
+				for (i = 0; i < numPlugins; i++) {
+					plugin = navigator.plugins[i];
+					if (plugin.name.substring(0,10)=="RealPlayer") {
+						hasplugin = 'true';
+					}
+				}
+			}
+			if (browser.substring(0,2) == 'ie') {
+				hasplugin = 'true';
+			}
+			if (hasplugin == 'true') {
+				videoWin = window.open (url , 'video', windowFeatures);
+				if (streamtitle != '') {
+					videoWin.streamtitle=streamtitle;
+				}
+				videoWin.document.close();              
+			} else {
+				stream = url.substring(0,(url.length-5));
+				location.href=stream + '.ram';
+			}
+		} else {
+			videoWin = window.open (url , 'video', windowFeatures);
+			if (document.images) {
+				if (streamtitle != '') {
+					videoWin.streamtitle=streamtitle;
+				}
+			}
+			videoWin.document.close();                      
+		}               
+	} else {
+		videoWin = window.open (url , 'video', windowFeatures);
+		if (document.images) {
+			if (streamtitle != '') {
+				videoWin.streamtitle=streamtitle;
+			}
+		}
+		videoWin.document.close();
+	}
+}
+</script>
+
+		
+		<script type="text/javascript" src="story60_files/0231100.js"></script>		
+		
+		
+		<script type="text/javascript">
+		<!--
+		// Prevent others from including this site
+		var preview = 'no'
+		if (preview != 'yes') {
+			if (top != self) {
+				top.location = location;
+			}
+		}
+
+		MM_reloadPage(true);
+
+		if (GetCookie('cookieChk') == null) { 
+			var expdate = new Date ();
+
+			// Correct for Mac date bug - call only once for given Date object!
+			FixCookieDate (expdate); 
+
+			// expires 30 days from now
+			expdate.setTime (expdate.getTime() + (30 * 24 * 60 * 60 * 1000)); 
+			SetCookie ('cookieChk', 'OK', expdate, '/', thisdomain, null);
+		}
+		// -->
+		</script>
+		
+		<script src="story60_files/apptap3.txt"></script>
+		<script>apptap();</script><link href="story60_files/rail_herb.css" rel="stylesheet" type="text/css"><style type="text/css">
+<!--
+.sponsor{
+	font-family: arial, helvetica, veranda;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+	}
+-->
+</style></head><body leftmargin="0" topmargin="0" bgcolor="#ffffff" link="#333366" marginheight="0" marginwidth="0" text="#000000"><div style="position: absolute; z-index: 10;"><img src="story60_files/s7330924207710.gif" name="s_i_ewswichitafalls" alt="" border="0" height="1" width="1"></div>
+		
+
+	
+	
+		<!-- Vignette V6 Mon Jul 24 17:18:06 2006 -->
+
+	<table width="750">
+<tbody><tr>
+<td colspan="3">
+<img src="story60_files/local_news.gif"></td> 
+</tr>
+<tr>
+<td colspan="3">
+<div background="#006BB4" id="horiznav" align="left"><font color="#ffffff">
+<a href="http://www.timesrecordnews.com/">
+Home</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/news/0,1891,TRN_5695,00.html">News</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/sports/0,1891,TRN_5730,00.html">Sports</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/local_opinions/">Opinions</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/business/0,1891,TRN_5638,00.html">Business</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/local_obituaries/">Obituaries</a>&nbsp;|&nbsp;
+<a href="http://www.timesrecordnews.com/trn/family/">Family</a>&nbsp;| &nbsp;
+<a href="http://marketplace.timesrecordnews.com/mach2/wic/home/Home.action">Classifieds</a>&nbsp;| &nbsp;
+<a href="http://web.timesrecordnews.com/archives/search.html">Archives</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://reg.timesrecordnews.com/trn/web/registrationForm">Subscribe</a>&nbsp;|&nbsp;
+<a href="http://reg.timesrecordnews.com/trn/web/loginForm">Sign In</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="3" background="story60_files/head_bg.gif" height="100" valign="center"><center><!--leaderboard script-->
+		<script language="JavaScript1.1" src="story60_files/siteTRNpageMAINcategoryNEWSsectionNEWSadtypeLEADERBOARDPagePo.js">
+		</script><a target="_top" href="http://adsremote.scripps.com/event.ng/Type=click&amp;FlightID=2039501&amp;AdID=2048597&amp;TargetID=2025116&amp;Segments=351,2540,2560,2000825,2001081,2001256,2001550,2001551,2001761,2001784,2001916,2002245,2003087,2003137,2003524,2003526,2004128,2004207,2006147,2006149,2006150,2006151,2006162,2006188,2006881,2006935,2007851,2008092,2008093,2008094,2008614,2008711,2008733,2008740,2008787,2009205,2009431,2010059,2010250,2010386,2010753,2010754,2010755,2010756,2010869,2010967,2011002,2011117,2011596,2011794,2012309,2012909,2013178,2013864,2014111,2014135,2014155,2014158,2014164,2014210,2014234,2014363,2014378,2014844,2014862,2014897,2014910,2014964,2015151,2015256,2015920,2016474,2016743,2016903,2017211,2017324,2017504,2017624,2017746,2017772,2017914,2018328,2018451,2018458,2018481,2018531,2018635,2018664,2018675,2018677&amp;Targets=2003385,2004956,2006629,2006630,2020614,2018448,2018473,2023721,2025116,2020688,2022372,2024805,2024818,2025186,2025187&amp;Values=25,30,50,60,72,86,93,101,110,150,155,215,593,672,674,739,847,848,1169,2000134,2000705,2000709,2000874,2001560,2002057,2002938,2004296,2004338,2004360,2004415,2004417,2004425,2004426,2004427,2004428,2004446,2004460,2004462,2004463,2004477,2004493,2005250,2005544,2005724,2006154,2006407,2007353,2007729,2007950,2008359,2009449,2010187&amp;RawValues=&amp;Redirect=http:%2F%2Fwww.texasford.com%2F"><img src="story60_files/dec18_trn_FORD.jpg" alt="" border="0" height="90" width="728"></a>
+		<!--end leaderboard script-->
+		</center></td>
+
+</tr>
+</tbody></table>  <!-- BEGIN TABLE FOR CONTENT AREA -->
+<table border="0" cellpadding="0" cellspacing="0" height="500" width="750">
+<tbody><tr>
+	<!-- BEGIN CELL FOR LEFT SIDE CONTENT -->
+				
+	<td class="lnbbgcolor" valign="top" width="145">
+		
+		<!-- Vignette V6 Fri Dec 29 04:50:40 2006 -->
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="145"><tbody><tr><td><div id="background">
+
+</div><table align="center" border="0" cellpadding="0" cellspacing="0" width="145"><tbody><tr><td><div id="background">
+</div></td></tr><tr>
+<td class="navsection" vaign="top" bgcolor="#efe6dd" width="145">
+<script language="javascript">
+function toggleNode(node) 
+  {
+	var nodeArray = node.childNodes;
+	for(i=0; i < nodeArray.length; i++)
+	{
+	  node = nodeArray[i];
+	  if (node.tagName && node.tagName.toLowerCase() == 'div')
+		node.style.display = (node.style.display == 'block') ? 'none' : 'block';
+	}
+  }
+  
+  function openNode(node)
+  {
+	var nodeArray = node.childNodes;
+	for(i=0; i < nodeArray.length; i++)
+	{
+	  node = nodeArray[i];
+	  if (node.tagName && node.tagName.toLowerCase() == 'div')
+		node.style.display = 'block';
+	}
+  }
+
+  function closeNode(node)
+  {
+	var nodeArray = node.childNodes;
+	for(i=0; i < nodeArray.length; i++)
+	{
+	  node = nodeArray[i];
+	  if (node.tagName && node.tagName.toLowerCase() == 'div')
+		node.style.display = 'none';
+	}
+  }
+
+  function showNode(node)
+  {
+	if (!node) return;
+	if (!node.parentNode) return;
+	node = node.parentNode;
+	while (node.tagName.toLowerCase() == 'div')
+	{
+	  openNode(node);
+	  node = node.parentNode;
+	}
+  }
+</script>
+<script language="JavaScript">
+document.write( "<b>Welcome " + GetValueFromValueCookie( "first%5Fname" ) + "! </b>" ) ; </script><b>Welcome ! </b>
+</td>
+</tr>
+<tr><td bgcolor="#efe6dd" valign="top" width="145">
+<table border="0" width="145">
+	<tbody><tr>
+		<td class="navsection2">Search</td>
+	</tr>
+	<tr>
+		<form method="get" name="CDASearchForm" action="http://www.timesrecordnews.com/trn/search/1,1892,TRN_5670,00.html"></form>
+		<td class="navsection3" bgcolor="#ffffff">	
+		<center><input size="13" name="SearchString" value="" type="text">
+		<input name="Site" value="TRN" type="hidden">
+		<input alt="Go!" src="story60_files/go.gif" name="GoSearch" align="absmiddle" border="0" type="image"></center>
+		</td>
+		
+	</tr>
+</tbody></table><table valign="top" align="center" border="0" cellpadding="0" cellspacing="0" width="145">
+<tbody><tr>
+  <td class="navsection2">News</td>
+</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/local_news/">&nbsp;Local News</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/pdf/TX_TRN.pdf">&nbsp;News Front Page</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/rss/rss.html">&nbsp;RSS Feeds</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/nw_national/">&nbsp;National</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/nw_politics/">&nbsp;Politics</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/nw_washington/">&nbsp;Washington</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/nw_world/">&nbsp;World</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/nw_sci_tech/">&nbsp;Science / Technology</a></td>
+	</tr>
+    
+
+<tr>
+  <td>
+      <div class="root">
+        <table class="classOutBox" align="center" border="0" cellpadding="0" cellspacing="0" width="145">
+          <tbody><tr>
+            <td class="drop" onmouseover="this.className='dropH';" onmouseout="this.className='drop';"><a href="#" class="classSubCat" onclick="toggleNode(this.parentNode.parentNode.parentNode.parentNode.parentNode); return false;">AP News Wire</a></td>
+          </tr>
+        </tbody></table>
+<div>
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="145">            
+             <tbody><tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3'"><a href="javascript:void(window.open('http://video.ap.org/vws/search/aspx/ap.aspx?t=s60&p=enapus_enapus&g=minuteworld&f=txwic','_blank','width=788,height=598,status=1,scrollbars=1,resizable=1'));">&nbsp;&nbsp;AP Video News</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://hosted.ap.org/dynamic/fronts/HOME?SITE=TXWIC&amp;SECTION=HOME">&nbsp;&nbsp;AP News Wire</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://hosted.ap.org/dynamic/fronts/US?SITE=TXWIC&amp;SECTION=US">&nbsp;&nbsp;AP US News Wire</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://hosted.ap.org/dynamic/fronts/POLITICS?SITE=TXWIC&amp;SECTION=POLITICS">&nbsp;&nbsp;AP Politics</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://hosted.ap.org/dynamic/fronts/WORLD?SITE=TXWIC&amp;SECTION=HOME">&nbsp;&nbsp;AP World</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://hosted.ap.org/dynamic/fronts/MIDEAST?SITE=TXWIC&amp;SECTION=HOME">&nbsp;&nbsp;AP Mideast Wire</a></td>
+            </tr>
+            <tr>
+              <td class="drop3" onmouseover="this.className='drop3H';" onmouseout="this.className='drop3';"><a href="http://www.timesrecordnews.com/trn/nw_ap_state/">&nbsp;&nbsp;AP Texas State Wire</a></td>
+            </tr>
+          </tbody></table>
+		  </div>
+      </div>
+</td></tr>
+
+
+</tbody></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+	<tbody><tr>
+	<td class="navsection2">Local Announcements</td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/local_obituaries/">&nbsp;Obituaries</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/an_anniversaries/">&nbsp;Anniversaries</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/an_weddings/">&nbsp;Weddings</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://community.timesrecordnews.com/index.cfm?type=engagements">&nbsp;Engagements</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://community.timesrecordnews.com/index.cfm?type=birthdays">&nbsp;Birthdays</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/local_news/article/0,1891,TRN_5784_1871028,00.html">&nbsp;H.S. Reunions</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://community.timesrecordnews.com/index.cfm?type=memorials">&nbsp;Memorials</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://community.timesrecordnews.com/index.cfm?type=miscellaneous">&nbsp;Miscellaneous</a></td>
+	</tr>
+	<tr>
+	<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/an_submit/">&nbsp;Submit your Announcement</a></td>
+	</tr>
+	
+</tbody></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+	<tbody><tr>
+		<td class="navsection2">Featured Websites</td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.sheppard.af.mil/" target="_blank">&nbsp;Sheppard AFB</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://homes.timesrecordnews.com/">&nbsp;Homes</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://cars.timesrecordnews.com/">&nbsp;Cars</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://wichitafalls.yourhub.com/">&nbsp;Your Hub</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://experts.timesrecordnews.com/">&nbsp;Ask the Experts</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://recipes.timesrecordnews.com/">&nbsp;Recipes Online</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://gardening.timesrecordnews.com/">&nbsp;Local Gardening</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.uclick.com/client/trn/fcx/" target="_blank">&nbsp;Universal Crossword</a></td>
+	</tr>	
+</tbody></table><table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+<tbody><tr>
+		<td class="navsection2">Special Sections</td>
+</tr>
+	<tr>
+		<td class="navsection3"><a href="http://display.timesrecordnews.com/SS/Tiles.aspx?type=homesmagazine">&nbsp;Homes Magazine Online</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://display.timesrecordnews.com/SS/Tiles.aspx?type=lonestarconnection">&nbsp;Lone Star Connection</a></td>
+	</tr>
+<tr>
+	<td align="center" bgcolor="#efe6dd">
+	<form name="specialsections">
+  <p>
+    <select style="font-size: 9px; color: rgb(0, 0, 0); font-family: verdana; background-color: rgb(255, 255, 255); width: 120px;" name="menu">
+      <option value="http://display.timesrecordnews.com/SS/Page.aspx?secid=24690&amp;pagenum=1">Holiday Recipe Guide 2006</option>
+      <option value="http://display.timesrecordnews.com/sections.aspx?sec=17014">Medical Directory 2006</option>
+      <option value="http://display.timesrecordnews.com/sections.aspx?sec=18291">Progress 2006</option>	 
+      <option value="http://display.timesrecordnews.com/sections.aspx?sec=22679">High School Football 2006</option> 	 
+      <option value="http://display.timesrecordnews.com/sections.aspx?sec=22330">Hotter N' Hell 100</option> 
+      <option value="http://display.timesrecordnews.com/SS/Page.aspx?secid=19866&amp;pagenum=1">How-To Guide</option>
+      <option value="http://display.timesrecordnews.com/SS/Page.aspx?&amp;secid=17682&amp;pagenum=1">Visitor's Guide</option>
+    </select>
+    <input onclick="window.open(document.specialsections.menu.options[document.specialsections.menu.selectedIndex].value);" value="go" type="button">
+  </p>
+	</form>
+	</td>
+</tr>
+</tbody></table>  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+	<tbody><tr>
+		<td class="navsection2">Features</td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.dot.state.tx.us/travel/traffic_cameras.htm" target="_blank">&nbsp;TxDot Traffic Cameras</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.legalnotice.org/pl/timesrecordnews/">&nbsp;Legal Notices</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.legalnotice.org/pl/timesrecordnews/#UCP">&nbsp;Unclaimed Property</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.legalnotice.org/pl/timesrecordnews/#SOS">&nbsp;Sex Offender Search</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/stocks/overview.html">&nbsp;Stock Market Overview</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/printroom/trn_printroom.html">&nbsp;Buy Photos Online</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/pdf/TX_TRN.pdf">&nbsp;News Front Page</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.trnphotojournal.com/">&nbsp;TRN Photo Journal</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.texasgasprices.com/index.aspx?&amp;area=WICHITA+FALLS&amp;area=Texas+City">&nbsp;Find Lowest Gas Prices</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/mostwanted/nav.cfm" target="_blank">&nbsp;Texoma's Most Wanted</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/restaurant/nav.cfm" target="_blank">&nbsp;Restaurant Insp. Scores</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/co_churches/0,1891,TRN_5641,00.html">&nbsp;Local Churches</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/local_news/article/0,1891,TRN_5784_1617864,00.html">&nbsp;How Now Joe Brown</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://nieonline.com/timesrecordnews">&nbsp;Newspapers in Education</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.txlottery.org/">&nbsp;TX Lottery Results</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/lakelevels/">&nbsp;Lake Levels</a></td>
+	</tr>
+	
+</tbody></table>	<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+<tbody><tr>
+	<td class="navsection2">Online Links</td>
+</tr>
+<tr>
+	<td class="navsection3"><a href="http://www.bankruptcyhome.com/">&nbsp;Bankruptcy Attorney</a></td>
+</tr>
+<tr>
+	<td class="navsection3"><a href="http://www.personalinjuryplace.com/">&nbsp;Personal Injury</a></td>
+</tr>
+<tr>
+	<td class="navsection3"><a href="http://www.socialsecurityhome.com/">&nbsp;Social Security Disability</a></td>
+</tr>
+</tbody></table><table align="left" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="145">
+	<tbody><tr>
+		<td class="navsection2">Services</td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/rss/rss05.html">&nbsp;RSS Feeds</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://hosted.ap.org/dynamic/fronts/PODCAST?SITE=TXWIC&amp;SECTION=PODCAST">&nbsp;AP Podcasts</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/home/article/0,1891,TRN_5670_1598278,00.html#homepage">&nbsp;Make us your homepage</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/advertise/">&nbsp;Advertising Opportunities</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/home/article/0,1891,TRN_5670_1598278,00.html">&nbsp;FAQs</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/home/article/0,1891,TRN_5670_1598293,00.html">&nbsp;Customer Service</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://web.timesrecordnews.com/subscribe/">&nbsp;Subscribe to TRN</a></td>
+	</tr>
+	<tr>
+		<td class="navsection3"><a href="http://www.timesrecordnews.com/trn/main/article/0,2586,TRN_25018_4169951,00.html">&nbsp;Contact Us</a></td>
+	</tr>
+</tbody></table>
+</td><!-- MaxSize (9) --></tr></tbody></table><!-- MaxSize (1) --></td></tr></tbody></table> </td>
+	 <!-- END OF CELL FOR LEFT SIDE CONTENT -->
+
+
+	<!-- BEGIN CELL FOR CONTENT AREA -->
+	
+	<td valign="top" width="440">
+		<table border="0" cellpadding="12" cellspacing="0" width="440">
+        	<tbody><tr valign="top">
+				<td class="bodytext">
+											    
+						<!-- Vignette V6 Fri Dec 29 18:40:31 2006 -->
+
+	
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="416">	
+					<tbody><tr valign="top"> 
+						<td class="bodytext"> 
+			<table border="0" cellpadding="3" cellspacing="0">
+				<tbody><tr>
+					<td class="deeplinks">
+				<a href='javascript:popup("/trn/cda/article_print/0,1983,TRN_5784_5244543_ARTICLE-DETAIL-PRINT,00.html",700,500,1)' class="deeplinks" onmouseover='self.status="Print this story";return true' onmouseout='self.status="";return true'>PRINT THIS STORY</a> | 
+				<a href='javascript:popup("/cr/cda/email/article/1,1249,TRN_5784_5244543,00.html",400,350)' class="deeplinks" onmouseover='self.status="E-mail this story";return true' onmouseout='self.status="";return true'>E-MAIL THIS STORY</a>
+					</td>
+				</tr>
+			</tbody></table><br><span class="headline1">Saddam to be executed by Saturday</span><p><span class="smalltext"><b>By The Associated Press</b></span><br><span class="smalltext"><b>December 29, 2006</b></span></p><p><span class="bodytext">BAGHDAD,
+Iraq (AP) - Saddam Hussein will be executed no later than Saturday,
+said an Iraqi judge authorized to attend his hanging. The former
+dictator's lawyers said he had been transferred from U.S. custody, but
+an Iraqi official said he was still in the hands of American guards.
+<p>The physical hand-over of Saddam to Iraqi authorities would be one
+of the last steps before he was to be hanged, although the lawyers'
+statement did not specifically say Saddam was in Iraqi hands.
+</p><p> 
+		<table align="left" border="0" cellpadding="0" cellspacing="0" width="130">
+			<tbody><tr><td><img src="story60_files/spacer.gif" border="0" height="10" width="1"></td></tr>
+			<tr>
+				<td width="120">
+			<!-- AdSpace adsize=120x600 pos.5 -->
+			<script language="JavaScript1.1" src="story60_files/siteTRNpagetypeARTICLE_DETAILcategoryNEWSvgncontentLOCAL_NEWS.js">
+			</script><div align="center"><font color="#808080" face="Arial" size="1"></font></div><br>
+<script language="JavaScript" src="story60_files/adsonar.js"></script><form id="qas_frm" name="qas_frm" method="get" action="" target=""><input name="ie52_mac_only" value="" type="hidden"></form><iframe name="adsonar_serve548478" id="adsonar_serve548478" marginwidth="0" marginheight="0" vspace="0" hspace="0" src="story60_files/getAds.htm" frameborder="0" height="600" scrolling="no" width="120"></iframe>
+
+
+			<!-- /AdSpace --></td>
+				<td width="10"><img src="story60_files/spacer.gif" border="0" height="1"></td>
+			</tr>
+			<tr><td><img src="story60_files/spacer.gif" border="0" height="10" width="1"></td></tr>
+		</tbody></table>
+"A few minutes ago we received correspondence from the Americans saying
+that President Saddam Hussein is no longer under the control of U.S.
+forces," according to the statement faxed to The Associated Press.
+</p><p>Munir Haddad, a judge on the appeals court that upheld Saddam's death sentence, said he was ready to attend the execution.
+
+</p><p>"All the measures have been done," Haddad said. "There is no reason for delays."
+
+</p><p>In Baghdad, Prime Minister Nouri al-Maliki has signed Saddam's
+death sentence, a government official said. The official, who refused
+to be identified by name because he was not authorized to release the
+information, said that Iraqi authorities were not yet in control of
+Saddam.
+</p><p>"We will get him when the execution is going to be carried out," said the official.
+
+</p><p>"We are waiting for the friendly side to hand him over to us,"
+the official said in a reference to American forces, who are allied
+with the Iraqi government.
+</p><p>"We have agreed with the Americans that the handover will take
+place only a few minutes before he is executed," the official said. The
+discrepancy could not be explained.
+</p><p>The defense team statement called on "everybody to do everything to stop this unfair execution."
+<br></p></span></p></td></tr></tbody></table>   </td>
+			</tr>
+		</tbody></table>
+	</td>
+	 <!-- END OF CELL FOR CONTENT -->
+
+	<!-- BEGIN CELL THAT HOLDS RIGHT GUTTER INFO -->
+	
+	<td bgcolor="#ffffff" valign="top" width="165">
+		<table border="0" cellpadding="0" cellspacing="0" width="165">
+		<tbody><tr>
+			<td class="gutterbgcolor">
+			<!-- Vignette V6 Tue Oct 17 17:05:28 2006 -->
+
+   
+			<table border="0" cellpadding="0" cellspacing="0" width="165">
+			<tbody><tr>
+				<td>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr>
+<td align="center">
+<img src="story60_files/comcenter.gif"><br>
+<a href="http://web.timesrecordnews.com/trn/blogs/"><img src="story60_files/comblogs.gif" border="0" height="20"></a><br>
+<a href="http://yourhub.com/"><img src="story60_files/comyourhub.gif" border="0" height="20"></a><br>
+<a href="http://www.trnphotojournal.com/"><img src="story60_files/comphoto.gif" border="0" height="20"></a><br>
+<a href="http://1standtrn.timesrecordnews.com/"><img src="story60_files/com1trn.gif" border="0" height="20"></a><br>
+<p></p><p>
+</p></td></tr></tbody></table>
+ <div id="marketrail">
+    <table align="center" background="" border="0" width="100%">
+<tbody><tr>
+<td><p></p><center><img src="story60_files/quickclicks.gif" height="39" width="190"></center></td>
+</tr>
+<tr>
+<td align="center">
+<p></p><center>
+<div id="quickclicks">
+<script language="JavaScript">
+	<!--
+
+	graphic1= new Image();
+	graphic1.src = "http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif";
+	graphic1on = new Image();
+	graphic1on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left_on.gif";
+
+	graphic2= new Image();
+	graphic2.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right.gif";
+	graphic2on = new Image();
+	graphic2on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right_on.gif";
+
+	graphic3= new Image();
+	graphic3.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left.gif";
+	graphic3on = new Image();
+	graphic3on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left_on.gif";
+
+	graphic4= new Image();
+	graphic4.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right.gif";
+	graphic4on = new Image();
+	graphic4on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right_on.gif";
+
+	graphic5= new Image();
+	graphic5.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left.gif";
+	graphic5on = new Image();
+	graphic5on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left_on.gif";
+
+	graphic6= new Image();
+	graphic6.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right.gif";
+	graphic6on = new Image();
+	graphic6on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right_on.gif";
+
+	graphic7= new Image();
+	graphic7.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left.gif";
+	graphic7on = new Image();
+	graphic7on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_left_on.gif";
+
+	graphic8= new Image();
+	graphic8.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right.gif";
+	graphic8on = new Image();
+	graphic8on.src = "http://web.timesrecordnews.com/images/06/images/quickclicks/qc_right_on.gif";
+
+
+	function imageChange(imageID,imageName) { 
+	document.images[imageID].src = imageName;
+}
+
+	function updateImage(img_name,new_image_name){document[img_name].src=new_image_name;}
+	
+	-->
+
+	</script>
+<table background="story60_files/qc_bk.gif" border="0" height="151" width="212">
+<tbody><tr>
+<td>&nbsp;&nbsp;<a href="http://membercenter.timesrecordnews.com/" onmouseover="imageChange('seven','http://web.timesrecordnews.com/images/06//quickclicks/qc_left_on.gif')" onmouseout="imageChange('seven','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')"><img src="story60_files/qc_left.gif" name="seven" alt="left" border="0" height="21" width="21"></a>
+<a href="http://membercenter.timesrecordnews.com/"><img src="story60_files/qc_member.gif" onmouseover="imageChange('seven','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('seven','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')" border="0"></a>
+</td>
+<td><a href="http://experts.timesrecordnews.com/"><img src="story60_files/qc_experts.gif" onmouseover="imageChange('eight','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('eight','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')" border="0"></a>
+<a href="http://experts.timesrecordnews.com/" onmouseover="imageChange('eight','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('eight','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')"><img src="story60_files/qc_right.gif" name="eight" alt="left" border="0" height="21" width="21"></a></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;<a href="http://homes.timesrecordnews.com/" onmouseover="imageChange('one','http://web.timesrecordnews.com/images/06//quickclicks/qc_left_on.gif')" onmouseout="imageChange('one','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')"><img src="story60_files/qc_left.gif" name="one" alt="left" border="0" height="21" width="21"></a>
+<a href="http://homes.timesrecordnews.com/"><img src="story60_files/qc_homes.gif" onmouseover="imageChange('one','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('one','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')" border="0"></a>
+</td>
+<td><a href="http://jobs.timesrecordnews.com/"><img src="story60_files/qc_jobs.gif" onmouseover="imageChange('two','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('two','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')" border="0"></a>
+<a href="http://jobs.timesrecordnews.com/" onmouseover="imageChange('two','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('two','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')"><img src="story60_files/qc_right.gif" name="two" alt="left" border="0" height="21" width="21"></a></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;<a href="http://cars.timesrecordnews.com/" onmouseover="imageChange('three','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('three','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')"><img src="story60_files/qc_left.gif" name="three" alt="left" border="0" height="21" width="21"></a>
+<a href="http://cars.timesrecordnews.com/"><img src="story60_files/qc_cars.gif" onmouseover="imageChange('three','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('three','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')" border="0"></a>
+</td>
+<td><a href="http://web.timesrecordnews.com/advertise/"><img src="story60_files/qc_ad.gif" onmouseover="imageChange('four','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('four','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')" border="0"></a>
+<a href="http://web.timesrecordnews.com/advertise/" onmouseover="imageChange('four','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('four','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')"><img src="story60_files/qc_right.gif" name="four" alt="left" border="0" height="21" width="21"></a></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;<a href="http://web.timesrecordnews.com/printroom/trn_printroom.html" onmouseover="imageChange('five','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('five','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')"><img src="story60_files/qc_left.gif" name="five" alt="left" border="0" height="21" width="21"></a>
+<a href="http://web.timesrecordnews.com/printroom/trn_printroom.html"><img src="story60_files/qc_photos.gif" onmouseover="imageChange('five','http://web.timesrecordnews.com/images/06/quickclicks/qc_left_on.gif')" onmouseout="imageChange('five','http://web.timesrecordnews.com/images/06/quickclicks/qc_left.gif')" border="0"></a>
+</td>
+<td>
+<a href="http://display.timesrecordnews.com/SS/Tiles.aspx?type=homesmagazine"><img src="story60_files/qc_mag.gif" onmouseover="imageChange('six','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('six','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')" border="0"></a>
+<a href="http://display.timesrecordnews.com/SS/Tiles.aspx?type=homesmagazine" onmouseover="imageChange('six','http://web.timesrecordnews.com/images/06/quickclicks/qc_right_on.gif')" onmouseout="imageChange('six','http://web.timesrecordnews.com/images/06/quickclicks/qc_right.gif')"><img src="story60_files/qc_right.gif" name="six" alt="left" border="0" height="21" width="21">
+</a></td>
+</tr>
+</tbody></table>
+<p></p><p>
+</p></div>
+</center>
+</td>
+</tr>
+<!--/RIGHT GUTTER-->
+<tr>
+<td align="center">
+<a href="javascript:void(window.open('http://video.ap.org/vws/search/aspx/ap.aspx?t=s60&p=enapus_enapus&g=minuteworld&f=txwic','_blank','width=788,height=598,status=1,scrollbars=1,resizable=1'));"><img src="story60_files/ap_video_news.gif" border="0"></a><p>
+</p></td>
+</tr>
+
+<!--<tr>
+<td align="center" valign="bottom">
+<table class="sponsor">
+<tr><td>
+<script language='JavaScript1.1' src='http://adsremote.scripps.com/js.ng/site=TRN&page=MAIN&category=NEWS&section=NEWS&adtype=LOGO&PagePos=1'>
+  </script>
+</td><td> Video Sponsored by:<br> Champions Clinic</td></tr>
+</table>
+</td>
+</tr>-->
+<tr>
+<td align="center" valign="top">
+<img src="story60_files/tomm_headline.gif"><br>
+ <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="rail" align="" height="225" width="212">
+              <param name="movie" value="http://web.timesrecordnews.com/headlines/headlines.swf">
+              <param name="quality" value="high">
+              <param name="bgcolor" value="#066BB4">
+              <embed src="story60_files/headlines.txt" quality="high" bgcolor="#006BB4" name="rail" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" align="" height="225" width="212">
+            </object>
+<p></p><p>
+<a href="http://videoarchive.timesrecordnews.com/" onclick="window.open('http://videoarchive.timesrecordnews.com/');return false"><img src="story60_files/video_archives.gif" target="_blank" border="0"></a>
+</p></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td align="center">
+<script language="JavaScript1.1" src="story60_files/siteTRNpageMAINcategoryNEWSsectionNEWSadsize180x50PagePos1.js">
+</script><a target="_top" href="http://adsremote.scripps.com/event.ng/Type=click&amp;FlightID=2038331&amp;AdID=2047082&amp;TargetID=2018155&amp;Segments=351,2540,2560,2000825,2001081,2001256,2001550,2001551,2001761,2001784,2001916,2002245,2003087,2003137,2003524,2003526,2004128,2004207,2006147,2006149,2006150,2006151,2006162,2006188,2007851,2008092,2008093,2008094,2008614,2008711,2008733,2008740,2008787,2009205,2009431,2010059,2010250,2010386,2010753,2010754,2010755,2010756,2010869,2010967,2011117,2011596,2011794,2012309,2012909,2013178,2014135,2014154,2014155,2014158,2014164,2014210,2014234,2014844,2014862,2014964,2015151,2015920,2016474,2016743,2017211,2017324,2017504,2017624,2017746,2017772,2017914,2018328,2018481,2018531,2018611,2018635,2018664,2018675&amp;Targets=2003385,2004956,2006629,2006630,2018152,2018155,2025086&amp;Values=25,30,50,60,72,86,93,101,110,150,155,215,593,672,674,739,847,848,1169,2000134,2000705,2000709,2000874,2001560,2002057,2004296,2004338,2004360,2004415,2004417,2004425,2004426,2004427,2004428,2004446,2004460,2004462,2004463,2004477,2004493,2005250,2005544,2005724,2006154,2006407,2007353,2007729,2007950,2008359,2008555,2009449,2010187&amp;RawValues=&amp;Redirect=http:%2F%2Fexperts.timesrecordnews.com%2Findex.cfm%3Faction%3Dsubcat%26expertid%3D8"><img src="story60_files/mar10_trn_earad_arrowhead.gif" alt="" border="0" height="50" width="180"></a>
+		<p></p><p>
+</p></td>
+</tr>
+<tr>
+<td align="center">
+<script type="text/javascript">adsonar_pid=200762;adsonar_ps=951706;adsonar_zw=200;adsonar_zh=300;adsonar_jv='ads.adsonar.com';</script><script language="JavaScript" src="story60_files/adsonar.js"></script><iframe name="adsonar_serve790938" id="adsonar_serve790938" marginwidth="0" marginheight="0" vspace="0" hspace="0" src="story60_files/getAds_002.htm" frameborder="0" height="300" scrolling="no" width="200"></iframe>
+<p></p><p>
+
+</p></td>
+</tr>
+</tbody></table>
+</div><!-- MaxSize (2) -->
+				</td>
+			</tr>
+			</tbody></table><p></p><div class="ad" align="center"> <script language="JavaScript1.1" src="story60_files/siteTRNcategoryNEWSsectionLOCAL_NEWSpageSECTIONadsize120x_002.js">
+				</script><!-- Sniffer Code for Flash version=60 -->
+<a target="_blank" href="http://adsremote.scripps.com/event.ng/Type=click&amp;FlightID=2037548&amp;AdID=2046163&amp;TargetID=2019226&amp;Targets=2007794,2019442,2019226,2025184,1477,2003385,2004956,2006629,2006630,2007771,2019319&amp;RawValues=&amp;Redirect=http:%2f%2fwww.advertisersite.com"><img src="story60_files/1x1.gif" border="0" height="240" width="120"></a><noembed>&lt;A
+TARGET="_blank"
+HREF="http://adsremote.scripps.com/event.ng/Type=click&amp;FlightID=2037548&amp;AdID=2046163&amp;TargetID=2019226&amp;Targets=2007794,2019442,2019226,2025184,1477,2003385,2004956,2006629,2006630,2007771,2019319&amp;RawValues=&amp;Redirect=http:%2f%2fwww.advertisersite.com"&gt;&lt;IMG
+SRC="http://images.scripps.com/1x1.gif" WIDTH=120 HEIGHT=240
+BORDER=0&gt;&lt;/A&gt;</noembed><noscript><A TARGET="_blank"
+HREF="http://adsremote.scripps.com/event.ng/Type=click&FlightID=2037548&AdID=2046163&TargetID=2019226&Targets=2007794,2019442,2019226,2025184,1477,2003385,2004956,2006629,2006630,2007771,2019319&RawValues=&Redirect=http:%2f%2fwww.advertisersite.com"><IMG
+SRC="http://images.scripps.com/1x1.gif" WIDTH=120 HEIGHT=240
+BORDER=0></A></noscript> 
+				 
+
+
+				<script language="JavaScript1.1" src="story60_files/siteTRNcategoryNEWSsectionLOCAL_NEWSpageSECTIONadsize120x240P.js">
+				</script><a target="_top" href="http://adsremote.scripps.com/event.ng/Type=click&amp;FlightID=2039720&amp;AdID=2048871&amp;TargetID=2024108&amp;Segments=351,2229,2540,2560,2000825,2001081,2001256,2001550,2001551,2001761,2001784,2001916,2002245,2003087,2003137,2003524,2003526,2003692,2004128,2004275,2006147,2006149,2006150,2006151,2006162,2006188,2006415,2007851,2008092,2008093,2008094,2008711,2008733,2008740,2008787,2009205,2009431,2010059,2010250,2010386,2010753,2010754,2010755,2010756,2010869,2010967,2011117,2011596,2011794,2012309,2012909,2013178,2014135,2014155,2014158,2014164,2014210,2014234,2014844,2014862,2014964,2015262,2015920,2016474,2016743,2017211,2017324,2017504,2017624,2017746,2017772,2017914,2018328,2018481,2018531,2018635,2018664,2018675&amp;Targets=1477,2003385,2024108,2008733,2008093,2006629,2006630,2023688,2024951&amp;Values=25,30,50,60,72,86,93,101,110,139,150,155,216,220,593,672,674,739,847,848,1169,2000134,2000705,2000709,2000874,2001560,2002057,2004296,2004338,2004360,2004415,2004417,2004425,2004426,2004427,2004428,2004446,2004460,2004462,2004463,2004477,2004493,2005250,2005544,2005724,2006154,2006407,2007353,2007729,2008380,2009449,2010187&amp;RawValues=&amp;Redirect=http:%2F%2Fweb.timesrecordnews.com%2FAdvertising%2Ffourstars%2Ffourstar.html"><img src="story60_files/240_tile_ad.gif" alt="Four Stars Auto Ranch" border="0" height="240" width="120"></a> </div><p>
+			<table border="0" cellpadding="0" cellspacing="0" width="165">
+			<tbody><tr>
+				<td>
+				<script language="javascript" src="story60_files/railrotator_002.js"></script>
+<script language="JavaScript">document.write(rotaterail('wic','wictopjobs','live'))</script><script src="story60_files/rail_1_002.js"></script><table border="0" cellpadding="0" cellspacing="0" width="165"><tbody><tr><td align="center"><img src="story60_files/top_jobs.gif" alt="Top Jobs" border="0"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="165"><tbody><tr><td bgcolor="#ffffff"><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://railads.scripps.com/wic/wictopjobs/live/details/wictopjobs_176506.html', '176506', 'width=500,height=400,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"><font face="Verdana" size="1"><b>LVN</b></font></a> </b><font face="Verdana" size="1"><br>CLAY COUNTY HOSPITAL</font> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://railads.scripps.com/wic/wictopjobs/live/details/wictopjobs_176474.html', '176474', 'width=500,height=400,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"><font face="Verdana" size="1"><b>Admissions Department</b></font></a> </b><font face="Verdana" size="1"><br>RED RIVER HOSPITAL/CLASS</font> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://railads.scripps.com/wic/wictopjobs/live/details/wictopjobs_176554.html', '176554', 'width=500,height=400,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"><font face="Verdana" size="1"><b>Route Delivery Salesperson, Merchandiser</b></font></a> </b><font face="Verdana" size="1"><br>ABTEX BEVERAGE GROUP</font> <hr noshade="noshade" size="1"></td></tr></tbody></table><div align="center"> <a href="javascript:newWindow = window.open( 'http://railads.scripps.com/wic/wictopjobs/live/more/wictopjobs_more.html','176554', 'width=600,height=500,toolbar=1,location=1,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="verdana" size="1"><b> Click Here</b></font></a> <font color="Black" face="verdana" size="1"><br>more Top Jobs</font></div></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td bgcolor="#000000" height="2"><img src="story60_files/spacer.gif" border="0" height="1" width="1"></td></tr></tbody></table>
+
+
+<script language="JavaScript" src="story60_files/railrotator.js"></script>
+<script language="JavaScript">document.write(rotaterail('wic','wicotherads','live'))</script><script src="story60_files/rail_1.js"></script><table border="0" cellpadding="0" cellspacing="0" width="165"><tbody><tr><td align="center"><img src="story60_files/top_ads.gif" border="0"></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="165"><tbody><tr><td bgcolor="#ffffff"><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=279821&adid=109090', '109090', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>United Supermarkets</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=277237&adid=109135', '109135', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>First Baptist Church</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=278609&adid=108342', '108342', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>Bealls</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=278609&adid=108340', '108340', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>Bealls</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=520975&adid=109139', '109139', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>Nissan</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=279830&adid=106584', '106584', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>Ashley Furniture HomeStore</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><table width="100%"><tbody><tr><td><b> <a href="javascript:newWindow = window.open( 'http://display.timesrecordnews.com/ROP/ads.aspx?advid=385934&adid=108921', '108921', 'width=1024,height=768,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="Verdana" size="1"><b>Kings Food Store</b></font></a> </b> <hr noshade="noshade" size="1"></td></tr></tbody></table><div align="center"> <a href="javascript:newWindow = window.open( 'http://railads.scripps.com/wic/wicotherads/live/more/wicotherads_more.html','108921', 'width=600,height=500,toolbar=1,location=1,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus();"> <font face="verdana" size="1"><b> Click Here</b></font></a>  <font color="Black" face="verdana" size="1"><br>More TopAds advertisers</font></div></td></tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td bgcolor="#000000" height="2"><img src="story60_files/spacer.gif" border="0" height="1" width="1"></td></tr></tbody></table> <!-- MaxSize (2) -->
+				</td>
+			</tr>
+			</tbody></table><!-- MaxSize (3) --> </p></td>
+		</tr>
+		</tbody></table>
+	</td>
+	 <!-- END CELL THAT HOLDS RIGHT GUTTER INFO -->
+</tr>
+</tbody></table>
+<!-- END OF TABLE FOR CONTENT AREA -->	
+
+	
+	
+	<!-- ----------------------BEGIN SITE FOOTER LIBRARY ----------------------- -->	 
+	
+	<!-- Vignette V6 Tue Jun 13 12:00:37 2006 -->
+
+  
+			
+			<div id="footer05">
+<table border="0" height="100%" width="100%">
+<tbody><tr>
+<td valign="top" width="76">
+<a href="http://www.scripps.com/"><img src="story60_files/scripps.gif" border="0"></a></td>
+<td id="footertext05" valign="top">
+2006© Wichita Falls Times Record News<br>
+Advertising Information: <br>Email Tony Kouri (940-720-3412) <a href="mailto:kourit@timesrecordnews.com">kourit@timesrecordnews.com</a><br>
+<table cellpadding="0" width="450">
+    <tbody><tr>
+      <td class="footertext05" valign="middle">Other E.W. Scripps sites: </td>
+      <td valign="middle"><img src="story60_files/nets.gif" usemap="#Map" border="0" height="35" width="300"></td>
+    </tr>
+  </tbody></table>
+</td>
+
+<td id="footertext05" valign="top">
+<a href="http://www.scrippsnews.com/"><img src="story60_files/scrippsnews.gif" border="0"></a><p>
+<a href="http://web.timesrecordnews.com/trn06/privacy_policy.html">Privacy Policy</a><br>
+<a href="http://web.timesrecordnews.com/trn06/useragreement.html">User Agreement</a><br>
+<a href="http://web.timesrecordnews.com/trn06/webmaster_form.html">Contact Webmaster</a><br>
+<a href="http://web.timesrecordnews.com/trn06/sitemap.html">Site Map</a><br>
+</p></td>
+</tr>
+<tr>
+<td colspan="3" id="footertext05">
+<br>
+Comparison Shop for <a href="http://www.shopzilla.com/7X--Outdoor_Furniture_-_cat_id--13010500__rf--wft001">Patio Furniture</a> and <a href="http://www.shopzilla.com/10J--Television_TV__-_cat_id--11520000__rf--wft001">Plasma Televisions</a> at <a href="http://www.shopzilla.com/index.xpml?rf=wft001">Shopzilla</a> &amp; <a href="http://www.bizrate.com/index__rf--wft001.html">BizRate</a> 
+</td>
+</tr>
+</tbody></table>
+</div>
+<map name="Map"><area shape="rect" coords="2,3,65,33" href="http://www.hgtv.com/" target="_blank" alt="Visit HGTV online"><area shape="rect" coords="75,2,141,35" href="http://www.foodtv.com/" target="_blank" alt="Visit The Food Network online"><area shape="rect" coords="154,3,216,35" href="http://www.diynet.com/" target="_blank" alt="Visit DIY online"><area shape="rect" coords="230,4,299,32" href="http://www.fineliving.com/" target="_blank" alt="Vist Fine Living online">
+  
+  
+  
+  
+</map><!-- MaxSize (1) -->  <!-- ----------------------END SITE FOOTER LIBRARY ----------------------- -->
+</body></html>

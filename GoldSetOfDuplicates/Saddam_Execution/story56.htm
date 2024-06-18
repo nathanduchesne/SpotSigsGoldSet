@@ -1,0 +1,834 @@
+<html><head><!-- NewSys(TM), version 3.32.1, Copyright TownNews.com(C) 2002-2005, on web24.systems.townnews.com -->
+
+
+
+		
+	<meta http-equiv="expires" content="Sat 30 Dec 2006 08:15:00 PST">
+	<meta name="title" content="The Daily News Online - Longview"><title>The Daily News Online</title>
+	
+	<style type="text/css">
+
+.opinion-hed {
+  color: #999999;
+  font-family: times,serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin:0;
+}
+
+.apheadlines {
+  background: white;
+  border: 1px solid black;
+  padding: 5px;
+  margin:0;
+  color: red;
+  width: 97px;
+}
+
+* html .apheadlines {
+  width: 110px;
+}
+
+.apheadlines span {
+  display: block;
+  margin: 0;
+  padding: 10px 0px;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.apheadlines br {
+  height: 0;
+  margin: 0;
+  padding: 0px;
+  display: block;
+}
+
+* html .apheadlines br {
+  border-bottom: 0px;
+}
+
+.apheadlines A {
+  color: black;
+  font-size: 9px;
+  font-weight: bold;
+  font-family: Verdana,Arial,Trebuchet MS,MS Serif;
+
+  }
+
+ .apheadlines A:hover {
+  color: #F00;
+}
+
+.updatedheadlines {
+  color: #999;
+  font-size: 9px;
+  padding-bottom: 10px;
+}
+
+	a {text-decoration:none} 
+	A.more:active, A.more:link, A.more:visited {color:#FFFFFF;}
+	A.more:hover { color:#CCFFFF;}
+
+	A.menu  {width:100%; font-weight:bold;}
+	A.menu:link, A.menu:visited { color:#000000;} 
+	A.menu:hover, A.menu:active {color:#ffffff; background-color:#8899aa;}
+
+	.nav_left, .nav_white, .nav_white2, .menu, .subtab, .nav_bottom {font-family: Verdana,Arial,Trebuchet MS,MS Serif; font-size: 10px;}
+	.front_headlines {font-size: 9pt; font-family: Verdana, Arial, Helvetica, Geneva;}
+	.nav_white, .subtab {color:white; font-weight:bold;}
+	.subtab:hover {text-decoration:underline;}
+	a.submenu:hover {text-decoration:underline;}
+
+
+	.sbody {font-family: Arial, Helvetica, Verdana; font-size: 10pt;}
+	TD.sbody A {font-family: Verdana, Arial, Helvetica; font-weight: bold; font-size: 8pt;}
+	TD.sbody B {font-family: Arial, Helvetica, Verdana; font-weight: bold; font-size: 12pt;}
+
+	.top_bottom {
+		border-top: black 1px solid;
+		border-bottom: black 1px solid;
+		}
+	.top {border-top: black 1px solid;}
+	.bottom_right {border-bottom: black 1px solid; border-right: black 1px solid;}
+	.nav_bottom {border-bottom: black 1px solid; font-weight: bold;}
+	.bottom {border-bottom: black 1px solid; font-weight: bold; /* depreciated */} 
+	.field  { font: 10px "Verdana", "sans-serif"; background: white;  }
+
+	.black_link:link, .black_link:visited, .black_link:hover {color:black; font-weight:normal;}
+
+	.caps_header {color: #737373; font-style: normal; font-weight: bold; font-size: 11pt; font-family: Arial;}
+	TD.photos img {border:1px solid #000;}
+	.border{border: 1px solid #000;} 
+
+	.main, .main_white {font-family: Arial,Verdana,Helvetica; font-size: 9pt;}
+	.main_white {color:white; font-weight:bold;}
+
+.teaser_box {
+    width: 500px;
+    position: relative;   
+    background-color: #FFFFFF;
+    border: 1px solid #006699;
+    padding: 2px;
+    margin-top: 0px;
+    margin-left: 0px }
+
+.teaser_box hr {
+  border: 0;
+  margin: 0px 0px 0px 0px;
+  border-top: 1px solid #006699;
+  height: 0;
+  background: #006699 }
+
+.teaser_box .teaser_headline {font-family: Verdana, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+      margin: 0px 0px 0px 0px;
+    font-size: 8pt;
+    background-color: #006699;
+    font-weight: bold }
+
+.teaser_box .teaser_bottomline {font-family: Verdana, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 7pt;
+    background-color: #006699;
+    font-weight: bold }
+    
+.teaser_bottomline a:link { color: #FFFFFF; 
+    text-decoration: none }  /* for unvisited links */
+.teaser_bottomline a:visited { color: #FFFFFF; 
+    text-decoration: none } /* for visited links */
+.teaser_bottomline a:active { color: #FFFFFF; 
+    text-decoration: none } /* when link is clicked */
+.teaser_bottomline a:hover { color: #FFFFFF; 
+    text-decoration: none } /* when mouse is over link */ 
+    
+.teaser_box .day {color: #737373; 
+    font-style: normal; 
+    font-weight: bold; 
+    text-align: left;
+      margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    font-size: 9pt; 
+    font-family: Arial }
+    
+.teaser_box .tease_text {color: #000000; 
+    font-style: normal; 
+    text-align: left;
+      margin: 0px 0px 0px 0px;
+    font-size: 8pt;
+    font-family: Arial }
+
+.teaser_section {color: #000000; 
+    font-style: normal;
+    font-weight: bold;
+      margin: 0px 0px 0px 0px;
+    font-size: 8pt;
+    font-family: Arial }
+
+.teaser_picture { border: 1px solid #000;
+    margin: 3px 3px 1px 1px;
+    float: left  }
+
+.rss_info {font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 60%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #FF6600;
+    background-color: #ccc }
+    
+.rss_info_image {
+    vertical-align: -10%
+  }
+
+.hr_black {
+  border: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border-top: 1px solid #006699;
+  height: 0;
+  background: #006699 }
+
+/*simpleblog CSS courtesy Quad City Times*/
+
+.simpleblog-form label {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: #2e436d;
+    display: block;
+}
+.simpleblog-form {
+        background: #fafafa;
+        border: 1px solid #efefef;
+    padding: 10px;
+        margin: 0 0 20px 0;
+}
+
+.simpleblog-name {
+          color: #2e436d;
+      font-weight: bold;
+      display: block;
+}
+.simpleblog-date {
+     font-size: 10px;
+}
+.simpleblog-url {
+     font-size: 11px;
+         font-weight: bold;
+         color: #666;
+}
+.simpleblog-response {
+      display: block;
+          color: #333;
+          padding: 10px 0 20px 0;
+          border-bottom: 1px solid #efefef;
+}
+.simpleblog-results{
+         background: #fafafa;
+         border: 1px solid #efefef;
+     padding: 0px 10px;
+}
+
+	</style>
+	
+	<link href="story56_files/raw_hide.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="story56_files/resize.js" type="text/javascript"></script>
+	<script language="JavaScript">
+	<!--
+	function highlight(o) {
+		o.style.background='#DDDDDD'; 
+		o.style.cursor='pointer'; 
+		o.style.cursor='hand';
+		}
+	
+	image01 = new Image();
+	image01.src = '/art/bar_links/jobs_on.gif';
+	image02 = new Image();
+	image02.src = '/art/bar_links/home_on.gif';
+	image03 = new Image();
+	image03.src = '/art/bar_links/auto_on.gif';
+	//-->
+	</script>
+	<link rel="icon" href="http://www.tdn.com/art/icon.gif" type="image/gif"> 
+	<link href="http://www.tdn.com/?rss=top_story" rel="alternate" type="application/rss+xml" title="TDN -- Top Story"><link href="http://www.tdn.com/?rss=area_news" rel="alternate" type="application/rss+xml" title="TDN -- Area News"><link href="http://www.tdn.com/?rss=nation_world" rel="alternate" type="application/rss+xml" title="TDN -- Nation/World"><link href="http://www.tdn.com/?rss=sports" rel="alternate" type="application/rss+xml" title="TDN -- Sports"><link href="http://www.tdn.com/?rss=biz" rel="alternate" type="application/rss+xml" title="TDN -- Business"><link href="http://www.tdn.com/?rss=this_day" rel="alternate" type="application/rss+xml" title="TDN -- This Day"><link href="http://www.tdn.com/?rss=letters_new" rel="alternate" type="application/rss+xml" title="TDN -- Letters to the Editor"><link href="http://www.tdn.com/?rss=editorial" rel="alternate" type="application/rss+xml" title="TDN -- Local Editorial"><link href="http://www.tdn.com/blogs/sports/wp-rss2.php" rel="alternate" type="application/rss+xml" title="TDN -- Sports Blog -- Posts"><link href="http://www.tdn.com/blogs/sports/wp-commentsrss2.php" rel="alternate" type="application/rss+xml" title="TDN -- Sports Blog -- Comments"><link href="http://www.tdn.com/blogs/news/wp-rss2.php" rel="alternate" type="application/rss+xml" title="TDN -- News Blog -- Posts"><link href="http://www.tdn.com/blogs/news/wp-commentsrss2.php" rel="alternate" type="application/rss+xml" title="TDN -- News Blog -- Comments"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=employment/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- Employment"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=real_estate_for_rent/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- Rentals"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=real_estate_for_sale/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- Real Estate for Sale"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=transportation/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- Autos for Sale"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=new_today/new_today/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- New Today!"><link href="http://www.tdn.com/shared-content/admarket/?format=rss&amp;market=admarket&amp;query=&amp;start=1&amp;limit=25&amp;path=general_merchandise/" rel="alternate" type="application/rss+xml" title="TDN -- Classifieds -- General Merchandise"><link rel="stylesheet" href="story56_files/news.css" type="text/css"><style type="text/css">
+<!--
+p {margin-top: 0px; margin-bottom: 0px}
+-->
+
+</style></head><body topmargin="0" leftmargin="0" rightmargin="0" alink="blue" bgcolor="#ffffff" link="blue" marginheight="0" marginwidth="0" vlink="blue">
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+
+<table background="story56_files/blue_bevel.gif" bgcolor="#00639c" border="0" cellpadding="0" cellspacing="0" height="60" width="780">
+  <tbody><tr>
+    <td width="300"><a href="http://www.tdn.com/"><img src="story56_files/toplogo_1.gif" border="0" height="60" width="300"></a></td>
+	<td align="right" valign="middle">
+      <table cellpadding="1" cellspacing="2">
+	    <tbody><tr>
+		  <td rowspan="2" align="center" width="40"><a href="http://www.tdn.com/admarket/employment/" onmouseover="image01.src='/art/bar_links/jobs_on.gif';" onmouseout="image01.src='/art/bar_links/jobs_off.gif';"><img name="image01" src="story56_files/jobs_off.gif" border="0"></a></td>
+		 <td rowspan="2" align="center" width="40"><a href="http://www.tdn.com/admarket/real_estate_for_sale/" onmouseover="image02.src='/art/bar_links/home_on.gif';" onmouseout="image02.src='/art/bar_links/home_off.gif';"><img name="image02" src="story56_files/home_off.gif" border="0"></a></td>
+		<td rowspan="2" align="center" width="40"><a href="http://www.wheelsforyoutdn.com/" onmouseover="image03.src='/art/bar_links/auto_on.gif';" onmouseout="image03.src='/art/bar_links/auto_off.gif';"><img name="image03" src="story56_files/auto_off.gif" border="0"></a></td>
+		<td rowspan="2" width="10">&nbsp;</td>
+		<form action="http://www.google.com/search" target="_blank" name="f"></form>
+		<td height="20" nowrap="nowrap" valign="middle" width="140"><input class="nav_left" name="q" size="18" type="text">&nbsp;<input value="search" src="story56_files/go.gif" align="absmiddle" border="0" height="20" type="image" width="20"></td>
+		<td rowspan="2" width="40">&nbsp;</td>
+		</tr><tr>
+		  <td colspan="2" class="nav_white" align="left"><font size="1">&nbsp;Web Search by Google</font></td></tr>
+		
+	</tbody></table>
+	<!-- END GOOGLE -->	</td></tr>
+	<!-- DATE -->
+	<tr>
+	<td class="nav_white" colspan="2" align="right" background="story56_files/black_bevel.gif" bgcolor="black" height="10">
+	<font size="1">Friday December 29, 2006&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr>
+</tbody></table>
+
+<table style="clear: both;" border="0" cellpadding="0" cellspacing="0" width="755">
+  <tbody><tr><td><img 3="" src="story56_files/pixel.gif" height="" width="1"></td></tr>
+	<tr>
+  <td align="left"><img src="story56_files/banneradflag.gif"></td>
+	<td style="border: 1px solid rgb(0, 0, 0);" align="center" height="90" valign="center" width="700">
+	<script type="text/javascript" src="story56_files/static_004.js"></script><script type="text/javascript" src="story56_files/capped.js"></script><script type="text/javascript" src="story56_files/60316.js"></script><script language="Javascript1.1" src="story56_files/getntag_002.htm">
+</script><script language="Javascript" src="story56_files/getntag.htm"></script><iframe id="CWADFRAME1" src="story56_files/ContextAd.htm" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0" height="90" scrolling="no" width="728">
+&lt;A
+HREF=http://media.contextweb.com/sysdefaultclick.aspx?cwformat=728X90&amp;PID=404256&gt;&lt;IMG
+SRC=http://media.contextweb.com/sysdefault.aspx?cwformat=728X90&amp;PID=404256
+border=0&gt;&lt;/A&gt;
+</iframe>
+
+
+</td></tr>
+  <tr><td align="center"><font size="1"> </font></td></tr>
+  <tr><td><img src="story56_files/pixel.gif" height="2" width="1"></td></tr>
+</tbody></table>
+
+<!-- END HEADER -->
+
+<!-- TABS -->
+<table background="story56_files/top_bg.gif" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="780">
+	<tbody><tr>
+	<td align="left" background="story56_files/top_bg_noline.gif" nowrap="nowrap" width="25"><img src="story56_files/top_bg_noline.gif" height="18" width="5"><img src="story56_files/top_bg.gif" height="18" width="20"></td>
+	
+
+
+<!-- news -->
+
+
+
+	<td><img src="story56_files/up_left.gif" height="18" width="10"></td>
+	<td class="top" align="center" bgcolor="#6699cc" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/"><font class="main_white"><font color="#ffffb5">&nbsp; News &nbsp;</font></font></a></td>
+	<td><img src="story56_files/up_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/sports"><font class="main_white"><font color="white">&nbsp; Sports &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/opinions"><font class="main_white"><font color="white">&nbsp; Opinions &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/admarket/"><font class="main_white"><font color="white">&nbsp; Classifieds &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/customer_service/"><font class="main_white"><font color="white">&nbsp; Customer Service &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdnhosting.com/gallery/browse.php"><font class="main_white"><font color="white">&nbsp; Photo Gallery &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/blogs"><font class="main_white"><font color="white">&nbsp; Blogs &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+
+	<td><img src="story56_files/down_left.gif" height="18" width="10"></td>
+	<td class="top_bottom" align="center" bgcolor="#b5b5b5" nowrap="nowrap" valign="middle"><a href="http://www.tdn.com/townsquare/"><font class="main_white"><font color="white">&nbsp; Forum &nbsp;</font></font></a></td>
+	<td><img src="story56_files/down_right.gif" height="18" width="10"></td>
+		
+	<td background="story56_files/sub_menu_bar_bg.gif" width="50%"></td>
+	<td width="5"><img src="story56_files/top_bg_noline.gif" height="18" width="5"></td>
+	</tr>
+</tbody></table>		
+<!-- SUB MENU -->
+<table bgcolor="#6699cc" border="0" cellpadding="0" cellspacing="0" width="780">
+	<tbody><tr>
+	<td width="13"><img src="story56_files/sub_menu_bar_left.gif" height="28" width="13"></td>
+	<td class="nav_white" height="28" valign="middle" width="754"><font size="1">	<a href="http://www.tdn.com/" class="subtab"><font color="white">Home</font></a>
+	 | <a href="http://www.tdn.com/area_news" class="subtab"><font color="white">Area News</font></a>
+	 | <a href="http://www.tdn.com/ap/headlines" class="subtab"><font color="#ffffb5">Nation/World</font></a>
+	 | <a href="http://www.tdn.com/this_day" class="subtab"><font color="white">This Day</font></a>
+	 | <a href="http://www.tdn.com/biz" class="subtab"><font color="white">Business</font></a>
+	 | <a href="http://www.tdn.com/news_briefs" class="subtab"><font color="white">Local Briefs</font></a>
+	 | <a href="http://www.tdn.com/blotter" class="subtab"><font color="white">Police Blotter/Map</font></a>
+	 | <a href="http://www.tdn.com/obits" class="subtab"><font color="white">Obituaries</font></a>
+	 | <a href="http://www.tdn.com/births" class="subtab"><font color="white">Births</font></a>
+	 | <a href="http://www.tdn.com/special" class="subtab"><font color="white">Special Sections</font></a>
+</font></td>
+	<td width="10"><img src="story56_files/sub_menu_bar_right.gif" height="28" width="10"></td></tr>
+</tbody></table>
+<!-- START MAIN TABLE -->
+<table style="border-right: 1px solid black;" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="780">
+	<tbody><tr><td align="center" valign="top" width="118">
+	<!-- START COLUMN 1-->
+	<table bgcolor="#6699cc" border="0" cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr><td align="center" valign="top">
+				<!-- START WEATHER -->
+		<table class="border" cellpadding="2" cellspacing="0" width="100%">
+			<tbody><tr><td class="nav_white" align="center" bgcolor="#006699"><font size="1">Today's Weather</font></td></tr>
+			<tr><td align="center" bgcolor="white"><a href="http://wwwa.accuweather.com/index-forecast.asp?partner=accuweather&amp;traveler=0&amp;zipcode=98632&amp;u=1" target="_new"><img src="story56_files/21.jpg" alt="WXPort" border="0" height="82" width="48"></a><br>
+			<font class="nav_left"><font size="1"><b><a href="http://www.tdn.com/pass_cams/">WA Pass Cams</a><br>
+			<a href="http://www.tdn.com/pass_cams/?state=Oregon">OR Pass Cams</a><br>
+			</b></font></font></td></tr>
+		</tbody></table>
+		<!-- END WEATHER -->
+		
+		</td></tr>
+		<tr><td align="center" valign="top">
+		
+		<table class="border" bgcolor="white" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr><td class="nav_white" align="center" bgcolor="black"><font size="1">News</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/area_news';" class="nav_bottom"><font size="1">&nbsp;Area News</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/ap/headlines';" class="nav_bottom"><font size="1">&nbsp;Nation/World</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/this_day';" class="nav_bottom"><font size="1">&nbsp;This Day</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/sports';" class="nav_bottom"><font size="1">&nbsp;Sports</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/biz';" class="nav_bottom"><font size="1">&nbsp;Business</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/news_briefs';" class="nav_bottom"><font size="1">&nbsp;Local Briefs</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/blotter';" class="nav_bottom"><font size="1">&nbsp;Police Blotter</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/births';" class="nav_bottom"><font size="1">&nbsp;Births</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/obits';" class="nav_bottom"><font size="1">&nbsp;Obituaries</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/editorial';" class="nav_bottom"><font size="1">&nbsp;Editorial</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/letters';" class="nav_bottom"><font size="1">&nbsp;Letters</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='http://www.tdn.com/admarket/';" class="nav_bottom"><font size="1">&nbsp;Classifieds</font></td></tr>
+			<tr><td onmouseover="highlight(this)" onmouseout="this.style.background='#FFFFFF';" onclick="window.location='/archives_new/';" class="nav_left"><font size="1"><b>&nbsp;Archives</b></font></td></tr>
+		</tbody></table> 		</td></tr>
+		<tr><td align="center" valign="top">
+				<table class="border" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr><td class="nav_white" align="center" bgcolor="#006699"><font size="1">Services</font></td></tr>
+			<tr><td height="5"></td></tr>	
+			<tr><td align="center" height="44"><a href="http://www.tdn.com/home/"><img src="story56_files/homefinder.gif" border="0" height="40" width="100"></a></td></tr>
+			<tr><td align="center" height="44"><a href="http://www.tdn.com/admarket/"><img src="story56_files/class4.gif" border="0" height="40" width="100"></a></td></tr>
+			<tr><td align="center" height="44"><a href="http://www.wheelsforyoutdn.com/"><img src="story56_files/wheels_for_you_sm.jpg" border="0" height="40" width="100"></a></td></tr>
+			<tr><td align="center" height="49"><a href="http://www.newspaperlinks.com/" target="_blank"><img src="story56_files/naalink3.gif" border="0" height="45" width="100"></a></td></tr>
+			<tr><td align="center" height="49"><a href="http://www.people2people.com/?connect=longview" target="_blank"><img src="story56_files/personals.gif" border="0" height="40" width="100"></a></td></tr>
+			<tr><td align="center" height="49"><a href="http://www.tdn.com/drugfree/"><img src="story56_files/parenting.gif" border="1" height="40" width="100"></a></td></tr>
+			<tr><td align="center" height="44"><a href="http://www.tdn.com/stopmeth/"><img src="story56_files/stopmeth.gif" border="0" height="40" width="100"></a></td></tr>
+		</tbody></table>
+		</td></tr>
+	</tbody></table>			
+	<img src="story56_files/curious_split.gif" width="100%">
+
+	<img src="story56_files/pixel.gif" border="0" height="10" width="100"><br>
+	<table cellpadding="1" cellspacing="0" width="100%">
+		<tbody><tr><td class="nav_white" bgcolor="#00659c">&nbsp;&nbsp;Mount St. Helens</td></tr>
+		<tr><td valign="top">		
+		<table cellpadding="2" cellspacing="0" width="100%">
+		  <tbody><tr><td class="nav_left" align="center"><br>
+    <a href="http://www.tdn.com/helens/" target="_blank"><img src="story56_files/25yearslogo.jpg" border="0"></a><br>
+    <font class="nav_left" style="font-size: 10pt;"><b>Photo<br>&amp;<br>Story<br>Gallery<br></b><a href="http://www.tdn.com/helens/" target="_blank">Click Here</a></font><br>
+    <br>
+	<a href="http://vulcan.wr.usgs.gov/Volcanoes/Cascades/CurrentActivity/current_updates.html" target="_blank"><img src="story56_files/volcanoWatch.jpg" alt="Current Volcano Updates" border="0" height="46" width="110"></a>
+	<br><br>
+	<a href="http://www.fs.fed.us/gpnf/volcanocams/msh/" target="_blank"><img src="story56_files/webcam.gif" alt="Mt St Helens Web Cam" border="0" height="46" width="110"></a>
+	</td></tr>
+		</tbody></table>
+		</td></tr>
+	</tbody></table>
+	<br><br>
+		<table cellpadding="1" cellspacing="0" width="100%">
+		<tbody><tr><td class="nav_white" bgcolor="#00659c">&nbsp;&nbsp;Sponsors</td></tr>
+		<tr><td><script type="text/javascript" language="javascript" src="story56_files/static_005.js"></script><script type="text/javascript" src="story56_files/capped.js"></script><script type="text/javascript" src="story56_files/48896.js"></script><p><a href="http://www.bizrate.com/">Gift&nbsp;</a><font color="#0000ff"><a href="http://www.bizrate.com/">Shopping</a> </font></p></td></tr>
+		<tr><td><script type="text/javascript" language="javascript" src="story56_files/static.htm"></script></td></tr>
+		</tbody></table>
+	<p>&nbsp;</p>
+	</td>
+	<!-- COLUMN 2 -->
+	<td valign="top" width="525">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr><td nowrap="nowrap" valign="top" width="17"><img src="story56_files/side_bar_top.gif" height="12" width="16"></td>
+		<td width="90%"></td></tr>
+	</tbody></table>
+	<table border="0" cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr><td valign="top">
+
+
+
+
+
+<table id="headtable" border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tbody><tr>
+	<td class="photos" align="center" width="100"><script src="story56_files/photo.js"></script><a href="javascript:thumbnailWindow('/articles/2006/12/29/ap/headlines/d8mamodg0.img', 350, 300)"><img src="story56_files/d8mamodg0_thumb.jpg" border="0"></a><br>
+ <font class="nav_left">Full Size Photo</font><br></td>	<td valign="top">
+	<div id="tdnheadline">Judge: Saddam to Be Executed by Saturday</div>
+	<div id="tdnbyline">By LAUREN FRAYER</div>
+	<div id="tdnpublished">Dec 29, 2006 - 11:50:37 am PST</div>
+	</td></tr>
+</tbody></table>
+<table class="menubar" background="story56_files/menubg.htm" border="0" cellpadding="2" cellspacing="2" width="100%">
+	<tbody><tr>
+	<td width="15"></td>
+	<td width="20"><a href="javascript:eventFaceSmaller()"><img src="story56_files/smaller.gif" alt="Make text smaller" border="0" height="20" width="23"></a></td>
+	<td width="60"><img src="story56_files/font.gif" alt="Press A+ to make text Larger or Press A- to make text smaller" border="0" height="20" width="60"></td>
+	<td width="20"><a href="javascript:eventFaceLarger()"><img src="story56_files/larger.gif" alt="Make text larger" border="0" height="20" width="23"></a></td>
+	<td width="120"></td>
+	<td class="nav_left" align="right" nowrap="nowrap"><font size="1"><a href="http://www.tdn.com/articles/2006/12/29/ap/headlines/d8mamodg0.prt" target="_blank">Print this story</a></font></td>
+	<td width="20"><a href="http://www.tdn.com/articles/2006/12/29/ap/headlines/d8mamodg0.prt" target="_blank"><img src="story56_files/print.gif" border="0" height="20" width="20"></a></td>
+	<td class="nav_left" align="right" nowrap="nowrap"><font size="1"><a href="http://www.tdn.com/articles/2006/12/29/ap/headlines/d8mamodg0.eml" target="_blank">Email this story</a></font></td>
+	<td width="20"><a href="http://www.tdn.com/articles/2006/12/29/ap/headlines/d8mamodg0.eml" target="_blank"><img src="story56_files/email.gif" border="0" height="20" width="20"></a></td>
+	</tr>
+</tbody></table>
+
+<div id="tdnstory">
+<br>BAGHDAD, Iraq - Saddam Hussein will be executed no later than
+Saturday, said an Iraqi judge authorized to attend his hanging. The
+former dictator's lawyers said he had been transferred from U.S.
+custody, but an Iraqi official said he was still in the hands of
+American guards.<br><br>The physical transfer of Saddam to Iraqi
+authorities was believed to be one of the last steps before he was to
+be hanged, although the lawyers' statement did not specifically say
+Saddam was in Iraqi hands.
+<br><br>
+<!--Section: ap_headlines -->
+	<table align="right" border="0" cellpadding="0" cellspacing="0" width="331">
+		<tbody><tr><td style="border-bottom: 1px solid rgb(198, 195, 198);" align="center"><font class="nav_left"><font size="1"><img src="story56_files/advertisement_2.gif" alt="ADVERTISEMENT" height="10" width="271"></font></font></td></tr>
+		<tr><td height="3"></td></tr>
+		<tr><td align="center" height="274">
+		<script type="text/javascript" language="javascript" src="story56_files/static.js"></script><script type="text/javascript" src="story56_files/capped.js"></script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" name="42320" id="42320" height="250" width="300"><param name="play" value="true"><param name="movie" value="http://adsys.townnews.com/71531721/creative/tdn.com/ap_headlines_tile/42320.swf"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="FlashVars" value=""><embed src="story56_files/42320.swf" quality="high" flashvars="" wmode="opaque" name="42320" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" height="250" width="300"></object>
+		</td></tr><tr><td style="border-bottom: 1px solid rgb(198, 195, 198); font-size: 3px;">&nbsp;</td></tr>
+		<tr><td height="4"></td></tr>
+	</tbody></table>"A
+few minutes ago we received correspondence from the Americans saying
+that President Saddam Hussein is no longer under the control of U.S.
+forces," according to the statement faxed to The Associated Press.<br><br>The
+statement said U.S. officials asked the lawyers to cancel a trip to
+Baghdad for a last meeting with Saddam, saying he was no longer in
+American custody.<br><br>Munir Haddad, a judge on the appeals court that upheld Saddam's death sentence, said he was ready to attend the execution.<br><br>"All the measures have been done," Haddad said. "There is no reason for delays."<br><br>In
+Baghdad, Prime Minister Nouri al-Maliki has signed Saddam's death
+sentence, a government official said. The official, who refused to be
+identified by name because he was not authorized to release the
+information, said that Iraqi authorities were not yet in control of
+Saddam. The discrepancy could not be explained.
+"We have agreed with the Americans that the handover will take place
+only a few minutes before he is executed," the official said.<br><br>The defense team statement called on "everybody to do everything to stop this unfair execution."<br><br>Prime
+Minister Nouri al-Maliki said opposing Saddam's execution was an insult
+to his victims. His office said he made the remarks in a meeting with
+families of people who died during Saddam's rule.<br><br>"Our respect
+for human rights requires us to execute him, and there will be no
+review or delay in carrying out the sentence," al-Maliki said.<br><br>Bryan Whitman, a Pentagon spokesman, said U.S. forces were on high alert.<br><br>"They'll
+obviously take into account social dimensions that could potentially
+led to an increase in violence which certainly would include carrying
+out the sentence of Saddam Hussein," Whitman said.<br><br>On Thursday,
+two half brothers visited Saddam in his cell, a member of the former
+dictator's defense team, Badee Izzat Aref, told The Associated Press by
+telephone from the United Arab Emirates. He said the former dictator
+handed them his personal belongings.<br><br>A senior commander at the
+Iraqi defense ministry also confirmed the meeting and said Saddam gave
+his will to one of his half brothers. The official spoke on condition
+of anonymity because he was not authorized to speak to the media.
+Saddam's lawyers later issued a statement saying the Americans gave
+permission for his belongings to be retrieved. However, Raed Juhi,
+spokesman for the High Tribunal court that convicted Saddam, denied
+that the former leader's relatives visited him.<br><br>An
+Iraqi appeals court upheld Saddam's death sentence Tuesday for the
+killing of 148 people who were detained after an attempt to assassinate
+him in the northern Iraqi city of Dujail in 1982. The court said the
+former president should be hanged within 30 days.<br><br>There have
+been disagreements among Iraqi officials in recent days as to whether
+Iraqi law dictates the execution must take place within 30 days and
+whether President Jalal Talabani and his two deputies have to approve
+it.<br><br>In his Friday sermon, a mosque preacher in the Shiite holy city of Najaf called Saddam's execution "God's gift to Iraqis."<br><br>"Oh,
+God, you know what Saddam has done! He killed millions of Iraqis in
+prisons, in wars with neighboring countries and he is responsible for
+mass graves. Oh God, we ask you to take revenge on Saddam," said Sheik
+Sadralddin al-Qubanji, a member of the Supreme Council for the Islamic
+Revolution in Iraq, known as SCIRI, the dominant party in al-Maliki's
+coalition.<br><br>With at least 72 more Iraqis killed Thursday in
+violence, U.S. officials and Iraqis expressed concern about the
+potential for even worse bloodshed following Saddam's execution.<br><br>In
+the latest violence, a suicide bomber killed nine people near a Shiite
+mosque north of Baghdad on Friday, police said. A round of mortar
+shells also slammed into al-Maidan square in central Baghdad, wounding
+ten people and damaging shops and buildings in the area, police said.<br><br>Gunmen
+killed two employees of an oil company and another civilian in Mosul,
+250 miles northwest of Baghdad. Two civilians and a policeman were
+fatally shot in separate attacks in Musayyib, about 40 miles south of
+the capital, police said.<br><br>U.S. troops, meanwhile, killed six
+people and destroyed a weapons cache in separate raids in Baghdad and
+northwest of the Iraqi capital, the U.S. military said.<br><br>One of
+the raids targeted two buildings in the village of Thar Thar, where
+U.S. troops found 16 pounds of homemade explosives, two large bombs, a
+rocket-propelled grenade, suicide vests and multiple batteries, the
+military said.<br><br>Iraqi forces backed by U.S. troops also captured
+13 suspects and confiscated weapons in a raid on a mosque southeast of
+Baghdad, the U.S. military said Friday.<br><br>Associated Press writers Shafika Mattar in Amman, Jordan, and Salah Nasrawi in Cairo, Egypt contributed to this report.<br><br>A service of the Associated Press(AP)
+<div id="tdnstory">
+
+<hr align="center" color="black" size="1" width="100%">
+<a href="https://secure.tdn.com/subscribe/"><b>Two weeks free</b></a><br>
+If you don't subscribe to our print edition, you're missing a lot. Sign up now and get a <a href="https://secure.tdn.com/subscribe/">two-week trial of The Daily News</a> at no cost or obligation to you. (<a href="http://www.tdn.com/customer_service/missing.php">What am I missing if I don't subscribe?</a>)
+</div>
+
+<hr align="center" color="black" size="1" width="100%">
+<table border="0" cellpadding="25" cellspacing="0">
+<tbody><tr><td>
+
+<div id="tdnstory">
+<b>User Comments:</b><br>
+Have something to say about this story? Submit it! The comments
+approved for posting aren't edited, and don't necessarily represent the
+views of The Daily News, its owners or its employees.<br><br>
+Note: when we post a new story on the same topic, comments don't move
+to the new page. For comments that won't be tied to the story, try our <a href="http://www.tdn.com/townsquare">community forum</a>; signing up is quick and free.
+</div>
+</td></tr>
+</tbody></table>
+<a name="blogcomments"></a><br>
+<hr align="center" color="black" size="1" width="100%">
+<font size="-3">Tip: always use a nickname! That way, nobody can impersonate you.</font>
+<a name="blogform"></a><div id="simpleblog-form" class="simpleblog-form"><form method="post" name="simpleblog" action="/articles/2006/12/29/ap/headlines/d8mamodg0.txt#blogcomments"><div class="simpleblog-form-block"><label for="personname" class="simpleblog-form-label">Name:</label><input id="personname" name="personname" value="" type="text"></div><div class="simpleblog-form-block"><label for="comments" class="simpleblog-form-label">Comments:</label><textarea id="comments" rows="10" cols="40" name="comments"></textarea></div><div class="simpleblog-form-block"><input value="Post Comment" type="submit"></div></form></div>
+</div>
+
+<table cellpadding="2" cellspacing="2" width="100%">
+	<tbody><tr>
+	<td width="50%"><script type="text/javascript" language="javascript" src="story56_files/static_003.js"></script><script type="text/javascript" src="story56_files/capped.js"></script><img alt="*" src="story56_files/16504.gif" border="0"></td>
+	<td width="50%"><script type="text/javascript" language="javascript" src="story56_files/static_002.js"></script><script type="text/javascript" src="story56_files/capped.js"></script><a href="http://adsys.townnews.com/c89311104/creative/tdn.com/ron_bottom_right_half/19102.gif?r=http://www.cascadeconstruction.com" target="_blank"><img alt="*" src="story56_files/19102.gif" border="0"></a></td>
+	</tr>
+</tbody></table>		</td></tr>
+	</tbody></table>
+	
+	</td>
+
+	<!-- COLUMN 3 -->
+	<td rowspan="2" valign="top" width="137">
+	<!-- ARCHIVES SEARCH -->
+	<table border="0" cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr><td valign="top">
+		<input name="range" value="Past Month" type="hidden">
+			<table style="border: 1px solid rgb(102, 102, 102);" cellpadding="2" cellspacing="0" width="100%">
+			<form action="/archives_new/index.php" method="get"></form>
+			<tbody><tr><td colspan="2" class="nav_left" style="border-bottom: 1px solid rgb(102, 102, 102);" align="center" bgcolor="#005683"><font color="white" size="1"><b>Archive Search</b></font></td></tr>
+			<tr><td align="right" height="24" nowrap="nowrap"><input name="keywords" value="" size="15" class="nav_left" type="text"></td>
+			<td align="center" nowrap="nowrap"><input src="story56_files/archive_go.gif" height="14" type="image" width="14">&nbsp;&nbsp;</td></tr>
+			<tr><td colspan="2" class="nav_left" align="right"><a href="http://www.tdn.com/archives_new/"><img src="story56_files/archives_advanced.gif" alt="Advanced" border="0" height="10" width="50"></a></td></tr>
+			
+		</tbody></table>
+		</td></tr>
+		<tr><td valign="top">
+			<table bgcolor="#cc3300" cellpadding="1" cellspacing="0" width="100%">
+		<tbody><tr><td class="nav_white" align="center"><font size="2">Top Jobs</font></td></tr>
+	</tbody></table>
+	<table bgcolor="#cc3300" cellpadding="4" cellspacing="1" width="100%">
+		<tbody><tr><td class="nav_left" align="center" bgcolor="#ffe7e7"><a href="http://www.tdn.com/top_ads/job_ads.php?id=1166488668" onclick="window.open(this.href,'1166488668','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1166488668"><font color="#cc3300" size="2"><b>Columbia River PUD</b></font><br><font color="black" size="1">CUSTOMER ACCOUNT REPRESENTATIVE I / CASHIER
+</font></a></td></tr>
+<tr><td class="nav_left" align="center" bgcolor="#ffe7e7"><a href="http://www.tdn.com/top_ads/job_ads.php?id=1167263006" onclick="window.open(this.href,'1167263006','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1167263006"><font color="#cc3300" size="2"><b>The Daily News</b></font><br><font color="black" size="1">EARN EXTRA CASH - WOODLAND
+</font></a></td></tr>
+<tr><td class="nav_left" align="center" bgcolor="#ffe7e7"><a href="http://www.tdn.com/top_ads/job_ads.php?id=1167266972" onclick="window.open(this.href,'1167266972','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1167266972"><font color="#cc3300" size="2"><b>MEDICAL</b></font><br><font color="black" size="1">CODING/BILLING REP
+</font></a></td></tr>
+<tr><td class="nav_left" align="center" bgcolor="#ffe7e7"><a href="http://www.tdn.com/top_ads/job_ads.php?id=1167409190" onclick="window.open(this.href,'1167409190','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1167409190"><font color="#cc3300" size="2"><b>Flight Attendants</b></font><br><font color="black" size="1">Horizon Air
+</font></a></td></tr>
+<tr><td class="nav_left" align="center" bgcolor="#ffe7e7"><a href="http://www.tdn.com/top_ads/job_ads.php?id=1166735693" onclick="window.open(this.href,'1166735693','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1166735693"><font color="#cc3300" size="2"><b>Driver</b></font><br><font color="black" size="1">SWEEPER OPERATOR
+</font></a></td></tr>
+		<tr><td bgcolor="#ffe7e7">
+		<table align="center" bgcolor="#636163" cellpadding="0" cellspacing="1" width="90%">
+			<tbody><tr><td class="nav_left" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#FFD7D6';" align="center" bgcolor="#ffd7d6"><a href="http://www.tdn.com/top_ads/?category=job"><font color="#cc3300" size="1"><b>More Jobs</b></font></a><font color="#cc3300" size="1"><br>			</font></td></tr><tr><td class="nav_left" onclick="window.open('/top_ads/about.php','about','top=50,left=50,width=250,height=250,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" title="What is Top Ads?" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#FFD7D6';" align="center" bgcolor="#ffd7d6"><font color="#cc3300" size="1"><b>About Top Jobs</b></font></td></tr>
+		</tbody></table>
+		</td></tr>
+	</tbody></table>
+        </td></tr>
+		<tr><td align="center" valign="top"><a href="https://secure.townnews.com/shared-content/adowl/?domain=tdn.com&amp;ui=" target="_blank"><img src="story56_files/owl.jpg" alt="Ad Owl" border="0" height="120" width="120"></a></td></tr>
+		<tr><td valign="top">
+			<table bgcolor="#494949" cellpadding="1" cellspacing="0" width="100%">
+		<tbody><tr><td class="nav_white" align="center"><font size="2">Top Autos</font></td></tr>
+	</tbody></table>
+	<table bgcolor="#494949" cellpadding="4" cellspacing="1" width="100%">
+		<tbody><tr><td class="nav_left" align="center" bgcolor="#f5f5f5"><a href="http://www.tdn.com/top_ads/automobile_ads.php?id=1166719289" onclick="window.open(this.href,'1166719289','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1166719289"><font color="#494949" size="2"><b>Chevy Suburban LS</b></font><br><font color="black" size="1">4x4, '04
+</font></a></td></tr>
+<tr><td class="nav_left" align="center" bgcolor="#f5f5f5"><a href="http://www.tdn.com/top_ads/automobile_ads.php?id=1167153552" onclick="window.open(this.href,'1167153552','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1167153552"><font color="#494949" size="2"><b>'01 DODGE</b></font><br><font color="black" size="1">RAM 1500
+</font></a></td></tr>
+		<tr><td bgcolor="#f5f5f5">
+		<table align="center" bgcolor="#b1b1b1" cellpadding="0" cellspacing="1" width="90%">
+			<tbody><tr><td class="nav_left" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#F0F0F0';" align="center" bgcolor="#f0f0f0"><a href="http://www.tdn.com/top_ads/?category=automobile"><font color="#494949" size="1"><b>More Autos</b></font></a><font color="#494949" size="1"><br>			</font></td></tr><tr><td class="nav_left" onclick="window.open('/top_ads/about.php','about','top=50,left=50,width=250,height=250,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" title="What is Top Ads?" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#F0F0F0';" align="center" bgcolor="#f0f0f0"><font color="#494949" size="1"><b>About Top Autos</b></font></td></tr>
+		</tbody></table>
+		</td></tr>
+	</tbody></table>
+		</td></tr>
+		<tr><td align="center" valign="top">
+		<table bgcolor="#848200" cellpadding="1" cellspacing="0" width="100%">
+		<tbody><tr><td class="nav_white" align="center"><font size="2">Top Rentals</font></td></tr>
+	</tbody></table>
+	<table bgcolor="#848200" cellpadding="4" cellspacing="1" width="100%">
+		<tbody><tr><td class="nav_left" align="center" bgcolor="#f0ffe7"><a href="http://www.tdn.com/top_ads/rental_ads.php?id=1166721089" onclick="window.open(this.href,'1166721089','top=50,left=50,width=400,height=400,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" target="1166721089"><font color="#848200" size="2"><b>Fairways Apartments</b><br><font color="black" size="1">1, 2 &amp; 3 Bedrooms
+</font></font></a></td></tr>
+		<tr><td bgcolor="#f0ffe7">
+		<table align="center" bgcolor="#626361" cellpadding="0" cellspacing="1" width="90%">
+			<tbody><tr><td class="nav_left" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#EBFFD6';" align="center" bgcolor="#ebffd6"><a href="http://www.tdn.com/top_ads/?category=rental"><font color="#848200" size="1"><b>More Rentals</b></font></a><font color="#848200" size="1"><br>			</font></td></tr><tr><td class="nav_left" onclick="window.open('/top_ads/about.php','about','top=50,left=50,width=250,height=250,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" title="What is Top Ads?" onmouseover="highlight(this);this.style.cursor='pointer';this.style.cursor='hand';" onmouseout="this.style.background='#E8FFD6';" align="center" bgcolor="#ebffd6"><font color="#848200" size="1"><b>About Top Rentals</b></font></td></tr>
+		</tbody></table>
+		</td></tr>
+	</tbody></table>
+	</td></tr>
+		<tr><td align="center" valign="top">
+		<table align="center" bgcolor="#848284" cellpadding="2" cellspacing="1" height="240" width="120">
+<tbody><tr><td align="center" height="10" valign="top"><font color="white" face="Verdana" size="1"><b>Local Promotions</b></font></td></tr>	<tr><td bgcolor="white" height="110"><font color="blue" face="Arial" size="2"><a href="#" onclick="window.location='/top_ads/ad_click.php?id=1078444264&url=http://www.tdnhosting.com/gallery/'" onmouseover="window.status='http://www.tdnhosting.com/gallery/'; return true" onmouseout="window.status=''; return true"><b><u>Photo Galleries</u></b><br>
+	<font style="text-decoration: none;" color="black" face="verdana, arial" size="1">The
+photo galleries are back on tdn.com! Make sure to check out The Daily
+News Gallery where our photogs put their award winning work. Also,
+users are allowed to post photos in their own gallery.</font></a></font></td></tr>
+<tr><td align="center" height="8"><font color="white" face="verdana" size="1">by the Daily News</font></td></tr>
+</tbody></table>        </td></tr>
+	
+        	
+	        
+	</tbody></table>
+	</td></tr>
+</tbody></table>  
+<!-- END MAIN TABLE -->
+
+
+<!-- EXTENDED FOOTER -->
+<table bgcolor="#ffffe5" border="0" cellpadding="0" cellspacing="0" width="780">
+	<tbody><tr><td colspan="8" bgcolor="#6699cc" height="1"><img src="story56_files/pixel.gif" height="1" width="730"></td></tr>
+	<tr>
+	<td valign="top" width="146">
+	<table cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr><td class="nav_left"><a href="https://secure.tdn.com/subscribe"><font color="#cc3300" size="2"><b>Two Weeks Free!</b></font></a></td></tr>
+		<tr><td class="nav_left">
+		<a href="https://secure.tdn.com/subscribe"><font color="#000000">Get the whole story delivered every day.<br>
+		Subscribe now to The Daily News.</font></a>
+<font color="#000000">		</font></td></tr>
+		<tr><td class="nav_left"></td></tr>
+	</tbody></table>	
+	</td>
+	<td bgcolor="#6699cc" width="1"><img src="story56_files/pixel.gif" height="1" width="1"></td>
+	<td valign="top" width="496"><!-- RAW HIDE -->
+	<table cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr><td class="nav_left"><font color="#cc3300"><b>Paid Advertising</b></font></td></tr>
+	</tbody></table>
+	<img src="story56_files/pixel.htm" border="0" height="1" width="496"><br>
+	<table class="rawstyle" border="0" cellpadding="0" cellspacing="8">
+		<tbody><tr>
+		<td valign="top"><a href="http://www.taxanalysts.com/" target="_blank">Tax News</a></td>
+		<td valign="top"><a href="http://www.equifax.com/" target="_blank">Identity Theft</a></td>
+		<td valign="top"><a href="http://www.justfundraising.com/" target="_blank">Fundraising</a></td>
+		<td valign="top"><a href="http://www.officedepot.com/" target="_blank">Office Furniture</a></td>
+		<td valign="top"><a href="http://redlion.rdln.com/" target="_blank">Seattle Hotels</a></td>
+		</tr>
+		<tr>
+		<td valign="top"><a href="http://www.levenger.com/" target="_blank">Briefcases</a></td>
+		<td valign="top"><a href="http://www.hrblock.com/" target="_blank">Tax Return</a></td>
+		<td valign="top"><a href="http://www.hollandamerica.com/" target="_blank">Cruise</a></td>
+		<td valign="top"><a href="" target="_blank"></a></td>
+		<td valign="top"><a href="" target="_blank"></a></td>
+		</tr>
+		<tr><td colspan="5"><img src="story56_files/pixel.htm" border="0" height="1" width="480"></td></tr>
+	</tbody></table>
+<!-- END RAW HIDE --><!-- cdorr -->&nbsp;</td>
+	<td bgcolor="#6699cc" width="1"><img src="story56_files/pixel.gif" height="1" width="1"></td>
+	<td valign="top" width="145">
+	<table cellpadding="2" cellspacing="2" width="100%">
+
+		<tbody><tr><td class="nav_left"><font color="#cc3300"><b>Special Sections</b></font></td></tr>
+		<tr><td class="nav_left"><a href="http://www.tdn.com/inbusiness/" class="submenu">InBusiness</a></td></tr>
+		<tr><td class="nav_left"><a href="http://www.tdn.com/baby_annual" class="submenu">2005 Baby Annual</a></td></tr>
+		<tr><td class="nav_left"><a href="http://welcome.tdn.com/" class="submenu">2006 Recreation Guide</a></td></tr>
+	</tbody></table>	
+	</td>
+	<td bgcolor="#000000" width="1"><img src="story56_files/pixel.gif" height="1" width="1"></td>
+
+	</tr>
+	<tr><td colspan="8" bgcolor="#6699cc" height="1"><img src="story56_files/pixel.gif" height="1" width="730"></td></tr>
+</tbody></table>
+
+
+<!-- END EXTENDED FOOTER -->
+<table bgcolor="#c4d9ec" cellpadding="0" cellspacing="0" width="780">
+	<tbody><tr><td>
+	<table cellpadding="2" cellspacing="2" width="100%">
+		<tbody><tr>
+		<td class="nav_left" align="center" width="779"><font size="1">
+		<a href="http://www.tdn.com/" class="submenu">Home</a> . 
+		<a href="http://www.tdn.com/area_news" class="submenu">Area News</a> . 
+		<a href="http://www.tdn.com/nation_world" class="submenu">Nation/World</a> . 
+		<a href="http://www.tdn.com/sports" class="submenu">Sports</a> . 
+		<a href="http://www.tdn.com/opinions" class="submenu">Opinions</a> . 
+		<a href="http://www.tdn.com/biz" class="submenu">Business</a> . 
+		<a href="http://www.tdn.com/this_day" class="submenu">This Day</a> .  
+		<a href="http://longview.abracat.com/c2/" class="submenu">Classifieds</a> . 
+		<a href="http://www.tdn.com/blotter" class="submenu">Blotter</a> . 
+		<a href="http://www.tdn.com/obits" class="submenu">Obituaries</a> . 
+		<a href="http://www.tdn.com/births" class="submenu">Births</a></font></td>
+		</tr>
+	</tbody></table>
+	</td>
+	<td bgcolor="black" width="1"><img src="story56_files/pixel.gif" height="1" width="1"></td>
+	</tr>
+</tbody></table>
+<!--FOOTER-->
+<table style="border-right: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0);" bgcolor="#6699cc" cellpadding="5" cellspacing="2" width="780">
+	<tbody><tr>
+	<td class="nav_left" valign="top"><font color="white" size="1"><b>© 2006 &nbsp;The Daily News<br>
+	<a href="http://www.tdn.com/publisher/"><font color="#00ffff">Lee Publications, Inc.</font></a><font color="#00ffff"></font></b>
+<font color="#00ffff">	</font></font></td>
+	<td class="nav_white" align="right" valign="top"><a href="http://www.tdn.com/contact/"><font color="white">Contact Us</font></a><font color="white">&nbsp;|&nbsp;<a href="http://www.thejobnetwork.com/home.asp?AffiliateID=1192" target="_blank"><font color="white">Employment Opportunities</font></a>&nbsp;</font></td></tr>
+	<tr><td class="nav_left" colspan="2" align="center"><font color="white" size="1">
+	 <b>770 11th Avenue&nbsp;&nbsp;
+	 <font class="main">&#8226;</font>&nbsp;&nbsp;P.O. Box 189&nbsp;&nbsp;
+	 <font class="main">&#8226;</font>&nbsp;&nbsp;Longview, WA 98632&nbsp;&nbsp;
+	 <font class="main">&#8226;</font>&nbsp;&nbsp;360-577-2500&nbsp;&nbsp;
+	 <font class="main">&#8226;</font>&nbsp;&nbsp;<a href="http://www.tdn.com/contact/email.php?u=webmaster"><font color="white">webmaster@tdn.com</font></a><font color="white"></font></b>
+<font color="white">	 </font></font></td></tr>
+</tbody></table>
+<br><br><br>
+<!-- SiteCatalyst code version: H.7.
+Copyright 1997-2006 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="story56_files/s_code.js"></script><img src="story56_files/s73453975918921.gif" name="s_i_lee-global" alt="" border="0" height="1" width="1">
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server="Longview"
+s.channel="tdn.com"
+s.pageType=""
+s.prop1="news"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop6=""
+s.prop7=""
+s.prop8=""
+s.prop9=""
+s.prop10=""
+
+/* Hierarchy Variables */
+s.hier1="Lee Enterprises," + s.server + "," + s.channel + "," + s.prop1 + "," + s.prop2 + "," + s.prop3 + "," + s.prop4 + "," + s.prop5
+s.hier2="Lee Enterprises," + s.prop1 + "," + s.server + "," + s.channel + "," + s.prop2 + "," + s.prop3 + "," + s.prop4 + "," + s.prop5
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.7. -->
+</center></body></html>

@@ -1,0 +1,701 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript1.2" type="text/javascript">
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function onimage(self, imagePath)
+{
+    imagePathNew = imagePath.replace('navbar','navbar_over');
+    imagePathNew = imagePathNew.replace('pfd_nav','pfd_nav_over');
+    self.src = imagePathNew;
+}
+
+function offimage(self, imagePath)
+{
+    self.src = imagePath;
+}
+
+function writeDate()
+{
+
+    var d=new Date()
+    var day
+    var month
+    var year
+    var outputDate
+    
+    var weekday=new Array(7)
+    weekday[0]="SUNDAY"
+    weekday[1]="MONDAY"
+    weekday[2]="TUESDAY"
+    weekday[3]="WEDNESDAY"
+    weekday[4]="THURSDAY"
+    weekday[5]="FRIDAY"
+    weekday[6]="SATURDAY"
+    
+    var monthnames=new Array(12)
+    monthnames[0]="JANUARY"
+    monthnames[1]="FEBRUARY"
+    monthnames[2]="MARCH"
+    monthnames[3]="APRIL"
+    monthnames[4]="MAY"
+    monthnames[5]="JUNE"
+    monthnames[6]="JULY"    
+    monthnames[7]="AUGUST"
+    monthnames[8]="SEPTEMBER"
+    monthnames[9]="OCTOBER"    
+    monthnames[10]="NOVEMBER"
+    monthnames[11]="DECEMBER"         
+
+    day = weekday[d.getDay()]
+    month = monthnames[d.getMonth()]  
+    
+    outputDate = day + ", " + month + " " + d.getDate() + ", " + d.getFullYear();
+    
+    document.write(outputDate);
+    
+}
+  
+
+function expandmenu(menuid)
+{
+    var objBranch = document.getElementById(menuid).style;
+    objBranch.display="block";
+}
+</script>
+<link href="m22_files/content.css" rel="stylesheet" type="text/css">
+
+<link href="m22_files/designformentry.css" rel="stylesheet" type="text/css">
+<script src="m22_files/cookies.js" type="text/javascript"></script>
+<script src="m22_files/cmsmenuapi.js" type="text/javascript"></script>
+
+    <link href="m22_files/designformentry.css" rel="stylesheet" type="text/css">
+    <link href="m22_files/designformentry.css" rel="stylesheet" type="text/css">
+<link href="m22_files/metro.css" rel="stylesheet" type="text/css"><title>Metronews</title>   
+<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="m22_files/reportchart.css"><link rel="stylesheet" type="text/css" href="m22_files/designformentry.css"><meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1"></head><body onload="MM_preloadImages('images/pfd_nav_over_02.gif','images/pfd_nav_over_03.gif','images/pfd_nav_over_04.gif','images/pfd_nav_over_05.gif');">
+<form name="aspnetForm" method="post" action="results.aspx" id="aspnetForm">
+<div>
+<input name="NOVIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI0NzQ3MzUwN2RkT2cxGcPWz+5CLWDBWzYvXbfkA8g=" type="hidden">
+</div>
+
+<script type="text/javascript" language="Javascript">document.forms[0].action = "results.aspx";
+document.forms[0].__VIEWSTATE.name = 'NOVIEWSTATE';</script>
+
+ <span id="ctl00_AnalyticsTracker1"></span>
+
+
+
+
+<!-- Begin Header -->
+<div id="topbar">
+  <div id="date"><script>writeDate();</script>SATURDAY, DECEMBER 30, 2006</div>
+  <div id="topbanner">
+        <div id="ctl00_BannerPlaceHolder_TorontoSuperbannerPanel" style="height: 50px; width: 125px;">
+	
+            <!-- Rich Media Ad Tag Below -->
+            <script type="text/javascript">
+            <!--
+            bust = Math.floor(1000000*Math.random());
+            document.write('<SCR' + 'IPT language="JavaScript1.1" src="http://ads.thestar.com/js.ng/site=metro&VChannel=metro_toronto&position=superbanner&HChannel=news&ord=' + bust + '"><\/SCR' + 'IPT>' );
+            -->
+            </script><script language="JavaScript1.1" src="m22_files/sitemetroVChannelmetro_torontopositionsuperbannerHChannelnews.js"></script><a target="_top" href="http://ads.thestar.com/event.ng/Type=click&amp;FlightID=12912&amp;AdID=19567&amp;TargetID=2662&amp;Segments=3208,3223,3280,3608&amp;Targets=2597,2662&amp;Values=25,30,50,60,72,86,93,101,110,155,230,284,347,424,449,6148,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&amp;RawValues=&amp;Redirect=http://ad.ca.doubleclick.net/jump/N3959.metronews.ca/B2092002;sz%3D728x90"><img src="m22_files/B2092002.jpg" alt="" border="0" height="90" width="728"></a>
+            <noscript>
+<a
+href="http://ads.thestar.com/click.ng/site=metro&VChannel=metro_toronto&position=superbanner&HChannel=news"><img
+src="http://ads.thestar.com/image.ng/site=metro&VChannel=metro_toronto&position=superbanner&HChannel=news"/></a>
+</noscript>
+            <!-- /Rich Media Ad Tag -->        
+        
+</div>
+        
+         
+
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Begin Left Nav -->
+
+<div id="leftnav">
+   
+    <!-- Begin Navbar -->
+	<table id="navigation" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr><td>
+            <span id="ctl00_Menu1">
+<span class="handcur"><img src="m22_files/navbar_011.gif" border="0"></span><br><span class="branch" style="display: block;" id="20_20"><span class="handcur" onclick="showBranch('20_22')"><a href="http://www.metronews.ca/home.aspx"><img src="m22_files/navbar_02.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_02.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_02.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_22"></span><span class="handcur" onclick="showBranch('20_24')"><a href="http://www.metronews.ca/news.aspx"><img src="m22_files/navbar_03.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_03.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_03.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_24"><span class="handcur" onclick="showBranch('20_118')"><a href="http://www.metronews.ca/world.aspx"><img src="m22_files/navbar_26.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_26.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_26.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_118"></span><span class="handcur" onclick="showBranch('20_120')"><a href="http://www.metronews.ca/canada.aspx"><img src="m22_files/navbar_25.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_25.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_25.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_120"></span><span class="handcur" onclick="showBranch('20_122')"><a href="http://www.metronews.ca/local.aspx"><img src="m22_files/navbar_24.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_24.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_24.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_122"></span></span><span class="handcur" onclick="showBranch('20_26')"><a href="http://www.metronews.ca/business.aspx"><img src="m22_files/navbar_04.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_04.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_04.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_26"></span><span class="handcur" onclick="showBranch('20_30')"><a href="http://www.metronews.ca/entertainment.aspx"><img src="m22_files/navbar_06.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_06.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_06.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_30"><span class="handcur" onclick="showBranch('20_86')"><a href="http://www.metronews.ca/movies.aspx"><img src="m22_files/navbar_07.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_07.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_07.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_86"></span><span class="handcur" onclick="showBranch('20_48')"><a href="http://www.metronews.ca/music.aspx"><img src="m22_files/navbar_08.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_08.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_08.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_48"></span><span class="handcur" onclick="showBranch('20_50')"><a href="http://www.metronews.ca/reviews.aspx"><img src="m22_files/navbar_09.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_09.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_09.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_50"></span><span class="handcur" onclick="showBranch('20_52')"><a href="http://www.metronews.ca/listings.aspx"><img src="m22_files/navbar_10.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_10.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_10.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_52"></span><span class="handcur" onclick="showBranch('20_88')"><a href="http://www.metronews.ca/books.aspx"><img src="m22_files/navbar_11.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_11.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_11.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_88"></span></span><span class="handcur" onclick="showBranch('20_32')"><a href="http://www.metronews.ca/lifestyle.aspx"><img src="m22_files/navbar_12.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_12.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_12.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_32"><span class="handcur" onclick="showBranch('20_90')"><a href="http://www.metronews.ca/mindandbody.aspx"><img src="m22_files/navbar_13.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_13.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_13.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_90"></span><span class="handcur" onclick="showBranch('20_92')"><a href="http://www.metronews.ca/fashion.aspx"><img src="m22_files/navbar_14.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_14.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_14.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_92"></span><span class="handcur" onclick="showBranch('20_94')"><a href="http://www.metronews.ca/food.aspx"><img src="m22_files/navbar_15.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_15.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_15.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_94"></span><span class="handcur" onclick="showBranch('20_96')"><a href="http://www.metronews.ca/homefashion.aspx"><img src="m22_files/navbar_16.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_16.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_16.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_96"></span></span><span class="handcur" onclick="showBranch('20_38')"><a href="http://www.metronews.ca/driver.aspx"><img src="m22_files/navbar_32.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_32.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_32.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_38"></span><span class="handcur" onclick="showBranch('20_34')"><a href="http://www.metronews.ca/yourmoney.aspx"><img src="m22_files/navbar_17.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_17.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_17.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_34"></span><span class="handcur" onclick="showBranch('20_36')"><a href="http://www.metronews.ca/workology.aspx"><img src="m22_files/navbar_18.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_18.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_18.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_36"></span><span class="handcur" onclick="showBranch('20_40')"><a href="http://www.metronews.ca/travel.aspx"><img src="m22_files/navbar_20.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_20.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_20.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_40"></span><span class="handcur" onclick="showBranch('20_42')"><a href="http://www.metronews.ca/dreamhomes.aspx"><img src="m22_files/navbar_21.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_21.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_21.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_42"></span><span class="handcur" onclick="showBranch('20_28')"><a href="http://www.metronews.ca/sports.aspx"><img src="m22_files/navbar_05.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_05.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_05.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_28"></span><span class="handcur" onclick="showBranch('20_44')"><a href="http://www.metronews.ca/tech.aspx"><img src="m22_files/navbar_22.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_22.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_22.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_44"></span><span class="handcur" onclick="showBranch('20_124')"><a href="http://www.metronews.ca/columnists.aspx"><img src="m22_files/navbar_27.gif" onmouseover="                onimage(this,'/uploadedimages/navbar_27.gif');
+              " onmouseout="                offimage(this, '/uploadedimages/navbar_27.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_124"></span><span class="handcur" onclick="showBranch('20_134')"><a href="http://www.metronews.ca/specialsections.aspx"><img src="m22_files/navbar_50.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_50.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_50.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_134"></span><span class="handcur" onclick="showBranch('20_136')"><a href="http://www.metronews.ca/distancelearning.aspx"><img src="m22_files/navbar_33.gif" onmouseover="                onimage(this,'/uploadedImages/navbar_33.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/navbar_33.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="20_136"></span></span>
+<script language="JavaScript" type="text/javascript" src="m22_files/webtoolbar.js"></script>
+<script language="JavaScript">
+function GetPreviewURL() {
+ var url = self.location.href;
+ var arString = url.split('?')
+ if (arString.length > 1) { url = url + "&cmsMode=Preview"}
+ else { url = url + "?cmsMode=Preview"}
+ return url;
+}
+</script><script language="javascript">
+function PopUpWindow(url, hWind, nWidth, nHeight, nScroll, nResize) { return (EkTbWebMenuPopUpWindow (url, hWind, nWidth, nHeight, nScroll, nResize));}
+function ecmPopUpWindow (url, hWind, nWidth, nHeight, nScroll, nResize) { 
+ PopUpWindow(url, hWind, nWidth, nHeight, nScroll, nResize) ; 
+ } 
+</script>
+</span>
+        </td></tr>
+	</tbody></table>
+	<br>
+		<!-- READ TODAY'S METRO -->
+    <span id="ctl00_Menu2">
+<span class="handcur"><img src="m22_files/pfd_nav_01.gif" onmouseover="                onimage(this,'/uploadedImages/pfd_nav_01.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/pfd_nav_01.gif');
+              " border="0"></span><br><span class="branch" style="display: block;" id="106_106"><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/20061222_Toronto.pdf" target="                _blank
+              "><img src="m22_files/pfd_nav_02.gif" onmouseover="                onimage(this,'/uploadedImages/pfd_nav_02.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/pfd_nav_02.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="106_108"><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/Metro_Toronto_0705_2006.pdf" target="_self">Metro_Toronto</a></span><br></span><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/20061222_Vancouver.pdf" target="                _blank
+              "><img src="m22_files/pfd_nav_03.gif" onmouseover="                onimage(this,'/uploadedImages/pfd_nav_03.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/pfd_nav_03.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="106_110"><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/Metro_Vancouver_0705_2006.pdf" target="_self">Metro_Vancouver</a></span><br></span><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/20061221_Montreal.pdf" target="                _blank
+              "><img src="m22_files/pfd_nav_05.gif" onmouseover="                onimage(this,'/uploadedImages/pfd_nav_05.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/pfd_nav_05.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="106_114"><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/Metro_Montreal_0705_2006.pdf" target="_self">Metro_Montreal</a></span><br></span><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/20061222_Ottawa.pdf" target="                _blank
+              "><img src="m22_files/pfd_nav_04.gif" onmouseover="                onimage(this,'/uploadedImages/pfd_nav_04.gif');
+              " onmouseout="                offimage(this, '/uploadedImages/pfd_nav_04.gif');
+              " border="0"></a></span><br><span class="branch" style="display: none;" id="106_112"><span class="handcur"><a href="http://www.metronews.ca/uploadedFiles/PDFs/Metro_Ottawa_0705_2006.pdf" target="_self">Metro_Ottawa</a></span><br></span></span>
+<script language="JavaScript" type="text/javascript" src="m22_files/webtoolbar.js"></script>
+<script language="JavaScript">
+function GetPreviewURL() {
+ var url = self.location.href;
+ var arString = url.split('?')
+ if (arString.length > 1) { url = url + "&cmsMode=Preview"}
+ else { url = url + "?cmsMode=Preview"}
+ return url;
+}
+</script><script language="javascript">
+function PopUpWindow(url, hWind, nWidth, nHeight, nScroll, nResize) { return (EkTbWebMenuPopUpWindow (url, hWind, nWidth, nHeight, nScroll, nResize));}
+function ecmPopUpWindow (url, hWind, nWidth, nHeight, nScroll, nResize) { 
+ PopUpWindow(url, hWind, nWidth, nHeight, nScroll, nResize) ; 
+ } 
+</script>
+</span>
+    <br>
+	<!-- End Navbar -->
+        <div id="ctl00_TorontoButtonPanel">
+	
+                <!-- Rich Media Ad Tag Below -->
+                <script type="text/javascript">
+                <!--
+                bust = Math.floor(1000000*Math.random());
+                document.write('<SCR' + 'IPT language="JavaScript1.1" src="http://ads.thestar.com/js.ng/site=metro&VChannel=metro_toronto&position=button_1&HChannel=news&ord=' + bust + '"><\/SCR' + 'IPT>' );
+                -->
+                </script><script language="JavaScript1.1" src="m22_files/sitemetroVChannelmetro_torontopositionbutton_1HChannelnewsord.js"></script><script type="text/javascript" src="m22_files/a.txt"></script>
+                <noscript>
+<a
+href="http://ads.thestar.com/click.ng/site=metro&VChannel=metro_toronto&position=button_1&HChannel=news"><img
+src="http://ads.thestar.com/image.ng/site=metro&VChannel=metro_toronto&position=button_1&HChannel=news"/></a>
+</noscript>
+                <!-- /Rich Media Ad Tag -->            
+        
+</div>
+                
+            
+    </div>
+<!-- End Column 1 -->
+   
+
+
+   
+<div id="body">
+<table class="body_featurecol" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td>
+   
+<!-- Begin Column 2 -->
+   
+	<!-- FEATURE STORY -->
+	
+	<table class="mainfeature" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr><td>
+	
+	<!-- Begin Sidebar -->
+	
+	<div class="feature_sidebar">
+	
+    <table class="sidebar_item" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr><td align="center">
+        <div id="ctl00_BodyPlaceHolder_TorontoBigboxPanel">
+	
+            <!-- Rich Media Ad Tag Below -->
+            <script type="text/javascript">
+            <!--
+            bust = Math.floor(1000000*Math.random());
+            document.write('<SCR' + 'IPT language="JavaScript1.1" src="http://ads.thestar.com/js.ng/site=metro&VChannel=metro_toronto&position=bigbox&HChannel=news&ord=' + bust + '"><\/SCR' + 'IPT>' );
+            -->
+            </script><script language="JavaScript1.1" src="m22_files/sitemetroVChannelmetro_torontopositionbigboxHChannelnewsord21.js"></script>
+<script src="m22_files/DartRichMedia_1_03.js"></script>
+<!-- Sniffer Code for Flash version=60 -->
+<a href="http://ads.thestar.com/event.ng/Type=click&amp;FlightID=12817&amp;AdID=19416&amp;TargetID=2599&amp;Segments=3206,3223,3282,3608&amp;Targets=2599,2663&amp;Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6149,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&amp;RawValues=&amp;Redirect=http://www2.hellobc.com/ski/06winter/index.asp?campaign=ski06&amp;market=can&amp;media=display&amp;detail=300x250&amp;referrer=metronews&amp;cta=contest" target="_top"><img src="m22_files/tbc_ski06_300x250_bug.jpg" border="0" height="250" width="300"></a><noembed>&lt;A
+HREF="http://ads.thestar.com/event.ng/Type=click&amp;FlightID=12817&amp;AdID=19416&amp;TargetID=2599&amp;Segments=3206,3223,3282,3608&amp;Targets=2599,2663&amp;Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6149,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&amp;RawValues=&amp;Redirect=http://www2.hellobc.com/ski/06winter/index.asp?campaign=ski06&amp;market=can&amp;media=display&amp;detail=300x250&amp;referrer=metronews&amp;cta=contest"
+target="_top"&gt;&lt;IMG
+SRC="http://images.torstardigital.com/DART/ads/Metro/tbc_ski06_300x250_bug.jpg"
+WIDTH=300 HEIGHT=250 BORDER=0&gt;&lt;/A&gt;
+</noembed>
+<noscript><A
+HREF="http://ads.thestar.com/event.ng/Type=click&FlightID=12817&AdID=19416&TargetID=2599&Segments=3206,3223,3282,3608&Targets=2599,2663&Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6149,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&RawValues=&Redirect=http://www2.hellobc.com/ski/06winter/index.asp?campaign=ski06&market=can&media=display&detail=300x250&referrer=metronews&cta=contest"
+target="_top"><IMG
+SRC="http://images.torstardigital.com/DART/ads/Metro/tbc_ski06_300x250_bug.jpg"
+WIDTH=300 HEIGHT=250 BORDER=0></A>
+</noscript>
+
+
+            <noscript> <a
+href="http://ads.thestar.com/click.ng/site=metro&VChannel=metro_toronto&position=bigbox&HChannel=news"><img
+src="http://ads.thestar.com/image.ng/site=metro&VChannel=metro_toronto&position=bigbox&HChannel=news"/></a>
+</noscript>
+            <!-- /Rich Media Ad Tag -->        
+		    <br>
+        	<img src="m22_files/advertisement_other.gif">
+        
+</div>	
+                 
+                 				
+
+	</td></tr>
+	</tbody></table>
+	
+	</div>
+	
+	<!-- End Sidebar -->
+
+	
+	<img src="m22_files/dummy_header.gif" align="left"><br><br>
+	
+	<!-- Story Content -->
+        
+  
+    
+  
+    <h3>Michael Jordan, wife file for divorce after 17 years of marriage</h3>
+    <h5>
+      <i>ASHLEY M. HEHER</i>
+    </h5>
+    <cponlinefile type="FullStory" xmlns="">
+      <script language="&amp;JavaScriptLanguage;" xmlns="http://www.w3.org/TR/REC-html40">function MM_openBrWindow(theURL,winName,features) { window.open(theURL,winName,features);}</script>
+      </cponlinefile><table xmlns="http://www.w3.org/TR/REC-html40" align="right" border="0" width="155">
+        <tbody><tr>
+          <td></td>
+          <td>
+            <img src="m22_files/v122918A.jpg" alt="Chicago Bulls' Michael Jordan, right, reacts to a reporters' question as his wife, Juanita, listens. (AP File '99/M. Spencer Green)" border="1" height="111" width="150">
+          </td>
+        </tr>
+      </tbody></table>
+      <cpstory>
+        </cpstory><p xmlns="http://www.w3.org/TR/REC-html40">
+CHICAGO (AP) - Michael Jordan and his wife, Juanita, filed for divorce after 17 years of marriage.
+
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">"Michael and
+Juanita Jordan mutually and amicably decided to end their 17 year
+marriage," the couple said in a statement issued Friday through their
+lawyers. "A judgment for dissolution of their marriage was entered
+today. There will be no further statements."
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">
+Michael Jordan's lawyer, Frederick J. Sperling, declined comment.
+
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">But in court
+documents filed Friday with the Lake County Circuit Court, the couple
+said "irreconcilable differences have caused an irretrievable breakdown
+of the marriage." The couple said attempts to reconcile their marriage
+had failed and future ones "would be impractical and not in the best
+interests of the family."
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">Juanita
+Jordan previously filed for divorce in January 2002, but withdrew her
+petition a month later when the couple announced they were attempting a
+reconciliation.
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">The couple
+met at a Chicago restaurant during his second season with the Bulls and
+were married Sept. 2, 1989, in Las Vegas. They have three children:
+Jeffrey, 18, Marcus, 16, and Jasmine, 14.
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">
+Michael Jordan, 43, lives in Chicago; Juanita Jordan, 47, lives in Highland Park, Ill.
+
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">
+The Jordans, who have lived separately since February, will share custody of their children, according to court documents.
+
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">
+        </p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">"The
+co-petitioners acknowledge that although their marriage is ending, they
+desire to resolve all of the issues surrounding the dissolution of
+marriage in the most amicable, expeditious and private fashion
+possible, for the benefit of themselves and their children," the
+documents read.
+</p>
+        <p xmlns="http://www.w3.org/TR/REC-html40">Jordan, a
+part-owner of the Charlotte Bobcats, led the Bulls to six NBA titles
+and was a five-time league MVP. He also played with the Washington
+Wizards and served as the club's president of basketball operations for
+a brief time.
+</p>
+      
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+      <b>
+  ©
+  The Canadian Press, 2006</b>
+    </center>
+    <br>
+  </td></tr>
+	</tbody></table>
+	
+	<hr>
+	
+<!-- End Column 2 -->
+
+</td></tr>
+
+<!-- Begin Footer -->
+
+<tr><td colspan="2" class="footer" align="center">
+<a href="http://www.metronews.ca/columnists.aspx">Columnists</a>  -  <a href="http://www.metronews.ca/letters.aspx">Letters to the Editor</a>  -  <a href="http://www.metronews.ca/contactus.aspx">Contact Us</a>  -  <a href="http://www.metronews.ca/advertise.aspx">Advertise</a>  -  <a href="http://www.metronews.ca/about.aspx">About</a>
+</td></tr>
+<!-- End Footer -->
+
+</tbody></table>
+</div>
+
+
+
+
+
+  
+
+<!-- Begin Right Nav -->
+
+<div id="rightnav">
+   
+	<!-- SEARCH -->
+	
+	<table class="rightnavitem" border="0" cellpadding="0" cellspacing="0">
+	 <tbody><tr><td style=""><img src="m22_files/rightnav_header_search.gif" class="rightnavheader"></td></tr>
+	 <tr><td class="searchbucket">
+         <div id="ctl00_Search1" class="searchbucket" style="border-width: 0px; width: 46px;">
+	<script type="text/javascript" language="JavaScript">
+// <!-- 
+var g_AdvancedGroupSelected = true ; 
+var g_enableCmsConstraints = false ; 
+var g_enableAssetConstraints = false ; 
+var g_enableFormReInitializing = false ; 
+ function MarkPostBack() { 
+     var activeForm = document.getElementById('aspnetForm');     if (typeof activeForm.__ekSearchPost == "object") {
+         activeForm.__ekSearchPost.value = "1"
+     }
+ }
+function EkMarkPostOnEnter(item, keys) {
+ if (item.keyCode==13){MarkPostBack();}
+ return true;
+}
+// --></script><script type="text/javascript" language="JavaScript" src="m22_files/searchfuncsupport.js"></script><script type="text/javascript" language="JavaScript" src="m22_files/internCalendarDisplayFuncs.js"></script><input name="frm_object_type" value="" size="30" maxlength="255" id="frm_object_type" type="hidden"><input name="ecmsearchtext" size="30" maxlength="255" type="hidden"><input name="ecmstartingfolder" id="ecmstartingfolder" value="0" size="30" maxlength="255" type="hidden"><input name="ecmrecursive" id="ecmrecursive" value="1" size="30" maxlength="255" type="hidden"><input name="ecmsearchmode" id="ecmsearchmode" value="advanced" size="30" maxlength="32" type="hidden"><input name="ecmContentTypes" id="ecmContentTypes" value="" size="30" maxlength="32" type="hidden">
+<input name="ecmAssetTypes" id="ecmAssetTypes" value="document,unknown" size="30" maxlength="32" type="hidden">
+<div id="advanced_options_panel" name="advanced_options_panel" style="display: none;">
+<table align="center" border="0" cellpadding="1" cellspacing="0" width="1%">
+<tbody>
+<tr>
+<td>
+<input name="ecmFolderDesc" value="" size="30" maxlength="255" type="hidden"><table name="checkbox_document_type_selectors" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="center" nowrap="nowrap">
+<input name="ecmCheckboxDocTypeSelectorIncludeContent" value="on" type="hidden"><input name="ecmCheckboxDocTypeSelectorIncludeForms" type="hidden"><input name="ecmCheckboxDocTypeSelectorIncludeAssets" type="hidden"><input name="ecmCheckboxDocTypeSelectorIncludeLibrary" value="on" type="hidden">
+<input name="ecmLibImages" type="hidden"><input name="ecmLibFiles" type="hidden"><input name="ecmLibHyperlinks" type="hidden"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="__ekSearchPost" id="__ekSearchPost" value="0" type="hidden">
+<table id="basic_group_panel" name="basic_group_panel" style="display: block;" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="right" width="10%">&nbsp;</td><td>
+<table border="0" cellpadding="1" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td nobr=""><nobr>
+
+
+<input onkeypress="javascript:return EkMarkPostOnEnter(event,'34');" maxlength="20" size="5" name="ecmBasicKeywords" id="ecmBasicKeywords">&nbsp;&nbsp;
+<input onclick="Javascript:MarkPostBack();" src="m22_files/search_button.gif" name="Search" title="Search" border="0" type="image">
+
+
+
+
+
+<input name="ecmsearchtype" value="AND" type="hidden"><input name="ecmallowfragments" value="" type="hidden"></nobr></td></tr></tbody></table></td></tr></tbody></table>
+</div>
+     </td></tr>
+	</tbody></table>
+	
+	 
+	<!-- Poll -->
+	
+	<table class="rightnavitem" border="0" cellpadding="0" cellspacing="0">
+	 <tbody><tr><td><img src="m22_files/rightnav_header_poll.gif" class="rightnavheader"></td></tr>
+	 <tr><td class="rightnavbucket" style="padding: 0pt;" width="120">
+         &nbsp;
+         
+         <script language="JavaScript" type="text/javascript" src="m22_files/webtoolbar.js"></script><script language="javascript" type="text/javascript" src="m22_files/pollhandler.js"></script><script type="text/javascript" language="javascript"> function __LoadPollResult(args,context){var submitaction=true;if("function"==typeof EkFmValidate){submitaction=EkFmValidate(document.forms[0]);}if(submitaction){WebForm_DoCallback('ctl00$Poll1',args,ICallBackPollHandler.DisplayPollResult,context,ICallBackPollHandler.DisplayPollError,false)}else{return false}}</script><script language="JavaScript" type="text/javascript">
+<!--
+function customValidationStyle() { }
+// -->
+</script>
+<div id="ctl00_Poll1" style="width: 120px;">
+	<div id="__ecmPoll1">
+<script language="JavaScript1.2" type="text/javascript" src="m22_files/platforminfo.js"></script>
+<script language="JavaScript1.2" type="text/javascript" src="m22_files/designformentry.js"></script>
+<input name="ApplicationAPI18220" value="postback" type="hidden">
+<input name="EktFormId" value="18220" type="hidden">
+<input name="EktFormTitle" value="Poll 061120 - Holiday Shopping 2" type="hidden">
+<input name="EktFormDescription" value="Holiday Poll" type="hidden">
+<input name="EktFormLang" value="1033" type="hidden">
+<input name="EktFormPublishDate" value="21/11/2006 2:12:42 PM" type="hidden">
+When do you start your holiday shopping?<br>
+<ektdesignns_choices id="ektpoll1164136438625" ektdesignns_name="ektpoll1164136438625" name="ektpoll1164136438625" ektdesignns_caption="When do you start your holiday shopping?" title="When do you start your holiday shopping?" ektdesignns_nodetype="element">
+</ektdesignns_choices><ol class="design_list_vertical" onblur="design_validate_choice(1, -1, this, 'Options are required.')" title="When do you start your holiday shopping?" contenteditable="false" onclick="design_validate_choice(1, -1, this, 'Options are required.')" unselectable="on" ektdesignns_minoccurs="1" ektdesignns_maxoccurs="1" ektdesignns_validation="choice-req">
+<li><input id="ID276222" title="I've already started" value="I've already started_1" name="ektpoll1164136438625" ektdesignns_nodetype="item" type="radio"><label for="ID276222">I've already started</label></li>
+
+<li><input id="ID3670407" title="I wait until at least December" value="I wait until at least December_2" name="ektpoll1164136438625" ektdesignns_nodetype="item" type="radio"><label for="ID3670407">I wait until at least December</label></li>
+
+<li><input id="ID6220037" title="I'm a last minute shopper" value="I'm a last minute shopper_3" name="ektpoll1164136438625" ektdesignns_nodetype="item" type="radio"><label for="ID6220037">I'm a last minute shopper</label></li>
+
+<li><input id="ID1122267" title="I give money" value="I give money_4" name="ektpoll1164136438625" ektdesignns_nodetype="item" type="radio"><label for="ID1122267">I give money</label></li>
+</ol>
+
+
+<input onclick="javascript:__LoadPollResult(ICallBackPollHandler.getArguements(),'Poll1');return false;" value="Vote" type="submit"><script language="JavaScript1.1" type="text/javascript" src="m22_files/validation.js"></script>
+<script type="text/javascript" language="javascript">
+function EkFmValidate(formObj){ 
+	var strError=''; var e=null;
+if (strError=='' && 'function' == typeof design_validateHtmlForm) {
+ e = design_validateHtmlForm(formObj);
+ if (e) { strError = e.title; }
+}
+	if (strError==''){return true;}
+	else {
+		alert(strError);
+		if ('function' == typeof e.scrollIntoView || 'object' == typeof e.scrollIntoView) e.scrollIntoView();
+		if ('function' == typeof design_canElementReceiveFocus) {
+         if (design_canElementReceiveFocus(e)) e.focus();
+     } else { e.focus(); }
+		return false;
+	}
+}
+</script>
+</div>
+</div>
+	 </td></tr>
+	</tbody></table>	
+	
+	<br> 
+	 
+	<!-- Skyscraper -->
+	<table class="skyscraper" border="0" cellpadding="0" cellspacing="0">
+	 <tbody><tr><td align="center">
+	    
+                <div id="ctl00_SkyscraperPlaceHolder_TorontoSkyPanel" style="width: 125px;">
+	
+                    <!-- Rich Media Ad Tag Below -->
+                    <script type="text/javascript">
+                    <!--
+                    bust = Math.floor(1000000*Math.random());
+                    document.write('<SCR' + 'IPT language="JavaScript1.1" src="http://ads.thestar.com/js.ng/site=metro&VChannel=metro_toronto&position=skyscraper&HChannel=news&ord=' + bust + '"><\/SCR' + 'IPT>' );
+                    -->
+                    </script><script language="JavaScript1.1" src="m22_files/sitemetroVChannelmetro_torontopositionskyscraperHChannelnewso.js"></script>
+<script src="m22_files/DartRichMedia_1_03.js"></script>
+<!-- Sniffer Code for Flash version=70 -->
+<a href="http://ads.thestar.com/event.ng/Type=click&amp;FlightID=12344&amp;AdID=19654&amp;TargetID=2664&amp;Segments=3207,3223,3281,3608&amp;Targets=2598,2664&amp;Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6150,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&amp;RawValues=&amp;Redirect=http://www.hbc.com/hbcrewards/" target="_top"><img src="m22_files/120x600_backup.gif" border="0" height="600" width="120"></a><noembed>&lt;A
+HREF="http://ads.thestar.com/event.ng/Type=click&amp;FlightID=12344&amp;AdID=19654&amp;TargetID=2664&amp;Segments=3207,3223,3281,3608&amp;Targets=2598,2664&amp;Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6150,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&amp;RawValues=&amp;Redirect=http://www.hbc.com/hbcrewards/"
+target="_top"&gt;&lt;IMG
+SRC="http://images.torstardigital.com/DART/ads/Metro/120x600_backup.gif"
+WIDTH=120 HEIGHT=600 BORDER=0&gt;&lt;/A&gt;
+</noembed>
+<noscript><A
+HREF="http://ads.thestar.com/event.ng/Type=click&FlightID=12344&AdID=19654&TargetID=2664&Segments=3207,3223,3281,3608&Targets=2598,2664&Values=25,30,50,60,72,86,93,101,110,150,155,230,284,347,424,449,6150,6177,6254,6265,6321,6334,6396,6398,6406,6407,6408,6409,6427,6442,6443,6640,6657,6661,6778,6779,6840,6859&RawValues=&Redirect=http://www.hbc.com/hbcrewards/"
+target="_top"><IMG
+SRC="http://images.torstardigital.com/DART/ads/Metro/120x600_backup.gif"
+WIDTH=120 HEIGHT=600 BORDER=0></A>
+</noscript>
+
+
+                    <noscript> <a
+href="http://ads.thestar.com/click.ng/site=metro&VChannel=metro_toronto&position=skyscraper&HChannel=news"><img
+src="http://ads.thestar.com/image.ng/site=metro&VChannel=metro_toronto&position=skyscraper&HChannel=news"/></a>
+</noscript>
+                    <!-- /Rich Media Ad Tag -->              
+                    <img src="m22_files/advertisement_other.gif">
+                
+</div>                
+                                
+                                                           
+
+	    <!--<img src="images/advertisement_other.gif">-->
+	 </td></tr>
+	</tbody></table>
+	 
+</div>
+
+
+
+<div>
+
+	<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+	<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+</div>
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="m22_files/WebResource.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+<!--
+
+WebForm_InitCallback();// -->
+</script>
+</form>
+<script type="text/javascript">
+function ekVerifyContentRatingSelectionMade(radioFieldName, validationFieldId, formSubmittedId) 
+{	
+    document.forms[0].action = "";
+    var radioField = document.getElementsByName(radioFieldName);
+	var validationField = document.getElementById(validationFieldId);
+	var formSubmittedField = document.getElementById(formSubmittedId);
+	var ratingReason = document.getElementById('ctl00$BodyPlaceHolder$ContentRating1_ratingReason');
+	var actualValue = document.getElementById('ctl00$BodyPlaceHolder$ContentRating1_actualValue');
+	var i;
+	for( i = 0; i < radioField.length; i++ )
+	{
+		if( radioField[i].checked )
+		{
+			formSubmittedField.value = 'submitted';
+			actualValue.value = encodeURIComponent(ratingReason.value);
+			ratingReason.value = ''; 
+			//alert("test");
+			return true;
+		}
+	}
+	validationField.firstChild.nodeValue = 'Please select a rating before submitting your feedback.';
+	return false;
+}
+
+expandmenu('20_20');
+expandmenu('106_106');
+
+try{showBranch(getCookie("MenuBranch"))}
+catch(err){};
+
+</script>
+</body></html>

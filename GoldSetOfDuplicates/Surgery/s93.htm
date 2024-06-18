@@ -1,0 +1,1218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1" runat="server"><title>Roanoke.com</title>
+
+
+  
+    
+        <link href="s93_files/globalv2.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="s93_files/interior_base.css" type="text/css" media="screen" rel="stylesheet">
+    <link href="s93_files/ap_story.css" type="text/css" media="screen" rel="stylesheet">
+   <link href="s93_files/subfront.css" type="text/css" media="screen" rel="stylesheet">
+    
+    <link href="s93_files/print.css" type="text/css" media="print" rel="stylesheet"><!--[if lte IE 7]>
+            <link href="http://www.roanoke.com/css/ie-globalv2.css" type="text/css" media="screen" rel="stylesheet" />
+            <link href="http://www.roanoke.com/css/ie-subfront.css" type="text/css" media="screen" rel="stylesheet" />
+        <![endif]-->
+    
+ 
+
+    <script src="s93_files/pantana.js" type="text/javascript" language="javascript"></script><!-- must leave this in for homes search -->
+
+    
+    <script language="javascript">
+    <!--
+	//configuration
+
+ 	//end of configuration
+    //-->
+    </script><!------ OAS SETUP begin ------>
+
+
+   
+    <script language="JavaScript" type="text/javascript">
+      <!--
+//configuration
+OAS_url = 'http://oas.roanoke.com/RealMedia/ads/';
+OAS_sitepage = 'www.roanoke.com' + window.location.pathname;
+//OAS_sitepage = 'www.realmedia.com/Samples/mjx.html';
+OAS_listpos = 'Top1,Right';
+OAS_query = '';
+OAS_target = '_top';
+//end of configuration
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+function OAS_NORMAL(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' + OAS_query + '" BORDER=0></A>');
+}
+//-->
+    </script>
+    <script language="javascript" type="text/javascript">
+      <!--
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
+  OAS_version = 10;
+if (OAS_version >= 11)
+  document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>');
+//-->
+    </script><script language="JavaScript1.1" src="s93_files/1871889145Top1Right.js"></script>
+    <script language="JavaScript" type="text/javascript">
+      <!--
+document.write('');
+function OAS_AD(pos) {
+  if (OAS_version >= 11)
+    OAS_RICH(pos);
+  else
+    OAS_NORMAL(pos);
+}
+//-->
+    </script><!------ OAS SETUP end ------>
+    
+
+<style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="s93_files/tab.css"></head><body>
+
+    <div id="page">
+      <div id="pre-header">
+        
+        <!--Subfront box-top right-->
+        	<div id="top-side-block"><a href="http://blogs.roanoke.com/vlog/" target="_blank"><img src="s93_files/webpromo.gif"></a></div>
+	        <div id="top-leader">
+        	  .....Advertisement.....<br>
+	          <script language="javascript" type="text/javascript">OAS_AD('Top1')</script><script language="JavaScript">var tcdacmd="sa=a;sz=2;ad";</script>
+<script src="s93_files/slf.js" language="JavaScript"></script><script src="s93_files/a_003.htm" language="JavaScript"></script><iframe src="s93_files/REDIRURL.htm" marginwidth="0" marginheight="0" hspace="0" vspace="0" bordercolor="#000000" frameborder="0" height="90" scrolling="no" width="728">&lt;SCRIPT
+language='JavaScript1.1'
+SRC="http://ad.doubleclick.net/adj/N1823.Tacoda/B2126411.29;abr=!ie;sz=728x90;click=http://anad.tacoda.net/ads/ad13019a-map.cgi/BCPG62631.90741.103194/SZ=728X90A/V=2.0S//REDIRURL=;ord=48014?"&gt;&lt;/SCRIPT&gt;</iframe><img src="s93_files/a.gif" height="1" width="1">
+        	</div>
+      </div>
+      <div id="header">
+        <div id="header-top">
+          <div id="search">
+            <form method="post" action="http://searchforit.roanoke.com/search.aspx">
+            Search roanoke.com <input name="searchRequest" id="search-box" type="text">
+            <input value="Go" class="button-small" type="submit">
+            </form>
+          </div>
+	      <h1>The Roanoke Times</h1> 
+        </div>
+
+        <div id="header-center">
+	      <h1 id="logo"><a href="http://www.roanoke.com/" title="Roanoke.com">Roanoke.com</a></h1>
+
+          <div class="date"><script language="javascript">document.write(getFormattedDate());</script>Saturday, January 6, 2007</div>
+	      <div class="clear"></div>
+          <div id="headline-ticker"> 
+            <iframe id="ticker" src="s93_files/headline_ticker.htm" class="ticker-frame" frameborder="no" scrolling="no"></iframe>               
+          </div>
+
+          <div id="login">
+             <h1>Welcome</h1>
+             <a href="http://www.roanoke.com/profile/newuser.aspx">Create Account</a>
+             | <a href="http://email.roanoke.com/Login.aspx">Check E-mail</a>
+             | <a href="http://www.roanoke.com/profile/userlogin.aspx">Login</a> <br>
+
+             <a href="http://shop.roanoke.com/roanoke/subscription.html">Get the Paper</a>
+             | <a href="http://www.roanoke.com/services/newstips.html">Submit a News Item</a>
+             | <a href="https://circulation.roanoke.com/CBWebServer/">Manage my Paper</a><br>
+
+             <a href="javascript:makeLarge('http://www.roanoke.com/wse', 500, 400)">Contact Online</a>
+             | <a href="http://www.roanoke.com/services">Contact Us</a>
+          </div>
+        </div>
+
+        <div id="header-bottom">
+          <ul id="main-nav">
+            <li>
+              <a href="http://www.roanoke.com/">Home</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/news">News</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/sports">Sports</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/entertainment/wb/xp-index">Entertainment</a> |
+            </li>
+            <li>
+              <a href="http://blogs.roanoke.com/vlog/">Webcast</a> |
+            </li>
+            <li>
+              <a href="http://classified.roanoke.com/classified/index.jsp">Classified</a> |
+            </li>
+	    <li>
+       	      <a href="http://www.roanoke.com/editorials/">Opinion</a> |
+            </li>
+            <li>
+              <a href="http://blogs.roanoke.com/">Blogs</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/photography/">Photos</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/photography/">Multimedia</a> |
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/messages/">Message Boards</a> |
+            </li>
+            <li>
+              <a href="http://celebrations.roanoke.com/celebs/">Celebrations</a> |
+            </li>
+            <li style="padding-right: 70px;">
+              <a href="http://www.legacy.com/roanoke/obituaries.asp">Obituaries</a>
+            </li>
+            <li>
+              <a href="http://www.roanoke.com/job/">Jobs</a> |
+            </li>
+            <li>
+              <a href="http://classified.roanoke.com/classified/homes">Homes</a> |
+            </li>
+            <li>
+              <a href="http://www.newspaperads.com/roanokecars/">Autos</a> |
+            </li>
+            <li>
+              <a href="http://adexpress.roanoke.com/" target="_blank">Place Ad</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content">
+        <table id="tbl-main" width="100%">
+        <tbody>
+        <tr>
+            <td id="td-main" valign="top">
+                <div id="main">
+                    <div id="story-text"> 
+                    <!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="s93_files/s_code_remote.js"></script><img src="s93_files/s56671345498522.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "VAROA") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="s93_files/prototype.js"></script>
+ <script type="text/javascript" src="s93_files/scriptaculous.js"></script><script type="text/javascript" src="s93_files/effects.js"></script>
+ <script type="text/javascript" src="s93_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="s93_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1995833: Stunted Daughter
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:45
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Jan 5, 1:04 AM EST</div></div><br>
+<p class="body"><span class="headline">Surgery on girl raises ethical questions</span>
+</p>
+<p class="ap-story-p">
+<span class="byline">By LINDSEY TANNER         </span><br>
+<span class="bylinetitle">AP Medical Writer</span></p></div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11244329
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1109541: online
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<!-- SmallPhoto: 2247169
+   Created: 2007/1/4 19:53:46
+   Modified: 2007/1/4 19:53:47
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://customwire.ap.org/dynamic/files/photos/W/WXS12001050053.html?SITE=VAROA&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="s93_files/WXS12001050053-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2247169 -->
+<!-- /Package: 1109541 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1109542: online
+   Created: 2007/1/5 01:04:44
+   Modified: 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+
+<!-- Video: 18287
+   Created: 2007/1/4 23:31:03
+   Modified: 2007/1/4 23:31:03
+   Generated: 2007/1/5 01:04:45 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-video-table" width="180">
+<tbody><tr class="ap-video-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-video-td"><span class="tabletitle">AP VIDEO</span></td></tr>
+<tr class="ap-video-tr">
+<td class="ap-video-td">
+<p class="ap-video-p"><span class="apCaption"><a href="http://video.ap.org/vws/search/aspx/ap.aspx?t=m318&amp;p=ENAPus_ENAPus&amp;f=VAROA&amp;g=0104dv_stunted_daughter" class="ap-video-a" onclick="window.open(this.href, 'popupwindow','width=798,height=598,status=1,scrollbars=1,resizable=1'); return false;">Parents Stunt Disabled Girl's Growth</a></span></p>
+</td>
+</tr>
+</tbody></table>
+<!-- /Video: 18287 -->
+<!-- /Package: 1109542 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858209: VIDEO_PROMO_HEALTH_SECTION
+   Created: 2006/3/21 11:16:07
+   Modified: 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+
+<!-- HtmlTable: 44695
+   Created  : 2006/3/21 11:16:35
+   Modified : 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Other News Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4643
+   Created: 2006/3/21 11:16:53
+   Modified: 2006/10/16 12:46:53
+   Generated: 2006/12/2 09:26:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="s93_files/apOVN.js">
+</script>
+<div id="flashcontent"><embed type="application/x-shockwave-flash" src="s93_files/sm_vrt_3thumb_scroll.swf" id="sm_vrt_3thumb_scroll" name="sm_vrt_3thumb_scroll" wmode="opaque" quality="best" bgcolor="#FFFFFF" flashvars="cat=Scitech&amp;pid=VAROA&amp;fontcolor=0x336699" height="165" width="170">
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4643 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44695 -->
+<!-- /Package: 858209 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 270575: ADVERTISEMENT_HEALTH
+   Created: 2003/8/14 11:18:49
+   Modified: 2006/3/27 15:01:23
+   Generated: 2006/12/2 09:46:12 -->
+<!-- HtmlFragment: 4266
+   Created: 2005/11/28 11:28:24
+   Modified: 2005/11/28 11:28:33
+   Generated: 2006/12/2 09:46:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=hlt; dt";</script>
+<script src="s93_files/slf_002.js" language="JavaScript"></script><script src="s93_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4266 -->
+<!-- HtmlFragment: 2256
+   Created: 2003/8/14 11:19:01
+   Modified: 2005/8/5 10:46:03
+   Generated: 2006/12/2 09:46:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR HEALTH STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='HEALTH';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="s93_files/1411667036x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/1411667036@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/1411667036@x96"></a></script><iframe src="s93_files/01668743177.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="250" scrolling="no" width="300">
+&lt;script language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/VAROA.hosted.ap.org/HEALTH/668743177/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?668743177"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/668743177"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/VAROA.hosted.ap.org/HEALTH/668743177/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?668743177"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/668743177"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="s93_files/1411667036x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/1411667036@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/1411667036@x03"></a></script><!-- Casale Media 2006 (C) -->
+<!-- Ad Format: Pop Under -->
+<!-- Domain(s): ap.org -->
+<script type="text/javascript"><!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape('ap.org');
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'76784&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//--></script><script type="text/javascript" src="s93_files/s.txt"></script><!-- Casale Media 2006 (C) -->
+</div>
+<!-- AP end call to x03 -->
+
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 2256 -->
+<!-- /Package: 270575 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244329  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11244330
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 514402: X_BEHAVIORAL_HEALTH
+   Created: 2004/12/2 17:23:21
+   Modified: 2006/4/13 09:12:08
+   Generated: 2006/12/2 09:43:45 -->
+<!-- HtmlFragment: 3861
+   Created: 2004/12/2 17:25:27
+   Modified: 2005/5/12 15:39:52
+   Generated: 2006/12/2 09:43:45 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- start behavioral tag 1 -->
+<script language="Javascript" src="s93_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+<!-- end behavioral tag 1 -->
+
+
+<!-- start behavioral tag 2 -->
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "HEALTH")
+</script>
+<!-- end behavioral tag 2 -->
+
+
+<!-- start behavioral tag 3 -->
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="s93_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+<!-- end behavioral tag 3 -->
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3861 -->
+<!-- /Package: 514402 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244330  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11244331
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:45
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="s93_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="s93_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="s93_files/STUNTED_DAUGHTER.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244331  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> CHICAGO (AP) -- In a case fraught with ethical
+questions, the parents of a severely mentally and physically disabled
+child have stunted her growth to keep their little "pillow angel" a
+manageable and more portable size.</p> <p class="ap-story-p">The
+bedridden 9-year-old girl had her uterus and breast tissue removed at a
+Seattle hospital and received large doses of hormones to halt her
+growth. She is now 4-foot-5; her parents say she would otherwise
+probably reach a normal 5-foot-6.</p> <p class="ap-story-p">The case
+has captured attention nationwide and abroad via the Internet, with
+some decrying the parents' actions as perverse and akin to eugenics.
+Some ethicists question the parents' claim that the drastic treatment
+will benefit their daughter and allow them to continue caring for her
+at home.</p> <p class="ap-story-p">University of Pennsylvania ethicist
+Art Caplan said the case is troubling and reflects "slippery slope"
+thinking among parents who believe "the way to deal with my kid with
+permanent behavioral problems is to put them into permanent childhood."</p> <p class="ap-story-p">Right
+or wrong, the couple's decision highlights a dilemma thousands of
+parents face in struggling to care for severely disabled children as
+they grow up.</p> <p class="ap-story-p">"This particular treatment,
+even if it's OK in this situation, and I think it probably is, is not a
+widespread solution and ignores the large social issues about caring
+for people with disabilities," Dr. Joel Frader, a medical ethicist at
+Chicago's Children's Memorial Hospital, said Thursday. "As a society,
+we do a pretty rotten job of helping caregivers provide what's
+necessary for these patients."</p> <p class="ap-story-p">The case
+involves a girl identified only as Ashley on a blog her parents created
+after her doctors wrote about her treatment in October's Archives of
+Pediatrics &amp; Adolescent Medicine. The journal did not disclose the
+parents' names or where they live; the couple do not identify
+themselves on their blog, either.</p> <p class="ap-story-p">Shortly
+after birth, Ashley had feeding problems and showed severe
+developmental delays. Her doctors diagnosed static encephalopathy,
+which means severe brain damage. They do not know what caused it.</p> <p class="ap-story-p">Her
+condition has left her in an infant state, unable to sit up, roll over,
+hold a toy or walk or talk. Her parents say she will never get better.
+She is alert, startles easily, and smiles, but does not maintain eye
+contact, according to her parents, who call the brown-haired little
+girl their "pillow angel."</p> <p class="ap-story-p">She goes to school
+for disabled children, but her parents care for her at home and say
+they have been unable to find suitable outside help.</p> <p class="ap-story-p">An
+editorial in the medical journal called "the Ashley treatment"
+ill-advised and questioned whether it will even work. But her parents
+say it has succeeded so far.</p> <p class="ap-story-p">She had surgery
+in July 2004 and recently completed the hormone treatment. She weighs
+about 65 pounds, and is about 13 inches shorter and 50 pounds lighter
+than she would be as an adult, according to her parents' blog.</p> <p class="ap-story-p">"Ashley's
+smaller and lighter size makes it more possible to include her in the
+typical family life and activities that provide her with needed
+comfort, closeness, security and love: meal time, car trips, touch,
+snuggles, etc.," her parents wrote.</p> <p class="ap-story-p">Also,
+Ashley's parents say keeping her small will reduce the risk of bedsores
+and other conditions that can afflict bedridden patients. In addition,
+they say preventing her from going through puberty means she won't
+experience the discomfort of periods or grow breasts that might develop
+breast cancer, which runs in the family.</p> <p class="ap-story-p">"Even
+though caring for Ashley involves hard and continual work, she is a
+blessing and not a burden," her parents say. Still, they write, "Unless
+you are living the experience ... you have no clue what it is like to
+be the bedridden child or their caregivers."</p> <p class="ap-story-p">Caplan
+questioned how preventing normal growth could benefit the patient.
+Treatment that is not for a patient's direct benefit "only seems wrong
+to me," the ethicist said.</p> <p class="ap-story-p">Dr. Douglas
+Diekema, an ethicist at Children's Hospital and Regional Medical Center
+in Seattle, where Ashley was treated, said he met with the parents and
+became convinced they were motivated by love and the girl's best
+interests.</p> <p class="ap-story-p">Diekema said he was mainly
+concerned with making sure the little girl would actually benefit and
+not suffer any harm from the treatment. She did not, and is doing well,
+he said.</p> <p class="ap-story-p">"The more her parents can be
+touching her and caring for her ... and involving her in family
+activities, the better for her," he said. "The parents' argument was,
+`If she's smaller and lighter, we will be able to do that for a longer
+period of time.'"</p> <p class="ap-story-p">---</p> <p class="ap-story-p">On the Net:</p> <p class="ap-story-p">Ashley's blog: <a href="http://ashleytreatment.spaces.live.com/" target="-blank">http://ashleytreatment.spaces.live.com</a> </p> <p class="ap-story-p">Journal: <a href="http://www.archpediatrics.com/" target="-blank">http://www.archpediatrics.com</a> </p> <p class="ap-story-p">©
+2007 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MEUL700', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="s93_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11244334
+   Created  : 2007/1/5 01:04:44
+   Modified : 2007/1/5 01:04:44
+   Generated: 2007/1/5 01:04:45 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621974: ADV_UNDER_HEALTH
+   Created: 2005/5/15 11:33:52
+   Modified: 2005/5/16 15:47:34
+   Generated: 2006/12/2 09:39:08 -->
+<!-- HtmlFragment: 3989
+   Created: 2005/5/15 11:41:51
+   Modified: 2005/5/16 15:47:34
+   Generated: 2006/12/2 09:39:09 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- AP call to x02 -->
+<script language="JavaScript">			 
+	var RN = new String(Math.random());			 
+	var RNS = "1" + RN.substring(2, 11);			 		 
+		
+	document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/VAROA.hosted.ap.org/HEALTH/' + RNS+ '@x02">');
+	document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/' + RNS+ '@x02">');			 
+	document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/' + RNS+ '@x02"></a>');			 
+	document.write('<\/SCRIPT>'+'<\/div>');			
+
+</script><div align="center"><script language="JavaScript1.1" src="s93_files/1239168858x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/VAROA.hosted.ap.org/HEALTH/1239168858@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/VAROA.hosted.ap.org/HEALTH/1239168858@x02"></a></script><script language="JavaScript" src="s93_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Resperate relaxes blood vessels to reduce pressure. No side effects." onmouseover="top.status='Lower Blood Pressure'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnobgnobgnkbpnjzyrwrzxcrr&eid=1&id=85414040&brightads_used=&partner_override=&query=health&clickfactor_impression=1&clickid=82333664&UNQ=00116808049383179942&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Lower Blood Pressure</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Resperate relaxes blood vessels to reduce pressure. No side effects.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.resperate.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="21 piece collection from BareEscentuals BareMinerals! Act now." onmouseover="top.status='Free Bare Escentuals Package'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnobgnobgnkbpnjzexexbxrry&eid=1&id=87241272&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=01116808049383179993&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Free Bare Escentuals Package</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">21 piece collection from BareEscentuals BareMinerals! Act now.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.personalcare-offer.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="CigArrest will help you quit smoking for life. Try it for free!" onmouseover="top.status='Quit Smoking in 7 Days - Guaranteed'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnobgnobgnkbpnjzcrwrzxcrr&eid=1&id=87267284&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=01116808049383179927&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Quit Smoking in 7 Days - Guaranteed</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">CigArrest will help you quit smoking for life. Try it for free!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.cigarrest.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Fast relief from hot flashes, mood swings &amp; more. Free 30 day supply!" onmouseover="top.status='Try Herbal Remedy for Menopause Symptoms'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnobgnobgnkbpnjzdrtxexars&eid=1&id=87394668&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808049383179929&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Try Herbal Remedy for Menopause Symptoms</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">Fast relief from hot flashes, mood swings &amp; more. Free 30 day supply!</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.ChangesForWomen.com</span>					</div>				</div>				<div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="You may be younger than you think. Take the RealAge test and find out." onmouseover="top.status='Prepare to be Shocked'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnobgnobgnkbpnjzpxdxaxxrt&eid=1&id=86336350&brightads_used=&partner_override=&query=health&clickid=82333664&UNQ=00116808049383179993&tz=US&cgroup=health&src=context.cgi')">					<div style="font-weight: bold; color: rgb(25, 25, 112);">Prepare to be Shocked</div>					<div>						<span style="margin-right: 7px; color: rgb(0, 0, 0);">You may be younger than you think. Take the RealAge test and find out.</span>						<span style="text-decoration: none; color: rgb(0, 0, 205);">www.realage.com</span>					</div>				</div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div>			
+<!-- AP end call to x02 --></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3989 -->
+<!-- /Package: 621974 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11244334  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1995833: Stunted Daughter -->
+<br><br>
+                 
+                 <form method="get" action="http://customwire.ap.org/dynamic/external/search.customwire.ap.org/wireCoreTool/Search">
+<input name="SITE" value="VAROA" type="hidden">
+<input name="SECTION" value="HOME" type="hidden">
+<input name="TEMPLATE" value="DEFAULT" type="hidden">
+&nbsp;<input name="query" class="body" onfocus="this.value=''" value="Search AP News" size="16" type="text">
+<input value="Go" type="submit">  </form>
+                 </div>  <!-- begin of footer -->
+                </div>
+            </td>
+            <td id="td-side" valign="top" width="350">
+                <div class="ad-bigboxSub">.....Advertisement.....<br>
+                    <script language="javascript" type="text/javascript">OAS_AD('Right')</script><script language="JavaScript">var tcdacmd="sa=a;sz=4;ad";</script>
+<script src="s93_files/slf.js" language="JavaScript"></script><script src="s93_files/a.js" language="JavaScript"></script><script language="javascript" src="s93_files/j.js"></script><!-- START DART (iframe) -->
+<iframe src="s93_files/a.htm" hspace="0" vspace="0" bordercolor="#000000" marginheight="0" marginwidth="0" frameborder="0" height="600" scrolling="no" width="160">
+</iframe>
+<!-- END DART (iframe) -->
+
+                </div><!--Featured Jobs-->
+<div id="featured-jobs"><!--featured jobs table-->
+<table class="ContentArea" border="1" cellpadding="1" cellspacing="0" width="130">
+<tbody>
+<tr>
+<td class="ccJSTableHeader" bgcolor="#660000">
+<div align="center"><img src="s93_files/feat_jobs.gif" border="0"></div></td></tr>
+<tr>
+<td><ilayer id="jobslayer" height="400" width="130" visibility="hidden"><nolayer><iframe marginwidth="5" marginheight="5" src="s93_files/a_002.htm" frameborder="1" height="200" scrolling="yes" width="295">
+</iframe></nolayer></ilayer></td></tr></tbody></table></div>
+                <div id="ad-google">
+                        <script type="text/javascript"><!--
+                            google_ad_client = "pub-3754100302324154";
+                            google_ad_width = 300;
+                            google_ad_height = 250;
+                            google_ad_format = "300x250_as";
+                            google_ad_type = "text";
+                            google_ad_channel ="3673729826";
+                            google_color_border = "B4D0DC";
+                            google_color_bg = "ECF8FF";
+                            google_color_link = "0000CC";
+                            google_color_url = "008000";
+                            google_color_text = "6F6F6F";
+                            //--></script>
+
+                        <script type="text/javascript" src="s93_files/show_ads.js"></script><iframe name="google_ads_frame" src="s93_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="250" scrolling="no" width="300"></iframe>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <script language="javascript" type="text/javascript">adControl(document.getElementById("story-text").offsetHeight)</script>
+      </div>
+      
+  <div id="footer">
+    
+  <h1>Site Index</h1>
+
+  <div id="foot-news" class="footer-index">
+
+    <h2>News</h2>
+    <ul>
+      <li>
+        - <a href="http://www.roanoke.com/archives/">Archives</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/business/">Business</a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/columnists/">Columnists</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/news/corrections/">Corrections</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/health/">Health</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/news/roanoke/">Local News</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/news/8195">National News</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/politics/">Politics</a>
+
+      </li>
+      <li>
+        - <a href="http://customwire.ap.org/dynamic/files/static/moneywire-basic/dc_tables/mwh.html?SITE=VAROA&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT">Stocks</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/weather/">Weather</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div id="foot-sports" class="footer-index">
+    <h2>Sports</h2>
+    <ul>
+      <li>
+        - <a href="http://www.roanoke.com/sports/racing/">Auto Racing</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/sports/baseball/">Baseball</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports/college/">College Sports</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports/probasketball/">Dazzle Basketball</a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports/golf/">Golf</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports/highschool/">High School</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/sports/etc/">Other Local Sports</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/outdoors/">Outdoors</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/sports/profootball"><abbr title="professional">Pro</abbr> Football</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports#uvasports">
+          <acronym title="University of Virginia">UVa</acronym>
+        </a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports/hockey/">Viper Hockey</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/sports#vtsports">Virginia <abbr title="polytechnic">Tech</abbr></a>
+
+      </li>
+    </ul>
+  </div>
+
+  <div id="foot-ent" class="footer-index">
+    <h2>Entertainment</h2>
+    <ul>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/insideout/arts/">Arts</a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/insideout/eat/">Dining</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/theedge/">The Edge</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/appcal/callist.aspx">Events Calendar</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/entertainment/insideout/hangout/">Hangout</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/insideout/">Inside Out</a>
+      </li>
+      <li>
+        - <a href="http://www.valottery.com/">Lottery</a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/insideout/movies/">Movie Reviews</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/insideout/music/">Music</a>
+      </li>
+
+      <li>
+        - <a href="http://www.people2people.com/?connect=roanoke">Personals</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/tv/">
+          <abbr title="television">TV</abbr> Listings
+        </a>
+
+      </li>
+    </ul>
+  </div>
+
+  <div id="foot-local" class="footer-index">
+    <h2>Local</h2>
+    <ul>
+      <li>
+        - <a href="http://celebrations.roanoke.com/celebs/">Celebrations</a>
+
+      </li>
+      <li>
+        - <a href="http://community.roanoke.com/">Community Groups</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/smithmountainlake/">The Lake</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/messages/">Message Boards</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/neighbors/">Neighbors</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/news/nrv/">New River Valley</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/nie/">Newspaper in Education</a>
+      </li>
+      <li>
+        - <a href="http://obituaries.roanoke.com/obits/">Obituaries</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/editorials/">Opinion/Editorials</a>
+      </li>
+      <li>
+        - <a href="http://www.switchboard.com/bin/cgidir.dll?MEM=1307&amp;PR=108&amp;QV=38C09234B1424874BF53581E3A1892F0l028A1D7BE4422944B2313203O0184E8BB51DA3A4442303203O03842F3D51DA3A443F313203&amp;cid=&amp;KW=churches&amp;T=Roanoke&amp;S=VA&amp;Z=&amp;Search=Search&amp;ST=2&amp;SD=10">Places of worship</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/advertising/summercamp/camps.html">Summer camp guide</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/travel/">Travel/Vistors</a>
+      </li>
+      <li>
+        - <a href="http://roanoke.buzznet.com/">YourPix</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div id="foot-online" class="footer-index">
+    <h2>Online Features</h2>
+    <ul>
+      <li>
+        - <a href="http://blogs.roanoke.com/">
+
+          <abbr title="Weblogs">Blogs</abbr>
+        </a>
+      </li>
+      <!--<li>
+        - <a href="#">Contests</a>
+      </li>-->
+      <li>
+        - <a href="http://www.roanoke.com/news/nrv/cram/wb/xp-index"><abbr title="College. Reality. Attitude. More.">CRAM</abbr></a>
+      </li>
+
+	    <li>
+        - <a href="http://www.roanoke.com/news/nrv/cram/jams/wb/xp-index"><abbr title="College. Reality. Attitude. More.">CRAM</abbr> Jams</a>
+      </li>
+
+      <li>
+        - <a href="http://roanoke.interest.com/">Find a Mortgage</a>
+      </li>
+	 
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/dining/diningList.aspx">Find a Restaurant</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/entertainment/movies/movie/nowPlaying.aspx">Movie Listings</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/multimedia/">Multimedia</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/photography/">Photo Galleries</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/photography/">Podcasts</a>
+      </li>
+           <li>
+        - <a href="http://www.roanoke.com/rss/wb/xp-48763">
+
+          <acronym title="Really Simple Syndication">RSS</acronym> Feeds
+        </a>
+      </li>
+      <li>
+        - <a href="http://customwire.ap.org/dynamic/files/static/moneywire-basic/dc_tables/mwh.html?SITE=VAROA&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT">Stocks</a>
+      </li>
+      <li>
+
+        - <a href="http://blogs.roanoke.com/vlog/">Webcast</a>
+      </li>
+      <li>
+        - <a href="http://www.switchboard.com/bin/cgidir.dll?MEM=1307&amp;T=Roanoke&amp;s=VA&amp;TYPE=Search+near+location">Yellow Pages</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="foot-bus" class="footer-index">
+    <h2>Do Business With Us</h2>
+    <ul>
+      <li>
+        - <a href="http://shop.roanoke.com/roanoke/subscription.html">Get the Paper</a>
+      </li>
+      <!--<li>
+        - <a href="#">Buy a Photo</a>
+      </li>-->
+
+      <li>
+        - <a href="http://www.roanoke.com/services/">Contact Us</a>
+      </li>
+      <li>
+        - <a href="https://circulation.roanoke.com/CBWebServer/">Manage Your Paper</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/profile/userlogin.aspx">Manage Your Profile</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/services/online/online_intro.html">Online Advertising</a>
+      </li>
+      <li>
+        - <a href="http://classified.roanoke.com/classified/adsb">Place a Classified <abbr title="advertisement">Ad</abbr></a>
+
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/services/advertising.html">Print Advertising</a>
+      </li>
+      <li>
+        - <a href="http://www.roanoke.com/profile/newuser.aspx">Register Online</a>
+      </li>
+
+      <li>
+        - <a href="http://www.roanoke.com/services/newstips.html">Send a News Tip</a>
+      </li>
+      <li>
+        - <a href="mailto:presstours@roanoke.com">Tour The Roanoke Times</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/careers/">Work at The Roanoke Times</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="foot-market" class="footer-index">
+    <h2>Market Place</h2>
+    <ul>
+
+      <li>
+        - <a href="http://mn.coolsavings.com/web/index.aspx?p=970">Coupons</a>
+      </li>
+      <li>
+        - <a href="http://classified.roanoke.com/classified/search_entry2.jsp?id=1&amp;mCat=430">Find an Apartment</a>
+      </li>
+      <li>
+
+        - <a href="http://www.newspaperads.com/roanokecars/">Find an <abbr title="automobile">Auto</abbr></a>
+      </li>
+      <li>
+        - <a href="http://classified.roanoke.com/classified/homes">Find a Home</a>
+      </li>
+      <li>
+
+        - <a href="http://www.roanoke.com/job/">Find a Job</a>
+      </li>
+      <!-- <li>
+        - <a href="#">Find a Mortgage</a>
+      </li>-->
+      <li>
+        - <a href="http://protalk.roanoke.com/protalk/"><abbr title="professional">Pro</abbr> Talk: Ask an Expert</a>
+      </li>
+
+      <!--<li>
+        - <a href="#">Special Section</a>
+      </li>-->
+      <li>
+        - <a href="http://www.switchboard.com/bin/cgidir.dll?MEM=1307&amp;T=Roanoke&amp;s=VA&amp;TYPE=Search+near+location">Yellow Pages</a>
+      </li>
+    </ul>
+  </div>
+
+  <p class="clear"></p>
+
+  <div id="sitetools">
+    <a href="http://www.roanoke.com/">
+      <img src="s93_files/roanoke-logo.gif" alt="The Roanoke Times and Roanoke.com logo" height="46" width="175">
+    </a>
+    <ul>
+      <li>
+        <a href="http://shop.roanoke.com/roanoke/subscription.html">Get the paper</a>
+      </li>
+
+      <li>
+        <a href="http://www.roanoke.com/profile/userlogin.aspx">Create/manage your profile</a>
+      </li>
+      <li>
+        <a href="http://www.roanoke.com/standards/standards.html">Professional Standards</a>
+      </li>
+      <li>
+        <a href="http://www.roanoke.com/services/privacy.html">Privacy Policy, Terms and Conditions</a>
+
+      </li>
+      <li>
+        <a href="http://www.roanoke.com/services/index.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="http://www.roanoke.com/services/siteworks.html">How this site works best</a>
+      </li>
+    </ul>
+
+    <p>© Copyright 2006</p>
+  </div>
+</div>
+</div>
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="s93_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="s93_files/closelabel.gif"></a></div></div></div></div></body></html>

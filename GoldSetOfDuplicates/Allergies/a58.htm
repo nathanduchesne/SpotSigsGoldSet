@@ -1,0 +1,885 @@
+<html><head>
+<meta name="file_date" content="Nov 27, 2002"><title>The Clarion-Ledger: Mississippi's News Source</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><!-- AP STYLESHEET -->
+
+<style type="text/css">	
+a:link { font-size: 11px; line-height:14px; font-weight: normal; text-decoration:none; font-family: arial, helvetica, sans-serif;}
+a:visited { font-size: 11px; line-height:14px; font-weight: normal; text-decoration:none; font-family: arial, helvetica, sans-serif;}
+a:hover { font-size: 11px; line-height:14px; font-weight: normal; text-decoration:underline; font-family: arial, helvetica, sans-serif;}
+.cs_nav { color: #003399; font-size: 9px; font-weight: normal; text-decoration:none; font-family: verdana, arial, helvetica, sans-serif;}
+.news_nav, .news_nav a:link, .news_nav a:visited, .news_nav a:hover { color: #ffffff; font-size: 13px; font-weight: bold; text-decoration:none; font-family: arial, helvetica, sans-serif;} 
+.local_nav, .local_nav a:link, .local_nav a:visited, .local_nav a:hover { color:#000000; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; text-decoration:none; border-style:none; border-color:#000000; border-width:0px; padding:2px 5px;}
+.headline {font: normal 18px/20px Verdana, Arial, Helvetica, sans-serif; color: #003366;}
+.byline {font: normal 12px Verdana, Arial, Helvetica, sans-serif; color: #003366;}
+.bytitle {font: normal 10px Verdana, Arial, Helvetica, sans-serif; color: #003366;}
+.body {font: 12px Verdana,Geneva,Arial,Helvetica,sans-serif; color: #000000;}
+.tabletitle {font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif; color: #663333;}
+.storylink {font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif; color: #003366;}
+.textlabel {font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif; color: #663333;}
+.photo {font: 11px Verdana,Geneva,Arial,Helvetica,sans-serif; color: #000000;}
+.audio {font: 11px Verdana,Geneva,Arial,Helvetica,sans-serif; color: #000000;}
+.video {font: 11px Verdana,Geneva,Arial,Helvetica,sans-serif; color: #000000;}
+.firsttopheadline {FONT:bold 12px Verdana; COLOR: #990000}
+.topheadline {FONT: bold 12px Verdana; COLOR: #990000}
+.latesnews {FONT: bold 12px Verdana; COLOR: #990000}
+</style>
+
+
+<style>
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(/static/images/lightbox/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(/static/images/lightbox/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(/static/images/lightbox/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	
+/* AP specific styles */
+
+div.ap-photo-gallery-thumbnails 
+{
+  padding: 10px;
+text-align: center;
+}
+
+span.ap-photo-gallery-thumbnail
+{
+   float: left;
+   clear: none;
+}
+    
+span.ap-photo-gallery-thumbnail
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+span.ap-photo-gallery-thumbnail a:active
+{
+     margin: 0px 5px 5px 0px;
+}  
+
+img.ap-photo-gallery-thumbnail-img a.ap-photo-a:active
+{
+    height: 80px;
+    border: 2px dotted #00F;
+    background: #ccc;
+}
+
+img.ap-photo-gallery-thumbnail-img
+{
+    height: 80px;
+    border: 0px solid #00F;
+}
+
+div#ap_technorati_roundup
+{
+    margin-top: 5px
+}
+</style><link rel="stylesheet" href="a58_files/tab.css"><style id="ssimenus0" type="text/css">#ulitem0z0 {float:left;}#ulitem0z1 {float:left;}#ulitem0z2 {float:left;}#ulitem0z3 {float:left;}#ulitem0z4 {float:left;}#ulitem0z5 {float:left;}#ulitem0z6 {float:left;}#ulitem0z7 {float:left;}#ulitem0z8 {float:left;}#ulitem0z9 {float:left;}#imcontainer10 {z-index:999999;position:relative;block}#imcontainer20 {position:absolute;}#imenus0,#imenus0 ul{margin:0;list-style:none;}#imouter0 {text-align:left;background-image:url(http://www.clarionledger.com/graphics/greybar.gif); border-style:none; border-color:#111111; border-width:1px; padding:0px; }BODY #imouter0 {undefined}#imenus0 {padding:0px;}#imenus0 ul {padding:0px;background-color:#ededee; border-style:solid; border-color:#111111; border-width:1px; padding:5px; margin:0px; position:relative;top:0px;left:0px;}BODY #imenus0 ul {undefined}#imenus0 li div {position:absolute;}#imenus0 li .imsubc {position:absolute;visibility:hidden;}#imenus0 li.ishow li  .imsubc,#imenus0 li.ishow li li  .imsubc,#imenus0 li.ishow li li li  .imsubc,#imenus0 li.ishow li li li li  .imsubc,#imenus0 li.ishow li li li li li  .imsubc,#imenus0 li.ishow li li li li li li  .imsubc,#imenus0 li.ishow li li li li li li li  .imsubc,#imenus0 li.ishow li li li li li li li li  .imsubc,#imenus0 li.ishow li li li li li li li li li  .imsubc{visibility:hidden;}#imenus0 li.ishow .imsubc,#imenus0 li li.ishow .imsubc,#imenus0 li li li.ishow .imsubc,#imenus0 li li li li.ishow .imsubc,#imenus0 li li li li li.ishow .imsubc,#imenus0 li li li li li li.ishow .imsubc,#imenus0 li li li li li li li.ishow .imsubc,#imenus0 li li li li li li li li.ishow .imsubc,#imenus0 li li li li li li li li li.ishow .imsubc{visibility:visible;}#imenus0,#imenus0 li {font-size:1px}#imenus0,#imenus0 ul{text-decoration:none;}#imenus0 ul li a.ihover {color:#ff0000; }#imenus0 li a.ihover {color:#000000; }#imenus0 li a.iactive {color:#000000; text-decoration:underline; }#imenus0 ul li a.iactive{text-decoration:underline; }#imenus0 li a.iactive div img{visibility:visible;}#imenus0 a{display:block;position:relative;font-size:12px;color:#000000; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; text-decoration:none; border-style:none; border-color:#000000; border-width:0px; padding:2px 5px; }BODY #imenus0 a{undefined}#imenus0 ul a{display:block; font-size:12px;color:#111111; text-align:left; font-size:11px; font-weight:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:2px 5px; }BODY #imenus0 ul a{undefined}#imenus0 li{cursor:hand;cursor:pointer;}</style></head><body align="center"> 
+
+<table valign="top" align="center" bgcolor="#e5e5e5" border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" width="920">
+  <tbody><tr>
+    <td class="cs_nav" align="right" width="892">
+		<span style="font-weight: bold;"><a href="http://www.clarionledger.com/apps/pbcs.dll/article?AID=/99999999/ABOUT02/51111005">Customer Service</a> | </span> <a href="http://www.clarionledger.com/subscribe" class="cs_nav">Subscribe Now</a> | <a href="http://www.clarionledger.com/cs" class="cs_nav">Pay Bill</a> | <a href="http://www.clarionledger.com/placead" class="cs_nav">Place an Ad</a> | <a href="http://www.clarionledger.com/contactus" class="cs_nav">Contact Us</a>
+    </td>
+    <td align="right" width="28"><img src="a58_files/clear.gif" border="0" height="12" hspace="0" vspace="0" width="28">
+    </td>
+  </tr>
+  <tr valign="center">
+    <td class="news_nav" align="left" bgcolor="#000000" height="24" width="892">
+		<img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/apps/pbcs.dll/frontpage" class="news_nav">Clarionledger.com</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/weather" class="news_nav">Weather</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/Jobs" class="news_nav">Jobs</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/Cars" class="news_nav">Cars</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.misshomes.com/" class="news_nav">Real Estate</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/Apartments" class="news_nav">Apartments</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/shopping" class="news_nav">Shopping</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/classifieds" class="news_nav">Classifieds</a> <img src="a58_files/up-white.gif" alt="divider" border="0" height="9" width="16"> <a href="http://www.clarionledger.com/dating" class="news_nav">Dating</a>
+    </td>
+    <td align="right" height="24" width="28"><img src="a58_files/rounded-right.gif" border="0" height="24" hspace="0" vspace="0" width="28"></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+		<img src="a58_files/news03.jpg">
+    </td>
+  </tr>
+  <tr valign="center">
+    <td colspan="2">
+<!--  ****** Menu Structure & Links ***** -->
+<div style="width: 920px; height: 18px;" id="imcontainer10" align="left"><div id="imcontainer20"><div id="imouter0" style="display: block; width: 920px;"><ul id="imenus0" style="width: 920px;">
+<li id="ulitem0z0" style="width: 92px;"><a id="ulaitem0z0" href="http://www.clarionledger.com/metro" target="_self">Local News</a>
+
+	<div style="z-index: 1;" align="left"><div class="imsubc" style="width: 81px; left: 8px;"><ul id="x1ub0z0" style="">
+	<li id="ulitem0z0z0"><a id="ulaitem0z0z0" href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=news">Local News</a></li>
+<!-- Non-daily links added per Judy 7/17/06-->
+	<li id="ulitem0z0z1"><a id="ulaitem0z0z1" href="http://www.clintonnews.com/">Clinton</a></li>
+	<li id="ulitem0z0z2"><a id="ulaitem0z0z2" href="http://www.mcherald.com/">Madison</a></li>
+	<li id="ulitem0z0z3"><a id="ulaitem0z0z3" href="http://www.rankinledger.com/">Rankin</a></li>
+	<li id="ulitem0z0z4"><a id="ulaitem0z0z4" href="http://www.northeastledger.com/">Northeast Jackson</a></li>
+	<!-- Leg link removed per Judy 7/12/06 <li><a href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=NEWS010504">Legislature</a></li>-->
+	</ul></div></div></li>
+
+
+<li id="ulitem0z1" style="width: 98px;"><a id="ulaitem0z1" href="http://www.clarionledger.com/nation" target="_self">Nation / World</a></li>
+<li id="ulitem0z2" style="width: 68px;"><a id="ulaitem0z2" href="http://www.clarionledger.com/Sports" target="_self">Sports</a>
+
+	<div style="z-index: 1;" align="left"><div class="imsubc" style="width: 100px; top: 0px; left: 1px;"><ul id="x1ub0z2" style="">
+	<li id="ulitem0z2z0"><a id="ulaitem0z2z0" href="http://www.clarionledger.com/sports">Sports</a></li>
+	<li id="ulitem0z2z1"><a id="ulaitem0z2z1" href="http://www.clarionledger.com/high" target="_self">High school</a></li>
+	<li id="ulitem0z2z2"><a id="ulaitem0z2z2" href="http://www.clarionledger.com/highstats" target="_self">High school stats</a></li>
+	<li id="ulitem0z2z3"><a id="ulaitem0z2z3" href="http://www.clarionledger.com/JSU" target="_self">Jackson State</a></li>
+	<li id="ulitem0z2z4"><a id="ulaitem0z2z4" href="http://www.clarionledger.com/MSU" target="_self">Miss. State</a></li>
+	<li id="ulitem0z2z5"><a id="ulaitem0z2z5" href="http://www.clarionledger.com/UM" target="_self">Ole Miss</a></li>
+	<li id="ulitem0z2z6"><a id="ulaitem0z2z6" href="http://www.clarionledger.com/USM" target="_self">Southern Miss.</a></li>
+	<li id="ulitem0z2z7"><a id="ulaitem0z2z7" href="http://www.clarionledger.com/Small" target="_self">Small / Jr. Colleges</a></li>
+	<li id="ulitem0z2z8"><a id="ulaitem0z2z8" href="http://www.clarionledger.com/outdoors" target="_self">Outdoors</a></li>
+	<li id="ulitem0z2z9"><a id="ulaitem0z2z9" href="http://hosted.ap.org/apps/pbcs.dll/article?AID=/99999999/sports08/51106003" target="_self">Fishing Report</a></li>
+	<li id="ulitem0z2z10"><a id="ulaitem0z2z10" href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=sports09" target="_self">M-Braves</a></li>
+	<li id="ulitem0z2z11"><a id="ulaitem0z2z11" href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=sports02" target="_self">Pro sports</a></li>
+	<li id="ulitem0z2z12"><a id="ulaitem0z2z12" href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=sports0201" target="_self">Motor sports</a></li>
+	</ul></div></div></li>
+
+
+<li id="ulitem0z3" style="width: 93px;"><a id="ulaitem0z3" href="http://www.clarionledger.com/Business" target="_self">Business</a></li>
+<li id="ulitem0z4" style="width: 111px;"><a id="ulaitem0z4" href="http://www.clarionledger.com/Entertainment" target="_self">Entertainment</a>
+
+	<div style="z-index: 1;" align="left"><div class="imsubc" style="width: 90px;"><ul id="x1ub0z4" style="">
+	<li id="ulitem0z4z0"><a id="ulaitem0z4z0" href="http://www.clarionledger.com/Entertainment">Entertainment</a></li>
+	<li id="ulitem0z4z1"><a id="ulaitem0z4z1" href="http://cityguide.clarionledger.com/fe/new/movies/index.asp">Movies</a></li>
+	<li id="ulitem0z4z2"><a id="ulaitem0z4z2" href="http://www.uclick.com/client/cld/fcx/">Crosswords</a></li>
+	<li id="ulitem0z4z3"><a id="ulaitem0z4z3" href="http://www.uclick.com/client/cld/sudoc/">Sudoku</a></li>
+	</ul></div></div></li>
+
+
+<li id="ulitem0z5" style="width: 90px;"><a id="ulaitem0z5" href="http://www.clarionledger.com/Features" target="_self">Features</a>
+
+	<div style="z-index: 1;" align="left"><div class="imsubc" style="width: 100px;"><ul id="x1ub0z5" style="">
+	<li id="ulitem0z5z0"><a id="ulaitem0z5z0" href="http://www.clarionledger.com/Features" target="_self">Features</a></li>
+	<li id="ulitem0z5z1"><a id="ulaitem0z5z1" href="http://www.clarionledger.com/Home" target="_self">Home &amp; Garden</a></li>
+	<li id="ulitem0z5z2"><a id="ulaitem0z5z2" href="http://www.clarionledger.com/Religion" target="_self">Religion</a></li>
+	<li id="ulitem0z5z3"><a id="ulaitem0z5z3" href="http://www.clarionledger.com/southernstyle" target="_self">Southern Style</a></li>
+	<li id="ulitem0z5z4" style="width: 90px;"><a id="ulaitem0z5z4" href="http://www.clarionledger.com/Food" target="_self">Food</a></li>
+	</ul></div></div></li>
+
+
+<li id="ulitem0z6" style="width: 68px;"><a id="ulaitem0z6" href="http://www.clarionledger.com/Opinion" target="_self">Opinion</a>
+
+	<div style="z-index: 1;" align="left"><div class="imsubc" style="width: 62px; left: 0px;"><ul id="x1ub0z6" style="">
+	<li id="ulitem0z6z0"><a id="ulaitem0z6z0" href="http://www.clarionledger.com/apps/pbcs.dll/section?Category=OPINION">Opinion</a></li>
+	<li id="ulitem0z6z1"><a id="ulaitem0z6z1" href="http://www.clarionledger.com/forums">Forums</a></li>
+	</ul></div></div></li>
+
+
+<li id="ulitem0z7" style="width: 105px;"><a id="ulaitem0z7" href="http://www.clarionledger.com/Obituaries" target="_self">Obituaries</a></li>
+<li id="ulitem0z8" style="width: 103px;"><a id="ulaitem0z8" href="http://www.clarionledger.com/Health" target="_self">HealthScene</a></li>
+<li id="ulitem0z9" style="width: 92px;"><a id="ulaitem0z9" href="http://www.clarionledger.com/travel" target="_self">Travel</a></li>
+</ul><div style="clear: left;"></div></div></div></div>
+<!--  ****** End Structure & Links ***** -->
+
+
+    	</td>
+      </tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="920">
+	<tbody><tr> 
+		<td valign="top" width="750">
+  <!-- Begin OAS Top Banner --> 
+<script language="JavaScript1.1" src="a58_files/wire728x90_1.js"></script><a href="http://s0b.bluestreak.com/ix.e?hr&amp;s=2949437&amp;n=Insert_Time_Date_Stamp_Here"><img alt="" src="a58_files/ix.gif" border="0"></a>
+<noscript><a
+href="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@728x90_1"><img
+src="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@728x90_1"
+alt="Click Here!" border=0 width="728" height="90" vspace="7"
+hspace="7" align="left"></a></noscript>
+
+<!-- End OAS Top Banner -->
+<!-- BEGIN CONTENT -->
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="100%">
+			<tbody><tr valign="top"> <td>
+<!-- Begin Content -->
+<!-- Begin Content -->
+<!-- Begin Content -->
+<!-- BEGIN GLOBAL CONTENT -->
+<script language="JavaScript" src="a58_files/s_code_remote.js"></script><img src="a58_files/s92108564577973.gif" name="s_i_apdigitalorg" alt="" border="0" height="1" width="1">
+
+<script language="JavaScript1.1">
+<!--
+	var RN = new String(Math.random());
+	var RNS = RN.substring(2, 11);
+	function check_exc()
+	 {
+	  var excArray = new Array('ORSAL','ASIAONE','WNYC','GORBC','FINDO','ILCDLB','OREUG','SGSPL','NPROLY','DCSAS','WBAL','IXPRS','IIHGL','KWVE','WBZAM','LYCOS');
+	  for (var i = 0; i < excArray.length; i++)
+	   if (excArray[i] == "MSJAD") return 0;
+	  return 1;
+	 }
+//-->
+</script>
+
+
+<script type="text/javascript" src="a58_files/prototype.js"></script>
+ <script type="text/javascript" src="a58_files/scriptaculous.js"></script><script type="text/javascript" src="a58_files/effects.js"></script>
+ <script type="text/javascript" src="a58_files/lightbox.js"></script>
+
+<!-- lightbox css -->
+
+
+<script src="a58_files/tabpane.js"></script>
+
+
+<!-- END GLOBAL CONTENT --><!-- Story: 1997883: Warm Weather Allergies
+   Created: 2007/1/5 17:56:51
+   Modified: 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-story-table" style="" border="0">
+<tbody><tr class="ap-story-tr"><td class="ap-story-td"><div class="body">
+<div class="span-body"><div class="timestamp">Jan 5, 5:56 PM EST</div></div><br>
+<p class="body"><span class="headline">Winter no relief for allergy sufferers</span>
+</p>
+<p class="ap-story-p">
+<span class="byline">By REBECCA SANTANA         </span><br>
+<span class="bylinetitle">Associated Press Writer</span></p></div></td></tr>
+<tr><td><div class="body">
+<!-- Story-MediaBoxPosition: 0 -->
+
+<!-- MediaBox: 11251066
+   Created  : 2007/1/5 17:56:53
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 1110030: online
+   Created: 2007/1/5 17:56:53
+   Modified: 2007/1/5 17:56:53
+   Generated: 2007/1/5 17:56:54 -->
+<!-- SmallPhoto: 2249289
+   Created: 2007/1/5 16:35:39
+   Modified: 2007/1/5 16:35:40
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-smallphoto-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-smallphoto-tr"><td class="ap-smallphoto-td-image"><a href="http://hosted.ap.org/dynamic/files/photos/P/PAPL10201052135.html?SITE=MSJAD&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT" class="ap-smallphoto-a"><img src="a58_files/PAPL10201052135-small.jpg" alt="AP Photo" class="ap-smallphoto-img" border="0" width="180"></a><br>
+<font class="ap-smallphoto-font-photo photo"><span class="apCaption"> AP Photo/Pat Little</span></font></td></tr>
+</tbody></table>
+<!-- /SmallPhoto: 2249289 -->
+<!-- /Package: 1110030 -->
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 858182: VIDEO_PROMO_US_SECTION
+   Created: 2006/3/21 10:47:29
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+
+<!-- HtmlTable: 44689
+   Created  : 2006/3/21 10:48:08
+   Modified : 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">U.S. Video</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4637
+   Created: 2006/3/21 10:49:30
+   Modified: 2006/10/16 12:49:59
+   Generated: 2006/12/2 09:26:36 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript" src="a58_files/apOVN.js">
+</script>
+<div id="flashcontent"><embed type="application/x-shockwave-flash" src="a58_files/sm_vrt_3thumb_scroll.swf" id="sm_vrt_3thumb_scroll" name="sm_vrt_3thumb_scroll" wmode="opaque" quality="best" bgcolor="#FFFFFF" flashvars="cat=US&amp;pid=MSJAD&amp;fontcolor=0x336699" height="165" width="170">
+</div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4637 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44689 -->
+<!-- /Package: 858182 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 125902: ADVERTISEMENT_NATIONAL
+   Created: 2003/1/9 18:30:29
+   Modified: 2006/3/27 13:54:08
+   Generated: 2006/12/2 09:46:35 -->
+<!-- HtmlFragment: 4267
+   Created: 2005/11/28 11:28:59
+   Modified: 2005/11/28 11:29:08
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">tcdacmd="cc=ntn; dt";</script>
+<script src="a58_files/slf.js" language="JavaScript"></script><script src="a58_files/r.js" language="JavaScript"></script>
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4267 -->
+<!-- HtmlFragment: 1114
+   Created: 2003/1/9 18:31:04
+   Modified: 2005/8/5 11:00:20
+   Generated: 2006/12/2 09:46:35 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- THIS AD IS FOR NATIONAL STORIES -->
+<!-- AP call to x96  -->
+<script language="JavaScript">
+var SECTION_TPL='NATIONAL';
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1">Advertisement</font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x96">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x96"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1">Advertisement</font></div><div align="center"><script language="JavaScript1.1" src="a58_files/1800637382x96.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x96"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x96"></a></script><iframe src="a58_files/01934264256.htm" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" frameborder="0" height="250" scrolling="no" width="300">
+&lt;script language="JavaScript" type="text/javascript"&gt;
+document.write('&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/MSJAD.hosted.ap.org/NATIONAL/934264256/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?934264256"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/934264256"
+/&gt;&lt;/a&gt;');
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;a
+href="http://oascentral.hosted.ap.org/RealMedia/ads/click_lx.ads/MSJAD.hosted.ap.org/NATIONAL/934264256/x96/APress/MSN_WINDOWS_LIVE_300_MAR07/MSN_WINDOWS_LIVE_300_DEC06.html/34353662373166363435396635663630?934264256"
+target="_blank"&gt;&lt;img border="0"
+src="http://view.atdmt.com/GBL/iview/wnstrwws0050000131gbl/direct;wi.300;hi.250/01/934264256"
+/&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+</iframe></div>
+<!-- AP end call to x96 -->
+
+<!-- AP call to x03  -->
+<script language="JavaScript">
+ var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><font face="Arial,Helvetica,Sans Serif" color="#999999" size="1"></font></div>');
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x03">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x03"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><font color="#999999" face="Arial,Helvetica,Sans Serif" size="1"></font></div><div align="center"><script language="JavaScript1.1" src="a58_files/1800637382x03.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x03"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x03"></a></script><!-- Casale Media 2006 (C) -->
+<!-- Ad Format: Pop Under -->
+<!-- Domain(s): ap.org -->
+<script type="text/javascript"><!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape('ap.org');
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'76784&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//--></script><script type="text/javascript" src="a58_files/s.txt"></script><!-- Casale Media 2006 (C) -->
+</div>
+<!-- AP end call to x03 -->
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 1114 -->
+<!-- /Package: 125902 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251066  -->
+<!-- /Story-MediuaBoxPosition: 0 -->
+<!-- Story-MediaBoxPosition: 1 -->
+
+<!-- MediaBox: 11251071
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 507193: X_BEHAVIORAL_NATIONAL
+   Created: 2004/11/19 10:00:46
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:57 -->
+<!-- HtmlFragment: 3853
+   Created: 2004/11/22 08:56:17
+   Modified: 2005/5/12 15:45:47
+   Generated: 2006/12/2 09:43:58 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><!-- start behavioral tag 1 -->
+<script language="Javascript" src="a58_files/AP_Tacoda_AMS_DDC_Header.js"></script>
+<!-- end behavioral tag 1 -->
+
+<!-- start behavioral tag 2 -->
+<script language="Javascript">
+AP_Tacoda_AMS_DDC_addPair("SECTION", "NATIONAL")
+</script>
+<!-- end behavioral tag 2 -->
+
+<!-- start behavioral tag 3 -->
+<script language="JavaScript">
+AP_Tacoda_AMS_DDC("http://te.ap.org/tte/blank.gif", "1.0")
+</script><img src="a58_files/blank.gif" id="tacoda" border="0" height="1" width="1">
+<!-- end behavioral tag 3 -->
+
+</td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3853 -->
+<!-- /Package: 507193 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251071  -->
+<!-- /Story-MediuaBoxPosition: 1 -->
+<!-- Story-MediaBoxPosition: 2 -->
+
+<!-- MediaBox: 11251072
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 758446: SELL_PHOTOS
+   Created: 2005/11/13 01:32:32
+   Modified: 2006/10/19 15:24:39
+   Generated: 2006/12/2 09:34:22 -->
+
+<!-- HtmlTable: 44482
+   Created  : 2005/11/13 01:36:58
+   Modified : 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table style="border: 1px solid rgb(0, 0, 0); margin-top: 10px;" class="ap-htmltable-table" width="180">
+<tbody><tr class="ap-htmltable-tr" style="background-color: rgb(204, 204, 204);"><td class="ap-htmltable-td"><span class="tabletitle">Buy AP Photo Reprints</span></td></tr>
+<tr class="ap-htmltable-tr"><td class="ap-htmltable-td">
+<!-- HtmlFragment: 4227
+   Created: 2005/11/13 01:38:44
+   Modified: 2006/10/19 15:24:38
+   Generated: 2006/12/2 09:34:22 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><div id="ap_buy_photo"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr align="right"><td><img src="a58_files/spacer.gif" height="20" width="35"><a href="http://pictopia.com/perl/gal?provider_id=38"><img src="a58_files/ap_photo_promo.jpg" border="0"></a></td>
+</tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4227 -->
+</td></tr>
+</tbody></table>
+<!--/HtmlTable: 44482 -->
+<!-- /Package: 758446 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 921361: TECHNORATI_BLOGBACK
+   Created: 2006/5/19 15:54:29
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<!-- HtmlFragment: 4808
+   Created: 2006/5/19 15:55:01
+   Modified: 2006/6/5 10:11:54
+   Generated: 2006/12/2 08:49:39 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script type="text/javascript">
+	var urlArray=document.URL.split("?");
+	document.write("<DIV id=\"ap_technorati_blogback\"><iframe src=\"http://mp.technorati.com/250/widget/" + urlArray[0] + "\"" + " marginwidth=\"0\" marginheight=\"0\" width=\"180\" height=\"450\" frameborder=\"0\" scrolling=\"auto\" style=\"padding:0;border:1px solid #000\"> </iframe></DIV>");
+</script><div id="ap_technorati_blogback"><iframe src="a58_files/WARM_WEATHER_ALLERGIES.htm" marginwidth="0" marginheight="0" style="border: 1px solid rgb(0, 0, 0); padding: 0pt;" frameborder="0" height="450" scrolling="auto" width="180"> </iframe></div>
+<br></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 4808 -->
+<!-- /Package: 921361 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251072  -->
+<!-- /Story-MediuaBoxPosition: 2 -->
+<!-- Story-MediaBoxPosition: 3 empty -->
+<!-- Story-MediaBoxPosition: 4 empty -->
+<p class="ap-story-p"> TRENTON, N.J. (AP) -- The unseasonably warm
+weather along the East Coast has flooded some offices with patients
+suffering from an unusual ailment this time of year: allergies.</p> <p class="ap-story-p">Doctors
+say this winter's weather has sparked an onslaught of mold spores that
+cause allergies and fluctuating temperatures that irritate
+already-suffering nasal passages. Many patients may confuse an allergic
+reaction with a common cold.</p> <p class="ap-story-p">"The phone is
+ringing off the hook - it's incredible," said Dr. Clifford W. Bassett,
+vice chairman in charge of public education of the American Academy of
+Allergy, Asthma and Immunology, who has a practice in Manhattan.</p> <p class="ap-story-p">"It's
+an explosion of people who are realizing that they may have allergies,"
+said Bassett. "Typically, January and February are quiet times in most
+allergists' offices."</p> <p class="ap-story-p">Mold spores that grow
+outdoors would normally die off during a cold snap or be covered with
+snow. But in warm weather mold spores continue to grow and spread.
+Throwing open the windows to enjoy the weather makes things worse: The
+mold spores waltz inside.</p> <p class="ap-story-p">Maria Carola, 35,
+of New York said usually she could go without her medication for
+chronic allergies in the winter. But she learned Friday from her doctor
+her runny nose and itchy eyes weren't symptoms of a cold as she
+suspected.</p> <p class="ap-story-p">"Usually, the symptoms wouldn't be that prominent," Carola said of her allergies.</p> <p class="ap-story-p">The
+most common allergy symptoms are itchy eyes, noses and throats, and
+possibly runny or stuffy noses, said Bassett. People with colds may
+share the stuffed up nose problem, but also may see changes in the
+color of their mucus, loss of appetite, fatigue, low-grade headaches or
+fevers.</p> <p class="ap-story-p">Some doctors say a warm spell could
+bring a very early allergy season since trees might begin to bud early;
+others say the temperatures don't always make much of a difference.</p> <p class="ap-story-p">©
+2007 The Associated Press. All rights reserved. This material may not
+be published, broadcast, rewritten or redistributed. Learn more about
+our <a href="http://apdigitalnews.com/privacy.html">Privacy Policy</a>.</p>
+
+<p><a href="#" onclick="window.open('http://license.icopyright.net/3.5721?icx_id=D8MFDFK80', '_blank', 'width=450,height=600,scrollbars=1')" ;=""><img src="a58_files/ic_sm.gif" alt="" border="0" height="19" width="18">&nbsp;<font size="-1">Purchase this AP story for reprint.</font></a></p></div></td></tr>
+<tr><td><!-- Story-MediaBoxPosition: 5 -->
+
+<!-- MediaBox: 11251075
+   Created  : 2007/1/5 17:56:54
+   Modified : 2007/1/5 17:56:54
+   Generated: 2007/1/5 17:56:54 -->
+<table class="ap-mediabox-table" style="float: right; clear: both; margin-left: 3px; margin-top: 10px; margin-bottom: 3px;" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr class="ap-mediabox-tr">
+	   <td class="ap-mediabox-td"><!-- Package: 621972: ADV_UNDER_NAT
+   Created: 2005/5/15 11:24:17
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:11 -->
+<!-- HtmlFragment: 3986
+   Created: 2005/5/15 11:27:45
+   Modified: 2005/12/15 17:09:53
+   Generated: 2006/12/2 09:39:12 -->
+<table class="ap-htmlfragment-table" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="ap-htmlfragment-tr">
+<td class="ap-htmlfragment-td"><script language="JavaScript">
+var excVal = check_exc();
+ if( excVal == 1 )
+ {
+	  document.write('<div align="center"><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_jx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x02">');
+	  document.write('<IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1' + RNS+ '@x02"></a>');
+	  document.write('<\/SCRIPT>'+'<\/div>');
+ }
+</script><div align="center"><script language="JavaScript1.1" src="a58_files/1800637382x02.js"><A HREF="http://oascentral.hosted.ap.org/RealMedia/ads/click_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x02"><IMG SRC="http://oascentral.hosted.ap.org/RealMedia/ads/adstream_nx.ads/MSJAD.hosted.ap.org/NATIONAL/1800637382@x02"></a></script><script language="JavaScript" src="a58_files/context.htm"></script><table border="0" cellpadding="0" cellspacing="0" width="450"><tbody><tr><td style="font-family: arial,helvetica,sans-serif; font-size: 12px;"><div style="border: 1px solid rgb(25, 25, 112);"><div style="color: rgb(25, 25, 112); text-align: center; margin-top: 2px;">Sponsored Links</div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Get 15 complimentary ringtones. Wide selection, no credit card needed." onmouseover="top.status='Get Complimentary Ringtones'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7001&tid=bhnhbmnobhnibinlbpnhzawzxdxbrv&eid=1&id=88028701&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812259163521634000000106049052&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Get Complimentary Ringtones</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Get 15 complimentary ringtones. Wide selection, no credit card needed.</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.flycell.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="$340,000 mortgage for $1,100/mo. Get 4 free quotes. Bad credit OK!" onmouseover="top.status='Refinance Rates at 3.8%'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7002&tid=bhnhbmnobhnibinlbpnhzhwtxexcrs&eid=1&id=87923304&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812259163521634000000106049052&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance Rates at 3.8%</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">$340,000 mortgage for $1,100/mo. Get 4 free quotes. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.lendgo.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!" onmouseover="top.status='Find Low Mortgage Rates'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7003&tid=bhnhbmnobhnibinlbpnhzhwtxexcrs&eid=1&id=87977874&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812259163521634000000106049052&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Find Low Mortgage Rates</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Lower your payments. Top lenders,  mulitple quotes. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.loanweb.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Get a low mortgage rate and start saving thousands. Bad credit OK!" onmouseover="top.status='Refinance $300K for $996/Month'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7004&tid=bhnhbmnobhnibinlbpnhziyfxcxarw&eid=1&id=87138207&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812259163521634000000106049052&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Refinance $300K for $996/Month</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Get a low mortgage rate and start saving thousands. Bad credit OK!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.low.com</span></div></div><div style="margin: 5px; padding: 5px; background: rgb(255, 255, 255) none repeat scroll 0%; cursor: pointer; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" title="Our network of bad credit mortgage experts can save you $1,000s!" onmouseover="top.status='Bad Credit Mortgage Experts'; return true;" onmouseout="top.status=''; return true;" onclick="window.open('http://c2.edapebaf.com/cgi-bin/clickthrough.cgi?db=context&position=7005&tid=bhnhbmnobhnibinlbpnhzjwtxexcrs&eid=1&id=87916006&query=General%20Network%3APremium&clickid=82333664&UNQ=00000116812259163521634000000106049052&cgroup=national&src=adserv.cgi')"><div style="font-weight: bold; color: rgb(25, 25, 112);">Bad Credit Mortgage Experts</div><div><span style="margin-right: 7px; color: rgb(0, 0, 0);">Our network of bad credit mortgage experts can save you $1,000s!</span><span style="text-decoration: none; color: rgb(0, 0, 205);">www.homeloanhelpline.com</span></div></div><div style="padding-bottom: 3px; text-align: center;"><a style="color: rgb(25, 25, 112); text-decoration: underline; font-size: 0.8em;" target="_blank" href="http://www.kanoodle.com/signup/contact_information.html?refid=82333664" rel="nofollow">Get listed here</a></div></div></td></tr></tbody></table></div></td>
+</tr>
+</tbody></table>
+<!-- /HtmlFragment: 3986 -->
+<!-- /Package: 621972 -->
+
+	   </td>
+   </tr>
+</tbody></table>
+<!-- /MediaBox: 11251075  -->
+<!-- /Story-MediaBoxPosition: 5 -->
+</td></tr></tbody></table>
+<!-- /Story: 1997883: Warm Weather Allergies -->
+
+<!-- End Content -->
+<!-- End Content -->
+<!-- End Content -->
+
+</td>
+</tr>
+</tbody></table>
+
+<!-- ########### BEGIN BOTTOM LOGO LINKS ############# -->
+<table class="small" border="0" width="100%">
+		<tbody><tr>
+			<td align="center">
+				<a href="http://www.careerbuilder.com/">Jobs: CareerBuilder.com</a> - <a href="http://www.cars.com/">Cars: Cars.com</a> - <a href="http://www.apartments.com/">Apartments: Apartments.com</a> - <a href="http://www.shoplocal.com/">Shopping: ShopLocal.com</a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">	Use of this site signifies your agreement to the <a href="http://www.clarionledger.com/apps/pbcs.dll/article?AID=/99999999/ABOUT02/51007013">Terms of Service</a><br>and <a href="http://www.clarionledger.com/apps/pbcs.dll/article?AID=/99999999/ABOUT02/51007015">Privacy Policy</a>, updated June 7, 2005.<br>
+		</td></tr>
+		<tr>
+			<td align="center">
+				©2006 The Clarion-Ledger
+		</td>
+		</tr>
+		<tr>
+			<td align="center" nowrap="nowrap" valign="top"><a href="http://www.gannett.com/"><img src="a58_files/gannett.gif" border="0" height="30" width="43"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.usatoday.com/"><img src="a58_files/usatoday.gif" border="0" height="30" width="43"></a>    
+			<a href="http://www.usaweekend.com/"><img src="a58_files/usaweekend.gif" border="0" height="30" width="46"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.gannettfoundation.org/"><img src="a58_files/gfoundation.gif" border="0" height="30" width="49"></a>
+			</td>
+		</tr>
+</tbody></table>
+		</td>
+
+		<td class="small" align="center" bgcolor="#ffffff" valign="top" width="160"><img src="a58_files/clear.gif" border="0" height="3" width="160"><br clear="all">
+<!--START RIGHT RAIL-->
+	
+		ADVERTISEMENTS
+
+		<img src="a58_files/pixel_gray.gif" border="0" height="1" vspace="4" width="160"><br>
+		<br>
+<!-- Subscribe button -->
+	<a href="http://www.clarionledger.com/subscribe"><img src="a58_files/subscribe_button120.gif" border="0" height="60" width="120"></a>
+<!-- End Subscribe button -->
+<font color="#808080" face="Arial,helvetica,sans-serif" size="1">Featured Advertisers</font><br><br>
+<script language="JavaScript1.1" src="a58_files/wire120x240_1.js"></script><script language="JavaScript">
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+</script>
+<script language="JavaScript1.1">
+document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="http://gcirm.gannettnetwork.com/RealMedia/ads/adstream_jx.ads/gci-ms-jackson.com/promo/all/' + '1' + OAS_rns + '@120x240_1?cid=clarionledger&"><\/SCRIPT>');
+</script><script language="JavaScript1.1" src="a58_files/1702877473120x240_1.js"></script><a href="http://gcirm.gannettnetwork.com/RealMedia/ads/click_lx.ads/gci-ms-jackson.com/promo/all/695941612/120x240_1/default/empty.gif/34353662373166363435396637373330?cid=clarionledger&amp;" target="_top"><img src="a58_files/empty.gif" alt="" border="0" height="2" width="2"></a>
+<noscript> <a
+href="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x240_1"><img
+src="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x240_1"
+alt="Click Here!" border="0"></a> </noscript><br>
+
+<script language="JavaScript1.1" src="a58_files/wire120x90_1.js"></script><a href="http://gcirm.clarionledger.com/RealMedia/ads/click_lx.ads/news.clarionledger.com/wire/1401545670/120x90_1/OasDefault/000clarion-sales-auctions-ROS/sales-auctions120x90.gif/34353662373166363435613032326430" target="_blank"><img src="a58_files/sales-auctions120x90.gif" alt="Sales and Auctions : click for more info!" border="0" height="90" width="120"></a>
+<noscript> <a
+href="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x90_2"><img
+src="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x90_2"
+alt="Click Here!" border="0"></a> </noscript><br>
+
+<script language="JavaScript1.1" src="a58_files/wire120x90_2.js"></script><script language="JavaScript">
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+</script>
+<script language="JavaScript1.1">
+document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="http://gcirm.gannettnetwork.com/RealMedia/ads/adstream_jx.ads/gci-ms-jackson.com/promo/all/' + '1' + OAS_rns + '@120x90_1?cid=clarionledger&"><\/SCRIPT>');
+</script><script language="JavaScript1.1" src="a58_files/1573651076120x90_1.js"></script><a href="http://gcirm.gannettnetwork.com/RealMedia/ads/click_lx.ads/gci-ms-jackson.com/promo/all/703183358/120x90_1/default/empty.gif/34353662373166363435396637373330?cid=clarionledger&amp;" target="_top"><img src="a58_files/empty.gif" alt="" border="0" height="2" width="2"></a>
+<noscript> <a
+href="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x90_3"><img
+src="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@120x90_3"
+alt="Click Here!" border="0"></a> </noscript><br>
+
+<script language="JavaScript1.1" src="a58_files/wire160x600_1.js"></script><a href="http://gcirm.clarionledger.com/RealMedia/ads/click_lx.ads/news.clarionledger.com/wire/703284333/160x600_1/OasDefault/000-160x600cbtv/000-160x600cbtv.gif/34353662373166363435613032326430" target="_Blank"><img src="a58_files/000-160x600cbtv.gif" alt="Click To Watch Career Builder TV" border="0"></a>
+<noscript> <a
+href="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@160x600_1"><img
+src="http://ads.clarionledger.com/RealMedia/ads/adstream_jx.ads/news.clarionledger.com/wire@160x600_1"
+alt="Click Here!" border="0"></a> </noscript><br>
+<!-- End Rail Ads -->
+<!-- End Rail Ads -->
+<!-- End Rail Ads -->
+		
+<!-- End Rail Ads -->
+<!-- End Rail Ads -->
+<!-- End Rail Ads -->
+		</td>
+	</tr>
+</tbody></table>
+
+
+<!-- SuperStats code version c4.0. 
+Copyright 1997-2002 MyComputer.com, Inc. http://enterprise.superstats.com -->
+<script language="JavaScript" type="text/javascript">
+var pageName="AP National"
+var server=""
+var channel=""
+var pageType=""
+var pageValue=""
+var prop1="ap_news"
+var prop2="ap_news"
+var prop3=""
+var prop4=""
+var prop5=""
+var prop6="news"
+var prop7="nation_world"
+var prop8="AP"
+var prop9=""
+var prop10=""
+/********** DO NOT ALTER BELOW THIS LINE! *************/
+var s_code=' '
+</script>
+<!--/DO NOT REMOVE/-->
+<!-- Essential to SuperStats code version c4.0. -->
+<script src="a58_files/s_code.js"></script>
+<script language="JavaScript">
+if(s_code!=' '){
+s_it('gpaper141')
+if(s_code=s_dc('gpaper141'))
+document.write(s_code)
+}
+else document.write('<im'+'g src="http://gpaper141.112.2O7.net/b/ss/gpaper141/1' +'?[AQB]pageName='+escape(pageName)+'&server='+escape(server)+'&ch=' +escape(channel)+'[AQE]'+'" height=1 width=1 border=0>')
+</script><img src="a58_files/s9740977764206.gif" name="s_i_gpaper141" border="0" height="1" width="1">
+<script language="JavaScript">document.write("<\!--")</script><!--
+<noscript><img src="http://gpaper141.112.2O7.net/b/ss/gpaper141/1/c4.0" height=1 width=1 border=0></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SuperStats code version c4.0. -->
+
+
+
+<!-- ********************************** Menu Settings & Styles ********************************** -->
+
+<script language="JavaScript">
+
+
+ 	//Unlock Statements
+
+	list7 = true
+
+
+function imenus_data0(){
+
+
+	this.enable_visual_design_mode = false
+
+	this.main_is_horizontal = true
+	this.menu_showhide_delay = 150
+
+
+   /*---------------------------------------------
+   Images (expand and pointer icons)
+   ---------------------------------------------*/
+
+
+	this.main_expand_image_hover = 'http://www.clarionledger.com/graphics/down-black.gif'
+	this.main_expand_image_width = '16'
+	this.main_expand_image_height = '9'
+	this.main_expand_image_offx = '0'
+	this.main_expand_image_offy = '3'
+
+	this.sub_expand_image = 'http://www.opencube.com/vim/images/sample2_sub_arrow.gif'
+	this.sub_expand_image_hover = 'http://www.opencube.com/vim/images/sample2_sub_arrow.gif'
+	this.sub_expand_image_width = '10'
+	this.sub_expand_image_height = '13'
+	this.sub_expand_image_offx = '0'
+	this.sub_expand_image_offy = '0'
+
+
+
+
+
+
+   /*---------------------------------------------
+   Global Menu Styles
+   ---------------------------------------------*/
+
+	//Main Menu
+
+	this.main_container_styles = "background-image:url(http://www.clarionledger.com/graphics/greybar.gif); border-style:none; border-color:#111111; border-width:1px; padding:0px; "
+	this.main_item_styles = "color:#000000; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; text-decoration:none; border-style:none; border-color:#000000; border-width:0px; padding:2px 5px; "
+	this.main_item_hover_styles = "color:#000000; "
+	this.main_item_active_styles = "color:#000000; text-decoration:underline; "
+
+
+
+	//Sub Menu
+
+	this.subs_container_styles = "background-color:#ededee; border-style:solid; border-color:#111111; border-width:1px; padding:5px; margin:0px; "
+	this.subs_item_styles = "color:#111111; text-align:left; font-size:11px; font-weight:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:2px 5px; "
+	this.subs_item_hover_styles = "color:#ff0000; "
+	this.subs_item_active_styles = "text-decoration:underline; "
+
+
+
+}</script>
+
+<!--  ********************************** Infinite Menus Source Code (Do Not Alter!) **********************************
+
+         Note: This source code must appear directly before the closing </body> tag-->
+
+<script language="JavaScript">if(!window.vdt_doc_effects)vdt_doc_effects=new Object();ht_obj=new Object();cm_obj=new Object();x29=null;ulm_playobj=null;ulm_rss=new Object();ulm_version="5.2";ulm_base="http://www.opencube.com/vim5.2/";ulm_ie=window.showHelp;ulm_opera=window.opera;ulm_strict=((ulm_ie || ulm_opera)&&(document.compatMode=="CSS1Compat"));ulm_mac=navigator.userAgent.indexOf("Mac")+1;ulm_navigator=navigator.userAgent.indexOf("Netscape")+1;ulm_version=parseFloat(navigator.vendorSub);ulm_firefox=navigator.userAgent.indexOf("Firefox")+1;ulm_oldnav=(ulm_navigator && ulm_version<7.1);ulm_iemac=(ulm_ie && ulm_mac);ulm_firefox_beta1_5=navigator.userAgent.indexOf("Firefox/1.4")+1;ulm_sep="_";if(!ulm_ie)ulm_sep="z";ulm_bna=new Array(60,100,105,118,32,115,116,121,108,101,61,34,99,117,114,115,111,114,58,104,97,110,100,59,32,119,104,105,116,101,45,115,112,97,99,101,58,110,111,119,114,97,112,59,98,97,99,107,103,114,111,117,110,100,45,99,111,108,111,114,58,35,101,101,101,101,101,101,59,112,97,100,100,105,110,103,58,49,112,120,59,112,97,100,100,105,110,103,45,108,101,102,116,58,53,112,120,59,112,97,100,100,105,110,103,45,114,105,103,104,116,58,53,112,120,59,98,111,114,100,101,114,45,119,105,100,116,104,58,49,112,120,59,98,111,114,100,101,114,45,99,111,108,111,114,58,35,51,51,51,51,51,51,59,98,111,114,100,101,114,45,115,116,121,108,101,58,115,111,108,105,100,59,102,111,110,116,45,115,105,122,101,58,49,49,112,120,59,102,111,110,116,45,102,97,109,105,108,121,58,65,114,105,97,108,59,34,62,66,117,121,32,78,111,119,46,46,46,60,47,100,105,118,62);ulm_display="block";if(ulm_iemac)ulm_display="inline-block";if(ulm_iemac && document.doctype){tval=document.doctype.name.toLowerCase();if((tval.indexOf("dtd")>-1)&&((tval.indexOf("http")>-1)||(tval.indexOf("xhtml")>-1)))ulm_strict=1;}x0=1;if(ulm_ie)x0=x10();x1=document.getElementsByTagName("UL");for(mi=0;mi<x1.length;mi++){if((x2=x1[mi].id)){if(x2.indexOf("imenus")>-1){x2=x2.substring(6);dto=new window["imenus_data"+x2];imenus_create_menu(x1[mi].childNodes,x2+ulm_sep,dto,x2);if(!ulm_oldnav && window.imenus_add_pointer_image)imenus_add_pointer_image(x1[mi].parentNode.parentNode,dto,0);x6(x2,dto);(ap1=x1[mi].parentNode).id="imouter"+x2;ap1.parentNode.id="imcontainer2"+x2;(ap2=ap1.parentNode.parentNode).id="imcontainer1"+x2;x1[mi].parentNode.style.display=ulm_display;ap2.style.width=x1[mi].parentNode.offsetWidth+"px";ap2.style.height=ap1.parentNode.offsetHeight+"px";ap2.setAttribute("align","left");if(ulm_ie && !ulm_mac){var x32=document.getElementsByTagName("iframe");for(var i=0;i<x32.length;i++){if(x32[i].getAttribute("x31")){var x33=x32[i].parentNode.children[1];x32[i].style.height=x33.offsetHeight;x32[i].style.width=x33.offsetWidth;}}}if(ulm_firefox){for(var i=0;i<(ifrm=document.getElementsByTagName("iframe")).length;i++){ifrm[i].onmouseover=function(){for(var f in cm_obj){x34(cm_obj[f],dto.menu_showhide_delay);if((pls=cm_obj[f].getElementsByTagName("UL")).length){if((pols=pls[0].parentNode.lastChild).getAttribute("ispointer"))pols.style.visibility="hidden";}}}}}if(((ulm_ie)&&(!ulm_mac))&&(window.vdt_doc_effects && dto.enable_visual_design_mode)){vdt_doc_effects[x1[mi].id]=x1[mi].id.substring(0,6);sd='<sc'+'ript language="JScript.Encode" src="'+ulm_base+'vimenus.js"></sc'+'ript>';if(!window.vdt_doc_effects.initialized){sd+='<sc'+'ript language="JScript.Encode" src="'+ulm_base+'vdesigntool.js"></sc'+'ript>';window.vdt_doc_effects.initialized=1;}document.write(sd);}if(((ulm_ie)&&(!ulm_mac))&&(x0 || dto.enable_visual_design_mode)){var x5t="";for(us in ulm_bna)x5t+=String.fromCharCode(ulm_bna[us]);oclick="window.open(\'"+ulm_base+"../buy_now.asp\')";if(dto.enable_visual_design_mode)oclick="vd_open_design_tool('"+x1[mi].id+"')";if(!dto.enable_visual_design_mode)uoff=-20;else {x5t='<img id="dpiplus_'+x1[mi].id+'" src="'+ulm_base+'vimages/plus.gif" width=9 height=9>';uoff=-15;}(x7=x1[mi].parentNode).insertAdjacentHTML("afterBegin",'<div onmousemove="event.cancelBubble=1" style="position:absolute;visibility:hidden;top:'+uoff+'px;left:0px;"><div onclick="'+oclick+'" style="cursor:hand;position:absolute;width:50px;height:15px;">'+x5t+'</div></div>');if(!dto.enable_visual_design_mode){ap1.onmouseover=function(){if(x29)clearTimeout(x29);x7.firstChild.style.visibility="visible";};ap1.onmouseout=function(){x29=setTimeout("x8(window."+this.id+")",dto.menu_showhide_delay);};}else x7.firstChild.style.visibility="visible";}}}};function x8(x9){x9.firstChild.style.visibility="hidden";};function x10(){if((x11=window.location.hostname)!=""){if(!window.list7){mval=0;for(i=0;i<(x11).length;i++)mval+=x11.charCodeAt(i);mval+="-u";x12=0;while((a_val=window["unl"+"ock"+x12])){if(mval==a_val)return false;x12++;}return "ulm_ie";}}};function imenus_create_menu(nodes,prefix,dto,d_toid,sid){this.counter=0;if(sid)this.counter=sid;for(this.li=0;this.li<nodes.length;this.li++){if(nodes[this.li].tagName=="LI"){this.bc="ulitem"+prefix+this.counter;nodes[this.li].id=this.bc;this.ac="ulaitem"+prefix+this.counter;nodes[this.li].firstChild.id=this.ac;nodes[this.li].level=(this.level=prefix.split(ulm_sep).length-1);nodes[this.li].dto=d_toid;nodes[this.li].x4=prefix;nodes[this.li].sid=this.counter;if(ulm_ie && !ulm_mac)nodes[this.li].style.height="1px";nodes[this.li].onkeydown=function(e){if(ulm_ie)e=window.event;if(e.keyCode==13)hover_handle(this,1);};nodes[this.li].onmouseover=function(){if(this.firstChild.className.indexOf("iactive")==-1)this.firstChild.className="ihover";if(ht_obj[this.level])clearTimeout(ht_obj[this.level]);ht_obj[this.level]=setTimeout("hover_handle(document.getElementById('"+this.id+"'),1)",dto.menu_showhide_delay);};nodes[this.li].onmouseout=function(){x34(this,dto.menu_showhide_delay);};this.x30=nodes[this.li].childNodes;for(this.ti=0;this.ti<this.x30.length;this.ti++){if(this.x30[this.ti].tagName=="DIV"){if(ulm_ie && !ulm_mac)this.x30[this.ti].firstChild.insertAdjacentHTML("afterBegin","<iframe src='javascript:false;' x31=1 style='position:absolute;border-style:none;width:1px;height:1px;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);' frameborder='0'></iframe>");if(!(ulm_iemac)|| this.level>1 || !dto.main_is_horizontal)this.x30[this.ti].style.zIndex=this.level;this.x30[this.ti].setAttribute("align","left");this.cx1=this.x30[this.ti].getElementsByTagName("UL");if(this.cx1.length){x4="sub";if(this.level==1)x4="main";if((iname=dto[x4+"_expand_image"])&&(!ulm_firefox_beta1_5)){x14=dto[x4+"_expand_image_hover"];x15=new Array(dto[x4+"_expand_image_width"],dto[x4+"_expand_image_height"]);tewid="100%";if(ulm_ie)tewid="0px";x16='<div style="visibility:hidden;position:absolute;text-align:right;top:0px;left:0px;width:'+tewid+';"><img style="border-style:none;" level='+this.level+' imexpandicon=2 src="'+x14+'" width='+x15[0]+' height='+x15[1]+' border=0></div>';nodes[this.li].firstChild.innerHTML='<div imexpandarrow=1 style="position:relative;text-align:left;"><div style="position:absolute;width:100%;cursor:hand;cursor:pointer;text-align:right;"><div style="position:relative;width:'+tewid+';height:0px; text-align:right;top:'+dto[x4+"_expand_image_offy"]+'px;left:'+dto[x4+"_expand_image_offx"]+'px;">'+x16+'<img style="border-style:none;" imexpandicon=1 level='+this.level+' src="'+iname+'" width='+x15[0]+' height='+x15[1]+' border=0></div></div></div>'+nodes[this.li].firstChild.innerHTML;}this.cx1[0].parentNode.className="imsubc";this.cx1[0].id="x1ub"+prefix+this.counter;new imenus_create_menu(this.cx1[0].childNodes,prefix+this.counter+ulm_sep,dto,d_toid);if(!ulm_oldnav && window.imenus_add_pointer_image)imenus_add_pointer_image(this.cx1[0].parentNode,dto,this.level);}}}if((!sid)&&(!ulm_navigator)&&(!ulm_iemac)&&(rssurl=nodes[this.li].getAttribute("rssfeed"))&&(window.imenus_get_rss_data))imenus_get_rss_data(nodes[this.li],rssurl);this.counter++;}}};function x34(x35,x36){if(x35.firstChild.className.indexOf("iactive")==-1)x35.firstChild.className="";clearTimeout(ht_obj[x35.level]);ht_obj[x35.level]=setTimeout("hover_handle(document.getElementById('"+x35.id+"'))",x36);};function hover_handle(hobj,show){if(ulm_ie && !ulm_mac){try{if(show){if((plobj=(uobj=hobj.getElementsByTagName("UL")[0]).filters[0])){if(uobj.parentNode.currentStyle.visibility=="hidden"){if(ulm_playobj)ulm_playobj.stop();plobj.apply();plobj.play();ulm_playobj=plobj;}}}}catch(e){}}if(cm_obj[hobj.level]!=null){cm_obj[hobj.level].className="";cm_obj[hobj.level].firstChild.className="";}if(show){if(!hobj.getElementsByTagName("UL")[0])return;hobj.firstChild.className="ihover iactive";hobj.className="ishow";cm_obj[hobj.level]=hobj;}};function x6(id,dto){x19="#imenus"+id;sd="<style id='ssimenus"+id+"' type='text/css'>";x20=0;di=0;while((x21=document.getElementById("ulitem"+id+ulm_sep+di))){if(dto.main_is_horizontal){if(ulm_iemac)x21.style.display="inline-block";else sd+="#ulitem"+id+ulm_sep+di+" {float:left;}";if((tgw=x21.style.width))x20+=parseInt(tgw);}else {x20=parseInt(document.getElementById("imenus"+id).style.width);x21.style.width="100%";}di++;}document.getElementById("imenus"+id).style.width=x20+"px";if(!ulm_opera)document.getElementById("imenus"+id).parentNode.style.width=x20+"px";var adpr="relative";if(ulm_oldnav)adpr="absolute";sd+="#imcontainer1"+id+" {z-index:"+(999999-id)+";position:"+adpr+";"+ulm_display+"}";sd+="#imcontainer2"+id+" {position:absolute;}";sd+=x19+",#imenus"+id+" ul{margin:0;list-style:none;}";sd+="#imouter"+id+" {text-align:left;"+dto.main_container_styles+"}";sd+="BODY #imouter"+id+" {"+dto.main_container_styles_extra+"}";sd+=x19+" {padding:0px;}";posp="relative";if(ulm_ie && !ulm_mac)posp="absolute";sd+=x19+" ul {padding:0px;"+dto.subs_container_styles+"position:"+posp+";top:0px;left:0px;}";sd+="BODY "+x19+" ul {"+dto.subs_container_styles_extra+"}";sd+=x19+" li div {position:absolute;}";sd+=x19+" li .imsubc {position:absolute;visibility:hidden;}";ubt="";lbt="";x23="";x24="";x22=10;for(hi=1;hi<x22;hi++){ubt+="li ";lbt+=" li";x23+=x19+" li.ishow "+ubt+" .imsubc";x24+=x19+lbt+".ishow .imsubc";if(hi!=(x22-1)){x23+=",";x24+=",";}}sd+=x23+"{visibility:hidden;}";sd+=x24+"{visibility:visible;}";sd+=x19+","+x19+" li {font-size:1px}";sd+=x19+","+x19+" ul{text-decoration:none;}";sd+=x19+" ul li a.ihover {"+dto.subs_item_hover_styles+"}";sd+=x19+" li a.ihover {"+dto.main_item_hover_styles+"}";sd+=x19+" li a.iactive {"+dto.main_item_active_styles+"}";sd+=x19+" ul li a.iactive{"+dto.subs_item_active_styles+"}";sd+=x19+" li a.iactive div img{visibility:visible;}";ulp="";ulmp="";if(ulm_ie && !ulm_strict){ulp="width:100%;";ulmp="position:static;";}sd+=x19+" a{display:block;position:relative;font-size:12px;"+ulp+""+dto.main_item_styles+"}";sd+="BODY "+x19+" a{"+dto.main_item_styles_extra+"}";sd+=x19+" ul a{display:block;"+ulmp+" "+"font-size:12px;"+dto.subs_item_styles+"}";sd+="BODY "+x19+" ul a{"+dto.subs_item_styles_extra+"}";sd+=x19+" li{cursor:hand;cursor:pointer;}";document.write(sd+"</style>");}</script><noscript>Infinite
+Menus, Copyright 2005, OpenCube Inc. All Rights Reserved.<a
+href="http://www.opencube.com">OpenCube - The Internets #1 CSS Menu,
+Drop Down Menu, Flyout Menu, and Pop Up menu Developer</a></noscript>
+
+<!--  *********************************************** End Source Code ******************************************** -->
+
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a href="#" id="prevLink"></a><a href="#" id="nextLink"></a></div><div id="loading"><a href="#" id="loadingLink"><img src="a58_files/loading.gif"></a></div></div></div><div class="clearfix" id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="ap-lb-bottomNav"><a href="#" id="bottomNavClose"><img src="a58_files/closelabel.gif"></a></div></div></div></div></body></html>
